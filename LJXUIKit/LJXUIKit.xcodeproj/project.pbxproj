@@ -20,16 +20,12 @@
 		41407C2D1AFCD821006A1847 /* LJXUserNameTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 41407C2B1AFCD821006A1847 /* LJXUserNameTextField.m */; };
 		41407C301AFCD84D006A1847 /* LJXPasswordTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 41407C2F1AFCD84D006A1847 /* LJXPasswordTextField.m */; };
 		41407C311AFCD84D006A1847 /* LJXPasswordTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 41407C2F1AFCD84D006A1847 /* LJXPasswordTextField.m */; };
-		414125DC1AEDC6B8006E143A /* UIControl+LJXBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 414125DB1AEDC6B8006E143A /* UIControl+LJXBlocks.m */; };
-		414125DD1AEDC6B8006E143A /* UIControl+LJXBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 414125DB1AEDC6B8006E143A /* UIControl+LJXBlocks.m */; };
 		4144AF2F1AF898C20034D386 /* LJXUISystemMetric.m in Sources */ = {isa = PBXBuildFile; fileRef = 4144AF2E1AF898C20034D386 /* LJXUISystemMetric.m */; };
 		4144AF301AF898C20034D386 /* LJXUISystemMetric.m in Sources */ = {isa = PBXBuildFile; fileRef = 4144AF2E1AF898C20034D386 /* LJXUISystemMetric.m */; };
 		4144AF5F1AF8A2B30034D386 /* LJXAppStoreHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F70E1AE9F06C00B1E39E /* LJXAppStoreHelper.h */; };
 		4144AF601AF8A2B30034D386 /* LJXUIBlocks.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F67B1AE9DF7C00B1E39E /* LJXUIBlocks.h */; };
 		4144AF611AF8A2B30034D386 /* LJXUIMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F67C1AE9DF7C00B1E39E /* LJXUIMacros.h */; };
-		4144AF621AF8A2B30034D386 /* UIControl+LJXBlocks.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 414125DA1AEDC6B8006E143A /* UIControl+LJXBlocks.h */; };
 		4144AF631AF8A2B30034D386 /* UINavigationController+LJXAddition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F67F1AE9DF7C00B1E39E /* UINavigationController+LJXAddition.h */; };
-		4144AF651AF8A2B30034D386 /* NSArray+BlocksKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6851AE9DF7C00B1E39E /* NSArray+BlocksKit.h */; };
 		4144AF661AF8A2B30034D386 /* NSArray+Subviews.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6871AE9DF7C00B1E39E /* NSArray+Subviews.h */; };
 		4144AF671AF8A2B30034D386 /* NSArray+UI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6891AE9DF7C00B1E39E /* NSArray+UI.h */; };
 		4144AF681AF8A2B30034D386 /* UIDevice+IdentifierAddition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F68D1AE9DF7C00B1E39E /* UIDevice+IdentifierAddition.h */; };
@@ -66,8 +62,6 @@
 		4146F6D11AE9DF7C00B1E39E /* UINavigationController+LJXAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6801AE9DF7C00B1E39E /* UINavigationController+LJXAddition.m */; };
 		4146F6D21AE9DF7C00B1E39E /* UIViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6821AE9DF7C00B1E39E /* UIViewController+Addition.m */; };
 		4146F6D31AE9DF7C00B1E39E /* UIViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6821AE9DF7C00B1E39E /* UIViewController+Addition.m */; };
-		4146F6D41AE9DF7C00B1E39E /* NSArray+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6861AE9DF7C00B1E39E /* NSArray+BlocksKit.m */; };
-		4146F6D51AE9DF7C00B1E39E /* NSArray+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6861AE9DF7C00B1E39E /* NSArray+BlocksKit.m */; };
 		4146F6D61AE9DF7C00B1E39E /* NSArray+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6881AE9DF7C00B1E39E /* NSArray+Subviews.m */; };
 		4146F6D71AE9DF7C00B1E39E /* NSArray+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6881AE9DF7C00B1E39E /* NSArray+Subviews.m */; };
 		4146F6D81AE9DF7C00B1E39E /* NSArray+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F68A1AE9DF7C00B1E39E /* NSArray+UI.m */; };
@@ -172,10 +166,8 @@
 				4144AF5F1AF8A2B30034D386 /* LJXAppStoreHelper.h in CopyFiles */,
 				4144AF601AF8A2B30034D386 /* LJXUIBlocks.h in CopyFiles */,
 				4144AF611AF8A2B30034D386 /* LJXUIMacros.h in CopyFiles */,
-				4144AF621AF8A2B30034D386 /* UIControl+LJXBlocks.h in CopyFiles */,
 				4154A19D1B00A51C00135E28 /* UIViewController+Addition.h in CopyFiles */,
 				4144AF631AF8A2B30034D386 /* UINavigationController+LJXAddition.h in CopyFiles */,
-				4144AF651AF8A2B30034D386 /* NSArray+BlocksKit.h in CopyFiles */,
 				4144AF661AF8A2B30034D386 /* NSArray+Subviews.h in CopyFiles */,
 				4144AF671AF8A2B30034D386 /* NSArray+UI.h in CopyFiles */,
 				4144AF681AF8A2B30034D386 /* UIDevice+IdentifierAddition.h in CopyFiles */,
@@ -235,8 +227,6 @@
 		41407C2B1AFCD821006A1847 /* LJXUserNameTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXUserNameTextField.m; sourceTree = "<group>"; };
 		41407C2E1AFCD84D006A1847 /* LJXPasswordTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXPasswordTextField.h; sourceTree = "<group>"; };
 		41407C2F1AFCD84D006A1847 /* LJXPasswordTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXPasswordTextField.m; sourceTree = "<group>"; };
-		414125DA1AEDC6B8006E143A /* UIControl+LJXBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+LJXBlocks.h"; sourceTree = "<group>"; };
-		414125DB1AEDC6B8006E143A /* UIControl+LJXBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+LJXBlocks.m"; sourceTree = "<group>"; };
 		4144AF2D1AF898C20034D386 /* LJXUISystemMetric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUISystemMetric.h; sourceTree = "<group>"; };
 		4144AF2E1AF898C20034D386 /* LJXUISystemMetric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXUISystemMetric.m; sourceTree = "<group>"; };
 		4146F67B1AE9DF7C00B1E39E /* LJXUIBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIBlocks.h; sourceTree = "<group>"; };
@@ -245,8 +235,6 @@
 		4146F6801AE9DF7C00B1E39E /* UINavigationController+LJXAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LJXAddition.m"; sourceTree = "<group>"; };
 		4146F6811AE9DF7C00B1E39E /* UIViewController+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Addition.h"; sourceTree = "<group>"; };
 		4146F6821AE9DF7C00B1E39E /* UIViewController+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Addition.m"; sourceTree = "<group>"; };
-		4146F6851AE9DF7C00B1E39E /* NSArray+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BlocksKit.h"; sourceTree = "<group>"; };
-		4146F6861AE9DF7C00B1E39E /* NSArray+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BlocksKit.m"; sourceTree = "<group>"; };
 		4146F6871AE9DF7C00B1E39E /* NSArray+Subviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Subviews.h"; sourceTree = "<group>"; };
 		4146F6881AE9DF7C00B1E39E /* NSArray+Subviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Subviews.m"; sourceTree = "<group>"; };
 		4146F6891AE9DF7C00B1E39E /* NSArray+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+UI.h"; sourceTree = "<group>"; };
@@ -359,15 +347,6 @@
 			path = UITextField;
 			sourceTree = "<group>";
 		};
-		414125D51AEDC59C006E143A /* UIControl */ = {
-			isa = PBXGroup;
-			children = (
-				414125DA1AEDC6B8006E143A /* UIControl+LJXBlocks.h */,
-				414125DB1AEDC6B8006E143A /* UIControl+LJXBlocks.m */,
-			);
-			path = UIControl;
-			sourceTree = "<group>";
-		};
 		4144AF311AF899180034D386 /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,7 +366,6 @@
 		4146F67D1AE9DF7C00B1E39E /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				414125D51AEDC59C006E143A /* UIControl */,
 				4146F67E1AE9DF7C00B1E39E /* Controller */,
 				4146F6831AE9DF7C00B1E39E /* Foundation */,
 				4146F68C1AE9DF7C00B1E39E /* Other */,
@@ -414,7 +392,6 @@
 			isa = PBXGroup;
 			children = (
 				4146F6841AE9DF7C00B1E39E /* NSArray */,
-				4146F68B1AE9DF7C00B1E39E /* NSDictionary */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -422,21 +399,12 @@
 		4146F6841AE9DF7C00B1E39E /* NSArray */ = {
 			isa = PBXGroup;
 			children = (
-				4146F6851AE9DF7C00B1E39E /* NSArray+BlocksKit.h */,
-				4146F6861AE9DF7C00B1E39E /* NSArray+BlocksKit.m */,
 				4146F6871AE9DF7C00B1E39E /* NSArray+Subviews.h */,
 				4146F6881AE9DF7C00B1E39E /* NSArray+Subviews.m */,
 				4146F6891AE9DF7C00B1E39E /* NSArray+UI.h */,
 				4146F68A1AE9DF7C00B1E39E /* NSArray+UI.m */,
 			);
 			path = NSArray;
-			sourceTree = "<group>";
-		};
-		4146F68B1AE9DF7C00B1E39E /* NSDictionary */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NSDictionary;
 			sourceTree = "<group>";
 		};
 		4146F68C1AE9DF7C00B1E39E /* Other */ = {
@@ -838,7 +806,6 @@
 				4127B08A1B1D8A98006BB196 /* LJXUITextField.m in Sources */,
 				4146F7051AE9DF7C00B1E39E /* LJXViewController.m in Sources */,
 				4127B0871B1D8840006BB196 /* LJXBlueRoundButton.m in Sources */,
-				414125DC1AEDC6B8006E143A /* UIControl+LJXBlocks.m in Sources */,
 				4146F7031AE9DF7C00B1E39E /* LJXTableViewController.m in Sources */,
 				41407C301AFCD84D006A1847 /* LJXPasswordTextField.m in Sources */,
 				4146F6DE1AE9DF7C00B1E39E /* UIButtonAdditions.m in Sources */,
@@ -863,7 +830,6 @@
 				4146F6D61AE9DF7C00B1E39E /* NSArray+Subviews.m in Sources */,
 				4146F6DA1AE9DF7C00B1E39E /* UIDevice+IdentifierAddition.m in Sources */,
 				4146F6F81AE9DF7C00B1E39E /* LJXLoadingViewController.m in Sources */,
-				4146F6D41AE9DF7C00B1E39E /* NSArray+BlocksKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -871,7 +837,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				414125DD1AEDC6B8006E143A /* UIControl+LJXBlocks.m in Sources */,
 				4146F6FF1AE9DF7C00B1E39E /* UIView+Toast.m in Sources */,
 				4146F6F11AE9DF7C00B1E39E /* UIViewAdditions.m in Sources */,
 				4144AF301AF898C20034D386 /* LJXUISystemMetric.m in Sources */,
@@ -889,7 +854,6 @@
 				4146F7041AE9DF7C00B1E39E /* LJXTableViewController.m in Sources */,
 				4146F6EF1AE9DF7C00B1E39E /* UIView+Subviews.m in Sources */,
 				4146F6ED1AE9DF7C00B1E39E /* UIView+Layout.m in Sources */,
-				4146F6D51AE9DF7C00B1E39E /* NSArray+BlocksKit.m in Sources */,
 				4146F7061AE9DF7C00B1E39E /* LJXViewController.m in Sources */,
 				4146F6FB1AE9DF7C00B1E39E /* LJXMBProgressHUD.m in Sources */,
 				4146F70C1AE9ED9C00B1E39E /* UIImage+Addition.m in Sources */,
