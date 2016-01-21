@@ -1,0 +1,1094 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4127B0871B1D8840006BB196 /* LJXBlueRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4127B0861B1D8840006BB196 /* LJXBlueRoundButton.m */; };
+		4127B08A1B1D8A98006BB196 /* LJXUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4127B0891B1D8A98006BB196 /* LJXUITextField.m */; };
+		4127B08B1B1D8B77006BB196 /* LJXUITextField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4127B0881B1D8A98006BB196 /* LJXUITextField.h */; };
+		4127B08F1B1D94D5006BB196 /* LJXUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4127B08E1B1D94D5006BB196 /* LJXUINavigationController.m */; };
+		4127B0901B1D952C006BB196 /* LJXUINavigationController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4127B08D1B1D94D5006BB196 /* LJXUINavigationController.h */; };
+		413DEEF71B042CC800B63322 /* LJXRoundFrameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DEEF61B042CC800B63322 /* LJXRoundFrameButton.m */; };
+		413DEEFA1B042D2300B63322 /* LJXRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 413DEEF91B042D2300B63322 /* LJXRoundButton.m */; };
+		413DEEFB1B042D7700B63322 /* LJXRoundFrameButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 413DEEF51B042CC800B63322 /* LJXRoundFrameButton.h */; };
+		413DEEFC1B042D7800B63322 /* LJXRoundButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 413DEEF81B042D2300B63322 /* LJXRoundButton.h */; };
+		41407C2C1AFCD821006A1847 /* LJXUserNameTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 41407C2B1AFCD821006A1847 /* LJXUserNameTextField.m */; };
+		41407C2D1AFCD821006A1847 /* LJXUserNameTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 41407C2B1AFCD821006A1847 /* LJXUserNameTextField.m */; };
+		41407C301AFCD84D006A1847 /* LJXPasswordTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 41407C2F1AFCD84D006A1847 /* LJXPasswordTextField.m */; };
+		41407C311AFCD84D006A1847 /* LJXPasswordTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 41407C2F1AFCD84D006A1847 /* LJXPasswordTextField.m */; };
+		414125DC1AEDC6B8006E143A /* UIControl+LJXBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 414125DB1AEDC6B8006E143A /* UIControl+LJXBlocks.m */; };
+		414125DD1AEDC6B8006E143A /* UIControl+LJXBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 414125DB1AEDC6B8006E143A /* UIControl+LJXBlocks.m */; };
+		4144AF2F1AF898C20034D386 /* LJXUISystemMetric.m in Sources */ = {isa = PBXBuildFile; fileRef = 4144AF2E1AF898C20034D386 /* LJXUISystemMetric.m */; };
+		4144AF301AF898C20034D386 /* LJXUISystemMetric.m in Sources */ = {isa = PBXBuildFile; fileRef = 4144AF2E1AF898C20034D386 /* LJXUISystemMetric.m */; };
+		4144AF5F1AF8A2B30034D386 /* LJXAppStoreHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F70E1AE9F06C00B1E39E /* LJXAppStoreHelper.h */; };
+		4144AF601AF8A2B30034D386 /* LJXUIBlocks.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F67B1AE9DF7C00B1E39E /* LJXUIBlocks.h */; };
+		4144AF611AF8A2B30034D386 /* LJXUIMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F67C1AE9DF7C00B1E39E /* LJXUIMacros.h */; };
+		4144AF621AF8A2B30034D386 /* UIControl+LJXBlocks.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 414125DA1AEDC6B8006E143A /* UIControl+LJXBlocks.h */; };
+		4144AF631AF8A2B30034D386 /* UINavigationController+LJXAddition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F67F1AE9DF7C00B1E39E /* UINavigationController+LJXAddition.h */; };
+		4144AF651AF8A2B30034D386 /* NSArray+BlocksKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6851AE9DF7C00B1E39E /* NSArray+BlocksKit.h */; };
+		4144AF661AF8A2B30034D386 /* NSArray+Subviews.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6871AE9DF7C00B1E39E /* NSArray+Subviews.h */; };
+		4144AF671AF8A2B30034D386 /* NSArray+UI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6891AE9DF7C00B1E39E /* NSArray+UI.h */; };
+		4144AF681AF8A2B30034D386 /* UIDevice+IdentifierAddition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F68D1AE9DF7C00B1E39E /* UIDevice+IdentifierAddition.h */; };
+		4144AF691AF8A2B30034D386 /* UIDeviceAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F68F1AE9DF7C00B1E39E /* UIDeviceAdditions.h */; };
+		4144AF6A1AF8A2B30034D386 /* UIButtonAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6921AE9DF7C00B1E39E /* UIButtonAdditions.h */; };
+		4144AF6B1AF8A2B30034D386 /* UIImage+Bundle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6951AE9DF7C00B1E39E /* UIImage+Bundle.h */; };
+		4144AF6C1AF8A2B30034D386 /* UIImage+editor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6971AE9DF7C00B1E39E /* UIImage+editor.h */; };
+		4144AF6D1AF8A2B30034D386 /* UIImage+Addition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F7091AE9ED9C00B1E39E /* UIImage+Addition.h */; };
+		4144AF6E1AF8A2B30034D386 /* UIResponderAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F69A1AE9DF7C00B1E39E /* UIResponderAdditions.h */; };
+		4144AF6F1AF8A2B30034D386 /* UICollectionView+Additions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F69D1AE9DF7C00B1E39E /* UICollectionView+Additions.h */; };
+		4144AF701AF8A2B30034D386 /* UITableView+Addition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F69F1AE9DF7C00B1E39E /* UITableView+Addition.h */; };
+		4144AF711AF8A2B30034D386 /* UIView+Animation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6A11AE9DF7C00B1E39E /* UIView+Animation.h */; };
+		4144AF721AF8A2B30034D386 /* UIView+Layout.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6A31AE9DF7C00B1E39E /* UIView+Layout.h */; };
+		4144AF731AF8A2B30034D386 /* UIView+Subviews.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6A51AE9DF7C00B1E39E /* UIView+Subviews.h */; };
+		4144AF741AF8A2B40034D386 /* UIViewAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6A71AE9DF7C00B1E39E /* UIViewAdditions.h */; };
+		4144AF751AF8A2B40034D386 /* LJXVEnum.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6AA1AE9DF7C00B1E39E /* LJXVEnum.h */; };
+		4144AF7C1AF8A2B40034D386 /* LJXButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6AD1AE9DF7C00B1E39E /* LJXButton.h */; };
+		4144AF7D1AF8A2B40034D386 /* LJXListButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6AF1AE9DF7C00B1E39E /* LJXListButton.h */; };
+		4144AF7E1AF8A2B40034D386 /* LJXMultiStateButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6B11AE9DF7C00B1E39E /* LJXMultiStateButton.h */; };
+		4144AF7F1AF8A2B40034D386 /* LJXLoadingViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6B41AE9DF7C00B1E39E /* LJXLoadingViewController.h */; };
+		4144AF801AF8A2B40034D386 /* LJXMBProgressHUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6B61AE9DF7C00B1E39E /* LJXMBProgressHUD.h */; };
+		4144AF811AF8A2B40034D386 /* LJXSpinImageView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6B81AE9DF7C00B1E39E /* LJXSpinImageView.h */; };
+		4144AF821AF8A2B40034D386 /* UIView+Toast.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6BB1AE9DF7C00B1E39E /* UIView+Toast.h */; };
+		4144AF831AF8A2B40034D386 /* LJXWindowView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6BE1AE9DF7C00B1E39E /* LJXWindowView.h */; };
+		4144AF841AF8A2B40034D386 /* LJXTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6C41AE9DF7C00B1E39E /* LJXTableViewController.h */; };
+		4144AF851AF8A2B40034D386 /* LJXViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6C61AE9DF7C00B1E39E /* LJXViewController.h */; };
+		4144AF861AF8A2B40034D386 /* LJXControlActionProtocol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6C91AE9DF7C00B1E39E /* LJXControlActionProtocol.h */; };
+		4144AF871AF8A2B40034D386 /* LJXControlEnabledProtocol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6CA1AE9DF7C00B1E39E /* LJXControlEnabledProtocol.h */; };
+		4144AF881AF8A2B40034D386 /* LJXSetValueProtocol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6CB1AE9DF7C00B1E39E /* LJXSetValueProtocol.h */; };
+		4144AF891AF8A2B40034D386 /* LJXViewSetHiddenProtocol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6CC1AE9DF7C00B1E39E /* LJXViewSetHiddenProtocol.h */; };
+		4144AF8A1AF8A2B40034D386 /* LJXUIStyle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6CE1AE9DF7C00B1E39E /* LJXUIStyle.h */; };
+		4144AF8B1AF8A2B40034D386 /* LJXUISystemMetric.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4144AF2D1AF898C20034D386 /* LJXUISystemMetric.h */; };
+		4146F6D01AE9DF7C00B1E39E /* UINavigationController+LJXAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6801AE9DF7C00B1E39E /* UINavigationController+LJXAddition.m */; };
+		4146F6D11AE9DF7C00B1E39E /* UINavigationController+LJXAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6801AE9DF7C00B1E39E /* UINavigationController+LJXAddition.m */; };
+		4146F6D21AE9DF7C00B1E39E /* UIViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6821AE9DF7C00B1E39E /* UIViewController+Addition.m */; };
+		4146F6D31AE9DF7C00B1E39E /* UIViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6821AE9DF7C00B1E39E /* UIViewController+Addition.m */; };
+		4146F6D41AE9DF7C00B1E39E /* NSArray+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6861AE9DF7C00B1E39E /* NSArray+BlocksKit.m */; };
+		4146F6D51AE9DF7C00B1E39E /* NSArray+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6861AE9DF7C00B1E39E /* NSArray+BlocksKit.m */; };
+		4146F6D61AE9DF7C00B1E39E /* NSArray+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6881AE9DF7C00B1E39E /* NSArray+Subviews.m */; };
+		4146F6D71AE9DF7C00B1E39E /* NSArray+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6881AE9DF7C00B1E39E /* NSArray+Subviews.m */; };
+		4146F6D81AE9DF7C00B1E39E /* NSArray+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F68A1AE9DF7C00B1E39E /* NSArray+UI.m */; };
+		4146F6D91AE9DF7C00B1E39E /* NSArray+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F68A1AE9DF7C00B1E39E /* NSArray+UI.m */; };
+		4146F6DA1AE9DF7C00B1E39E /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F68E1AE9DF7C00B1E39E /* UIDevice+IdentifierAddition.m */; };
+		4146F6DB1AE9DF7C00B1E39E /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F68E1AE9DF7C00B1E39E /* UIDevice+IdentifierAddition.m */; };
+		4146F6DC1AE9DF7C00B1E39E /* UIDeviceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6901AE9DF7C00B1E39E /* UIDeviceAdditions.m */; };
+		4146F6DD1AE9DF7C00B1E39E /* UIDeviceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6901AE9DF7C00B1E39E /* UIDeviceAdditions.m */; };
+		4146F6DE1AE9DF7C00B1E39E /* UIButtonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6931AE9DF7C00B1E39E /* UIButtonAdditions.m */; };
+		4146F6DF1AE9DF7C00B1E39E /* UIButtonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6931AE9DF7C00B1E39E /* UIButtonAdditions.m */; };
+		4146F6E01AE9DF7C00B1E39E /* UIImage+Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6961AE9DF7C00B1E39E /* UIImage+Bundle.m */; };
+		4146F6E11AE9DF7C00B1E39E /* UIImage+Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6961AE9DF7C00B1E39E /* UIImage+Bundle.m */; };
+		4146F6E21AE9DF7C00B1E39E /* UIImage+editor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6981AE9DF7C00B1E39E /* UIImage+editor.m */; };
+		4146F6E31AE9DF7C00B1E39E /* UIImage+editor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6981AE9DF7C00B1E39E /* UIImage+editor.m */; };
+		4146F6E41AE9DF7C00B1E39E /* UIResponderAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F69B1AE9DF7C00B1E39E /* UIResponderAdditions.m */; };
+		4146F6E51AE9DF7C00B1E39E /* UIResponderAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F69B1AE9DF7C00B1E39E /* UIResponderAdditions.m */; };
+		4146F6E61AE9DF7C00B1E39E /* UICollectionView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F69E1AE9DF7C00B1E39E /* UICollectionView+Additions.m */; };
+		4146F6E71AE9DF7C00B1E39E /* UICollectionView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F69E1AE9DF7C00B1E39E /* UICollectionView+Additions.m */; };
+		4146F6E81AE9DF7C00B1E39E /* UITableView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6A01AE9DF7C00B1E39E /* UITableView+Addition.m */; };
+		4146F6E91AE9DF7C00B1E39E /* UITableView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6A01AE9DF7C00B1E39E /* UITableView+Addition.m */; };
+		4146F6EA1AE9DF7C00B1E39E /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6A21AE9DF7C00B1E39E /* UIView+Animation.m */; };
+		4146F6EB1AE9DF7C00B1E39E /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6A21AE9DF7C00B1E39E /* UIView+Animation.m */; };
+		4146F6EC1AE9DF7C00B1E39E /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6A41AE9DF7C00B1E39E /* UIView+Layout.m */; };
+		4146F6ED1AE9DF7C00B1E39E /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6A41AE9DF7C00B1E39E /* UIView+Layout.m */; };
+		4146F6EE1AE9DF7C00B1E39E /* UIView+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6A61AE9DF7C00B1E39E /* UIView+Subviews.m */; };
+		4146F6EF1AE9DF7C00B1E39E /* UIView+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6A61AE9DF7C00B1E39E /* UIView+Subviews.m */; };
+		4146F6F01AE9DF7C00B1E39E /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6A81AE9DF7C00B1E39E /* UIViewAdditions.m */; };
+		4146F6F11AE9DF7C00B1E39E /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6A81AE9DF7C00B1E39E /* UIViewAdditions.m */; };
+		4146F6F21AE9DF7C00B1E39E /* LJXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6AE1AE9DF7C00B1E39E /* LJXButton.m */; };
+		4146F6F31AE9DF7C00B1E39E /* LJXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6AE1AE9DF7C00B1E39E /* LJXButton.m */; };
+		4146F6F41AE9DF7C00B1E39E /* LJXListButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6B01AE9DF7C00B1E39E /* LJXListButton.m */; };
+		4146F6F51AE9DF7C00B1E39E /* LJXListButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6B01AE9DF7C00B1E39E /* LJXListButton.m */; };
+		4146F6F61AE9DF7C00B1E39E /* LJXMultiStateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6B21AE9DF7C00B1E39E /* LJXMultiStateButton.m */; };
+		4146F6F71AE9DF7C00B1E39E /* LJXMultiStateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6B21AE9DF7C00B1E39E /* LJXMultiStateButton.m */; };
+		4146F6F81AE9DF7C00B1E39E /* LJXLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6B51AE9DF7C00B1E39E /* LJXLoadingViewController.m */; };
+		4146F6F91AE9DF7C00B1E39E /* LJXLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6B51AE9DF7C00B1E39E /* LJXLoadingViewController.m */; };
+		4146F6FA1AE9DF7C00B1E39E /* LJXMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6B71AE9DF7C00B1E39E /* LJXMBProgressHUD.m */; };
+		4146F6FB1AE9DF7C00B1E39E /* LJXMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6B71AE9DF7C00B1E39E /* LJXMBProgressHUD.m */; };
+		4146F6FC1AE9DF7C00B1E39E /* LJXSpinImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6B91AE9DF7C00B1E39E /* LJXSpinImageView.m */; };
+		4146F6FD1AE9DF7C00B1E39E /* LJXSpinImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6B91AE9DF7C00B1E39E /* LJXSpinImageView.m */; };
+		4146F6FE1AE9DF7C00B1E39E /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6BC1AE9DF7C00B1E39E /* UIView+Toast.m */; };
+		4146F6FF1AE9DF7C00B1E39E /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6BC1AE9DF7C00B1E39E /* UIView+Toast.m */; };
+		4146F7001AE9DF7C00B1E39E /* LJXWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6BF1AE9DF7C00B1E39E /* LJXWindowView.m */; };
+		4146F7011AE9DF7C00B1E39E /* LJXWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6BF1AE9DF7C00B1E39E /* LJXWindowView.m */; };
+		4146F7021AE9DF7C00B1E39E /* LJXUI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4146F6C11AE9DF7C00B1E39E /* LJXUI.storyboard */; };
+		4146F7031AE9DF7C00B1E39E /* LJXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6C51AE9DF7C00B1E39E /* LJXTableViewController.m */; };
+		4146F7041AE9DF7C00B1E39E /* LJXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6C51AE9DF7C00B1E39E /* LJXTableViewController.m */; };
+		4146F7051AE9DF7C00B1E39E /* LJXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6C71AE9DF7C00B1E39E /* LJXViewController.m */; };
+		4146F7061AE9DF7C00B1E39E /* LJXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6C71AE9DF7C00B1E39E /* LJXViewController.m */; };
+		4146F7071AE9DF7C00B1E39E /* LJXUIStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6CF1AE9DF7C00B1E39E /* LJXUIStyle.m */; };
+		4146F7081AE9DF7C00B1E39E /* LJXUIStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F6CF1AE9DF7C00B1E39E /* LJXUIStyle.m */; };
+		4146F70B1AE9ED9C00B1E39E /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F70A1AE9ED9C00B1E39E /* UIImage+Addition.m */; };
+		4146F70C1AE9ED9C00B1E39E /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F70A1AE9ED9C00B1E39E /* UIImage+Addition.m */; };
+		4146F7101AE9F06C00B1E39E /* LJXAppStoreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F70F1AE9F06C00B1E39E /* LJXAppStoreHelper.m */; };
+		4146F7111AE9F06C00B1E39E /* LJXAppStoreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4146F70F1AE9F06C00B1E39E /* LJXAppStoreHelper.m */; };
+		414993FF1B12AF5D00813405 /* LJXUIWebViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 41DE28A21B0F13F400E90CEA /* LJXUIWebViewController.h */; };
+		4154A19D1B00A51C00135E28 /* UIViewController+Addition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4146F6811AE9DF7C00B1E39E /* UIViewController+Addition.h */; };
+		415591901B003F9B000C1B24 /* LJXUserNameTextField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 41407C2A1AFCD821006A1847 /* LJXUserNameTextField.h */; };
+		415591911B003F9D000C1B24 /* LJXPasswordTextField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 41407C2E1AFCD84D006A1847 /* LJXPasswordTextField.h */; };
+		418B102E1AE8EF7F00CC1848 /* libLJXUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 418B10221AE8EF7F00CC1848 /* libLJXUIKit.a */; };
+		41DE28A41B0F13F400E90CEA /* LJXUIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DE28A31B0F13F400E90CEA /* LJXUIWebViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		418B102F1AE8EF7F00CC1848 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 418B101A1AE8EF7F00CC1848 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 418B10211AE8EF7F00CC1848;
+			remoteInfo = LJXUIKit;
+		};
+		F74DC03A1C5066F400E7CB67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F74DC0351C5066F400E7CB67 /* LJXFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 418B0FF61AE8EF4300CC1848;
+			remoteInfo = LJXFoundation;
+		};
+		F74DC03C1C5066F400E7CB67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F74DC0351C5066F400E7CB67 /* LJXFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 418B10011AE8EF4400CC1848;
+			remoteInfo = LJXFoundationTests;
+		};
+		F74DC03E1C5066FA00E7CB67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F74DC0351C5066F400E7CB67 /* LJXFoundation.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 418B0FF51AE8EF4300CC1848;
+			remoteInfo = LJXFoundation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		418B10201AE8EF7F00CC1848 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				4144AF5F1AF8A2B30034D386 /* LJXAppStoreHelper.h in CopyFiles */,
+				4144AF601AF8A2B30034D386 /* LJXUIBlocks.h in CopyFiles */,
+				4144AF611AF8A2B30034D386 /* LJXUIMacros.h in CopyFiles */,
+				4144AF621AF8A2B30034D386 /* UIControl+LJXBlocks.h in CopyFiles */,
+				4154A19D1B00A51C00135E28 /* UIViewController+Addition.h in CopyFiles */,
+				4144AF631AF8A2B30034D386 /* UINavigationController+LJXAddition.h in CopyFiles */,
+				4144AF651AF8A2B30034D386 /* NSArray+BlocksKit.h in CopyFiles */,
+				4144AF661AF8A2B30034D386 /* NSArray+Subviews.h in CopyFiles */,
+				4144AF671AF8A2B30034D386 /* NSArray+UI.h in CopyFiles */,
+				4144AF681AF8A2B30034D386 /* UIDevice+IdentifierAddition.h in CopyFiles */,
+				4144AF691AF8A2B30034D386 /* UIDeviceAdditions.h in CopyFiles */,
+				4144AF6A1AF8A2B30034D386 /* UIButtonAdditions.h in CopyFiles */,
+				4144AF6B1AF8A2B30034D386 /* UIImage+Bundle.h in CopyFiles */,
+				4144AF6C1AF8A2B30034D386 /* UIImage+editor.h in CopyFiles */,
+				415591901B003F9B000C1B24 /* LJXUserNameTextField.h in CopyFiles */,
+				4144AF6D1AF8A2B30034D386 /* UIImage+Addition.h in CopyFiles */,
+				415591911B003F9D000C1B24 /* LJXPasswordTextField.h in CopyFiles */,
+				4144AF6E1AF8A2B30034D386 /* UIResponderAdditions.h in CopyFiles */,
+				4144AF6F1AF8A2B30034D386 /* UICollectionView+Additions.h in CopyFiles */,
+				4144AF701AF8A2B30034D386 /* UITableView+Addition.h in CopyFiles */,
+				4144AF711AF8A2B30034D386 /* UIView+Animation.h in CopyFiles */,
+				4144AF721AF8A2B30034D386 /* UIView+Layout.h in CopyFiles */,
+				4144AF731AF8A2B30034D386 /* UIView+Subviews.h in CopyFiles */,
+				4144AF801AF8A2B40034D386 /* LJXMBProgressHUD.h in CopyFiles */,
+				4144AF741AF8A2B40034D386 /* UIViewAdditions.h in CopyFiles */,
+				4144AF751AF8A2B40034D386 /* LJXVEnum.h in CopyFiles */,
+				4127B08B1B1D8B77006BB196 /* LJXUITextField.h in CopyFiles */,
+				4127B0901B1D952C006BB196 /* LJXUINavigationController.h in CopyFiles */,
+				4144AF7C1AF8A2B40034D386 /* LJXButton.h in CopyFiles */,
+				4144AF7D1AF8A2B40034D386 /* LJXListButton.h in CopyFiles */,
+				4144AF7E1AF8A2B40034D386 /* LJXMultiStateButton.h in CopyFiles */,
+				414993FF1B12AF5D00813405 /* LJXUIWebViewController.h in CopyFiles */,
+				4144AF7F1AF8A2B40034D386 /* LJXLoadingViewController.h in CopyFiles */,
+				4144AF811AF8A2B40034D386 /* LJXSpinImageView.h in CopyFiles */,
+				4144AF821AF8A2B40034D386 /* UIView+Toast.h in CopyFiles */,
+				4144AF831AF8A2B40034D386 /* LJXWindowView.h in CopyFiles */,
+				413DEEFB1B042D7700B63322 /* LJXRoundFrameButton.h in CopyFiles */,
+				413DEEFC1B042D7800B63322 /* LJXRoundButton.h in CopyFiles */,
+				4144AF841AF8A2B40034D386 /* LJXTableViewController.h in CopyFiles */,
+				4144AF851AF8A2B40034D386 /* LJXViewController.h in CopyFiles */,
+				4144AF861AF8A2B40034D386 /* LJXControlActionProtocol.h in CopyFiles */,
+				4144AF871AF8A2B40034D386 /* LJXControlEnabledProtocol.h in CopyFiles */,
+				4144AF881AF8A2B40034D386 /* LJXSetValueProtocol.h in CopyFiles */,
+				4144AF891AF8A2B40034D386 /* LJXViewSetHiddenProtocol.h in CopyFiles */,
+				4144AF8A1AF8A2B40034D386 /* LJXUIStyle.h in CopyFiles */,
+				4144AF8B1AF8A2B40034D386 /* LJXUISystemMetric.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4127B0851B1D8840006BB196 /* LJXBlueRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXBlueRoundButton.h; sourceTree = "<group>"; };
+		4127B0861B1D8840006BB196 /* LJXBlueRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXBlueRoundButton.m; sourceTree = "<group>"; };
+		4127B0881B1D8A98006BB196 /* LJXUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUITextField.h; sourceTree = "<group>"; };
+		4127B0891B1D8A98006BB196 /* LJXUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXUITextField.m; sourceTree = "<group>"; };
+		4127B08D1B1D94D5006BB196 /* LJXUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUINavigationController.h; sourceTree = "<group>"; };
+		4127B08E1B1D94D5006BB196 /* LJXUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXUINavigationController.m; sourceTree = "<group>"; };
+		413DEEF51B042CC800B63322 /* LJXRoundFrameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXRoundFrameButton.h; sourceTree = "<group>"; };
+		413DEEF61B042CC800B63322 /* LJXRoundFrameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXRoundFrameButton.m; sourceTree = "<group>"; };
+		413DEEF81B042D2300B63322 /* LJXRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXRoundButton.h; sourceTree = "<group>"; };
+		413DEEF91B042D2300B63322 /* LJXRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXRoundButton.m; sourceTree = "<group>"; };
+		41407C2A1AFCD821006A1847 /* LJXUserNameTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUserNameTextField.h; sourceTree = "<group>"; };
+		41407C2B1AFCD821006A1847 /* LJXUserNameTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXUserNameTextField.m; sourceTree = "<group>"; };
+		41407C2E1AFCD84D006A1847 /* LJXPasswordTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXPasswordTextField.h; sourceTree = "<group>"; };
+		41407C2F1AFCD84D006A1847 /* LJXPasswordTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXPasswordTextField.m; sourceTree = "<group>"; };
+		414125DA1AEDC6B8006E143A /* UIControl+LJXBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+LJXBlocks.h"; sourceTree = "<group>"; };
+		414125DB1AEDC6B8006E143A /* UIControl+LJXBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+LJXBlocks.m"; sourceTree = "<group>"; };
+		4144AF2D1AF898C20034D386 /* LJXUISystemMetric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUISystemMetric.h; sourceTree = "<group>"; };
+		4144AF2E1AF898C20034D386 /* LJXUISystemMetric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXUISystemMetric.m; sourceTree = "<group>"; };
+		4146F67B1AE9DF7C00B1E39E /* LJXUIBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIBlocks.h; sourceTree = "<group>"; };
+		4146F67C1AE9DF7C00B1E39E /* LJXUIMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIMacros.h; sourceTree = "<group>"; };
+		4146F67F1AE9DF7C00B1E39E /* UINavigationController+LJXAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LJXAddition.h"; sourceTree = "<group>"; };
+		4146F6801AE9DF7C00B1E39E /* UINavigationController+LJXAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LJXAddition.m"; sourceTree = "<group>"; };
+		4146F6811AE9DF7C00B1E39E /* UIViewController+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Addition.h"; sourceTree = "<group>"; };
+		4146F6821AE9DF7C00B1E39E /* UIViewController+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Addition.m"; sourceTree = "<group>"; };
+		4146F6851AE9DF7C00B1E39E /* NSArray+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BlocksKit.h"; sourceTree = "<group>"; };
+		4146F6861AE9DF7C00B1E39E /* NSArray+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BlocksKit.m"; sourceTree = "<group>"; };
+		4146F6871AE9DF7C00B1E39E /* NSArray+Subviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Subviews.h"; sourceTree = "<group>"; };
+		4146F6881AE9DF7C00B1E39E /* NSArray+Subviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Subviews.m"; sourceTree = "<group>"; };
+		4146F6891AE9DF7C00B1E39E /* NSArray+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+UI.h"; sourceTree = "<group>"; };
+		4146F68A1AE9DF7C00B1E39E /* NSArray+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+UI.m"; sourceTree = "<group>"; };
+		4146F68D1AE9DF7C00B1E39E /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		4146F68E1AE9DF7C00B1E39E /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
+		4146F68F1AE9DF7C00B1E39E /* UIDeviceAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceAdditions.h; sourceTree = "<group>"; };
+		4146F6901AE9DF7C00B1E39E /* UIDeviceAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDeviceAdditions.m; sourceTree = "<group>"; };
+		4146F6921AE9DF7C00B1E39E /* UIButtonAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonAdditions.h; sourceTree = "<group>"; };
+		4146F6931AE9DF7C00B1E39E /* UIButtonAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonAdditions.m; sourceTree = "<group>"; };
+		4146F6951AE9DF7C00B1E39E /* UIImage+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bundle.h"; sourceTree = "<group>"; };
+		4146F6961AE9DF7C00B1E39E /* UIImage+Bundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bundle.m"; sourceTree = "<group>"; };
+		4146F6971AE9DF7C00B1E39E /* UIImage+editor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+editor.h"; sourceTree = "<group>"; };
+		4146F6981AE9DF7C00B1E39E /* UIImage+editor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+editor.m"; sourceTree = "<group>"; };
+		4146F69A1AE9DF7C00B1E39E /* UIResponderAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIResponderAdditions.h; sourceTree = "<group>"; };
+		4146F69B1AE9DF7C00B1E39E /* UIResponderAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIResponderAdditions.m; sourceTree = "<group>"; };
+		4146F69D1AE9DF7C00B1E39E /* UICollectionView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Additions.h"; sourceTree = "<group>"; };
+		4146F69E1AE9DF7C00B1E39E /* UICollectionView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Additions.m"; sourceTree = "<group>"; };
+		4146F69F1AE9DF7C00B1E39E /* UITableView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Addition.h"; sourceTree = "<group>"; };
+		4146F6A01AE9DF7C00B1E39E /* UITableView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Addition.m"; sourceTree = "<group>"; };
+		4146F6A11AE9DF7C00B1E39E /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		4146F6A21AE9DF7C00B1E39E /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		4146F6A31AE9DF7C00B1E39E /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		4146F6A41AE9DF7C00B1E39E /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		4146F6A51AE9DF7C00B1E39E /* UIView+Subviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Subviews.h"; sourceTree = "<group>"; };
+		4146F6A61AE9DF7C00B1E39E /* UIView+Subviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Subviews.m"; sourceTree = "<group>"; };
+		4146F6A71AE9DF7C00B1E39E /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
+		4146F6A81AE9DF7C00B1E39E /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
+		4146F6AA1AE9DF7C00B1E39E /* LJXVEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXVEnum.h; sourceTree = "<group>"; };
+		4146F6AD1AE9DF7C00B1E39E /* LJXButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXButton.h; sourceTree = "<group>"; };
+		4146F6AE1AE9DF7C00B1E39E /* LJXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXButton.m; sourceTree = "<group>"; };
+		4146F6AF1AE9DF7C00B1E39E /* LJXListButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXListButton.h; sourceTree = "<group>"; };
+		4146F6B01AE9DF7C00B1E39E /* LJXListButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXListButton.m; sourceTree = "<group>"; };
+		4146F6B11AE9DF7C00B1E39E /* LJXMultiStateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXMultiStateButton.h; sourceTree = "<group>"; };
+		4146F6B21AE9DF7C00B1E39E /* LJXMultiStateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXMultiStateButton.m; sourceTree = "<group>"; };
+		4146F6B41AE9DF7C00B1E39E /* LJXLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXLoadingViewController.h; sourceTree = "<group>"; };
+		4146F6B51AE9DF7C00B1E39E /* LJXLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXLoadingViewController.m; sourceTree = "<group>"; };
+		4146F6B61AE9DF7C00B1E39E /* LJXMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXMBProgressHUD.h; sourceTree = "<group>"; };
+		4146F6B71AE9DF7C00B1E39E /* LJXMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXMBProgressHUD.m; sourceTree = "<group>"; };
+		4146F6B81AE9DF7C00B1E39E /* LJXSpinImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXSpinImageView.h; sourceTree = "<group>"; };
+		4146F6B91AE9DF7C00B1E39E /* LJXSpinImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXSpinImageView.m; sourceTree = "<group>"; };
+		4146F6BB1AE9DF7C00B1E39E /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		4146F6BC1AE9DF7C00B1E39E /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		4146F6BE1AE9DF7C00B1E39E /* LJXWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXWindowView.h; sourceTree = "<group>"; };
+		4146F6BF1AE9DF7C00B1E39E /* LJXWindowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXWindowView.m; sourceTree = "<group>"; };
+		4146F6C11AE9DF7C00B1E39E /* LJXUI.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LJXUI.storyboard; sourceTree = "<group>"; };
+		4146F6C41AE9DF7C00B1E39E /* LJXTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXTableViewController.h; sourceTree = "<group>"; };
+		4146F6C51AE9DF7C00B1E39E /* LJXTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXTableViewController.m; sourceTree = "<group>"; };
+		4146F6C61AE9DF7C00B1E39E /* LJXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXViewController.h; sourceTree = "<group>"; };
+		4146F6C71AE9DF7C00B1E39E /* LJXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXViewController.m; sourceTree = "<group>"; };
+		4146F6C91AE9DF7C00B1E39E /* LJXControlActionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXControlActionProtocol.h; sourceTree = "<group>"; };
+		4146F6CA1AE9DF7C00B1E39E /* LJXControlEnabledProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXControlEnabledProtocol.h; sourceTree = "<group>"; };
+		4146F6CB1AE9DF7C00B1E39E /* LJXSetValueProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXSetValueProtocol.h; sourceTree = "<group>"; };
+		4146F6CC1AE9DF7C00B1E39E /* LJXViewSetHiddenProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXViewSetHiddenProtocol.h; sourceTree = "<group>"; };
+		4146F6CE1AE9DF7C00B1E39E /* LJXUIStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIStyle.h; sourceTree = "<group>"; };
+		4146F6CF1AE9DF7C00B1E39E /* LJXUIStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXUIStyle.m; sourceTree = "<group>"; };
+		4146F7091AE9ED9C00B1E39E /* UIImage+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addition.h"; sourceTree = "<group>"; };
+		4146F70A1AE9ED9C00B1E39E /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addition.m"; sourceTree = "<group>"; };
+		4146F70E1AE9F06C00B1E39E /* LJXAppStoreHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXAppStoreHelper.h; sourceTree = "<group>"; };
+		4146F70F1AE9F06C00B1E39E /* LJXAppStoreHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXAppStoreHelper.m; sourceTree = "<group>"; };
+		4146F7441AE9F4BC00B1E39E /* LJXUIKit.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIKit.pch; sourceTree = "<group>"; };
+		415591921B0042B1000C1B24 /* LJXUIKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LJXUIKit.xcassets; sourceTree = "<group>"; };
+		418B10221AE8EF7F00CC1848 /* libLJXUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLJXUIKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		418B102D1AE8EF7F00CC1848 /* LJXUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LJXUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		418B10331AE8EF7F00CC1848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41DE28A21B0F13F400E90CEA /* LJXUIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIWebViewController.h; sourceTree = "<group>"; };
+		41DE28A31B0F13F400E90CEA /* LJXUIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXUIWebViewController.m; sourceTree = "<group>"; };
+		F74DC0351C5066F400E7CB67 /* LJXFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LJXFoundation.xcodeproj; path = ../../LJXFoundation/LJXFoundation.xcodeproj; sourceTree = "<group>"; };
+		F7E65B071B9BCAA000CFD4B8 /* LJXUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIKit.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		418B101F1AE8EF7F00CC1848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418B102A1AE8EF7F00CC1848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418B102E1AE8EF7F00CC1848 /* libLJXUIKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4127B08C1B1D94B9006BB196 /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				4127B08D1B1D94D5006BB196 /* LJXUINavigationController.h */,
+				4127B08E1B1D94D5006BB196 /* LJXUINavigationController.m */,
+			);
+			path = UINavigationController;
+			sourceTree = "<group>";
+		};
+		41407C291AFCD40C006A1847 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				41407C2A1AFCD821006A1847 /* LJXUserNameTextField.h */,
+				41407C2B1AFCD821006A1847 /* LJXUserNameTextField.m */,
+				41407C2E1AFCD84D006A1847 /* LJXPasswordTextField.h */,
+				41407C2F1AFCD84D006A1847 /* LJXPasswordTextField.m */,
+				4127B0881B1D8A98006BB196 /* LJXUITextField.h */,
+				4127B0891B1D8A98006BB196 /* LJXUITextField.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		414125D51AEDC59C006E143A /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				414125DA1AEDC6B8006E143A /* UIControl+LJXBlocks.h */,
+				414125DB1AEDC6B8006E143A /* UIControl+LJXBlocks.m */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
+		4144AF311AF899180034D386 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		4146F67A1AE9DF7C00B1E39E /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				4146F67B1AE9DF7C00B1E39E /* LJXUIBlocks.h */,
+				4146F67C1AE9DF7C00B1E39E /* LJXUIMacros.h */,
+			);
+			path = Blocks;
+			sourceTree = "<group>";
+		};
+		4146F67D1AE9DF7C00B1E39E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				414125D51AEDC59C006E143A /* UIControl */,
+				4146F67E1AE9DF7C00B1E39E /* Controller */,
+				4146F6831AE9DF7C00B1E39E /* Foundation */,
+				4146F68C1AE9DF7C00B1E39E /* Other */,
+				4146F6911AE9DF7C00B1E39E /* UIButton */,
+				4146F6941AE9DF7C00B1E39E /* UIImage */,
+				4146F6991AE9DF7C00B1E39E /* UIResponder */,
+				4146F69C1AE9DF7C00B1E39E /* View */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4146F67E1AE9DF7C00B1E39E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4146F67F1AE9DF7C00B1E39E /* UINavigationController+LJXAddition.h */,
+				4146F6801AE9DF7C00B1E39E /* UINavigationController+LJXAddition.m */,
+				4146F6811AE9DF7C00B1E39E /* UIViewController+Addition.h */,
+				4146F6821AE9DF7C00B1E39E /* UIViewController+Addition.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4146F6831AE9DF7C00B1E39E /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4146F6841AE9DF7C00B1E39E /* NSArray */,
+				4146F68B1AE9DF7C00B1E39E /* NSDictionary */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		4146F6841AE9DF7C00B1E39E /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				4146F6851AE9DF7C00B1E39E /* NSArray+BlocksKit.h */,
+				4146F6861AE9DF7C00B1E39E /* NSArray+BlocksKit.m */,
+				4146F6871AE9DF7C00B1E39E /* NSArray+Subviews.h */,
+				4146F6881AE9DF7C00B1E39E /* NSArray+Subviews.m */,
+				4146F6891AE9DF7C00B1E39E /* NSArray+UI.h */,
+				4146F68A1AE9DF7C00B1E39E /* NSArray+UI.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		4146F68B1AE9DF7C00B1E39E /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		4146F68C1AE9DF7C00B1E39E /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				4146F68D1AE9DF7C00B1E39E /* UIDevice+IdentifierAddition.h */,
+				4146F68E1AE9DF7C00B1E39E /* UIDevice+IdentifierAddition.m */,
+				4146F68F1AE9DF7C00B1E39E /* UIDeviceAdditions.h */,
+				4146F6901AE9DF7C00B1E39E /* UIDeviceAdditions.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		4146F6911AE9DF7C00B1E39E /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				4146F6921AE9DF7C00B1E39E /* UIButtonAdditions.h */,
+				4146F6931AE9DF7C00B1E39E /* UIButtonAdditions.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		4146F6941AE9DF7C00B1E39E /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				4146F6951AE9DF7C00B1E39E /* UIImage+Bundle.h */,
+				4146F6961AE9DF7C00B1E39E /* UIImage+Bundle.m */,
+				4146F6971AE9DF7C00B1E39E /* UIImage+editor.h */,
+				4146F6981AE9DF7C00B1E39E /* UIImage+editor.m */,
+				4146F7091AE9ED9C00B1E39E /* UIImage+Addition.h */,
+				4146F70A1AE9ED9C00B1E39E /* UIImage+Addition.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		4146F6991AE9DF7C00B1E39E /* UIResponder */ = {
+			isa = PBXGroup;
+			children = (
+				4146F69A1AE9DF7C00B1E39E /* UIResponderAdditions.h */,
+				4146F69B1AE9DF7C00B1E39E /* UIResponderAdditions.m */,
+			);
+			path = UIResponder;
+			sourceTree = "<group>";
+		};
+		4146F69C1AE9DF7C00B1E39E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4146F69D1AE9DF7C00B1E39E /* UICollectionView+Additions.h */,
+				4146F69E1AE9DF7C00B1E39E /* UICollectionView+Additions.m */,
+				4146F69F1AE9DF7C00B1E39E /* UITableView+Addition.h */,
+				4146F6A01AE9DF7C00B1E39E /* UITableView+Addition.m */,
+				4146F6A11AE9DF7C00B1E39E /* UIView+Animation.h */,
+				4146F6A21AE9DF7C00B1E39E /* UIView+Animation.m */,
+				4146F6A31AE9DF7C00B1E39E /* UIView+Layout.h */,
+				4146F6A41AE9DF7C00B1E39E /* UIView+Layout.m */,
+				4146F6A51AE9DF7C00B1E39E /* UIView+Subviews.h */,
+				4146F6A61AE9DF7C00B1E39E /* UIView+Subviews.m */,
+				4146F6A71AE9DF7C00B1E39E /* UIViewAdditions.h */,
+				4146F6A81AE9DF7C00B1E39E /* UIViewAdditions.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4146F6A91AE9DF7C00B1E39E /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				4146F6AA1AE9DF7C00B1E39E /* LJXVEnum.h */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		4146F6AB1AE9DF7C00B1E39E /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				41407C291AFCD40C006A1847 /* UITextField */,
+				4144AF311AF899180034D386 /* UITableViewCell */,
+				4146F6AC1AE9DF7C00B1E39E /* Button */,
+				4146F6B31AE9DF7C00B1E39E /* HUB */,
+				4146F6BA1AE9DF7C00B1E39E /* Toast */,
+				4146F6BD1AE9DF7C00B1E39E /* View */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		4146F6AC1AE9DF7C00B1E39E /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				4146F6AD1AE9DF7C00B1E39E /* LJXButton.h */,
+				4146F6AE1AE9DF7C00B1E39E /* LJXButton.m */,
+				4146F6AF1AE9DF7C00B1E39E /* LJXListButton.h */,
+				4146F6B01AE9DF7C00B1E39E /* LJXListButton.m */,
+				4146F6B11AE9DF7C00B1E39E /* LJXMultiStateButton.h */,
+				4146F6B21AE9DF7C00B1E39E /* LJXMultiStateButton.m */,
+				413DEEF51B042CC800B63322 /* LJXRoundFrameButton.h */,
+				413DEEF61B042CC800B63322 /* LJXRoundFrameButton.m */,
+				413DEEF81B042D2300B63322 /* LJXRoundButton.h */,
+				413DEEF91B042D2300B63322 /* LJXRoundButton.m */,
+				4127B0851B1D8840006BB196 /* LJXBlueRoundButton.h */,
+				4127B0861B1D8840006BB196 /* LJXBlueRoundButton.m */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		4146F6B31AE9DF7C00B1E39E /* HUB */ = {
+			isa = PBXGroup;
+			children = (
+				4146F6B41AE9DF7C00B1E39E /* LJXLoadingViewController.h */,
+				4146F6B51AE9DF7C00B1E39E /* LJXLoadingViewController.m */,
+				4146F6B61AE9DF7C00B1E39E /* LJXMBProgressHUD.h */,
+				4146F6B71AE9DF7C00B1E39E /* LJXMBProgressHUD.m */,
+				4146F6B81AE9DF7C00B1E39E /* LJXSpinImageView.h */,
+				4146F6B91AE9DF7C00B1E39E /* LJXSpinImageView.m */,
+			);
+			path = HUB;
+			sourceTree = "<group>";
+		};
+		4146F6BA1AE9DF7C00B1E39E /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				4146F6BB1AE9DF7C00B1E39E /* UIView+Toast.h */,
+				4146F6BC1AE9DF7C00B1E39E /* UIView+Toast.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		4146F6BD1AE9DF7C00B1E39E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4146F6BE1AE9DF7C00B1E39E /* LJXWindowView.h */,
+				4146F6BF1AE9DF7C00B1E39E /* LJXWindowView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4146F6C01AE9DF7C00B1E39E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				4146F6C11AE9DF7C00B1E39E /* LJXUI.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		4146F6C21AE9DF7C00B1E39E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4127B08C1B1D94B9006BB196 /* UINavigationController */,
+				41DE28A11B0F13F400E90CEA /* Webview */,
+				4146F6C31AE9DF7C00B1E39E /* Base */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4146F6C31AE9DF7C00B1E39E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4146F6C41AE9DF7C00B1E39E /* LJXTableViewController.h */,
+				4146F6C51AE9DF7C00B1E39E /* LJXTableViewController.m */,
+				4146F6C61AE9DF7C00B1E39E /* LJXViewController.h */,
+				4146F6C71AE9DF7C00B1E39E /* LJXViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4146F6C81AE9DF7C00B1E39E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4146F6C91AE9DF7C00B1E39E /* LJXControlActionProtocol.h */,
+				4146F6CA1AE9DF7C00B1E39E /* LJXControlEnabledProtocol.h */,
+				4146F6CB1AE9DF7C00B1E39E /* LJXSetValueProtocol.h */,
+				4146F6CC1AE9DF7C00B1E39E /* LJXViewSetHiddenProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		4146F6CD1AE9DF7C00B1E39E /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				4146F6CE1AE9DF7C00B1E39E /* LJXUIStyle.h */,
+				4146F6CF1AE9DF7C00B1E39E /* LJXUIStyle.m */,
+				4144AF2D1AF898C20034D386 /* LJXUISystemMetric.h */,
+				4144AF2E1AF898C20034D386 /* LJXUISystemMetric.m */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		4146F70D1AE9F06C00B1E39E /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				4146F70E1AE9F06C00B1E39E /* LJXAppStoreHelper.h */,
+				4146F70F1AE9F06C00B1E39E /* LJXAppStoreHelper.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		418B10191AE8EF7F00CC1848 = {
+			isa = PBXGroup;
+			children = (
+				F7E65B061B9BCAA000CFD4B8 /* Export */,
+				4146F70D1AE9F06C00B1E39E /* Store */,
+				4146F67A1AE9DF7C00B1E39E /* Blocks */,
+				4146F67D1AE9DF7C00B1E39E /* Category */,
+				4146F6A91AE9DF7C00B1E39E /* Const */,
+				4146F6AB1AE9DF7C00B1E39E /* Custom */,
+				4146F6C01AE9DF7C00B1E39E /* Resource */,
+				4146F6C21AE9DF7C00B1E39E /* Controller */,
+				4146F6C81AE9DF7C00B1E39E /* Protocol */,
+				4146F6CD1AE9DF7C00B1E39E /* Style */,
+				418B10241AE8EF7F00CC1848 /* LJXUIKit */,
+				418B10311AE8EF7F00CC1848 /* LJXUIKitTests */,
+				418B10231AE8EF7F00CC1848 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		418B10231AE8EF7F00CC1848 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				418B10221AE8EF7F00CC1848 /* libLJXUIKit.a */,
+				418B102D1AE8EF7F00CC1848 /* LJXUIKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		418B10241AE8EF7F00CC1848 /* LJXUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F74DC0351C5066F400E7CB67 /* LJXFoundation.xcodeproj */,
+				4146F7441AE9F4BC00B1E39E /* LJXUIKit.pch */,
+				415591921B0042B1000C1B24 /* LJXUIKit.xcassets */,
+			);
+			path = LJXUIKit;
+			sourceTree = "<group>";
+		};
+		418B10311AE8EF7F00CC1848 /* LJXUIKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				418B10321AE8EF7F00CC1848 /* Supporting Files */,
+			);
+			path = LJXUIKitTests;
+			sourceTree = "<group>";
+		};
+		418B10321AE8EF7F00CC1848 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				418B10331AE8EF7F00CC1848 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41DE28A11B0F13F400E90CEA /* Webview */ = {
+			isa = PBXGroup;
+			children = (
+				41DE28A21B0F13F400E90CEA /* LJXUIWebViewController.h */,
+				41DE28A31B0F13F400E90CEA /* LJXUIWebViewController.m */,
+			);
+			path = Webview;
+			sourceTree = "<group>";
+		};
+		F74DC0361C5066F400E7CB67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F74DC03B1C5066F400E7CB67 /* libLJXFoundation.a */,
+				F74DC03D1C5066F400E7CB67 /* LJXFoundationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7E65B061B9BCAA000CFD4B8 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				F7E65B071B9BCAA000CFD4B8 /* LJXUIKit.h */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		418B10211AE8EF7F00CC1848 /* LJXUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418B10361AE8EF7F00CC1848 /* Build configuration list for PBXNativeTarget "LJXUIKit" */;
+			buildPhases = (
+				418B101E1AE8EF7F00CC1848 /* Sources */,
+				418B101F1AE8EF7F00CC1848 /* Frameworks */,
+				418B10201AE8EF7F00CC1848 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F74DC03F1C5066FA00E7CB67 /* PBXTargetDependency */,
+			);
+			name = LJXUIKit;
+			productName = LJXUIKit;
+			productReference = 418B10221AE8EF7F00CC1848 /* libLJXUIKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		418B102C1AE8EF7F00CC1848 /* LJXUIKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418B10391AE8EF7F00CC1848 /* Build configuration list for PBXNativeTarget "LJXUIKitTests" */;
+			buildPhases = (
+				418B10291AE8EF7F00CC1848 /* Sources */,
+				418B102A1AE8EF7F00CC1848 /* Frameworks */,
+				418B102B1AE8EF7F00CC1848 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				418B10301AE8EF7F00CC1848 /* PBXTargetDependency */,
+			);
+			name = LJXUIKitTests;
+			productName = LJXUIKitTests;
+			productReference = 418B102D1AE8EF7F00CC1848 /* LJXUIKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		418B101A1AE8EF7F00CC1848 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Mobo;
+				TargetAttributes = {
+					418B10211AE8EF7F00CC1848 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					418B102C1AE8EF7F00CC1848 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 418B101D1AE8EF7F00CC1848 /* Build configuration list for PBXProject "LJXUIKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 418B10191AE8EF7F00CC1848;
+			productRefGroup = 418B10231AE8EF7F00CC1848 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F74DC0361C5066F400E7CB67 /* Products */;
+					ProjectRef = F74DC0351C5066F400E7CB67 /* LJXFoundation.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				418B10211AE8EF7F00CC1848 /* LJXUIKit */,
+				418B102C1AE8EF7F00CC1848 /* LJXUIKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F74DC03B1C5066F400E7CB67 /* libLJXFoundation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLJXFoundation.a;
+			remoteRef = F74DC03A1C5066F400E7CB67 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F74DC03D1C5066F400E7CB67 /* LJXFoundationTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LJXFoundationTests.xctest;
+			remoteRef = F74DC03C1C5066F400E7CB67 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		418B102B1AE8EF7F00CC1848 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4146F7021AE9DF7C00B1E39E /* LJXUI.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		418B101E1AE8EF7F00CC1848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4146F6EA1AE9DF7C00B1E39E /* UIView+Animation.m in Sources */,
+				4146F6EE1AE9DF7C00B1E39E /* UIView+Subviews.m in Sources */,
+				4146F6F21AE9DF7C00B1E39E /* LJXButton.m in Sources */,
+				4146F6FE1AE9DF7C00B1E39E /* UIView+Toast.m in Sources */,
+				4146F7101AE9F06C00B1E39E /* LJXAppStoreHelper.m in Sources */,
+				4146F6F01AE9DF7C00B1E39E /* UIViewAdditions.m in Sources */,
+				4127B08F1B1D94D5006BB196 /* LJXUINavigationController.m in Sources */,
+				41407C2C1AFCD821006A1847 /* LJXUserNameTextField.m in Sources */,
+				4146F6D81AE9DF7C00B1E39E /* NSArray+UI.m in Sources */,
+				4144AF2F1AF898C20034D386 /* LJXUISystemMetric.m in Sources */,
+				4146F6D01AE9DF7C00B1E39E /* UINavigationController+LJXAddition.m in Sources */,
+				4127B08A1B1D8A98006BB196 /* LJXUITextField.m in Sources */,
+				4146F7051AE9DF7C00B1E39E /* LJXViewController.m in Sources */,
+				4127B0871B1D8840006BB196 /* LJXBlueRoundButton.m in Sources */,
+				414125DC1AEDC6B8006E143A /* UIControl+LJXBlocks.m in Sources */,
+				4146F7031AE9DF7C00B1E39E /* LJXTableViewController.m in Sources */,
+				41407C301AFCD84D006A1847 /* LJXPasswordTextField.m in Sources */,
+				4146F6DE1AE9DF7C00B1E39E /* UIButtonAdditions.m in Sources */,
+				4146F6E81AE9DF7C00B1E39E /* UITableView+Addition.m in Sources */,
+				4146F7001AE9DF7C00B1E39E /* LJXWindowView.m in Sources */,
+				4146F7071AE9DF7C00B1E39E /* LJXUIStyle.m in Sources */,
+				413DEEFA1B042D2300B63322 /* LJXRoundButton.m in Sources */,
+				4146F6E21AE9DF7C00B1E39E /* UIImage+editor.m in Sources */,
+				4146F6E61AE9DF7C00B1E39E /* UICollectionView+Additions.m in Sources */,
+				4146F6FA1AE9DF7C00B1E39E /* LJXMBProgressHUD.m in Sources */,
+				4146F6FC1AE9DF7C00B1E39E /* LJXSpinImageView.m in Sources */,
+				4146F6F61AE9DF7C00B1E39E /* LJXMultiStateButton.m in Sources */,
+				4146F6E41AE9DF7C00B1E39E /* UIResponderAdditions.m in Sources */,
+				4146F6D21AE9DF7C00B1E39E /* UIViewController+Addition.m in Sources */,
+				4146F6F41AE9DF7C00B1E39E /* LJXListButton.m in Sources */,
+				4146F6DC1AE9DF7C00B1E39E /* UIDeviceAdditions.m in Sources */,
+				4146F6E01AE9DF7C00B1E39E /* UIImage+Bundle.m in Sources */,
+				4146F70B1AE9ED9C00B1E39E /* UIImage+Addition.m in Sources */,
+				41DE28A41B0F13F400E90CEA /* LJXUIWebViewController.m in Sources */,
+				4146F6EC1AE9DF7C00B1E39E /* UIView+Layout.m in Sources */,
+				413DEEF71B042CC800B63322 /* LJXRoundFrameButton.m in Sources */,
+				4146F6D61AE9DF7C00B1E39E /* NSArray+Subviews.m in Sources */,
+				4146F6DA1AE9DF7C00B1E39E /* UIDevice+IdentifierAddition.m in Sources */,
+				4146F6F81AE9DF7C00B1E39E /* LJXLoadingViewController.m in Sources */,
+				4146F6D41AE9DF7C00B1E39E /* NSArray+BlocksKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418B10291AE8EF7F00CC1848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				414125DD1AEDC6B8006E143A /* UIControl+LJXBlocks.m in Sources */,
+				4146F6FF1AE9DF7C00B1E39E /* UIView+Toast.m in Sources */,
+				4146F6F11AE9DF7C00B1E39E /* UIViewAdditions.m in Sources */,
+				4144AF301AF898C20034D386 /* LJXUISystemMetric.m in Sources */,
+				4146F6E31AE9DF7C00B1E39E /* UIImage+editor.m in Sources */,
+				4146F6EB1AE9DF7C00B1E39E /* UIView+Animation.m in Sources */,
+				4146F6DD1AE9DF7C00B1E39E /* UIDeviceAdditions.m in Sources */,
+				4146F6E71AE9DF7C00B1E39E /* UICollectionView+Additions.m in Sources */,
+				4146F6D91AE9DF7C00B1E39E /* NSArray+UI.m in Sources */,
+				4146F6E51AE9DF7C00B1E39E /* UIResponderAdditions.m in Sources */,
+				4146F6D71AE9DF7C00B1E39E /* NSArray+Subviews.m in Sources */,
+				4146F6F31AE9DF7C00B1E39E /* LJXButton.m in Sources */,
+				4146F6F91AE9DF7C00B1E39E /* LJXLoadingViewController.m in Sources */,
+				4146F6DB1AE9DF7C00B1E39E /* UIDevice+IdentifierAddition.m in Sources */,
+				4146F7081AE9DF7C00B1E39E /* LJXUIStyle.m in Sources */,
+				4146F7041AE9DF7C00B1E39E /* LJXTableViewController.m in Sources */,
+				4146F6EF1AE9DF7C00B1E39E /* UIView+Subviews.m in Sources */,
+				4146F6ED1AE9DF7C00B1E39E /* UIView+Layout.m in Sources */,
+				4146F6D51AE9DF7C00B1E39E /* NSArray+BlocksKit.m in Sources */,
+				4146F7061AE9DF7C00B1E39E /* LJXViewController.m in Sources */,
+				4146F6FB1AE9DF7C00B1E39E /* LJXMBProgressHUD.m in Sources */,
+				4146F70C1AE9ED9C00B1E39E /* UIImage+Addition.m in Sources */,
+				41407C2D1AFCD821006A1847 /* LJXUserNameTextField.m in Sources */,
+				4146F6F51AE9DF7C00B1E39E /* LJXListButton.m in Sources */,
+				4146F6F71AE9DF7C00B1E39E /* LJXMultiStateButton.m in Sources */,
+				4146F6E91AE9DF7C00B1E39E /* UITableView+Addition.m in Sources */,
+				4146F6E11AE9DF7C00B1E39E /* UIImage+Bundle.m in Sources */,
+				41407C311AFCD84D006A1847 /* LJXPasswordTextField.m in Sources */,
+				4146F7111AE9F06C00B1E39E /* LJXAppStoreHelper.m in Sources */,
+				4146F6D31AE9DF7C00B1E39E /* UIViewController+Addition.m in Sources */,
+				4146F6D11AE9DF7C00B1E39E /* UINavigationController+LJXAddition.m in Sources */,
+				4146F6DF1AE9DF7C00B1E39E /* UIButtonAdditions.m in Sources */,
+				4146F6FD1AE9DF7C00B1E39E /* LJXSpinImageView.m in Sources */,
+				4146F7011AE9DF7C00B1E39E /* LJXWindowView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		418B10301AE8EF7F00CC1848 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 418B10211AE8EF7F00CC1848 /* LJXUIKit */;
+			targetProxy = 418B102F1AE8EF7F00CC1848 /* PBXContainerItemProxy */;
+		};
+		F74DC03F1C5066FA00E7CB67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LJXFoundation;
+			targetProxy = F74DC03E1C5066FA00E7CB67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		418B10341AE8EF7F00CC1848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		418B10351AE8EF7F00CC1848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		418B10371AE8EF7F00CC1848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/LJXUIKit/LJXUIKit.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/LJXFoundation";
+			};
+			name = Debug;
+		};
+		418B10381AE8EF7F00CC1848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/LJXUIKit/LJXUIKit.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/LJXFoundation";
+			};
+			name = Release;
+		};
+		418B103A1AE8EF7F00CC1848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LJXUIKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/wujianjun/workspace/svn/shanrong_p2p/trunk/04SourceCode/shan_p2p_mobile/ios/LJXFoundation/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		418B103B1AE8EF7F00CC1848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LJXUIKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/wujianjun/workspace/svn/shanrong_p2p/trunk/04SourceCode/shan_p2p_mobile/ios/LJXFoundation/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		418B101D1AE8EF7F00CC1848 /* Build configuration list for PBXProject "LJXUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418B10341AE8EF7F00CC1848 /* Debug */,
+				418B10351AE8EF7F00CC1848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418B10361AE8EF7F00CC1848 /* Build configuration list for PBXNativeTarget "LJXUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418B10371AE8EF7F00CC1848 /* Debug */,
+				418B10381AE8EF7F00CC1848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418B10391AE8EF7F00CC1848 /* Build configuration list for PBXNativeTarget "LJXUIKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418B103A1AE8EF7F00CC1848 /* Debug */,
+				418B103B1AE8EF7F00CC1848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 418B101A1AE8EF7F00CC1848 /* Project object */;
+}

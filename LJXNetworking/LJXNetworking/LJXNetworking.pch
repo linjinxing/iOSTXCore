@@ -1,0 +1,28 @@
+//
+//  LJXNetworking.pch
+//  LJXNetworking
+//
+//  Created by Mobo360 on 15/4/28.
+//  Copyright (c) 2015年 Mobo. All rights reserved.
+//
+
+#ifndef LJXNetworking_LJXNetworking_pch
+#define LJXNetworking_LJXNetworking_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <MJExtension/MJExtension.h>
+#import "LJXFoundation.h"
+//#import "AFNetworking.h"
+
+#ifndef LJXHTTPRequestLog
+#define LJXHTTPRequestLog LJXFoundationLog
+#else
+#define LJXHTTPRequestLog(...)
+#endif
+
+#endif
+
+
+
