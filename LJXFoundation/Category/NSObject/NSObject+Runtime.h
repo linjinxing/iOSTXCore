@@ -11,7 +11,9 @@
 @interface NSObject (Runtime)
 - (NSString*)className;
 + (NSString*)className;
++ (NSArray*)propeties;
++ (NSArray*)allPropeties;
 - (NSArray *)allPropertyNames;
-
+/* 继承自NSObject的类 */
 - (NSArray *)allPropertyNamesExceptSystem;
 @end

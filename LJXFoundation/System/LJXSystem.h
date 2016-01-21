@@ -11,7 +11,6 @@
 @interface LJXSystem : NSObject
 + (BOOL) isSimulator;
 + (BOOL) isiPad;
-+ (BOOL) isDuoPing;
 + (float)OSVersion;
 + (BOOL)isEqualToOSVersion:(NSString*)version;
 + (BOOL)isGeOSVersion:(NSString*)version;

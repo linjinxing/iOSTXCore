@@ -230,13 +230,7 @@
     return [dSet allObjects];
 }
 
-- (id)objectAtIndex:(NSUInteger)index
-{
-    if ([self count] > index) {
-        return [self objectAtIndex:index];
-    }
-    return nil;
-}
+
 
 - (void)setObjectsValue:(id)value forKey:(NSString *)key
 {

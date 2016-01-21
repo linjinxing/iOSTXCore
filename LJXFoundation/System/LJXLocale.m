@@ -83,7 +83,7 @@ NSString* LJXDescriptionForError(NSError* error) {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 NSString* LJXFormatInteger(NSInteger num) {
-  NSNumber* number = [NSNumber numberWithInt:num];
+  NSNumber* number = [NSNumber numberWithLong:num];
   NSNumberFormatter* formatter = [[NSNumberFormatter alloc] init];
   [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
   NSString* formatted = [formatter stringFromNumber:number];

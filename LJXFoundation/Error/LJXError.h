@@ -18,3 +18,20 @@ typedef NS_ENUM(NSInteger, LJXErrorCode) {
 FOUNDATION_EXTERN NSString * const kLJXVErrorDomain;
 
 NSError*  LJXErrorCreateWithCode(NSInteger code, NSDictionary* userInfo);
+
+@interface NSError (LJXExtend)
+
+/**
+ *  NSError扩展
+ *
+ *  @param domain
+ *  @param code
+ *  @param description 错误描述,必填
+ *  @param failReason  错误原因,可选
+ *
+ *  @return NSError
+ */
++ (instancetype)errorWithDomain:(NSString *)domain code:(NSInteger)code description:(NSString *)description failReason:(NSString *)failReason;
+
+
+@end

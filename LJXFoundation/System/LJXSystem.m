@@ -26,10 +26,6 @@
     return (UIUserInterfaceIdiomPad == UI_USER_INTERFACE_IDIOM());
 }
 
-+ (BOOL) isDuoPing
-{
-    return [[NSBundle displayName] rangeOfString:@"多屏"].length;
-}
 
 + (float)OSVersion
 {

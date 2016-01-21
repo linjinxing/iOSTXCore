@@ -60,8 +60,6 @@ typedef enum tagLayoutOrientation
                         withObject: (id)p2
                         withObject: (id)p3;
 
-- (id)objectAtIndex:(NSUInteger)index;
-
 /**
  * @return nil or an object that matches value with isEqual:
  */

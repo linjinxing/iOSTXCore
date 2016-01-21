@@ -272,7 +272,7 @@
     return comps;
 }
 
-- (NSString*)formatString:(int)value
+- (NSString*)formatString:(long)value
 {
     NSString *string;
     if (value<10) {
@@ -286,7 +286,7 @@
 - (NSString*)dateYear
 {
     NSDateComponents *dateCom = [self dateComponet];
-    return [NSString stringWithFormat:@"%d",[dateCom year]];
+    return [NSString stringWithFormat:@"%@",@([dateCom year])];
 }
 
 - (NSString*)dateMouth

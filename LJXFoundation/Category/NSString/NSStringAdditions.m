@@ -307,8 +307,8 @@ const float KB = (float)(1024);
 - (NSString *)urlencode {
     NSMutableString *output = [NSMutableString string];
     const unsigned char *source = (const unsigned char *)[self UTF8String];
-    int sourceLen = strlen((const char *)source);
-    for (int i = 0; i < sourceLen; ++i) {
+    size_t sourceLen = strlen((const char *)source);
+    for (size_t i = 0; i < sourceLen; ++i) {
         const unsigned char thisChar = source[i];
         if (thisChar == ' '){
             [output appendString:@"+"];
@@ -393,12 +393,12 @@ const float KB = (float)(1024);
 
 + (NSString*)stringWithFileLen:(long long)fileLength
 {
-    int fileSize = fileLength >> 30;
+    int fileSize = (int)fileLength >> 30;
     if (fileSize > 0) {
         float m_fileSize = (fileLength >> 20) / 1024.0;
         return [NSString stringWithFormat:@"%.2fGB", m_fileSize];
     }else {
-        fileSize = fileLength >> 20;
+        fileSize = (int)fileLength >> 20;
         if (fileSize > 0) {
             return [NSString stringWithFormat:@"%dMB", fileSize];
         }else {
@@ -428,18 +428,18 @@ const float KB = (float)(1024);
         duration = duration % LJX_DAY;
     }
     
-	int hour = duration / LJX_HOUR;
+	int hour = (int)(duration / LJX_HOUR);
 	if (hour > 0 ) 
 	{
 		duration = duration % LJX_HOUR;
 	}
 	
-	int minute = duration / LJX_MINUTE;
+	int minute = (int)(duration / LJX_MINUTE);
 	if (minute > 0)
 	{
-		duration = duration % LJX_MINUTE;
+		duration = (int)(duration % LJX_MINUTE);
 	}
-	int seconds = duration;
+	int seconds = (int)duration;
 	
 	NSString *timeStr = nil;
     if (0 == days && 0 == hour && 0 == minute && 0 == seconds) {
@@ -477,13 +477,13 @@ const float KB = (float)(1024);
 {
     long long duration = lround(aTimeInterval);
     
-    int hour = duration / LJX_HOUR;
+    int hour = (int)(duration / LJX_HOUR);
     if (hour > 0 )
     {
         duration = duration % LJX_HOUR;
     }
     
-    int minute = duration / LJX_MINUTE;
+    int minute = (int)(duration / LJX_MINUTE);
     
     NSMutableString *timeStr = [NSMutableString string];
     if (hour > 0) [timeStr appendFormat:@"%02d小时", hour];
@@ -500,18 +500,18 @@ const float KB = (float)(1024);
 {
 	long long duration = lround(aTimeInterval);
 	
-	int hour = duration / LJX_HOUR;
+	int hour = (int)(duration / LJX_HOUR);
 	if (hour > 0 )
 	{
 		duration = duration % LJX_HOUR;
 	}
 	
-	int minute = duration / LJX_MINUTE;
+	int minute = (int)(duration / LJX_MINUTE);
 	if (minute > 0)
 	{
 		duration = duration % LJX_MINUTE;
 	}
-	int seconds = duration;
+	int seconds = (int)duration;
 	
 	NSMutableString *timeStr = [NSMutableString string];
     if (hour > 0) [timeStr appendFormat:@"%02d", hour];

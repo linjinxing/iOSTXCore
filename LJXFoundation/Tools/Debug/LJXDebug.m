@@ -12,7 +12,6 @@
 #import <UIKit/UIKit.h>
 
 #import "LJXDebug.h"
-#import "NSTimer+Blocks.h"
 
 
 //#import "NSFileManagerAdditions.h"

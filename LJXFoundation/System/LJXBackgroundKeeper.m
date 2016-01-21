@@ -72,7 +72,7 @@ static LJXBackgroundContext*  s_bc;
 
 + (void)removeDemanderWithIdentifer:(LJXBGAliveDemander)demander
 {
-    int index = -1;
+    long index = -1;
     for (NSString *exist in s_bc.bgTasksDemander) {
         if ([exist intValue] == demander) {
             index = [s_bc.bgTasksDemander indexOfObject:exist];
