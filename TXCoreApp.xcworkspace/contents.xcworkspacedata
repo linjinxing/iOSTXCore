@@ -2,19 +2,16 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:LJXNetworking/../LJXOpenSource/LJXOpenSource/LJXOpenSource.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:LJXNetworking/LJXNetworking.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:LJXFoundation/LJXFoundation.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:LJXUIKit/LJXUIKit.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:UKApplicationShell/UKApplicationShell.xcodeproj">
+      location = "group:LJXNetworking/LJXNetworking.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TXAppShell/TXAppShell.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

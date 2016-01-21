@@ -1,9 +1,9 @@
 # Uncomment this line to define a global platform for your project
 platform :ios, '7.0'
 
-workspace 'uoko'
+workspace 'TXCoreApp'
 
-xcodeproj 'UKApplicationShell/UKApplicationShell'
+xcodeproj 'TXAppShell/TXAppShell'
 xcodeproj 'LJXNetworking/LJXNetworking'
 
 pod 'AFNetworking'

@@ -1,19 +1,18 @@
 //
-//  UKApplicationShellTests.m
-//  UKApplicationShellTests
+//  TXAppShellTests.m
+//  TXAppShellTests
 //
-//  Created by tongxing on 15/9/2.
-//  Copyright (c) 2015年 tongxing. All rights reserved.
+//  Created by tongxing on 16/1/21.
+//  Copyright © 2016年 tongxing. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface UKApplicationShellTests : XCTestCase
+@interface TXAppShellTests : XCTestCase
 
 @end
 
-@implementation UKApplicationShellTests
+@implementation TXAppShellTests
 
 - (void)setUp {
     [super setUp];
@@ -27,7 +26,7 @@
 
 - (void)testExample {
     // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
 - (void)testPerformanceExample {

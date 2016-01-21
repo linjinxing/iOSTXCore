@@ -11,8 +11,33 @@
 		4154316E1AF20FAC00ED6796 /* MBP2PURLJSONConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4154316D1AF20FAC00ED6796 /* MBP2PURLJSONConnection.m */; };
 		4154316F1AF20FEE00ED6796 /* LJXURLJSONConnection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4143F17C1AEF15E600309944 /* LJXURLJSONConnection.h */; };
 		415431701AF20FF000ED6796 /* MBP2PURLJSONConnection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4154316C1AF20FAC00ED6796 /* MBP2PURLJSONConnection.h */; };
+		8B07D6BFFE3EFD884D9E8768 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E0D1C30774DB22DDCACC0F /* libPods.a */; };
 		F7CA08921C5077940027CD78 /* TXURLJSONConnectionSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA08911C5077940027CD78 /* TXURLJSONConnectionSignal.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7CA08A51C508B1F0027CD78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7CA08A01C508B1F0027CD78 /* LJXFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 418B0FF61AE8EF4300CC1848;
+			remoteInfo = LJXFoundation;
+		};
+		F7CA08A71C508B1F0027CD78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7CA08A01C508B1F0027CD78 /* LJXFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 418B10011AE8EF4400CC1848;
+			remoteInfo = LJXFoundationTests;
+		};
+		F7CA08A91C508B290027CD78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7CA08A01C508B1F0027CD78 /* LJXFoundation.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 418B0FF51AE8EF4300CC1848;
+			remoteInfo = LJXFoundation;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		411A33F61AEE02800015E28C /* CopyFiles */ = {
@@ -41,6 +66,7 @@
 		C3DA7774281E5F55CF8E45DE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F7CA08901C5077940027CD78 /* TXURLJSONConnectionSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXURLJSONConnectionSignal.h; sourceTree = "<group>"; };
 		F7CA08911C5077940027CD78 /* TXURLJSONConnectionSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXURLJSONConnectionSignal.m; sourceTree = "<group>"; };
+		F7CA08A01C508B1F0027CD78 /* LJXFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LJXFoundation.xcodeproj; path = ../LJXFoundation/LJXFoundation.xcodeproj; sourceTree = "<group>"; };
 		F7EBEB881B96E71000F78570 /* LJXNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXNetworking.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B07D6BFFE3EFD884D9E8768 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +85,7 @@
 		1B356D4106773CA6AF3549BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7CA08A01C508B1F0027CD78 /* LJXFoundation.xcodeproj */,
 				80E0D1C30774DB22DDCACC0F /* libPods.a */,
 			);
 			name = Frameworks;
@@ -122,6 +150,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F7CA08A11C508B1F0027CD78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7CA08A61C508B1F0027CD78 /* libLJXFoundation.a */,
+				F7CA08A81C508B1F0027CD78 /* LJXFoundationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F7EBEB871B96E71000F78570 /* Export */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +183,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F7CA08AA1C508B290027CD78 /* PBXTargetDependency */,
 			);
 			name = LJXNetworking;
 			productName = LJXNetworking;
@@ -176,12 +214,35 @@
 			mainGroup = 411A33EF1AEE02800015E28C;
 			productRefGroup = 411A33F91AEE02800015E28C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F7CA08A11C508B1F0027CD78 /* Products */;
+					ProjectRef = F7CA08A01C508B1F0027CD78 /* LJXFoundation.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				411A33F71AEE02800015E28C /* LJXNetworking */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F7CA08A61C508B1F0027CD78 /* libLJXFoundation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLJXFoundation.a;
+			remoteRef = F7CA08A51C508B1F0027CD78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F7CA08A81C508B1F0027CD78 /* LJXFoundationTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LJXFoundationTests.xctest;
+			remoteRef = F7CA08A71C508B1F0027CD78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		63D9909E1E70C1EB3ADF3E8D /* Copy Pods Resources */ = {
@@ -228,6 +289,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7CA08AA1C508B290027CD78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LJXFoundation;
+			targetProxy = F7CA08A91C508B290027CD78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		411A340A1AEE02800015E28C /* Debug */ = {
