@@ -1,0 +1,19 @@
+//
+//  TXAppShell.pch
+//  TXAppShell
+//
+//  Created by linjinxing on 16/1/21.
+//  Copyright © 2016年 tongxing. All rights reserved.
+//
+
+#ifndef TXAppShell_pch
+#define TXAppShell_pch
+
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <MJExtension/MJExtension.h>
+#import "LJXFoundation.h"
+#import "LJXNetworking.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* TXAppShell_pch */

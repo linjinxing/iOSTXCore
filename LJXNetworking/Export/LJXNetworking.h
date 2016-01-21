@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-#import "LJXURLJSONConnection.h"
-#import "MBP2PURLJSONConnection.h"
+#import "TXURLJSONConnection.h"
+//#import "LJXURLJSONConnection.h"
+//#import "MBP2PURLJSONConnection.h"
 

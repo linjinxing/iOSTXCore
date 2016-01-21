@@ -6,7 +6,16 @@ workspace 'TXCoreApp'
 xcodeproj 'TXAppShell/TXAppShell'
 xcodeproj 'LJXNetworking/LJXNetworking'
 
-pod 'AFNetworking'
-pod 'ReactiveCocoa'
-pod 'MJExtension'
+target :TXAppShell do
+    xcodeproj 'TXAppShell/TXAppShell'
+    pod 'AFNetworking'
+    pod 'ReactiveCocoa'
+    pod 'MJExtension'
+end
 
+target :LJXNetworking do
+    xcodeproj 'LJXNetworking/LJXNetworking'
+    pod 'AFNetworking'
+    pod 'ReactiveCocoa'
+    pod 'MJExtension'
+end

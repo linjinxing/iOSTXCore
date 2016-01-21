@@ -28,6 +28,7 @@ static void LJXURLConnectionSendRequest(NSURLRequest* req,
 static id LJXURLConnectionDecodeReponseData(NSData *data,
                                             NSError** error)
 {
+//    LJXAssert(nil != data);
     id result = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:error];
     NSLog(@"obj:%@, error:%@", result, *error);
     return result;
@@ -40,7 +41,7 @@ static id LJXURLConnectionJSON2ClassInstance(id responseObject,
                                              Class class)
 {
 	id result = nil;
-    id datas = keypath ? responseObject : [responseObject valueForKeyPath:keypath];
+    id datas = keypath ? [responseObject valueForKeyPath:keypath] : responseObject;
 	if (class) {
         NSError* error = nil;
 		if ([datas isKindOfClass:[NSArray class]]) {
@@ -72,14 +73,13 @@ void LJXURLJSONConnection(NSURLRequest* request,
 //		return;
 //	}
 
-    void (^returnIfError)(NSError*, id) = ^(NSError* error, id responseObj){
-        if (error) {
-            if (failure) {
-                failure(error, responseObj);
-            }
-            return ;
+#define returnIfError(error, responseObj)   \
+        if (error) { \
+            if (failure) { \
+                failure(error, responseObj); \
+            } \
+            return ; \
         }
-    };
     
     LJXURLConnectionSendRequest(request, ^(NSData *data, NSError *error) {
         returnIfError(error, nil);
