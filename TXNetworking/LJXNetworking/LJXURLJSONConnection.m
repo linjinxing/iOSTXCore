@@ -14,17 +14,77 @@ NSString* const LJXURLJSONConnectionErrorDomain = @"LJXURLConnectionErrorDomain"
 typedef void (^LJXRequestResponseData)(NSData* data, NSError* error);
 
 
-static void LJXURLConnectionSendRequest(NSURLRequest* req,
-                                        LJXRequestResponseData responseBlock)
+//static void LJXURLConnectionSendRequest(NSURLRequest* req,
+//                                        LJXRequestResponseData responseBlock)
+//{
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        NSURLResponse* response = nil;
+//        NSError* error = nil;
+//        NSData* data = [NSURLConnection sendSynchronousRequest:req returningResponse:&response error:&error];
+//        if (responseBlock) {
+//            responseBlock(data, error);
+//        }
+//    });
+//}
+
+static void LJXURLConnectionSendRequest(NSURLRequest* req, LJXHTTPRequestResponse response)
 {
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSURLResponse* response = nil;
-        NSError* error = nil;
-        NSData* data = [NSURLConnection sendSynchronousRequest:req returningResponse:&response error:&error];
-        if (responseBlock) {
-            responseBlock(data, error);
+    
+#if defined(DEBUG)
+    void (^printfResponseInfoBlock)(AFHTTPRequestOperation*) = ^(AFHTTPRequestOperation *operation){
+        if ([operation responseData]) {
+            NSString* str = [[NSString alloc] initWithData:[operation responseData] encoding:NSUTF8StringEncoding];
+            NSError* jsonerror;
+            id result = [NSJSONSerialization JSONObjectWithData:[operation responseData] options:NSJSONReadingAllowFragments error:&jsonerror];
+            LJXFoundationLog("str:%@, body data:%@", str, result);
         }
+    };
+    
+#define PrintfResponseInfo printfResponseInfoBlock
+    
+#else
+#define PrintfResponseInfo
+#endif
+    
+    id (^decodeJSON)(id responseData, NSError** error) = ^(id responseData, NSError** error){
+        id result = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingAllowFragments error:error];
+        LJXNSError(*error);
+        LJXHTTPRequestLog("obj:%@", result);
+        return result;
+    };
+    
+    AFHTTPRequestOperation* op = [[AFHTTPRequestOperation alloc] initWithRequest:req];
+    op.responseSerializer = [AFHTTPResponseSerializer serializer];
+    op.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", @"text/html",nil];
+    [op setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        PrintfResponseInfo(operation);
+        NSError* error = nil;
+        id result = decodeJSON([operation responseData], &error);
+        if (response) {
+            response(result, error);
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        PrintfResponseInfo(operation);
+        id result = nil;
+        if ((kCFURLErrorCannotDecodeContentData == error.code)
+            && [operation responseData]) {
+            NSError* error = nil;
+            result = decodeJSON([operation responseData], &error);
+        }
+        if (response) {
+            response(result, error);
+        }
+    }];
+    
+    
+    static AFHTTPRequestOperationManager* mng = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        mng.requestSerializer.timeoutInterval = req.timeoutInterval;
+        mng = [AFHTTPRequestOperationManager manager];
+        [mng.operationQueue setMaxConcurrentOperationCount:1];
     });
+    [mng.operationQueue addOperation:op];
 }
 
 static id LJXURLConnectionDecodeReponseData(NSData *data,

@@ -8,6 +8,7 @@
 
 #import "TXURLJSONConnectionSignal.h"
 #import "LJXURLJSONConnection.h"
+#import "TXFoundation.h"
 
 RACSignal* TXURLJSONConnectionSignal(NSURLRequest* request, NSString* keyPath, Class cls)
 {
@@ -16,8 +17,8 @@ RACSignal* TXURLJSONConnectionSignal(NSURLRequest* request, NSString* keyPath, C
                              keyPath,
                              cls,
                              ^(id result) {
-            [subscriber sendNext:result];
-            [subscriber sendCompleted];
+                                     [subscriber sendNext:result];
+                                     [subscriber sendCompleted];
         }, ^(NSError *error, id respondseObject) {
             [subscriber sendError:error];
         });

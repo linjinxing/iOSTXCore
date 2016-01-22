@@ -18,6 +18,7 @@
 
 #import "UIViewAdditions.h"
 #import "UIView+Layout.h"
+#import "UIView+Subviews.h"
 //
 //#import "LJXConstValue.h"
 //// Core
@@ -471,32 +472,22 @@ static NSMutableDictionary* s_dict = nil;
 
 
 @implementation UIView (control)
-- (id)___viewWithTag:(NSInteger)tag class:(Class)cls{
-    for (UIView* view in self.subviews) {
-        if (tag == view.tag) {
-            if ([view isKindOfClass:cls]){
-                return view;
-            }
-        }
-    }
-    return nil;
-}
 
 
 - (UILabel*)labelWithTag:(NSInteger)tag{
-    return [self ___viewWithTag:tag class:[UILabel class]];
+    return [self viewWithTag:tag class:[UILabel class]];
 }
 
 - (UIButton*)buttonWithTag:(NSInteger)tag{
-    return [self ___viewWithTag:tag class:[UIButton class]];
+    return [self viewWithTag:tag class:[UIButton class]];
 }
 
 - (UIProgressView*)progressViewWithTag:(NSInteger)tag{
-    return [self ___viewWithTag:tag class:[UIProgressView class]];
+    return [self viewWithTag:tag class:[UIProgressView class]];
 }
 
 - (UISlider*)sliderWithTag:(NSInteger)tag{
-    return [self ___viewWithTag:tag class:[UISlider class]];
+    return [self viewWithTag:tag class:[UISlider class]];
 }
 
 @end

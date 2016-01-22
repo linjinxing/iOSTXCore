@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		68104AC51C5106B700073D03 /* CTHSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 68104AC41C5106B700073D03 /* CTHSubject.m */; };
 		68104AC81C5106FF00073D03 /* CTHServerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 68104AC71C5106FF00073D03 /* CTHServerInterface.m */; };
 		68B5750C1C525EAF0013BFD8 /* TXTestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5750B1C525EAF0013BFD8 /* TXTestCollectionViewController.m */; };
 		68B5750F1C5268280013BFD8 /* TXTextTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5750E1C5268280013BFD8 /* TXTextTableViewController.m */; };
+		68B576B61C5288B90013BFD8 /* CTHSelectSubjectCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B576AB1C5288B90013BFD8 /* CTHSelectSubjectCollectionViewController.m */; };
+		68B576B71C5288B90013BFD8 /* CTHKnowledgePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B576AE1C5288B90013BFD8 /* CTHKnowledgePoint.m */; };
+		68B576B81C5288B90013BFD8 /* CTHQuestionTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B576B01C5288B90013BFD8 /* CTHQuestionTag.m */; };
+		68B576B91C5288B90013BFD8 /* CTHSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B576B21C5288B90013BFD8 /* CTHSubject.m */; };
+		68B576BA1C5288B90013BFD8 /* WrongQuestions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B576B41C5288B90013BFD8 /* WrongQuestions.storyboard */; };
 		DA8E673B1711D6DC6CD3705F /* libPods-TXAppShell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 033E235583E459851181937A /* libPods-TXAppShell.a */; };
-		F70A64B41C5212770067A8E9 /* CTHKnowledgePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F70A64B31C5212770067A8E9 /* CTHKnowledgePoint.m */; };
-		F70A64B71C5219D70067A8E9 /* CTHQuestionTag.m in Sources */ = {isa = PBXBuildFile; fileRef = F70A64B61C5219D70067A8E9 /* CTHQuestionTag.m */; };
 		F77F59771C51C12A005CBD81 /* libTXUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F77F59761C51C12A005CBD81 /* libTXUIKit.a */; };
 		F77F59791C51C12F005CBD81 /* libTXFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F77F59781C51C12F005CBD81 /* libTXFoundation.a */; };
 		F7CA08BB1C508C910027CD78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA08BA1C508C910027CD78 /* main.m */; };
@@ -46,8 +48,6 @@
 
 /* Begin PBXFileReference section */
 		033E235583E459851181937A /* libPods-TXAppShell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TXAppShell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		68104AC31C5106B700073D03 /* CTHSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHSubject.h; sourceTree = "<group>"; };
-		68104AC41C5106B700073D03 /* CTHSubject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHSubject.m; sourceTree = "<group>"; };
 		68104AC61C5106FF00073D03 /* CTHServerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHServerInterface.h; sourceTree = "<group>"; };
 		68104AC71C5106FF00073D03 /* CTHServerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHServerInterface.m; sourceTree = "<group>"; };
 		68104ACD1C51092E00073D03 /* TXAppShell.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXAppShell.pch; sourceTree = "<group>"; };
@@ -55,12 +55,17 @@
 		68B5750B1C525EAF0013BFD8 /* TXTestCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTestCollectionViewController.m; sourceTree = "<group>"; };
 		68B5750D1C5268280013BFD8 /* TXTextTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTextTableViewController.h; sourceTree = "<group>"; };
 		68B5750E1C5268280013BFD8 /* TXTextTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTextTableViewController.m; sourceTree = "<group>"; };
+		68B576AA1C5288B90013BFD8 /* CTHSelectSubjectCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHSelectSubjectCollectionViewController.h; sourceTree = "<group>"; };
+		68B576AB1C5288B90013BFD8 /* CTHSelectSubjectCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHSelectSubjectCollectionViewController.m; sourceTree = "<group>"; };
+		68B576AD1C5288B90013BFD8 /* CTHKnowledgePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHKnowledgePoint.h; sourceTree = "<group>"; };
+		68B576AE1C5288B90013BFD8 /* CTHKnowledgePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHKnowledgePoint.m; sourceTree = "<group>"; };
+		68B576AF1C5288B90013BFD8 /* CTHQuestionTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHQuestionTag.h; sourceTree = "<group>"; };
+		68B576B01C5288B90013BFD8 /* CTHQuestionTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHQuestionTag.m; sourceTree = "<group>"; };
+		68B576B11C5288B90013BFD8 /* CTHSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHSubject.h; sourceTree = "<group>"; };
+		68B576B21C5288B90013BFD8 /* CTHSubject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHSubject.m; sourceTree = "<group>"; };
+		68B576B41C5288B90013BFD8 /* WrongQuestions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WrongQuestions.storyboard; sourceTree = "<group>"; };
 		72C1F6E3AB50717856987D6A /* Pods-TXAppShell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXAppShell.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-TXAppShell/Pods-TXAppShell.debug.xcconfig"; sourceTree = "<group>"; };
 		8187E8B0A76DD83897E0F7FC /* Pods-TXAppShell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXAppShell.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TXAppShell/Pods-TXAppShell.release.xcconfig"; sourceTree = "<group>"; };
-		F70A64B21C5212770067A8E9 /* CTHKnowledgePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHKnowledgePoint.h; sourceTree = "<group>"; };
-		F70A64B31C5212770067A8E9 /* CTHKnowledgePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHKnowledgePoint.m; sourceTree = "<group>"; };
-		F70A64B51C5219D70067A8E9 /* CTHQuestionTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHQuestionTag.h; sourceTree = "<group>"; };
-		F70A64B61C5219D70067A8E9 /* CTHQuestionTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHQuestionTag.m; sourceTree = "<group>"; };
 		F77F59761C51C12A005CBD81 /* libTXUIKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTXUIKit.a; path = "../TXUIKit/build/Debug-iphoneos/libTXUIKit.a"; sourceTree = "<group>"; };
 		F77F59781C51C12F005CBD81 /* libTXFoundation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTXFoundation.a; path = "../TXFoundation/build/Debug-iphoneos/libTXFoundation.a"; sourceTree = "<group>"; };
 		F7CA08B61C508C910027CD78 /* TXAppShell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TXAppShell.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,22 +143,56 @@
 				68104AC61C5106FF00073D03 /* CTHServerInterface.h */,
 				68104AC71C5106FF00073D03 /* CTHServerInterface.m */,
 				F70A64B81C521C170067A8E9 /* ServerInterface */,
-				68104AC21C5106A600073D03 /* Model */,
 			);
 			path = CTHServerInterfaceTest;
 			sourceTree = "<group>";
 		};
-		68104AC21C5106A600073D03 /* Model */ = {
+		68B576A81C5288B90013BFD8 /* WrongQuestions */ = {
 			isa = PBXGroup;
 			children = (
-				68104AC31C5106B700073D03 /* CTHSubject.h */,
-				68104AC41C5106B700073D03 /* CTHSubject.m */,
-				F70A64B21C5212770067A8E9 /* CTHKnowledgePoint.h */,
-				F70A64B31C5212770067A8E9 /* CTHKnowledgePoint.m */,
-				F70A64B51C5219D70067A8E9 /* CTHQuestionTag.h */,
-				F70A64B61C5219D70067A8E9 /* CTHQuestionTag.m */,
+				68B576A91C5288B90013BFD8 /* Controller */,
+				68B576AC1C5288B90013BFD8 /* Model */,
+				68B576B31C5288B90013BFD8 /* Resource */,
+				68B576B51C5288B90013BFD8 /* View */,
+			);
+			path = WrongQuestions;
+			sourceTree = "<group>";
+		};
+		68B576A91C5288B90013BFD8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				68B576AA1C5288B90013BFD8 /* CTHSelectSubjectCollectionViewController.h */,
+				68B576AB1C5288B90013BFD8 /* CTHSelectSubjectCollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		68B576AC1C5288B90013BFD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68B576AD1C5288B90013BFD8 /* CTHKnowledgePoint.h */,
+				68B576AE1C5288B90013BFD8 /* CTHKnowledgePoint.m */,
+				68B576AF1C5288B90013BFD8 /* CTHQuestionTag.h */,
+				68B576B01C5288B90013BFD8 /* CTHQuestionTag.m */,
+				68B576B11C5288B90013BFD8 /* CTHSubject.h */,
+				68B576B21C5288B90013BFD8 /* CTHSubject.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		68B576B31C5288B90013BFD8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				68B576B41C5288B90013BFD8 /* WrongQuestions.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		68B576B51C5288B90013BFD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F70A64B81C521C170067A8E9 /* ServerInterface */ = {
@@ -166,6 +205,7 @@
 		F7CA08AD1C508C910027CD78 = {
 			isa = PBXGroup;
 			children = (
+				68B576A81C5288B90013BFD8 /* WrongQuestions */,
 				68104AC11C50FEBF00073D03 /* CTHServerInterfaceTest */,
 				F7CA08F71C508D9D0027CD78 /* Libs */,
 				F7CA08B81C508C910027CD78 /* TXAppShell */,
@@ -349,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68B576BA1C5288B90013BFD8 /* WrongQuestions.storyboard in Resources */,
 				F7CA08C91C508C910027CD78 /* LaunchScreen.storyboard in Resources */,
 				F7CA08C61C508C910027CD78 /* Assets.xcassets in Resources */,
 				F7CA08C41C508C910027CD78 /* Main.storyboard in Resources */,
@@ -410,14 +451,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7CA08C11C508C910027CD78 /* ViewController.m in Sources */,
-				F70A64B71C5219D70067A8E9 /* CTHQuestionTag.m in Sources */,
 				F7CA08BE1C508C910027CD78 /* AppDelegate.m in Sources */,
 				68B5750F1C5268280013BFD8 /* TXTextTableViewController.m in Sources */,
-				68104AC51C5106B700073D03 /* CTHSubject.m in Sources */,
 				68B5750C1C525EAF0013BFD8 /* TXTestCollectionViewController.m in Sources */,
+				68B576B91C5288B90013BFD8 /* CTHSubject.m in Sources */,
+				68B576B81C5288B90013BFD8 /* CTHQuestionTag.m in Sources */,
 				F7CA08BB1C508C910027CD78 /* main.m in Sources */,
 				68104AC81C5106FF00073D03 /* CTHServerInterface.m in Sources */,
-				F70A64B41C5212770067A8E9 /* CTHKnowledgePoint.m in Sources */,
+				68B576B61C5288B90013BFD8 /* CTHSelectSubjectCollectionViewController.m in Sources */,
+				68B576B71C5288B90013BFD8 /* CTHKnowledgePoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

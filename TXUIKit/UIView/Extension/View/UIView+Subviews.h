@@ -10,6 +10,8 @@
 
 @interface UIView (Subviews)
 
+- (id)viewWithTag:(NSInteger)tag class:(Class)cls;
+
 - (NSDictionary*)subviewsWithKeyPaths:(id) firstKeyPath,  ... NS_REQUIRES_NIL_TERMINATION;
 
 - (void)removeSubviewClass:(Class) aClass;
