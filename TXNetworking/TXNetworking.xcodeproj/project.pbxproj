@@ -53,11 +53,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		411A33F81AEE02800015E28C /* libLJXNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLJXNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		411A33F81AEE02800015E28C /* libTXNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTXNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		411A34091AEE02800015E28C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4143F1791AEF15E600309944 /* LJXURLJSONConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXURLJSONConnection.m; sourceTree = "<group>"; };
 		4143F17C1AEF15E600309944 /* LJXURLJSONConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXURLJSONConnection.h; sourceTree = "<group>"; };
-		4143F1871AEF193500309944 /* LJXNetworking.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXNetworking.pch; sourceTree = "<group>"; };
+		4143F1871AEF193500309944 /* TXNetworking.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXNetworking.pch; sourceTree = "<group>"; };
 		4154316C1AF20FAC00ED6796 /* TXURLJSONConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXURLJSONConnection.h; sourceTree = "<group>"; };
 		4154316D1AF20FAC00ED6796 /* TXURLJSONConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXURLJSONConnection.m; sourceTree = "<group>"; };
 		47CE5CEFFD7D04583501BFC0 /* Pods-LJXNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJXNetworking.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-LJXNetworking/Pods-LJXNetworking.debug.xcconfig"; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		411A33F91AEE02800015E28C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				411A33F81AEE02800015E28C /* libLJXNetworking.a */,
+				411A33F81AEE02800015E28C /* libTXNetworking.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,7 +129,7 @@
 				F7CA08911C5077940027CD78 /* TXURLJSONConnectionSignal.m */,
 				4154316C1AF20FAC00ED6796 /* TXURLJSONConnection.h */,
 				4154316D1AF20FAC00ED6796 /* TXURLJSONConnection.m */,
-				4143F1871AEF193500309944 /* LJXNetworking.pch */,
+				4143F1871AEF193500309944 /* TXNetworking.pch */,
 			);
 			path = LJXNetworking;
 			sourceTree = "<group>";
@@ -170,9 +170,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		411A33F71AEE02800015E28C /* LJXNetworking */ = {
+		411A33F71AEE02800015E28C /* TXNetworking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 411A340C1AEE02800015E28C /* Build configuration list for PBXNativeTarget "LJXNetworking" */;
+			buildConfigurationList = 411A340C1AEE02800015E28C /* Build configuration list for PBXNativeTarget "TXNetworking" */;
 			buildPhases = (
 				EFC3BBCCB0F728DD8DA2AC6E /* Check Pods Manifest.lock */,
 				411A33F41AEE02800015E28C /* Sources */,
@@ -185,9 +185,9 @@
 			dependencies = (
 				F7CA08AA1C508B290027CD78 /* PBXTargetDependency */,
 			);
-			name = LJXNetworking;
+			name = TXNetworking;
 			productName = LJXNetworking;
-			productReference = 411A33F81AEE02800015E28C /* libLJXNetworking.a */;
+			productReference = 411A33F81AEE02800015E28C /* libTXNetworking.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 411A33F31AEE02800015E28C /* Build configuration list for PBXProject "LJXNetworking" */;
+			buildConfigurationList = 411A33F31AEE02800015E28C /* Build configuration list for PBXProject "TXNetworking" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -222,7 +222,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				411A33F71AEE02800015E28C /* LJXNetworking */,
+				411A33F71AEE02800015E28C /* TXNetworking */,
 			);
 		};
 /* End PBXProject section */
@@ -382,7 +382,7 @@
 			baseConfigurationReference = 47CE5CEFFD7D04583501BFC0 /* Pods-LJXNetworking.debug.xcconfig */;
 			buildSettings = {
 				GCC_PREFIX_HEADER = LJXNetworking/LJXNetworking.pch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TXNetworking;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/LJXFoundation";
 			};
@@ -393,7 +393,7 @@
 			baseConfigurationReference = FBB6BA473AADA054ABEDE00B /* Pods-LJXNetworking.release.xcconfig */;
 			buildSettings = {
 				GCC_PREFIX_HEADER = LJXNetworking/LJXNetworking.pch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TXNetworking;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/LJXFoundation";
 			};
@@ -402,7 +402,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		411A33F31AEE02800015E28C /* Build configuration list for PBXProject "LJXNetworking" */ = {
+		411A33F31AEE02800015E28C /* Build configuration list for PBXProject "TXNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				411A340A1AEE02800015E28C /* Debug */,
@@ -411,7 +411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		411A340C1AEE02800015E28C /* Build configuration list for PBXNativeTarget "LJXNetworking" */ = {
+		411A340C1AEE02800015E28C /* Build configuration list for PBXNativeTarget "TXNetworking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				411A340D1AEE02800015E28C /* Debug */,

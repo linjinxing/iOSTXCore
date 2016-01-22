@@ -2,13 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TXNetworking/TXNetworking.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TXFoundation/TXFoundation.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:TXUIKit/TXUIKit.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:LJXNetworking/LJXNetworking.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:TXAppShell/TXAppShell.xcodeproj">
