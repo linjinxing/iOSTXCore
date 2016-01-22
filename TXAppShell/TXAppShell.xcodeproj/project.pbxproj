@@ -10,6 +10,8 @@
 		68104AC51C5106B700073D03 /* CTHSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 68104AC41C5106B700073D03 /* CTHSubject.m */; };
 		68104AC81C5106FF00073D03 /* CTHServerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 68104AC71C5106FF00073D03 /* CTHServerInterface.m */; };
 		DA8E673B1711D6DC6CD3705F /* libPods-TXAppShell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 033E235583E459851181937A /* libPods-TXAppShell.a */; };
+		F70A64B41C5212770067A8E9 /* CTHKnowledgePoint.m in Sources */ = {isa = PBXBuildFile; fileRef = F70A64B31C5212770067A8E9 /* CTHKnowledgePoint.m */; };
+		F70A64B71C5219D70067A8E9 /* CTHQuestionTag.m in Sources */ = {isa = PBXBuildFile; fileRef = F70A64B61C5219D70067A8E9 /* CTHQuestionTag.m */; };
 		F77F59771C51C12A005CBD81 /* libTXUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F77F59761C51C12A005CBD81 /* libTXUIKit.a */; };
 		F77F59791C51C12F005CBD81 /* libTXFoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F77F59781C51C12F005CBD81 /* libTXFoundation.a */; };
 		F7CA08BB1C508C910027CD78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA08BA1C508C910027CD78 /* main.m */; };
@@ -49,6 +51,10 @@
 		68104ACD1C51092E00073D03 /* TXAppShell.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXAppShell.pch; sourceTree = "<group>"; };
 		72C1F6E3AB50717856987D6A /* Pods-TXAppShell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXAppShell.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-TXAppShell/Pods-TXAppShell.debug.xcconfig"; sourceTree = "<group>"; };
 		8187E8B0A76DD83897E0F7FC /* Pods-TXAppShell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXAppShell.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TXAppShell/Pods-TXAppShell.release.xcconfig"; sourceTree = "<group>"; };
+		F70A64B21C5212770067A8E9 /* CTHKnowledgePoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHKnowledgePoint.h; sourceTree = "<group>"; };
+		F70A64B31C5212770067A8E9 /* CTHKnowledgePoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHKnowledgePoint.m; sourceTree = "<group>"; };
+		F70A64B51C5219D70067A8E9 /* CTHQuestionTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHQuestionTag.h; sourceTree = "<group>"; };
+		F70A64B61C5219D70067A8E9 /* CTHQuestionTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHQuestionTag.m; sourceTree = "<group>"; };
 		F77F59761C51C12A005CBD81 /* libTXUIKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTXUIKit.a; path = "../TXUIKit/build/Debug-iphoneos/libTXUIKit.a"; sourceTree = "<group>"; };
 		F77F59781C51C12F005CBD81 /* libTXFoundation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTXFoundation.a; path = "../TXFoundation/build/Debug-iphoneos/libTXFoundation.a"; sourceTree = "<group>"; };
 		F7CA08B61C508C910027CD78 /* TXAppShell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TXAppShell.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +131,7 @@
 			children = (
 				68104AC61C5106FF00073D03 /* CTHServerInterface.h */,
 				68104AC71C5106FF00073D03 /* CTHServerInterface.m */,
+				F70A64B81C521C170067A8E9 /* ServerInterface */,
 				68104AC21C5106A600073D03 /* Model */,
 			);
 			path = CTHServerInterfaceTest;
@@ -135,8 +142,19 @@
 			children = (
 				68104AC31C5106B700073D03 /* CTHSubject.h */,
 				68104AC41C5106B700073D03 /* CTHSubject.m */,
+				F70A64B21C5212770067A8E9 /* CTHKnowledgePoint.h */,
+				F70A64B31C5212770067A8E9 /* CTHKnowledgePoint.m */,
+				F70A64B51C5219D70067A8E9 /* CTHQuestionTag.h */,
+				F70A64B61C5219D70067A8E9 /* CTHQuestionTag.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F70A64B81C521C170067A8E9 /* ServerInterface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServerInterface;
 			sourceTree = "<group>";
 		};
 		F7CA08AD1C508C910027CD78 = {
@@ -382,10 +400,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7CA08C11C508C910027CD78 /* ViewController.m in Sources */,
+				F70A64B71C5219D70067A8E9 /* CTHQuestionTag.m in Sources */,
 				F7CA08BE1C508C910027CD78 /* AppDelegate.m in Sources */,
 				68104AC51C5106B700073D03 /* CTHSubject.m in Sources */,
 				F7CA08BB1C508C910027CD78 /* main.m in Sources */,
 				68104AC81C5106FF00073D03 /* CTHServerInterface.m in Sources */,
+				F70A64B41C5212770067A8E9 /* CTHKnowledgePoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
