@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4143F17D1AEF15E600309944 /* LJXURLJSONConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4143F1791AEF15E600309944 /* LJXURLJSONConnection.m */; };
 		4154316E1AF20FAC00ED6796 /* TXURLJSONConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4154316D1AF20FAC00ED6796 /* TXURLJSONConnection.m */; };
-		68104ACA1C51079C00073D03 /* LJXNetworking.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7EBEB881B96E71000F78570 /* LJXNetworking.h */; };
+		68104ACA1C51079C00073D03 /* TXNetworking.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7EBEB881B96E71000F78570 /* TXNetworking.h */; };
 		68104ACB1C51079F00073D03 /* TXURLJSONConnection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4154316C1AF20FAC00ED6796 /* TXURLJSONConnection.h */; };
 		F7CA08921C5077940027CD78 /* TXURLJSONConnectionSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA08911C5077940027CD78 /* TXURLJSONConnectionSignal.m */; };
 /* End PBXBuildFile section */
@@ -45,8 +45,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				68104ACA1C51079C00073D03 /* LJXNetworking.h in CopyFiles */,
 				68104ACB1C51079F00073D03 /* TXURLJSONConnection.h in CopyFiles */,
+				68104ACA1C51079C00073D03 /* TXNetworking.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +66,7 @@
 		F7CA08901C5077940027CD78 /* TXURLJSONConnectionSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXURLJSONConnectionSignal.h; sourceTree = "<group>"; };
 		F7CA08911C5077940027CD78 /* TXURLJSONConnectionSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXURLJSONConnectionSignal.m; sourceTree = "<group>"; };
 		F7CA08A01C508B1F0027CD78 /* LJXFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LJXFoundation.xcodeproj; path = ../LJXFoundation/LJXFoundation.xcodeproj; sourceTree = "<group>"; };
-		F7EBEB881B96E71000F78570 /* LJXNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXNetworking.h; sourceTree = "<group>"; };
+		F7EBEB881B96E71000F78570 /* TXNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXNetworking.h; sourceTree = "<group>"; };
 		FBB6BA473AADA054ABEDE00B /* Pods-LJXNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJXNetworking.release.xcconfig"; path = "../Pods/Target Support Files/Pods-LJXNetworking/Pods-LJXNetworking.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,7 +162,7 @@
 		F7EBEB871B96E71000F78570 /* Export */ = {
 			isa = PBXGroup;
 			children = (
-				F7EBEB881B96E71000F78570 /* LJXNetworking.h */,
+				F7EBEB881B96E71000F78570 /* TXNetworking.h */,
 			);
 			path = Export;
 			sourceTree = "<group>";
@@ -381,10 +381,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 47CE5CEFFD7D04583501BFC0 /* Pods-LJXNetworking.debug.xcconfig */;
 			buildSettings = {
-				GCC_PREFIX_HEADER = LJXNetworking/LJXNetworking.pch;
 				PRODUCT_NAME = TXNetworking;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/LJXFoundation";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/TXFoundation";
 			};
 			name = Debug;
 		};
@@ -392,10 +391,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FBB6BA473AADA054ABEDE00B /* Pods-LJXNetworking.release.xcconfig */;
 			buildSettings = {
-				GCC_PREFIX_HEADER = LJXNetworking/LJXNetworking.pch;
 				PRODUCT_NAME = TXNetworking;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/LJXFoundation";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/TXFoundation";
 			};
 			name = Release;
 		};

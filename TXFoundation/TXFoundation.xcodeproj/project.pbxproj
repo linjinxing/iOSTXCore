@@ -63,7 +63,7 @@
 		F77F59581C51BF9C005CBD81 /* NSDictionaryAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58B81C51BF82005CBD81 /* NSDictionaryAdditions.h */; };
 		F77F59591C51BF9C005CBD81 /* NSMutableDictionaryAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58BA1C51BF82005CBD81 /* NSMutableDictionaryAdditions.h */; };
 		F77F595A1C51BF9C005CBD81 /* LJXError.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58BD1C51BF82005CBD81 /* LJXError.h */; };
-		F77F595B1C51BF9C005CBD81 /* LJXFoundation.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58C01C51BF82005CBD81 /* LJXFoundation.h */; };
+		F77F595B1C51BF9C005CBD81 /* TXFoundation.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58C01C51BF82005CBD81 /* TXFoundation.h */; };
 		F77F595C1C51BF9C005CBD81 /* LJXFileHandle.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58C31C51BF82005CBD81 /* LJXFileHandle.h */; };
 		F77F595D1C51BF9C005CBD81 /* NSFileManagerAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58C51C51BF82005CBD81 /* NSFileManagerAdditions.h */; };
 		F77F595E1C51BF9C005CBD81 /* LJXLocale.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58C81C51BF82005CBD81 /* LJXLocale.h */; };
@@ -99,6 +99,7 @@
 				F77F59471C51BF9C005CBD81 /* NSArray+LJXExtend.h in Copy Files */,
 				F77F59481C51BF9C005CBD81 /* NSArray+NSString.h in Copy Files */,
 				F77F59491C51BF9C005CBD81 /* NSArrayAdditions.h in Copy Files */,
+				F77F595B1C51BF9C005CBD81 /* TXFoundation.h in Copy Files */,
 				F77F594A1C51BF9C005CBD81 /* NSMutableArrayAdditions.h in Copy Files */,
 				F77F594B1C51BF9C005CBD81 /* NSBundle+Info_Plist.h in Copy Files */,
 				F77F594C1C51BF9C005CBD81 /* NSData+AES.h in Copy Files */,
@@ -116,7 +117,6 @@
 				F77F59581C51BF9C005CBD81 /* NSDictionaryAdditions.h in Copy Files */,
 				F77F59591C51BF9C005CBD81 /* NSMutableDictionaryAdditions.h in Copy Files */,
 				F77F595A1C51BF9C005CBD81 /* LJXError.h in Copy Files */,
-				F77F595B1C51BF9C005CBD81 /* LJXFoundation.h in Copy Files */,
 				F77F595C1C51BF9C005CBD81 /* LJXFileHandle.h in Copy Files */,
 				F77F595D1C51BF9C005CBD81 /* NSFileManagerAdditions.h in Copy Files */,
 				F77F595E1C51BF9C005CBD81 /* LJXLocale.h in Copy Files */,
@@ -182,7 +182,7 @@
 		F77F58BB1C51BF82005CBD81 /* NSMutableDictionaryAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableDictionaryAdditions.m; sourceTree = "<group>"; };
 		F77F58BD1C51BF82005CBD81 /* LJXError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXError.h; sourceTree = "<group>"; };
 		F77F58BE1C51BF82005CBD81 /* LJXError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXError.m; sourceTree = "<group>"; };
-		F77F58C01C51BF82005CBD81 /* LJXFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXFoundation.h; sourceTree = "<group>"; };
+		F77F58C01C51BF82005CBD81 /* TXFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXFoundation.h; sourceTree = "<group>"; };
 		F77F58C31C51BF82005CBD81 /* LJXFileHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXFileHandle.h; sourceTree = "<group>"; };
 		F77F58C41C51BF82005CBD81 /* LJXFileHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXFileHandle.m; sourceTree = "<group>"; };
 		F77F58C51C51BF82005CBD81 /* NSFileManagerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFileManagerAdditions.h; sourceTree = "<group>"; };
@@ -379,7 +379,7 @@
 		F77F58BF1C51BF82005CBD81 /* Export */ = {
 			isa = PBXGroup;
 			children = (
-				F77F58C01C51BF82005CBD81 /* LJXFoundation.h */,
+				F77F58C01C51BF82005CBD81 /* TXFoundation.h */,
 			);
 			path = Export;
 			sourceTree = "<group>";

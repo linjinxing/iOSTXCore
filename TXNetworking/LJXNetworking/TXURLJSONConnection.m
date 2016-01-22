@@ -5,8 +5,11 @@
 //  Created by Mobo360 on 15/4/30.
 //  Copyright (c) 2015年 Mobo. All rights reserved.
 //
+
+#import "TXFoundation.h"
 #import "TXURLJSONConnection.h"
 #import "TXURLJSONConnectionSignal.h"
+
 
 NSString* const MOBConstURLHost = @"http://112.126.80.207:8016";
 

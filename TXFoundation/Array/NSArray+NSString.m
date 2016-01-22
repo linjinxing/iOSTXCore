@@ -8,7 +8,7 @@
 
 #import <CoreGraphics/CoreGraphics.h>
 #import "NSArray+NSString.h"
-#import "LJXFoundation.h"
+#import "TXFoundation.h"
 #import "LJXDebug.h"
 
 @implementation NSArray (NSString)

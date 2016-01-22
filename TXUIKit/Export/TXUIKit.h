@@ -61,7 +61,6 @@
 #import "UIDeviceAdditions.h"
 #import "UICollectionView+Additions.h"
 
-#import "NSArray+BlocksKit.h"
 #import "NSArray+Subviews.h"
 #import "NSArray+UI.h"
 
@@ -69,10 +68,10 @@
 #import "UIImage+Bundle.h"
 
 /* 协议 */
-#import "LJXSetValueProtocol.h"
+//#import "LJXSetValueProtocol.h"
 //#import "LJXSetTextStringProtocol.h"
 #import "LJXControlActionProtocol.h"
-#import "LJXViewSetHiddenProtocol.h"
+//#import "LJXViewSetHiddenProtocol.h"
 #import "LJXControlEnabledProtocol.h"
 
 #import "UIViewController+Addition.h"

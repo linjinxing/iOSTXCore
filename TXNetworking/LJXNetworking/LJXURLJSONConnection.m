@@ -5,7 +5,9 @@
 //  Created by Mobo360 on 15/4/9.
 //  Copyright (c) 2015年 yfb. All rights reserved.
 //
-
+#import <MJExtension/MJExtension.h>
+//#import <AFNetworking/AFNetworking.h>
+#import "TXFoundation.h"
 #import "LJXURLJSONConnection.h"
 
 NSString* const LJXURLJSONConnectionErrorDomain = @"LJXURLConnectionErrorDomain";

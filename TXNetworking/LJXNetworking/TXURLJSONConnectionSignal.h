@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 RACSignal* TXURLJSONConnectionSignal(NSURLRequest* request, NSString* keyPath, Class cls);
 

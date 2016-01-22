@@ -7,6 +7,7 @@
 //  每一个平台都要定制自己的请求哈。
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 //
 //@interface MBP2PURLJSONConnectionCreateSignalPage : NSObject
 //@property(nonatomic, assign) NSUInteger size;
