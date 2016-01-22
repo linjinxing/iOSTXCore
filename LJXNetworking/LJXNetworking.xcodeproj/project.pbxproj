@@ -11,8 +11,6 @@
 		4154316E1AF20FAC00ED6796 /* TXURLJSONConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4154316D1AF20FAC00ED6796 /* TXURLJSONConnection.m */; };
 		68104ACA1C51079C00073D03 /* LJXNetworking.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F7EBEB881B96E71000F78570 /* LJXNetworking.h */; };
 		68104ACB1C51079F00073D03 /* TXURLJSONConnection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4154316C1AF20FAC00ED6796 /* TXURLJSONConnection.h */; };
-		8B07D6BFFE3EFD884D9E8768 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E0D1C30774DB22DDCACC0F /* libPods.a */; };
-		CBDE299FDE94628E949189C4 /* libPods-LJXNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFCCA85D1057264AC344437 /* libPods-LJXNetworking.a */; };
 		F7CA08921C5077940027CD78 /* TXURLJSONConnectionSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CA08911C5077940027CD78 /* TXURLJSONConnectionSignal.m */; };
 /* End PBXBuildFile section */
 
@@ -77,8 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B07D6BFFE3EFD884D9E8768 /* libPods.a in Frameworks */,
-				CBDE299FDE94628E949189C4 /* libPods-LJXNetworking.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -73,7 +73,7 @@
 		F77F586F1C51B4C6005CBD81 /* LJXUIBlocks.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57D51C51B497005CBD81 /* LJXUIBlocks.h */; };
 		F77F58701C51B4C6005CBD81 /* LJXUIMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57D61C51B497005CBD81 /* LJXUIMacros.h */; };
 		F77F58711C51B4C6005CBD81 /* LJXVEnum.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57D71C51B497005CBD81 /* LJXVEnum.h */; };
-		F77F58721C51B4C6005CBD81 /* LJXUIKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57D91C51B497005CBD81 /* LJXUIKit.h */; };
+		F77F58721C51B4C6005CBD81 /* TXUIKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57D91C51B497005CBD81 /* TXUIKit.h */; };
 		F77F58731C51B4C6005CBD81 /* LJXLoadingViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57DB1C51B497005CBD81 /* LJXLoadingViewController.h */; };
 		F77F58741C51B4C6005CBD81 /* LJXMBProgressHUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57DD1C51B497005CBD81 /* LJXMBProgressHUD.h */; };
 		F77F58751C51B4C6005CBD81 /* LJXSpinImageView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57DF1C51B497005CBD81 /* LJXSpinImageView.h */; };
@@ -138,6 +138,7 @@
 				F77F585D1C51B4C6005CBD81 /* LJXBlueRoundButton.h in CopyFiles */,
 				F77F585E1C51B4C6005CBD81 /* LJXButton.h in CopyFiles */,
 				F77F585F1C51B4C6005CBD81 /* LJXListButton.h in CopyFiles */,
+				F77F58721C51B4C6005CBD81 /* TXUIKit.h in CopyFiles */,
 				F77F58601C51B4C6005CBD81 /* LJXMultiStateButton.h in CopyFiles */,
 				F77F58611C51B4C6005CBD81 /* LJXRoundButton.h in CopyFiles */,
 				F77F58621C51B4C6005CBD81 /* LJXRoundFrameButton.h in CopyFiles */,
@@ -156,7 +157,6 @@
 				F77F586F1C51B4C6005CBD81 /* LJXUIBlocks.h in CopyFiles */,
 				F77F58701C51B4C6005CBD81 /* LJXUIMacros.h in CopyFiles */,
 				F77F58711C51B4C6005CBD81 /* LJXVEnum.h in CopyFiles */,
-				F77F58721C51B4C6005CBD81 /* LJXUIKit.h in CopyFiles */,
 				F77F58731C51B4C6005CBD81 /* LJXLoadingViewController.h in CopyFiles */,
 				F77F58741C51B4C6005CBD81 /* LJXMBProgressHUD.h in CopyFiles */,
 				F77F58751C51B4C6005CBD81 /* LJXSpinImageView.h in CopyFiles */,
@@ -237,7 +237,7 @@
 		F77F57D51C51B497005CBD81 /* LJXUIBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIBlocks.h; sourceTree = "<group>"; };
 		F77F57D61C51B497005CBD81 /* LJXUIMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIMacros.h; sourceTree = "<group>"; };
 		F77F57D71C51B497005CBD81 /* LJXVEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXVEnum.h; sourceTree = "<group>"; };
-		F77F57D91C51B497005CBD81 /* LJXUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIKit.h; sourceTree = "<group>"; };
+		F77F57D91C51B497005CBD81 /* TXUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXUIKit.h; sourceTree = "<group>"; };
 		F77F57DB1C51B497005CBD81 /* LJXLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXLoadingViewController.h; sourceTree = "<group>"; };
 		F77F57DC1C51B497005CBD81 /* LJXLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXLoadingViewController.m; sourceTree = "<group>"; };
 		F77F57DD1C51B497005CBD81 /* LJXMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXMBProgressHUD.h; sourceTree = "<group>"; };
@@ -307,10 +307,10 @@
 		418B10191AE8EF7F00CC1848 = {
 			isa = PBXGroup;
 			children = (
+				F77F57D81C51B497005CBD81 /* Export */,
 				F77F57A21C51B497005CBD81 /* Button */,
 				F77F57B21C51B497005CBD81 /* Controller */,
 				F77F57D41C51B497005CBD81 /* Define */,
-				F77F57D81C51B497005CBD81 /* Export */,
 				F77F57DA1C51B497005CBD81 /* HUB */,
 				F77F57E41C51B497005CBD81 /* Resource */,
 				F77F57E61C51B497005CBD81 /* Store */,
@@ -511,7 +511,7 @@
 		F77F57D81C51B497005CBD81 /* Export */ = {
 			isa = PBXGroup;
 			children = (
-				F77F57D91C51B497005CBD81 /* LJXUIKit.h */,
+				F77F57D91C51B497005CBD81 /* TXUIKit.h */,
 			);
 			path = Export;
 			sourceTree = "<group>";

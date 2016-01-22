@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:LJXFoundation/LJXFoundation.xcodeproj">
+      location = "group:TXFoundation/TXFoundation.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:LJXUIKit/LJXUIKit.xcodeproj">
+      location = "group:TXUIKit/TXUIKit.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:LJXNetworking/LJXNetworking.xcodeproj">

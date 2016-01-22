@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F77F58FF1C51BF82005CBD81 /* NSArray+LJXExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58991C51BF82005CBD81 /* NSArray+LJXExtend.m */; };
+		F77F59011C51BF82005CBD81 /* NSArray+NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F589B1C51BF82005CBD81 /* NSArray+NSString.m */; };
+		F77F59031C51BF82005CBD81 /* NSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F589D1C51BF82005CBD81 /* NSArrayAdditions.m */; };
+		F77F59051C51BF82005CBD81 /* NSMutableArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F589F1C51BF82005CBD81 /* NSMutableArrayAdditions.m */; };
+		F77F59071C51BF82005CBD81 /* NSBundle+Info_Plist.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58A21C51BF82005CBD81 /* NSBundle+Info_Plist.m */; };
+		F77F59091C51BF82005CBD81 /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58A51C51BF82005CBD81 /* NSData+AES.m */; };
+		F77F590B1C51BF82005CBD81 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58A71C51BF82005CBD81 /* NSDataAdditions.m */; };
+		F77F590D1C51BF82005CBD81 /* NSDateAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58AA1C51BF82005CBD81 /* NSDateAdditions.m */; };
+		F77F590F1C51BF82005CBD81 /* LJXConstValues.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58AE1C51BF82005CBD81 /* LJXConstValues.m */; };
+		F77F59111C51BF82005CBD81 /* NSDictionary+SafeExpectations.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58B71C51BF82005CBD81 /* NSDictionary+SafeExpectations.m */; };
+		F77F59131C51BF82005CBD81 /* NSDictionaryAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58B91C51BF82005CBD81 /* NSDictionaryAdditions.m */; };
+		F77F59151C51BF82005CBD81 /* NSMutableDictionaryAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58BB1C51BF82005CBD81 /* NSMutableDictionaryAdditions.m */; };
+		F77F59171C51BF82005CBD81 /* LJXError.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58BE1C51BF82005CBD81 /* LJXError.m */; };
+		F77F59191C51BF82005CBD81 /* LJXFileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58C41C51BF82005CBD81 /* LJXFileHandle.m */; };
+		F77F591B1C51BF82005CBD81 /* NSFileManagerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58C61C51BF82005CBD81 /* NSFileManagerAdditions.m */; };
+		F77F591D1C51BF82005CBD81 /* LJXLocale.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58C91C51BF82005CBD81 /* LJXLocale.m */; };
+		F77F591F1C51BF82005CBD81 /* LJXWifi.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58CC1C51BF82005CBD81 /* LJXWifi.m */; };
+		F77F59211C51BF82005CBD81 /* NSNumber+LJXExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58D01C51BF82005CBD81 /* NSNumber+LJXExtend.m */; };
+		F77F59231C51BF82005CBD81 /* NSObject+GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58D31C51BF82005CBD81 /* NSObject+GCD.m */; };
+		F77F59251C51BF82005CBD81 /* NSObject+NSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58D51C51BF82005CBD81 /* NSObject+NSNotification.m */; };
+		F77F59271C51BF82005CBD81 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58D71C51BF82005CBD81 /* NSObject+Runtime.m */; };
+		F77F59291C51BF82005CBD81 /* NSObjectAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58D91C51BF82005CBD81 /* NSObjectAdditions.m */; };
+		F77F592B1C51BF82005CBD81 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58DC1C51BF82005CBD81 /* NSString+Base64.m */; };
+		F77F592D1C51BF82005CBD81 /* NSString+Player.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58DE1C51BF82005CBD81 /* NSString+Player.m */; };
+		F77F592F1C51BF82005CBD81 /* NSString+UrlAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58E01C51BF82005CBD81 /* NSString+UrlAddition.m */; };
+		F77F59311C51BF82005CBD81 /* NSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58E21C51BF82005CBD81 /* NSStringAdditions.m */; };
+		F77F59331C51BF82005CBD81 /* NSURLRequest+LJXAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58E51C51BF82005CBD81 /* NSURLRequest+LJXAddition.m */; };
+		F77F59351C51BF82005CBD81 /* LJXPath.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58E81C51BF82005CBD81 /* LJXPath.m */; };
+		F77F59371C51BF82005CBD81 /* NSUserDefaultsAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58EC1C51BF82005CBD81 /* NSUserDefaultsAdditions.m */; };
+		F77F59391C51BF82005CBD81 /* LJXBackgroundKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58EF1C51BF82005CBD81 /* LJXBackgroundKeeper.m */; };
+		F77F593B1C51BF82005CBD81 /* LJXSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58F11C51BF82005CBD81 /* LJXSystem.m */; };
+		F77F593D1C51BF82005CBD81 /* LJXSystemCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58F31C51BF82005CBD81 /* LJXSystemCompatibility.m */; };
+		F77F593F1C51BF82005CBD81 /* LJXBG2Unicode.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58F71C51BF82005CBD81 /* LJXBG2Unicode.m */; };
+		F77F59411C51BF82005CBD81 /* LJXpinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = F77F58F81C51BF82005CBD81 /* LJXpinyin.c */; };
+		F77F59431C51BF82005CBD81 /* LJXurldecodeutf8gbk.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58FB1C51BF82005CBD81 /* LJXurldecodeutf8gbk.m */; };
+		F77F59451C51BF82005CBD81 /* LJXDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58FE1C51BF82005CBD81 /* LJXDebug.m */; };
+		F77F59471C51BF9C005CBD81 /* NSArray+LJXExtend.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58981C51BF82005CBD81 /* NSArray+LJXExtend.h */; };
+		F77F59481C51BF9C005CBD81 /* NSArray+NSString.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F589A1C51BF82005CBD81 /* NSArray+NSString.h */; };
+		F77F59491C51BF9C005CBD81 /* NSArrayAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F589C1C51BF82005CBD81 /* NSArrayAdditions.h */; };
+		F77F594A1C51BF9C005CBD81 /* NSMutableArrayAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F589E1C51BF82005CBD81 /* NSMutableArrayAdditions.h */; };
+		F77F594B1C51BF9C005CBD81 /* NSBundle+Info_Plist.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58A11C51BF82005CBD81 /* NSBundle+Info_Plist.h */; };
+		F77F594C1C51BF9C005CBD81 /* NSData+AES.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58A41C51BF82005CBD81 /* NSData+AES.h */; };
+		F77F594D1C51BF9C005CBD81 /* NSDataAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58A61C51BF82005CBD81 /* NSDataAdditions.h */; };
+		F77F594E1C51BF9C005CBD81 /* NSDateAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58A91C51BF82005CBD81 /* NSDateAdditions.h */; };
+		F77F594F1C51BF9C005CBD81 /* keypath.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58AC1C51BF82005CBD81 /* keypath.h */; };
+		F77F59501C51BF9C005CBD81 /* LJXConstValues.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58AD1C51BF82005CBD81 /* LJXConstValues.h */; };
+		F77F59511C51BF9C005CBD81 /* LJXFoundamentalTypes.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58AF1C51BF82005CBD81 /* LJXFoundamentalTypes.h */; };
+		F77F59521C51BF9C005CBD81 /* LJXFoundationMacros.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58B01C51BF82005CBD81 /* LJXFoundationMacros.h */; };
+		F77F59531C51BF9C005CBD81 /* LJXTypes.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58B11C51BF82005CBD81 /* LJXTypes.h */; };
+		F77F59541C51BF9C005CBD81 /* metamacros.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58B21C51BF82005CBD81 /* metamacros.h */; };
+		F77F59551C51BF9C005CBD81 /* scope.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58B31C51BF82005CBD81 /* scope.h */; };
+		F77F59561C51BF9C005CBD81 /* SynthesizeSingleton.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58B41C51BF82005CBD81 /* SynthesizeSingleton.h */; };
+		F77F59571C51BF9C005CBD81 /* NSDictionary+SafeExpectations.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58B61C51BF82005CBD81 /* NSDictionary+SafeExpectations.h */; };
+		F77F59581C51BF9C005CBD81 /* NSDictionaryAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58B81C51BF82005CBD81 /* NSDictionaryAdditions.h */; };
+		F77F59591C51BF9C005CBD81 /* NSMutableDictionaryAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58BA1C51BF82005CBD81 /* NSMutableDictionaryAdditions.h */; };
+		F77F595A1C51BF9C005CBD81 /* LJXError.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58BD1C51BF82005CBD81 /* LJXError.h */; };
+		F77F595B1C51BF9C005CBD81 /* LJXFoundation.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58C01C51BF82005CBD81 /* LJXFoundation.h */; };
+		F77F595C1C51BF9C005CBD81 /* LJXFileHandle.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58C31C51BF82005CBD81 /* LJXFileHandle.h */; };
+		F77F595D1C51BF9C005CBD81 /* NSFileManagerAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58C51C51BF82005CBD81 /* NSFileManagerAdditions.h */; };
+		F77F595E1C51BF9C005CBD81 /* LJXLocale.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58C81C51BF82005CBD81 /* LJXLocale.h */; };
+		F77F595F1C51BF9C005CBD81 /* LJXWifi.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58CB1C51BF82005CBD81 /* LJXWifi.h */; };
+		F77F59601C51BF9C005CBD81 /* NSNumber+LJXExtend.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58CF1C51BF82005CBD81 /* NSNumber+LJXExtend.h */; };
+		F77F59611C51BF9C005CBD81 /* NSObject+GCD.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58D21C51BF82005CBD81 /* NSObject+GCD.h */; };
+		F77F59621C51BF9C005CBD81 /* NSObject+NSNotification.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58D41C51BF82005CBD81 /* NSObject+NSNotification.h */; };
+		F77F59631C51BF9C005CBD81 /* NSObject+Runtime.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58D61C51BF82005CBD81 /* NSObject+Runtime.h */; };
+		F77F59641C51BF9C005CBD81 /* NSObjectAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58D81C51BF82005CBD81 /* NSObjectAdditions.h */; };
+		F77F59651C51BF9C005CBD81 /* NSString+Base64.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58DB1C51BF82005CBD81 /* NSString+Base64.h */; };
+		F77F59661C51BF9C005CBD81 /* NSString+Player.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58DD1C51BF82005CBD81 /* NSString+Player.h */; };
+		F77F59671C51BF9C005CBD81 /* NSString+UrlAddition.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58DF1C51BF82005CBD81 /* NSString+UrlAddition.h */; };
+		F77F59681C51BF9C005CBD81 /* NSStringAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58E11C51BF82005CBD81 /* NSStringAdditions.h */; };
+		F77F59691C51BF9C005CBD81 /* NSURLRequest+LJXAddition.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58E41C51BF82005CBD81 /* NSURLRequest+LJXAddition.h */; };
+		F77F596A1C51BF9C005CBD81 /* LJXPath.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58E71C51BF82005CBD81 /* LJXPath.h */; };
+		F77F596B1C51BF9C005CBD81 /* NSUserDefaultsAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58EB1C51BF82005CBD81 /* NSUserDefaultsAdditions.h */; };
+		F77F596C1C51BF9C005CBD81 /* LJXBackgroundKeeper.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58EE1C51BF82005CBD81 /* LJXBackgroundKeeper.h */; };
+		F77F596D1C51BF9C005CBD81 /* LJXSystem.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58F01C51BF82005CBD81 /* LJXSystem.h */; };
+		F77F596E1C51BF9C005CBD81 /* LJXSystemCompatibility.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58F21C51BF82005CBD81 /* LJXSystemCompatibility.h */; };
+		F77F596F1C51BF9C005CBD81 /* LJXBG2Unicode.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58F61C51BF82005CBD81 /* LJXBG2Unicode.h */; };
+		F77F59701C51BF9C005CBD81 /* LJXpinyin.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58F91C51BF82005CBD81 /* LJXpinyin.h */; };
+		F77F59711C51BF9C005CBD81 /* LJXurldecodeutf8gbk.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58FA1C51BF82005CBD81 /* LJXurldecodeutf8gbk.h */; };
+		F77F59721C51BF9C005CBD81 /* LJXDebug.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58FD1C51BF82005CBD81 /* LJXDebug.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		418B0FF41AE8EF4300CC1848 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				F77F59471C51BF9C005CBD81 /* NSArray+LJXExtend.h in Copy Files */,
+				F77F59481C51BF9C005CBD81 /* NSArray+NSString.h in Copy Files */,
+				F77F59491C51BF9C005CBD81 /* NSArrayAdditions.h in Copy Files */,
+				F77F594A1C51BF9C005CBD81 /* NSMutableArrayAdditions.h in Copy Files */,
+				F77F594B1C51BF9C005CBD81 /* NSBundle+Info_Plist.h in Copy Files */,
+				F77F594C1C51BF9C005CBD81 /* NSData+AES.h in Copy Files */,
+				F77F594D1C51BF9C005CBD81 /* NSDataAdditions.h in Copy Files */,
+				F77F594E1C51BF9C005CBD81 /* NSDateAdditions.h in Copy Files */,
+				F77F594F1C51BF9C005CBD81 /* keypath.h in Copy Files */,
+				F77F59501C51BF9C005CBD81 /* LJXConstValues.h in Copy Files */,
+				F77F59511C51BF9C005CBD81 /* LJXFoundamentalTypes.h in Copy Files */,
+				F77F59521C51BF9C005CBD81 /* LJXFoundationMacros.h in Copy Files */,
+				F77F59531C51BF9C005CBD81 /* LJXTypes.h in Copy Files */,
+				F77F59541C51BF9C005CBD81 /* metamacros.h in Copy Files */,
+				F77F59551C51BF9C005CBD81 /* scope.h in Copy Files */,
+				F77F59561C51BF9C005CBD81 /* SynthesizeSingleton.h in Copy Files */,
+				F77F59571C51BF9C005CBD81 /* NSDictionary+SafeExpectations.h in Copy Files */,
+				F77F59581C51BF9C005CBD81 /* NSDictionaryAdditions.h in Copy Files */,
+				F77F59591C51BF9C005CBD81 /* NSMutableDictionaryAdditions.h in Copy Files */,
+				F77F595A1C51BF9C005CBD81 /* LJXError.h in Copy Files */,
+				F77F595B1C51BF9C005CBD81 /* LJXFoundation.h in Copy Files */,
+				F77F595C1C51BF9C005CBD81 /* LJXFileHandle.h in Copy Files */,
+				F77F595D1C51BF9C005CBD81 /* NSFileManagerAdditions.h in Copy Files */,
+				F77F595E1C51BF9C005CBD81 /* LJXLocale.h in Copy Files */,
+				F77F595F1C51BF9C005CBD81 /* LJXWifi.h in Copy Files */,
+				F77F59601C51BF9C005CBD81 /* NSNumber+LJXExtend.h in Copy Files */,
+				F77F59611C51BF9C005CBD81 /* NSObject+GCD.h in Copy Files */,
+				F77F59621C51BF9C005CBD81 /* NSObject+NSNotification.h in Copy Files */,
+				F77F59631C51BF9C005CBD81 /* NSObject+Runtime.h in Copy Files */,
+				F77F59641C51BF9C005CBD81 /* NSObjectAdditions.h in Copy Files */,
+				F77F59651C51BF9C005CBD81 /* NSString+Base64.h in Copy Files */,
+				F77F59661C51BF9C005CBD81 /* NSString+Player.h in Copy Files */,
+				F77F59671C51BF9C005CBD81 /* NSString+UrlAddition.h in Copy Files */,
+				F77F59681C51BF9C005CBD81 /* NSStringAdditions.h in Copy Files */,
+				F77F59691C51BF9C005CBD81 /* NSURLRequest+LJXAddition.h in Copy Files */,
+				F77F596A1C51BF9C005CBD81 /* LJXPath.h in Copy Files */,
+				F77F596B1C51BF9C005CBD81 /* NSUserDefaultsAdditions.h in Copy Files */,
+				F77F596C1C51BF9C005CBD81 /* LJXBackgroundKeeper.h in Copy Files */,
+				F77F596D1C51BF9C005CBD81 /* LJXSystem.h in Copy Files */,
+				F77F596E1C51BF9C005CBD81 /* LJXSystemCompatibility.h in Copy Files */,
+				F77F596F1C51BF9C005CBD81 /* LJXBG2Unicode.h in Copy Files */,
+				F77F59701C51BF9C005CBD81 /* LJXpinyin.h in Copy Files */,
+				F77F59711C51BF9C005CBD81 /* LJXurldecodeutf8gbk.h in Copy Files */,
+				F77F59721C51BF9C005CBD81 /* LJXDebug.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		418B0FF61AE8EF4300CC1848 /* libTXFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTXFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		418B10071AE8EF4400CC1848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F77F58981C51BF82005CBD81 /* NSArray+LJXExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+LJXExtend.h"; sourceTree = "<group>"; };
+		F77F58991C51BF82005CBD81 /* NSArray+LJXExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LJXExtend.m"; sourceTree = "<group>"; };
+		F77F589A1C51BF82005CBD81 /* NSArray+NSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NSString.h"; sourceTree = "<group>"; };
+		F77F589B1C51BF82005CBD81 /* NSArray+NSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NSString.m"; sourceTree = "<group>"; };
+		F77F589C1C51BF82005CBD81 /* NSArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSArrayAdditions.h; sourceTree = "<group>"; };
+		F77F589D1C51BF82005CBD81 /* NSArrayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSArrayAdditions.m; sourceTree = "<group>"; };
+		F77F589E1C51BF82005CBD81 /* NSMutableArrayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArrayAdditions.h; sourceTree = "<group>"; };
+		F77F589F1C51BF82005CBD81 /* NSMutableArrayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArrayAdditions.m; sourceTree = "<group>"; };
+		F77F58A11C51BF82005CBD81 /* NSBundle+Info_Plist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Info_Plist.h"; sourceTree = "<group>"; };
+		F77F58A21C51BF82005CBD81 /* NSBundle+Info_Plist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Info_Plist.m"; sourceTree = "<group>"; };
+		F77F58A41C51BF82005CBD81 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		F77F58A51C51BF82005CBD81 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
+		F77F58A61C51BF82005CBD81 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		F77F58A71C51BF82005CBD81 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
+		F77F58A91C51BF82005CBD81 /* NSDateAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDateAdditions.h; sourceTree = "<group>"; };
+		F77F58AA1C51BF82005CBD81 /* NSDateAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateAdditions.m; sourceTree = "<group>"; };
+		F77F58AC1C51BF82005CBD81 /* keypath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keypath.h; sourceTree = "<group>"; };
+		F77F58AD1C51BF82005CBD81 /* LJXConstValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXConstValues.h; sourceTree = "<group>"; };
+		F77F58AE1C51BF82005CBD81 /* LJXConstValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXConstValues.m; sourceTree = "<group>"; };
+		F77F58AF1C51BF82005CBD81 /* LJXFoundamentalTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXFoundamentalTypes.h; sourceTree = "<group>"; };
+		F77F58B01C51BF82005CBD81 /* LJXFoundationMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXFoundationMacros.h; sourceTree = "<group>"; };
+		F77F58B11C51BF82005CBD81 /* LJXTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXTypes.h; sourceTree = "<group>"; };
+		F77F58B21C51BF82005CBD81 /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
+		F77F58B31C51BF82005CBD81 /* scope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scope.h; sourceTree = "<group>"; };
+		F77F58B41C51BF82005CBD81 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		F77F58B61C51BF82005CBD81 /* NSDictionary+SafeExpectations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeExpectations.h"; sourceTree = "<group>"; };
+		F77F58B71C51BF82005CBD81 /* NSDictionary+SafeExpectations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeExpectations.m"; sourceTree = "<group>"; };
+		F77F58B81C51BF82005CBD81 /* NSDictionaryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionaryAdditions.h; sourceTree = "<group>"; };
+		F77F58B91C51BF82005CBD81 /* NSDictionaryAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionaryAdditions.m; sourceTree = "<group>"; };
+		F77F58BA1C51BF82005CBD81 /* NSMutableDictionaryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableDictionaryAdditions.h; sourceTree = "<group>"; };
+		F77F58BB1C51BF82005CBD81 /* NSMutableDictionaryAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableDictionaryAdditions.m; sourceTree = "<group>"; };
+		F77F58BD1C51BF82005CBD81 /* LJXError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXError.h; sourceTree = "<group>"; };
+		F77F58BE1C51BF82005CBD81 /* LJXError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXError.m; sourceTree = "<group>"; };
+		F77F58C01C51BF82005CBD81 /* LJXFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXFoundation.h; sourceTree = "<group>"; };
+		F77F58C31C51BF82005CBD81 /* LJXFileHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXFileHandle.h; sourceTree = "<group>"; };
+		F77F58C41C51BF82005CBD81 /* LJXFileHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXFileHandle.m; sourceTree = "<group>"; };
+		F77F58C51C51BF82005CBD81 /* NSFileManagerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFileManagerAdditions.h; sourceTree = "<group>"; };
+		F77F58C61C51BF82005CBD81 /* NSFileManagerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSFileManagerAdditions.m; sourceTree = "<group>"; };
+		F77F58C81C51BF82005CBD81 /* LJXLocale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXLocale.h; sourceTree = "<group>"; };
+		F77F58C91C51BF82005CBD81 /* LJXLocale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXLocale.m; sourceTree = "<group>"; };
+		F77F58CB1C51BF82005CBD81 /* LJXWifi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXWifi.h; sourceTree = "<group>"; };
+		F77F58CC1C51BF82005CBD81 /* LJXWifi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXWifi.m; sourceTree = "<group>"; };
+		F77F58CF1C51BF82005CBD81 /* NSNumber+LJXExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+LJXExtend.h"; sourceTree = "<group>"; };
+		F77F58D01C51BF82005CBD81 /* NSNumber+LJXExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+LJXExtend.m"; sourceTree = "<group>"; };
+		F77F58D21C51BF82005CBD81 /* NSObject+GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GCD.h"; sourceTree = "<group>"; };
+		F77F58D31C51BF82005CBD81 /* NSObject+GCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GCD.m"; sourceTree = "<group>"; };
+		F77F58D41C51BF82005CBD81 /* NSObject+NSNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSNotification.h"; sourceTree = "<group>"; };
+		F77F58D51C51BF82005CBD81 /* NSObject+NSNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSNotification.m"; sourceTree = "<group>"; };
+		F77F58D61C51BF82005CBD81 /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		F77F58D71C51BF82005CBD81 /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
+		F77F58D81C51BF82005CBD81 /* NSObjectAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectAdditions.h; sourceTree = "<group>"; };
+		F77F58D91C51BF82005CBD81 /* NSObjectAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObjectAdditions.m; sourceTree = "<group>"; };
+		F77F58DB1C51BF82005CBD81 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		F77F58DC1C51BF82005CBD81 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		F77F58DD1C51BF82005CBD81 /* NSString+Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Player.h"; sourceTree = "<group>"; };
+		F77F58DE1C51BF82005CBD81 /* NSString+Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Player.m"; sourceTree = "<group>"; };
+		F77F58DF1C51BF82005CBD81 /* NSString+UrlAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UrlAddition.h"; sourceTree = "<group>"; };
+		F77F58E01C51BF82005CBD81 /* NSString+UrlAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UrlAddition.m"; sourceTree = "<group>"; };
+		F77F58E11C51BF82005CBD81 /* NSStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringAdditions.h; sourceTree = "<group>"; };
+		F77F58E21C51BF82005CBD81 /* NSStringAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringAdditions.m; sourceTree = "<group>"; };
+		F77F58E41C51BF82005CBD81 /* NSURLRequest+LJXAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+LJXAddition.h"; sourceTree = "<group>"; };
+		F77F58E51C51BF82005CBD81 /* NSURLRequest+LJXAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+LJXAddition.m"; sourceTree = "<group>"; };
+		F77F58E71C51BF82005CBD81 /* LJXPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXPath.h; sourceTree = "<group>"; };
+		F77F58E81C51BF82005CBD81 /* LJXPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXPath.m; sourceTree = "<group>"; };
+		F77F58EB1C51BF82005CBD81 /* NSUserDefaultsAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUserDefaultsAdditions.h; sourceTree = "<group>"; };
+		F77F58EC1C51BF82005CBD81 /* NSUserDefaultsAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaultsAdditions.m; sourceTree = "<group>"; };
+		F77F58EE1C51BF82005CBD81 /* LJXBackgroundKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXBackgroundKeeper.h; sourceTree = "<group>"; };
+		F77F58EF1C51BF82005CBD81 /* LJXBackgroundKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXBackgroundKeeper.m; sourceTree = "<group>"; };
+		F77F58F01C51BF82005CBD81 /* LJXSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXSystem.h; sourceTree = "<group>"; };
+		F77F58F11C51BF82005CBD81 /* LJXSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXSystem.m; sourceTree = "<group>"; };
+		F77F58F21C51BF82005CBD81 /* LJXSystemCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXSystemCompatibility.h; sourceTree = "<group>"; };
+		F77F58F31C51BF82005CBD81 /* LJXSystemCompatibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXSystemCompatibility.m; sourceTree = "<group>"; };
+		F77F58F61C51BF82005CBD81 /* LJXBG2Unicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXBG2Unicode.h; sourceTree = "<group>"; };
+		F77F58F71C51BF82005CBD81 /* LJXBG2Unicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXBG2Unicode.m; sourceTree = "<group>"; };
+		F77F58F81C51BF82005CBD81 /* LJXpinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LJXpinyin.c; sourceTree = "<group>"; };
+		F77F58F91C51BF82005CBD81 /* LJXpinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXpinyin.h; sourceTree = "<group>"; };
+		F77F58FA1C51BF82005CBD81 /* LJXurldecodeutf8gbk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXurldecodeutf8gbk.h; sourceTree = "<group>"; };
+		F77F58FB1C51BF82005CBD81 /* LJXurldecodeutf8gbk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXurldecodeutf8gbk.m; sourceTree = "<group>"; };
+		F77F58FD1C51BF82005CBD81 /* LJXDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXDebug.h; sourceTree = "<group>"; };
+		F77F58FE1C51BF82005CBD81 /* LJXDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXDebug.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		418B0FF31AE8EF4300CC1848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		418B0FED1AE8EF4300CC1848 = {
+			isa = PBXGroup;
+			children = (
+				F77F58971C51BF82005CBD81 /* Array */,
+				F77F58A01C51BF82005CBD81 /* Bundle */,
+				F77F58A31C51BF82005CBD81 /* Data */,
+				F77F58A81C51BF82005CBD81 /* Date */,
+				F77F58AB1C51BF82005CBD81 /* Define */,
+				F77F58B51C51BF82005CBD81 /* Dictionary */,
+				F77F58BC1C51BF82005CBD81 /* Error */,
+				F77F58BF1C51BF82005CBD81 /* Export */,
+				F77F58C11C51BF82005CBD81 /* FileManager */,
+				F77F58C71C51BF82005CBD81 /* Internationalization */,
+				F77F58CA1C51BF82005CBD81 /* Network */,
+				F77F58CD1C51BF82005CBD81 /* Notification */,
+				F77F58CE1C51BF82005CBD81 /* NSNumber */,
+				F77F58D11C51BF82005CBD81 /* NSObject */,
+				F77F58DA1C51BF82005CBD81 /* NSString */,
+				F77F58E31C51BF82005CBD81 /* NSURLRequest */,
+				F77F58E61C51BF82005CBD81 /* Path */,
+				F77F58E91C51BF82005CBD81 /* Persistent */,
+				F77F58ED1C51BF82005CBD81 /* System */,
+				F77F58F41C51BF82005CBD81 /* Tools */,
+				418B10051AE8EF4400CC1848 /* LJXFoundationTests */,
+				418B0FF71AE8EF4300CC1848 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		418B0FF71AE8EF4300CC1848 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				418B0FF61AE8EF4300CC1848 /* libTXFoundation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		418B10051AE8EF4400CC1848 /* LJXFoundationTests */ = {
+			isa = PBXGroup;
+			children = (
+				418B10061AE8EF4400CC1848 /* Supporting Files */,
+			);
+			path = LJXFoundationTests;
+			sourceTree = "<group>";
+		};
+		418B10061AE8EF4400CC1848 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				418B10071AE8EF4400CC1848 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F77F58971C51BF82005CBD81 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58981C51BF82005CBD81 /* NSArray+LJXExtend.h */,
+				F77F58991C51BF82005CBD81 /* NSArray+LJXExtend.m */,
+				F77F589A1C51BF82005CBD81 /* NSArray+NSString.h */,
+				F77F589B1C51BF82005CBD81 /* NSArray+NSString.m */,
+				F77F589C1C51BF82005CBD81 /* NSArrayAdditions.h */,
+				F77F589D1C51BF82005CBD81 /* NSArrayAdditions.m */,
+				F77F589E1C51BF82005CBD81 /* NSMutableArrayAdditions.h */,
+				F77F589F1C51BF82005CBD81 /* NSMutableArrayAdditions.m */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		F77F58A01C51BF82005CBD81 /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58A11C51BF82005CBD81 /* NSBundle+Info_Plist.h */,
+				F77F58A21C51BF82005CBD81 /* NSBundle+Info_Plist.m */,
+			);
+			path = Bundle;
+			sourceTree = "<group>";
+		};
+		F77F58A31C51BF82005CBD81 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58A41C51BF82005CBD81 /* NSData+AES.h */,
+				F77F58A51C51BF82005CBD81 /* NSData+AES.m */,
+				F77F58A61C51BF82005CBD81 /* NSDataAdditions.h */,
+				F77F58A71C51BF82005CBD81 /* NSDataAdditions.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F77F58A81C51BF82005CBD81 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58A91C51BF82005CBD81 /* NSDateAdditions.h */,
+				F77F58AA1C51BF82005CBD81 /* NSDateAdditions.m */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		F77F58AB1C51BF82005CBD81 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58AC1C51BF82005CBD81 /* keypath.h */,
+				F77F58AD1C51BF82005CBD81 /* LJXConstValues.h */,
+				F77F58AE1C51BF82005CBD81 /* LJXConstValues.m */,
+				F77F58AF1C51BF82005CBD81 /* LJXFoundamentalTypes.h */,
+				F77F58B01C51BF82005CBD81 /* LJXFoundationMacros.h */,
+				F77F58B11C51BF82005CBD81 /* LJXTypes.h */,
+				F77F58B21C51BF82005CBD81 /* metamacros.h */,
+				F77F58B31C51BF82005CBD81 /* scope.h */,
+				F77F58B41C51BF82005CBD81 /* SynthesizeSingleton.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		F77F58B51C51BF82005CBD81 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58B61C51BF82005CBD81 /* NSDictionary+SafeExpectations.h */,
+				F77F58B71C51BF82005CBD81 /* NSDictionary+SafeExpectations.m */,
+				F77F58B81C51BF82005CBD81 /* NSDictionaryAdditions.h */,
+				F77F58B91C51BF82005CBD81 /* NSDictionaryAdditions.m */,
+				F77F58BA1C51BF82005CBD81 /* NSMutableDictionaryAdditions.h */,
+				F77F58BB1C51BF82005CBD81 /* NSMutableDictionaryAdditions.m */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		F77F58BC1C51BF82005CBD81 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58BD1C51BF82005CBD81 /* LJXError.h */,
+				F77F58BE1C51BF82005CBD81 /* LJXError.m */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		F77F58BF1C51BF82005CBD81 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58C01C51BF82005CBD81 /* LJXFoundation.h */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		F77F58C11C51BF82005CBD81 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58C21C51BF82005CBD81 /* File */,
+				F77F58C51C51BF82005CBD81 /* NSFileManagerAdditions.h */,
+				F77F58C61C51BF82005CBD81 /* NSFileManagerAdditions.m */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		F77F58C21C51BF82005CBD81 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58C31C51BF82005CBD81 /* LJXFileHandle.h */,
+				F77F58C41C51BF82005CBD81 /* LJXFileHandle.m */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		F77F58C71C51BF82005CBD81 /* Internationalization */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58C81C51BF82005CBD81 /* LJXLocale.h */,
+				F77F58C91C51BF82005CBD81 /* LJXLocale.m */,
+			);
+			path = Internationalization;
+			sourceTree = "<group>";
+		};
+		F77F58CA1C51BF82005CBD81 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58CB1C51BF82005CBD81 /* LJXWifi.h */,
+				F77F58CC1C51BF82005CBD81 /* LJXWifi.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F77F58CD1C51BF82005CBD81 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		F77F58CE1C51BF82005CBD81 /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58CF1C51BF82005CBD81 /* NSNumber+LJXExtend.h */,
+				F77F58D01C51BF82005CBD81 /* NSNumber+LJXExtend.m */,
+			);
+			path = NSNumber;
+			sourceTree = "<group>";
+		};
+		F77F58D11C51BF82005CBD81 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58D21C51BF82005CBD81 /* NSObject+GCD.h */,
+				F77F58D31C51BF82005CBD81 /* NSObject+GCD.m */,
+				F77F58D41C51BF82005CBD81 /* NSObject+NSNotification.h */,
+				F77F58D51C51BF82005CBD81 /* NSObject+NSNotification.m */,
+				F77F58D61C51BF82005CBD81 /* NSObject+Runtime.h */,
+				F77F58D71C51BF82005CBD81 /* NSObject+Runtime.m */,
+				F77F58D81C51BF82005CBD81 /* NSObjectAdditions.h */,
+				F77F58D91C51BF82005CBD81 /* NSObjectAdditions.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		F77F58DA1C51BF82005CBD81 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58DB1C51BF82005CBD81 /* NSString+Base64.h */,
+				F77F58DC1C51BF82005CBD81 /* NSString+Base64.m */,
+				F77F58DD1C51BF82005CBD81 /* NSString+Player.h */,
+				F77F58DE1C51BF82005CBD81 /* NSString+Player.m */,
+				F77F58DF1C51BF82005CBD81 /* NSString+UrlAddition.h */,
+				F77F58E01C51BF82005CBD81 /* NSString+UrlAddition.m */,
+				F77F58E11C51BF82005CBD81 /* NSStringAdditions.h */,
+				F77F58E21C51BF82005CBD81 /* NSStringAdditions.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		F77F58E31C51BF82005CBD81 /* NSURLRequest */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58E41C51BF82005CBD81 /* NSURLRequest+LJXAddition.h */,
+				F77F58E51C51BF82005CBD81 /* NSURLRequest+LJXAddition.m */,
+			);
+			path = NSURLRequest;
+			sourceTree = "<group>";
+		};
+		F77F58E61C51BF82005CBD81 /* Path */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58E71C51BF82005CBD81 /* LJXPath.h */,
+				F77F58E81C51BF82005CBD81 /* LJXPath.m */,
+			);
+			path = Path;
+			sourceTree = "<group>";
+		};
+		F77F58E91C51BF82005CBD81 /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58EA1C51BF82005CBD81 /* NSUserDefaults */,
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
+		F77F58EA1C51BF82005CBD81 /* NSUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58EB1C51BF82005CBD81 /* NSUserDefaultsAdditions.h */,
+				F77F58EC1C51BF82005CBD81 /* NSUserDefaultsAdditions.m */,
+			);
+			path = NSUserDefaults;
+			sourceTree = "<group>";
+		};
+		F77F58ED1C51BF82005CBD81 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58EE1C51BF82005CBD81 /* LJXBackgroundKeeper.h */,
+				F77F58EF1C51BF82005CBD81 /* LJXBackgroundKeeper.m */,
+				F77F58F01C51BF82005CBD81 /* LJXSystem.h */,
+				F77F58F11C51BF82005CBD81 /* LJXSystem.m */,
+				F77F58F21C51BF82005CBD81 /* LJXSystemCompatibility.h */,
+				F77F58F31C51BF82005CBD81 /* LJXSystemCompatibility.m */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		F77F58F41C51BF82005CBD81 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58F51C51BF82005CBD81 /* Convert */,
+				F77F58FC1C51BF82005CBD81 /* Debug */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F77F58F51C51BF82005CBD81 /* Convert */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58F61C51BF82005CBD81 /* LJXBG2Unicode.h */,
+				F77F58F71C51BF82005CBD81 /* LJXBG2Unicode.m */,
+				F77F58F81C51BF82005CBD81 /* LJXpinyin.c */,
+				F77F58F91C51BF82005CBD81 /* LJXpinyin.h */,
+				F77F58FA1C51BF82005CBD81 /* LJXurldecodeutf8gbk.h */,
+				F77F58FB1C51BF82005CBD81 /* LJXurldecodeutf8gbk.m */,
+			);
+			path = Convert;
+			sourceTree = "<group>";
+		};
+		F77F58FC1C51BF82005CBD81 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58FD1C51BF82005CBD81 /* LJXDebug.h */,
+				F77F58FE1C51BF82005CBD81 /* LJXDebug.m */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		418B0FF51AE8EF4300CC1848 /* TXFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418B100A1AE8EF4400CC1848 /* Build configuration list for PBXNativeTarget "TXFoundation" */;
+			buildPhases = (
+				418B0FF21AE8EF4300CC1848 /* Sources */,
+				418B0FF31AE8EF4300CC1848 /* Frameworks */,
+				418B0FF41AE8EF4300CC1848 /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TXFoundation;
+			productName = LJXFoundation;
+			productReference = 418B0FF61AE8EF4300CC1848 /* libTXFoundation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		418B0FEE1AE8EF4300CC1848 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Mobo;
+				TargetAttributes = {
+					418B0FF51AE8EF4300CC1848 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 418B0FF11AE8EF4300CC1848 /* Build configuration list for PBXProject "TXFoundation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 418B0FED1AE8EF4300CC1848;
+			productRefGroup = 418B0FF71AE8EF4300CC1848 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				418B0FF51AE8EF4300CC1848 /* TXFoundation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		418B0FF21AE8EF4300CC1848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F77F593D1C51BF82005CBD81 /* LJXSystemCompatibility.m in Sources */,
+				F77F59211C51BF82005CBD81 /* NSNumber+LJXExtend.m in Sources */,
+				F77F59031C51BF82005CBD81 /* NSArrayAdditions.m in Sources */,
+				F77F59271C51BF82005CBD81 /* NSObject+Runtime.m in Sources */,
+				F77F591F1C51BF82005CBD81 /* LJXWifi.m in Sources */,
+				F77F59251C51BF82005CBD81 /* NSObject+NSNotification.m in Sources */,
+				F77F590B1C51BF82005CBD81 /* NSDataAdditions.m in Sources */,
+				F77F59191C51BF82005CBD81 /* LJXFileHandle.m in Sources */,
+				F77F591B1C51BF82005CBD81 /* NSFileManagerAdditions.m in Sources */,
+				F77F591D1C51BF82005CBD81 /* LJXLocale.m in Sources */,
+				F77F592B1C51BF82005CBD81 /* NSString+Base64.m in Sources */,
+				F77F59231C51BF82005CBD81 /* NSObject+GCD.m in Sources */,
+				F77F590F1C51BF82005CBD81 /* LJXConstValues.m in Sources */,
+				F77F592D1C51BF82005CBD81 /* NSString+Player.m in Sources */,
+				F77F59311C51BF82005CBD81 /* NSStringAdditions.m in Sources */,
+				F77F59331C51BF82005CBD81 /* NSURLRequest+LJXAddition.m in Sources */,
+				F77F59351C51BF82005CBD81 /* LJXPath.m in Sources */,
+				F77F59131C51BF82005CBD81 /* NSDictionaryAdditions.m in Sources */,
+				F77F590D1C51BF82005CBD81 /* NSDateAdditions.m in Sources */,
+				F77F59431C51BF82005CBD81 /* LJXurldecodeutf8gbk.m in Sources */,
+				F77F59051C51BF82005CBD81 /* NSMutableArrayAdditions.m in Sources */,
+				F77F59091C51BF82005CBD81 /* NSData+AES.m in Sources */,
+				F77F59171C51BF82005CBD81 /* LJXError.m in Sources */,
+				F77F59011C51BF82005CBD81 /* NSArray+NSString.m in Sources */,
+				F77F59411C51BF82005CBD81 /* LJXpinyin.c in Sources */,
+				F77F58FF1C51BF82005CBD81 /* NSArray+LJXExtend.m in Sources */,
+				F77F593F1C51BF82005CBD81 /* LJXBG2Unicode.m in Sources */,
+				F77F59151C51BF82005CBD81 /* NSMutableDictionaryAdditions.m in Sources */,
+				F77F59391C51BF82005CBD81 /* LJXBackgroundKeeper.m in Sources */,
+				F77F592F1C51BF82005CBD81 /* NSString+UrlAddition.m in Sources */,
+				F77F59451C51BF82005CBD81 /* LJXDebug.m in Sources */,
+				F77F59111C51BF82005CBD81 /* NSDictionary+SafeExpectations.m in Sources */,
+				F77F59071C51BF82005CBD81 /* NSBundle+Info_Plist.m in Sources */,
+				F77F593B1C51BF82005CBD81 /* LJXSystem.m in Sources */,
+				F77F59371C51BF82005CBD81 /* NSUserDefaultsAdditions.m in Sources */,
+				F77F59291C51BF82005CBD81 /* NSObjectAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		418B10081AE8EF4400CC1848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		418B10091AE8EF4400CC1848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		418B100B1AE8EF4400CC1848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TXFoundation;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		418B100C1AE8EF4400CC1848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TXFoundation;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		418B0FF11AE8EF4300CC1848 /* Build configuration list for PBXProject "TXFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418B10081AE8EF4400CC1848 /* Debug */,
+				418B10091AE8EF4400CC1848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418B100A1AE8EF4400CC1848 /* Build configuration list for PBXNativeTarget "TXFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418B100B1AE8EF4400CC1848 /* Debug */,
+				418B100C1AE8EF4400CC1848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 418B0FEE1AE8EF4300CC1848 /* Project object */;
+}
