@@ -18,9 +18,6 @@
 #import "LJXFoundamentalTypes.h"
 #import "LJXFoundationMacros.h"
 #import "SynthesizeSingleton.h"
-#import "keypath.h"
-#import "metamacros.h"
-#import "scope.h"
 #import "LJXDebug.h"
 
 

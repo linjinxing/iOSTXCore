@@ -1,0 +1,953 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F77F582B1C51B497005CBD81 /* UIButtonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57A51C51B497005CBD81 /* UIButtonAdditions.m */; };
+		F77F582C1C51B497005CBD81 /* LJXBlueRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57A71C51B497005CBD81 /* LJXBlueRoundButton.m */; };
+		F77F582D1C51B497005CBD81 /* LJXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57A91C51B497005CBD81 /* LJXButton.m */; };
+		F77F582E1C51B497005CBD81 /* LJXListButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57AB1C51B497005CBD81 /* LJXListButton.m */; };
+		F77F582F1C51B497005CBD81 /* LJXMultiStateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57AD1C51B497005CBD81 /* LJXMultiStateButton.m */; };
+		F77F58301C51B497005CBD81 /* LJXRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57AF1C51B497005CBD81 /* LJXRoundButton.m */; };
+		F77F58311C51B497005CBD81 /* LJXRoundFrameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57B11C51B497005CBD81 /* LJXRoundFrameButton.m */; };
+		F77F58321C51B497005CBD81 /* LJXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57B51C51B497005CBD81 /* LJXTableViewController.m */; };
+		F77F58331C51B497005CBD81 /* LJXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57B71C51B497005CBD81 /* LJXViewController.m */; };
+		F77F58341C51B497005CBD81 /* UIViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57B91C51B497005CBD81 /* UIViewController+Addition.m */; };
+		F77F58351C51B497005CBD81 /* LJXGesturePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57BD1C51B497005CBD81 /* LJXGesturePasswordViewController.m */; };
+		F77F58361C51B497005CBD81 /* LJXSetGesturePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57BF1C51B497005CBD81 /* LJXSetGesturePwdViewController.m */; };
+		F77F58371C51B497005CBD81 /* LJXGestureLock.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57C51C51B497005CBD81 /* LJXGestureLock.m */; };
+		F77F58381C51B497005CBD81 /* LJXLockIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57C71C51B497005CBD81 /* LJXLockIndicator.m */; };
+		F77F58391C51B497005CBD81 /* LJXLockPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57C91C51B497005CBD81 /* LJXLockPassword.m */; };
+		F77F583A1C51B497005CBD81 /* LJXLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57CB1C51B497005CBD81 /* LJXLockView.m */; };
+		F77F583B1C51B497005CBD81 /* LJXUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57CE1C51B497005CBD81 /* LJXUINavigationController.m */; };
+		F77F583C1C51B497005CBD81 /* UINavigationController+LJXAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57D01C51B497005CBD81 /* UINavigationController+LJXAddition.m */; };
+		F77F583D1C51B497005CBD81 /* LJXUIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57D31C51B497005CBD81 /* LJXUIWebViewController.m */; };
+		F77F583E1C51B497005CBD81 /* LJXLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57DC1C51B497005CBD81 /* LJXLoadingViewController.m */; };
+		F77F583F1C51B497005CBD81 /* LJXMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57DE1C51B497005CBD81 /* LJXMBProgressHUD.m */; };
+		F77F58401C51B497005CBD81 /* LJXSpinImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57E01C51B497005CBD81 /* LJXSpinImageView.m */; };
+		F77F58411C51B497005CBD81 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57E31C51B497005CBD81 /* UIView+Toast.m */; };
+		F77F58421C51B497005CBD81 /* LJXAppStoreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57E81C51B497005CBD81 /* LJXAppStoreHelper.m */; };
+		F77F58431C51B497005CBD81 /* LJXUIStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57EB1C51B497005CBD81 /* LJXUIStyle.m */; };
+		F77F58441C51B497005CBD81 /* LJXUISystemMetric.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57ED1C51B497005CBD81 /* LJXUISystemMetric.m */; };
+		F77F58451C51B497005CBD81 /* UICollectionView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57F01C51B497005CBD81 /* UICollectionView+Additions.m */; };
+		F77F58461C51B497005CBD81 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57F61C51B497005CBD81 /* UIDevice+IdentifierAddition.m */; };
+		F77F58471C51B497005CBD81 /* UIDeviceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57F81C51B497005CBD81 /* UIDeviceAdditions.m */; };
+		F77F58481C51B497005CBD81 /* UIImage+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57FB1C51B497005CBD81 /* UIImage+Addition.m */; };
+		F77F58491C51B497005CBD81 /* UIImage+Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57FD1C51B497005CBD81 /* UIImage+Bundle.m */; };
+		F77F584A1C51B497005CBD81 /* UIImage+editor.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57FF1C51B497005CBD81 /* UIImage+editor.m */; };
+		F77F584B1C51B497005CBD81 /* UIResponderAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58021C51B497005CBD81 /* UIResponderAdditions.m */; };
+		F77F584C1C51B497005CBD81 /* UITableView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58051C51B497005CBD81 /* UITableView+Addition.m */; };
+		F77F58521C51B497005CBD81 /* LJXPasswordTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58131C51B497005CBD81 /* LJXPasswordTextField.m */; };
+		F77F58531C51B497005CBD81 /* LJXUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58151C51B497005CBD81 /* LJXUITextField.m */; };
+		F77F58541C51B497005CBD81 /* LJXUserNameTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58171C51B497005CBD81 /* LJXUserNameTextField.m */; };
+		F77F58551C51B497005CBD81 /* NSArray+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F581C1C51B497005CBD81 /* NSArray+Subviews.m */; };
+		F77F58561C51B497005CBD81 /* NSArray+UI.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F581E1C51B497005CBD81 /* NSArray+UI.m */; };
+		F77F58571C51B497005CBD81 /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58211C51B497005CBD81 /* UIView+Animation.m */; };
+		F77F58581C51B497005CBD81 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58231C51B497005CBD81 /* UIView+Layout.m */; };
+		F77F58591C51B497005CBD81 /* UIView+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58251C51B497005CBD81 /* UIView+Subviews.m */; };
+		F77F585A1C51B497005CBD81 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58271C51B497005CBD81 /* UIViewAdditions.m */; };
+		F77F585B1C51B497005CBD81 /* LJXWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F582A1C51B497005CBD81 /* LJXWindowView.m */; };
+		F77F585C1C51B4C6005CBD81 /* UIButtonAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57A41C51B497005CBD81 /* UIButtonAdditions.h */; };
+		F77F585D1C51B4C6005CBD81 /* LJXBlueRoundButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57A61C51B497005CBD81 /* LJXBlueRoundButton.h */; };
+		F77F585E1C51B4C6005CBD81 /* LJXButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57A81C51B497005CBD81 /* LJXButton.h */; };
+		F77F585F1C51B4C6005CBD81 /* LJXListButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57AA1C51B497005CBD81 /* LJXListButton.h */; };
+		F77F58601C51B4C6005CBD81 /* LJXMultiStateButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57AC1C51B497005CBD81 /* LJXMultiStateButton.h */; };
+		F77F58611C51B4C6005CBD81 /* LJXRoundButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57AE1C51B497005CBD81 /* LJXRoundButton.h */; };
+		F77F58621C51B4C6005CBD81 /* LJXRoundFrameButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57B01C51B497005CBD81 /* LJXRoundFrameButton.h */; };
+		F77F58631C51B4C6005CBD81 /* LJXTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57B41C51B497005CBD81 /* LJXTableViewController.h */; };
+		F77F58641C51B4C6005CBD81 /* LJXViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57B61C51B497005CBD81 /* LJXViewController.h */; };
+		F77F58651C51B4C6005CBD81 /* UIViewController+Addition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57B81C51B497005CBD81 /* UIViewController+Addition.h */; };
+		F77F58661C51B4C6005CBD81 /* LJXGesturePasswordViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57BC1C51B497005CBD81 /* LJXGesturePasswordViewController.h */; };
+		F77F58671C51B4C6005CBD81 /* LJXSetGesturePwdViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57BE1C51B497005CBD81 /* LJXSetGesturePwdViewController.h */; };
+		F77F58681C51B4C6005CBD81 /* LJXGestureLock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57C41C51B497005CBD81 /* LJXGestureLock.h */; };
+		F77F58691C51B4C6005CBD81 /* LJXLockIndicator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57C61C51B497005CBD81 /* LJXLockIndicator.h */; };
+		F77F586A1C51B4C6005CBD81 /* LJXLockPassword.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57C81C51B497005CBD81 /* LJXLockPassword.h */; };
+		F77F586B1C51B4C6005CBD81 /* LJXLockView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57CA1C51B497005CBD81 /* LJXLockView.h */; };
+		F77F586C1C51B4C6005CBD81 /* LJXUINavigationController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57CD1C51B497005CBD81 /* LJXUINavigationController.h */; };
+		F77F586D1C51B4C6005CBD81 /* UINavigationController+LJXAddition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57CF1C51B497005CBD81 /* UINavigationController+LJXAddition.h */; };
+		F77F586E1C51B4C6005CBD81 /* LJXUIWebViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57D21C51B497005CBD81 /* LJXUIWebViewController.h */; };
+		F77F586F1C51B4C6005CBD81 /* LJXUIBlocks.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57D51C51B497005CBD81 /* LJXUIBlocks.h */; };
+		F77F58701C51B4C6005CBD81 /* LJXUIMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57D61C51B497005CBD81 /* LJXUIMacros.h */; };
+		F77F58711C51B4C6005CBD81 /* LJXVEnum.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57D71C51B497005CBD81 /* LJXVEnum.h */; };
+		F77F58721C51B4C6005CBD81 /* LJXUIKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57D91C51B497005CBD81 /* LJXUIKit.h */; };
+		F77F58731C51B4C6005CBD81 /* LJXLoadingViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57DB1C51B497005CBD81 /* LJXLoadingViewController.h */; };
+		F77F58741C51B4C6005CBD81 /* LJXMBProgressHUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57DD1C51B497005CBD81 /* LJXMBProgressHUD.h */; };
+		F77F58751C51B4C6005CBD81 /* LJXSpinImageView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57DF1C51B497005CBD81 /* LJXSpinImageView.h */; };
+		F77F58761C51B4C6005CBD81 /* UIView+Toast.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57E21C51B497005CBD81 /* UIView+Toast.h */; };
+		F77F58771C51B4C6005CBD81 /* LJXAppStoreHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57E71C51B497005CBD81 /* LJXAppStoreHelper.h */; };
+		F77F58781C51B4C6005CBD81 /* LJXUIStyle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57EA1C51B497005CBD81 /* LJXUIStyle.h */; };
+		F77F58791C51B4C6005CBD81 /* LJXUISystemMetric.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57EC1C51B497005CBD81 /* LJXUISystemMetric.h */; };
+		F77F587A1C51B4C6005CBD81 /* UICollectionView+Additions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57EF1C51B497005CBD81 /* UICollectionView+Additions.h */; };
+		F77F587B1C51B4C6005CBD81 /* LJXControlActionProtocol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57F21C51B497005CBD81 /* LJXControlActionProtocol.h */; };
+		F77F587C1C51B4C6005CBD81 /* LJXControlEnabledProtocol.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57F31C51B497005CBD81 /* LJXControlEnabledProtocol.h */; };
+		F77F587D1C51B4C6005CBD81 /* UIDevice+IdentifierAddition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57F51C51B497005CBD81 /* UIDevice+IdentifierAddition.h */; };
+		F77F587E1C51B4C6005CBD81 /* UIDeviceAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57F71C51B497005CBD81 /* UIDeviceAdditions.h */; };
+		F77F587F1C51B4C6005CBD81 /* UIImage+Addition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57FA1C51B497005CBD81 /* UIImage+Addition.h */; };
+		F77F58801C51B4C6005CBD81 /* UIImage+Bundle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57FC1C51B497005CBD81 /* UIImage+Bundle.h */; };
+		F77F58811C51B4C6005CBD81 /* UIImage+editor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57FE1C51B497005CBD81 /* UIImage+editor.h */; };
+		F77F58821C51B4C6005CBD81 /* UIResponderAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F58011C51B497005CBD81 /* UIResponderAdditions.h */; };
+		F77F58831C51B4C6005CBD81 /* UITableView+Addition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F58041C51B497005CBD81 /* UITableView+Addition.h */; };
+		F77F58891C51B4C6005CBD81 /* LJXPasswordTextField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F58121C51B497005CBD81 /* LJXPasswordTextField.h */; };
+		F77F588A1C51B4C6005CBD81 /* LJXUITextField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F58141C51B497005CBD81 /* LJXUITextField.h */; };
+		F77F588B1C51B4C6005CBD81 /* LJXUserNameTextField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F58161C51B497005CBD81 /* LJXUserNameTextField.h */; };
+		F77F588C1C51B4C6005CBD81 /* NSArray+Subviews.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F581B1C51B497005CBD81 /* NSArray+Subviews.h */; };
+		F77F588D1C51B4C6005CBD81 /* NSArray+UI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F581D1C51B497005CBD81 /* NSArray+UI.h */; };
+		F77F588E1C51B4C6005CBD81 /* UIView+Animation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F58201C51B497005CBD81 /* UIView+Animation.h */; };
+		F77F588F1C51B4C6005CBD81 /* UIView+Layout.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F58221C51B497005CBD81 /* UIView+Layout.h */; };
+		F77F58901C51B4C6005CBD81 /* UIView+Subviews.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F58241C51B497005CBD81 /* UIView+Subviews.h */; };
+		F77F58911C51B4C6005CBD81 /* UIViewAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F58261C51B497005CBD81 /* UIViewAdditions.h */; };
+		F77F58921C51B4C6005CBD81 /* LJXWindowView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F58291C51B497005CBD81 /* LJXWindowView.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F74DC03A1C5066F400E7CB67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F74DC0351C5066F400E7CB67 /* LJXFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 418B0FF61AE8EF4300CC1848;
+			remoteInfo = LJXFoundation;
+		};
+		F74DC03C1C5066F400E7CB67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F74DC0351C5066F400E7CB67 /* LJXFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 418B10011AE8EF4400CC1848;
+			remoteInfo = LJXFoundationTests;
+		};
+		F74DC03E1C5066FA00E7CB67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F74DC0351C5066F400E7CB67 /* LJXFoundation.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 418B0FF51AE8EF4300CC1848;
+			remoteInfo = LJXFoundation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		418B10201AE8EF7F00CC1848 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				F77F585C1C51B4C6005CBD81 /* UIButtonAdditions.h in CopyFiles */,
+				F77F585D1C51B4C6005CBD81 /* LJXBlueRoundButton.h in CopyFiles */,
+				F77F585E1C51B4C6005CBD81 /* LJXButton.h in CopyFiles */,
+				F77F585F1C51B4C6005CBD81 /* LJXListButton.h in CopyFiles */,
+				F77F58601C51B4C6005CBD81 /* LJXMultiStateButton.h in CopyFiles */,
+				F77F58611C51B4C6005CBD81 /* LJXRoundButton.h in CopyFiles */,
+				F77F58621C51B4C6005CBD81 /* LJXRoundFrameButton.h in CopyFiles */,
+				F77F58631C51B4C6005CBD81 /* LJXTableViewController.h in CopyFiles */,
+				F77F58641C51B4C6005CBD81 /* LJXViewController.h in CopyFiles */,
+				F77F58651C51B4C6005CBD81 /* UIViewController+Addition.h in CopyFiles */,
+				F77F58661C51B4C6005CBD81 /* LJXGesturePasswordViewController.h in CopyFiles */,
+				F77F58671C51B4C6005CBD81 /* LJXSetGesturePwdViewController.h in CopyFiles */,
+				F77F58681C51B4C6005CBD81 /* LJXGestureLock.h in CopyFiles */,
+				F77F58691C51B4C6005CBD81 /* LJXLockIndicator.h in CopyFiles */,
+				F77F586A1C51B4C6005CBD81 /* LJXLockPassword.h in CopyFiles */,
+				F77F586B1C51B4C6005CBD81 /* LJXLockView.h in CopyFiles */,
+				F77F586C1C51B4C6005CBD81 /* LJXUINavigationController.h in CopyFiles */,
+				F77F586D1C51B4C6005CBD81 /* UINavigationController+LJXAddition.h in CopyFiles */,
+				F77F586E1C51B4C6005CBD81 /* LJXUIWebViewController.h in CopyFiles */,
+				F77F586F1C51B4C6005CBD81 /* LJXUIBlocks.h in CopyFiles */,
+				F77F58701C51B4C6005CBD81 /* LJXUIMacros.h in CopyFiles */,
+				F77F58711C51B4C6005CBD81 /* LJXVEnum.h in CopyFiles */,
+				F77F58721C51B4C6005CBD81 /* LJXUIKit.h in CopyFiles */,
+				F77F58731C51B4C6005CBD81 /* LJXLoadingViewController.h in CopyFiles */,
+				F77F58741C51B4C6005CBD81 /* LJXMBProgressHUD.h in CopyFiles */,
+				F77F58751C51B4C6005CBD81 /* LJXSpinImageView.h in CopyFiles */,
+				F77F58761C51B4C6005CBD81 /* UIView+Toast.h in CopyFiles */,
+				F77F58771C51B4C6005CBD81 /* LJXAppStoreHelper.h in CopyFiles */,
+				F77F58781C51B4C6005CBD81 /* LJXUIStyle.h in CopyFiles */,
+				F77F58791C51B4C6005CBD81 /* LJXUISystemMetric.h in CopyFiles */,
+				F77F587A1C51B4C6005CBD81 /* UICollectionView+Additions.h in CopyFiles */,
+				F77F587B1C51B4C6005CBD81 /* LJXControlActionProtocol.h in CopyFiles */,
+				F77F587C1C51B4C6005CBD81 /* LJXControlEnabledProtocol.h in CopyFiles */,
+				F77F587D1C51B4C6005CBD81 /* UIDevice+IdentifierAddition.h in CopyFiles */,
+				F77F587E1C51B4C6005CBD81 /* UIDeviceAdditions.h in CopyFiles */,
+				F77F587F1C51B4C6005CBD81 /* UIImage+Addition.h in CopyFiles */,
+				F77F58801C51B4C6005CBD81 /* UIImage+Bundle.h in CopyFiles */,
+				F77F58811C51B4C6005CBD81 /* UIImage+editor.h in CopyFiles */,
+				F77F58821C51B4C6005CBD81 /* UIResponderAdditions.h in CopyFiles */,
+				F77F58831C51B4C6005CBD81 /* UITableView+Addition.h in CopyFiles */,
+				F77F58891C51B4C6005CBD81 /* LJXPasswordTextField.h in CopyFiles */,
+				F77F588A1C51B4C6005CBD81 /* LJXUITextField.h in CopyFiles */,
+				F77F588B1C51B4C6005CBD81 /* LJXUserNameTextField.h in CopyFiles */,
+				F77F588C1C51B4C6005CBD81 /* NSArray+Subviews.h in CopyFiles */,
+				F77F588D1C51B4C6005CBD81 /* NSArray+UI.h in CopyFiles */,
+				F77F588E1C51B4C6005CBD81 /* UIView+Animation.h in CopyFiles */,
+				F77F588F1C51B4C6005CBD81 /* UIView+Layout.h in CopyFiles */,
+				F77F58901C51B4C6005CBD81 /* UIView+Subviews.h in CopyFiles */,
+				F77F58911C51B4C6005CBD81 /* UIViewAdditions.h in CopyFiles */,
+				F77F58921C51B4C6005CBD81 /* LJXWindowView.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4146F7441AE9F4BC00B1E39E /* LJXUIKit.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIKit.pch; sourceTree = "<group>"; };
+		415591921B0042B1000C1B24 /* LJXUIKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LJXUIKit.xcassets; sourceTree = "<group>"; };
+		418B10221AE8EF7F00CC1848 /* libTXUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTXUIKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		418B10331AE8EF7F00CC1848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F74DC0351C5066F400E7CB67 /* LJXFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LJXFoundation.xcodeproj; path = ../../LJXFoundation/LJXFoundation.xcodeproj; sourceTree = "<group>"; };
+		F77F57A41C51B497005CBD81 /* UIButtonAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonAdditions.h; sourceTree = "<group>"; };
+		F77F57A51C51B497005CBD81 /* UIButtonAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonAdditions.m; sourceTree = "<group>"; };
+		F77F57A61C51B497005CBD81 /* LJXBlueRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXBlueRoundButton.h; sourceTree = "<group>"; };
+		F77F57A71C51B497005CBD81 /* LJXBlueRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXBlueRoundButton.m; sourceTree = "<group>"; };
+		F77F57A81C51B497005CBD81 /* LJXButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXButton.h; sourceTree = "<group>"; };
+		F77F57A91C51B497005CBD81 /* LJXButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXButton.m; sourceTree = "<group>"; };
+		F77F57AA1C51B497005CBD81 /* LJXListButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXListButton.h; sourceTree = "<group>"; };
+		F77F57AB1C51B497005CBD81 /* LJXListButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXListButton.m; sourceTree = "<group>"; };
+		F77F57AC1C51B497005CBD81 /* LJXMultiStateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXMultiStateButton.h; sourceTree = "<group>"; };
+		F77F57AD1C51B497005CBD81 /* LJXMultiStateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXMultiStateButton.m; sourceTree = "<group>"; };
+		F77F57AE1C51B497005CBD81 /* LJXRoundButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXRoundButton.h; sourceTree = "<group>"; };
+		F77F57AF1C51B497005CBD81 /* LJXRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXRoundButton.m; sourceTree = "<group>"; };
+		F77F57B01C51B497005CBD81 /* LJXRoundFrameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXRoundFrameButton.h; sourceTree = "<group>"; };
+		F77F57B11C51B497005CBD81 /* LJXRoundFrameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXRoundFrameButton.m; sourceTree = "<group>"; };
+		F77F57B41C51B497005CBD81 /* LJXTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXTableViewController.h; sourceTree = "<group>"; };
+		F77F57B51C51B497005CBD81 /* LJXTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXTableViewController.m; sourceTree = "<group>"; };
+		F77F57B61C51B497005CBD81 /* LJXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXViewController.h; sourceTree = "<group>"; };
+		F77F57B71C51B497005CBD81 /* LJXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXViewController.m; sourceTree = "<group>"; };
+		F77F57B81C51B497005CBD81 /* UIViewController+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Addition.h"; sourceTree = "<group>"; };
+		F77F57B91C51B497005CBD81 /* UIViewController+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Addition.m"; sourceTree = "<group>"; };
+		F77F57BC1C51B497005CBD81 /* LJXGesturePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXGesturePasswordViewController.h; sourceTree = "<group>"; };
+		F77F57BD1C51B497005CBD81 /* LJXGesturePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXGesturePasswordViewController.m; sourceTree = "<group>"; };
+		F77F57BE1C51B497005CBD81 /* LJXSetGesturePwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXSetGesturePwdViewController.h; sourceTree = "<group>"; };
+		F77F57BF1C51B497005CBD81 /* LJXSetGesturePwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXSetGesturePwdViewController.m; sourceTree = "<group>"; };
+		F77F57C21C51B497005CBD81 /* MBSetGesturePwd.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MBSetGesturePwd.storyboard; sourceTree = "<group>"; };
+		F77F57C41C51B497005CBD81 /* LJXGestureLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXGestureLock.h; sourceTree = "<group>"; };
+		F77F57C51C51B497005CBD81 /* LJXGestureLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXGestureLock.m; sourceTree = "<group>"; };
+		F77F57C61C51B497005CBD81 /* LJXLockIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXLockIndicator.h; sourceTree = "<group>"; };
+		F77F57C71C51B497005CBD81 /* LJXLockIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXLockIndicator.m; sourceTree = "<group>"; };
+		F77F57C81C51B497005CBD81 /* LJXLockPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXLockPassword.h; sourceTree = "<group>"; };
+		F77F57C91C51B497005CBD81 /* LJXLockPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXLockPassword.m; sourceTree = "<group>"; };
+		F77F57CA1C51B497005CBD81 /* LJXLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXLockView.h; sourceTree = "<group>"; };
+		F77F57CB1C51B497005CBD81 /* LJXLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXLockView.m; sourceTree = "<group>"; };
+		F77F57CD1C51B497005CBD81 /* LJXUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUINavigationController.h; sourceTree = "<group>"; };
+		F77F57CE1C51B497005CBD81 /* LJXUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXUINavigationController.m; sourceTree = "<group>"; };
+		F77F57CF1C51B497005CBD81 /* UINavigationController+LJXAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LJXAddition.h"; sourceTree = "<group>"; };
+		F77F57D01C51B497005CBD81 /* UINavigationController+LJXAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LJXAddition.m"; sourceTree = "<group>"; };
+		F77F57D21C51B497005CBD81 /* LJXUIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIWebViewController.h; sourceTree = "<group>"; };
+		F77F57D31C51B497005CBD81 /* LJXUIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXUIWebViewController.m; sourceTree = "<group>"; };
+		F77F57D51C51B497005CBD81 /* LJXUIBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIBlocks.h; sourceTree = "<group>"; };
+		F77F57D61C51B497005CBD81 /* LJXUIMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIMacros.h; sourceTree = "<group>"; };
+		F77F57D71C51B497005CBD81 /* LJXVEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXVEnum.h; sourceTree = "<group>"; };
+		F77F57D91C51B497005CBD81 /* LJXUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIKit.h; sourceTree = "<group>"; };
+		F77F57DB1C51B497005CBD81 /* LJXLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXLoadingViewController.h; sourceTree = "<group>"; };
+		F77F57DC1C51B497005CBD81 /* LJXLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXLoadingViewController.m; sourceTree = "<group>"; };
+		F77F57DD1C51B497005CBD81 /* LJXMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXMBProgressHUD.h; sourceTree = "<group>"; };
+		F77F57DE1C51B497005CBD81 /* LJXMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXMBProgressHUD.m; sourceTree = "<group>"; };
+		F77F57DF1C51B497005CBD81 /* LJXSpinImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXSpinImageView.h; sourceTree = "<group>"; };
+		F77F57E01C51B497005CBD81 /* LJXSpinImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXSpinImageView.m; sourceTree = "<group>"; };
+		F77F57E21C51B497005CBD81 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		F77F57E31C51B497005CBD81 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		F77F57E51C51B497005CBD81 /* LJXUI.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LJXUI.storyboard; sourceTree = "<group>"; };
+		F77F57E71C51B497005CBD81 /* LJXAppStoreHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXAppStoreHelper.h; sourceTree = "<group>"; };
+		F77F57E81C51B497005CBD81 /* LJXAppStoreHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXAppStoreHelper.m; sourceTree = "<group>"; };
+		F77F57EA1C51B497005CBD81 /* LJXUIStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIStyle.h; sourceTree = "<group>"; };
+		F77F57EB1C51B497005CBD81 /* LJXUIStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXUIStyle.m; sourceTree = "<group>"; };
+		F77F57EC1C51B497005CBD81 /* LJXUISystemMetric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUISystemMetric.h; sourceTree = "<group>"; };
+		F77F57ED1C51B497005CBD81 /* LJXUISystemMetric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXUISystemMetric.m; sourceTree = "<group>"; };
+		F77F57EF1C51B497005CBD81 /* UICollectionView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Additions.h"; sourceTree = "<group>"; };
+		F77F57F01C51B497005CBD81 /* UICollectionView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Additions.m"; sourceTree = "<group>"; };
+		F77F57F21C51B497005CBD81 /* LJXControlActionProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXControlActionProtocol.h; sourceTree = "<group>"; };
+		F77F57F31C51B497005CBD81 /* LJXControlEnabledProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXControlEnabledProtocol.h; sourceTree = "<group>"; };
+		F77F57F51C51B497005CBD81 /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		F77F57F61C51B497005CBD81 /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
+		F77F57F71C51B497005CBD81 /* UIDeviceAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDeviceAdditions.h; sourceTree = "<group>"; };
+		F77F57F81C51B497005CBD81 /* UIDeviceAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDeviceAdditions.m; sourceTree = "<group>"; };
+		F77F57FA1C51B497005CBD81 /* UIImage+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Addition.h"; sourceTree = "<group>"; };
+		F77F57FB1C51B497005CBD81 /* UIImage+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Addition.m"; sourceTree = "<group>"; };
+		F77F57FC1C51B497005CBD81 /* UIImage+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bundle.h"; sourceTree = "<group>"; };
+		F77F57FD1C51B497005CBD81 /* UIImage+Bundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bundle.m"; sourceTree = "<group>"; };
+		F77F57FE1C51B497005CBD81 /* UIImage+editor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+editor.h"; sourceTree = "<group>"; };
+		F77F57FF1C51B497005CBD81 /* UIImage+editor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+editor.m"; sourceTree = "<group>"; };
+		F77F58011C51B497005CBD81 /* UIResponderAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIResponderAdditions.h; sourceTree = "<group>"; };
+		F77F58021C51B497005CBD81 /* UIResponderAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIResponderAdditions.m; sourceTree = "<group>"; };
+		F77F58041C51B497005CBD81 /* UITableView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Addition.h"; sourceTree = "<group>"; };
+		F77F58051C51B497005CBD81 /* UITableView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Addition.m"; sourceTree = "<group>"; };
+		F77F58121C51B497005CBD81 /* LJXPasswordTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXPasswordTextField.h; sourceTree = "<group>"; };
+		F77F58131C51B497005CBD81 /* LJXPasswordTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXPasswordTextField.m; sourceTree = "<group>"; };
+		F77F58141C51B497005CBD81 /* LJXUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUITextField.h; sourceTree = "<group>"; };
+		F77F58151C51B497005CBD81 /* LJXUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXUITextField.m; sourceTree = "<group>"; };
+		F77F58161C51B497005CBD81 /* LJXUserNameTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUserNameTextField.h; sourceTree = "<group>"; };
+		F77F58171C51B497005CBD81 /* LJXUserNameTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXUserNameTextField.m; sourceTree = "<group>"; };
+		F77F581B1C51B497005CBD81 /* NSArray+Subviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Subviews.h"; sourceTree = "<group>"; };
+		F77F581C1C51B497005CBD81 /* NSArray+Subviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Subviews.m"; sourceTree = "<group>"; };
+		F77F581D1C51B497005CBD81 /* NSArray+UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+UI.h"; sourceTree = "<group>"; };
+		F77F581E1C51B497005CBD81 /* NSArray+UI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+UI.m"; sourceTree = "<group>"; };
+		F77F58201C51B497005CBD81 /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
+		F77F58211C51B497005CBD81 /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
+		F77F58221C51B497005CBD81 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		F77F58231C51B497005CBD81 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		F77F58241C51B497005CBD81 /* UIView+Subviews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Subviews.h"; sourceTree = "<group>"; };
+		F77F58251C51B497005CBD81 /* UIView+Subviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Subviews.m"; sourceTree = "<group>"; };
+		F77F58261C51B497005CBD81 /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
+		F77F58271C51B497005CBD81 /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
+		F77F58291C51B497005CBD81 /* LJXWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXWindowView.h; sourceTree = "<group>"; };
+		F77F582A1C51B497005CBD81 /* LJXWindowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXWindowView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		418B101F1AE8EF7F00CC1848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		418B10191AE8EF7F00CC1848 = {
+			isa = PBXGroup;
+			children = (
+				F77F57A21C51B497005CBD81 /* Button */,
+				F77F57B21C51B497005CBD81 /* Controller */,
+				F77F57D41C51B497005CBD81 /* Define */,
+				F77F57D81C51B497005CBD81 /* Export */,
+				F77F57DA1C51B497005CBD81 /* HUB */,
+				F77F57E41C51B497005CBD81 /* Resource */,
+				F77F57E61C51B497005CBD81 /* Store */,
+				F77F57E91C51B497005CBD81 /* Style */,
+				F77F57EE1C51B497005CBD81 /* UICollectionView */,
+				F77F57F11C51B497005CBD81 /* UIControl */,
+				F77F57F41C51B497005CBD81 /* UIDevice */,
+				F77F57F91C51B497005CBD81 /* UIImage */,
+				F77F58001C51B497005CBD81 /* UIResponder */,
+				F77F58031C51B497005CBD81 /* UITableView */,
+				F77F58111C51B497005CBD81 /* UITextField */,
+				F77F58181C51B497005CBD81 /* UIView */,
+				F77F58281C51B497005CBD81 /* Window */,
+				418B10241AE8EF7F00CC1848 /* LJXUIKit */,
+				418B10311AE8EF7F00CC1848 /* LJXUIKitTests */,
+				418B10231AE8EF7F00CC1848 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		418B10231AE8EF7F00CC1848 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				418B10221AE8EF7F00CC1848 /* libTXUIKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		418B10241AE8EF7F00CC1848 /* LJXUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F74DC0351C5066F400E7CB67 /* LJXFoundation.xcodeproj */,
+				4146F7441AE9F4BC00B1E39E /* LJXUIKit.pch */,
+				415591921B0042B1000C1B24 /* LJXUIKit.xcassets */,
+			);
+			path = LJXUIKit;
+			sourceTree = "<group>";
+		};
+		418B10311AE8EF7F00CC1848 /* LJXUIKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				418B10321AE8EF7F00CC1848 /* Supporting Files */,
+			);
+			path = LJXUIKitTests;
+			sourceTree = "<group>";
+		};
+		418B10321AE8EF7F00CC1848 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				418B10331AE8EF7F00CC1848 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F74DC0361C5066F400E7CB67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F74DC03B1C5066F400E7CB67 /* libLJXFoundation.a */,
+				F74DC03D1C5066F400E7CB67 /* LJXFoundationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F77F57A21C51B497005CBD81 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57A31C51B497005CBD81 /* Extension */,
+				F77F57A61C51B497005CBD81 /* LJXBlueRoundButton.h */,
+				F77F57A71C51B497005CBD81 /* LJXBlueRoundButton.m */,
+				F77F57A81C51B497005CBD81 /* LJXButton.h */,
+				F77F57A91C51B497005CBD81 /* LJXButton.m */,
+				F77F57AA1C51B497005CBD81 /* LJXListButton.h */,
+				F77F57AB1C51B497005CBD81 /* LJXListButton.m */,
+				F77F57AC1C51B497005CBD81 /* LJXMultiStateButton.h */,
+				F77F57AD1C51B497005CBD81 /* LJXMultiStateButton.m */,
+				F77F57AE1C51B497005CBD81 /* LJXRoundButton.h */,
+				F77F57AF1C51B497005CBD81 /* LJXRoundButton.m */,
+				F77F57B01C51B497005CBD81 /* LJXRoundFrameButton.h */,
+				F77F57B11C51B497005CBD81 /* LJXRoundFrameButton.m */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		F77F57A31C51B497005CBD81 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57A41C51B497005CBD81 /* UIButtonAdditions.h */,
+				F77F57A51C51B497005CBD81 /* UIButtonAdditions.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F77F57B21C51B497005CBD81 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57B31C51B497005CBD81 /* Base */,
+				F77F57BA1C51B497005CBD81 /* MBGesturePWD */,
+				F77F57CC1C51B497005CBD81 /* UINavigationController */,
+				F77F57D11C51B497005CBD81 /* Webview */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F77F57B31C51B497005CBD81 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57B41C51B497005CBD81 /* LJXTableViewController.h */,
+				F77F57B51C51B497005CBD81 /* LJXTableViewController.m */,
+				F77F57B61C51B497005CBD81 /* LJXViewController.h */,
+				F77F57B71C51B497005CBD81 /* LJXViewController.m */,
+				F77F57B81C51B497005CBD81 /* UIViewController+Addition.h */,
+				F77F57B91C51B497005CBD81 /* UIViewController+Addition.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F77F57BA1C51B497005CBD81 /* MBGesturePWD */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57BB1C51B497005CBD81 /* Controller */,
+				F77F57C01C51B497005CBD81 /* Model */,
+				F77F57C11C51B497005CBD81 /* Resource */,
+				F77F57C31C51B497005CBD81 /* View */,
+			);
+			path = MBGesturePWD;
+			sourceTree = "<group>";
+		};
+		F77F57BB1C51B497005CBD81 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57BC1C51B497005CBD81 /* LJXGesturePasswordViewController.h */,
+				F77F57BD1C51B497005CBD81 /* LJXGesturePasswordViewController.m */,
+				F77F57BE1C51B497005CBD81 /* LJXSetGesturePwdViewController.h */,
+				F77F57BF1C51B497005CBD81 /* LJXSetGesturePwdViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F77F57C01C51B497005CBD81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F77F57C11C51B497005CBD81 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57C21C51B497005CBD81 /* MBSetGesturePwd.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F77F57C31C51B497005CBD81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57C41C51B497005CBD81 /* LJXGestureLock.h */,
+				F77F57C51C51B497005CBD81 /* LJXGestureLock.m */,
+				F77F57C61C51B497005CBD81 /* LJXLockIndicator.h */,
+				F77F57C71C51B497005CBD81 /* LJXLockIndicator.m */,
+				F77F57C81C51B497005CBD81 /* LJXLockPassword.h */,
+				F77F57C91C51B497005CBD81 /* LJXLockPassword.m */,
+				F77F57CA1C51B497005CBD81 /* LJXLockView.h */,
+				F77F57CB1C51B497005CBD81 /* LJXLockView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F77F57CC1C51B497005CBD81 /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57CD1C51B497005CBD81 /* LJXUINavigationController.h */,
+				F77F57CE1C51B497005CBD81 /* LJXUINavigationController.m */,
+				F77F57CF1C51B497005CBD81 /* UINavigationController+LJXAddition.h */,
+				F77F57D01C51B497005CBD81 /* UINavigationController+LJXAddition.m */,
+			);
+			path = UINavigationController;
+			sourceTree = "<group>";
+		};
+		F77F57D11C51B497005CBD81 /* Webview */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57D21C51B497005CBD81 /* LJXUIWebViewController.h */,
+				F77F57D31C51B497005CBD81 /* LJXUIWebViewController.m */,
+			);
+			path = Webview;
+			sourceTree = "<group>";
+		};
+		F77F57D41C51B497005CBD81 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57D51C51B497005CBD81 /* LJXUIBlocks.h */,
+				F77F57D61C51B497005CBD81 /* LJXUIMacros.h */,
+				F77F57D71C51B497005CBD81 /* LJXVEnum.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		F77F57D81C51B497005CBD81 /* Export */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57D91C51B497005CBD81 /* LJXUIKit.h */,
+			);
+			path = Export;
+			sourceTree = "<group>";
+		};
+		F77F57DA1C51B497005CBD81 /* HUB */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57DB1C51B497005CBD81 /* LJXLoadingViewController.h */,
+				F77F57DC1C51B497005CBD81 /* LJXLoadingViewController.m */,
+				F77F57DD1C51B497005CBD81 /* LJXMBProgressHUD.h */,
+				F77F57DE1C51B497005CBD81 /* LJXMBProgressHUD.m */,
+				F77F57DF1C51B497005CBD81 /* LJXSpinImageView.h */,
+				F77F57E01C51B497005CBD81 /* LJXSpinImageView.m */,
+				F77F57E11C51B497005CBD81 /* Toast */,
+			);
+			path = HUB;
+			sourceTree = "<group>";
+		};
+		F77F57E11C51B497005CBD81 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57E21C51B497005CBD81 /* UIView+Toast.h */,
+				F77F57E31C51B497005CBD81 /* UIView+Toast.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		F77F57E41C51B497005CBD81 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57E51C51B497005CBD81 /* LJXUI.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F77F57E61C51B497005CBD81 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57E71C51B497005CBD81 /* LJXAppStoreHelper.h */,
+				F77F57E81C51B497005CBD81 /* LJXAppStoreHelper.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		F77F57E91C51B497005CBD81 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57EA1C51B497005CBD81 /* LJXUIStyle.h */,
+				F77F57EB1C51B497005CBD81 /* LJXUIStyle.m */,
+				F77F57EC1C51B497005CBD81 /* LJXUISystemMetric.h */,
+				F77F57ED1C51B497005CBD81 /* LJXUISystemMetric.m */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		F77F57EE1C51B497005CBD81 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57EF1C51B497005CBD81 /* UICollectionView+Additions.h */,
+				F77F57F01C51B497005CBD81 /* UICollectionView+Additions.m */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		F77F57F11C51B497005CBD81 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57F21C51B497005CBD81 /* LJXControlActionProtocol.h */,
+				F77F57F31C51B497005CBD81 /* LJXControlEnabledProtocol.h */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
+		F77F57F41C51B497005CBD81 /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57F51C51B497005CBD81 /* UIDevice+IdentifierAddition.h */,
+				F77F57F61C51B497005CBD81 /* UIDevice+IdentifierAddition.m */,
+				F77F57F71C51B497005CBD81 /* UIDeviceAdditions.h */,
+				F77F57F81C51B497005CBD81 /* UIDeviceAdditions.m */,
+			);
+			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		F77F57F91C51B497005CBD81 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				F77F57FA1C51B497005CBD81 /* UIImage+Addition.h */,
+				F77F57FB1C51B497005CBD81 /* UIImage+Addition.m */,
+				F77F57FC1C51B497005CBD81 /* UIImage+Bundle.h */,
+				F77F57FD1C51B497005CBD81 /* UIImage+Bundle.m */,
+				F77F57FE1C51B497005CBD81 /* UIImage+editor.h */,
+				F77F57FF1C51B497005CBD81 /* UIImage+editor.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		F77F58001C51B497005CBD81 /* UIResponder */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58011C51B497005CBD81 /* UIResponderAdditions.h */,
+				F77F58021C51B497005CBD81 /* UIResponderAdditions.m */,
+			);
+			path = UIResponder;
+			sourceTree = "<group>";
+		};
+		F77F58031C51B497005CBD81 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58041C51B497005CBD81 /* UITableView+Addition.h */,
+				F77F58051C51B497005CBD81 /* UITableView+Addition.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		F77F58111C51B497005CBD81 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58121C51B497005CBD81 /* LJXPasswordTextField.h */,
+				F77F58131C51B497005CBD81 /* LJXPasswordTextField.m */,
+				F77F58141C51B497005CBD81 /* LJXUITextField.h */,
+				F77F58151C51B497005CBD81 /* LJXUITextField.m */,
+				F77F58161C51B497005CBD81 /* LJXUserNameTextField.h */,
+				F77F58171C51B497005CBD81 /* LJXUserNameTextField.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		F77F58181C51B497005CBD81 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58191C51B497005CBD81 /* Extension */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		F77F58191C51B497005CBD81 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F77F581A1C51B497005CBD81 /* NSArray */,
+				F77F581F1C51B497005CBD81 /* View */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F77F581A1C51B497005CBD81 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				F77F581B1C51B497005CBD81 /* NSArray+Subviews.h */,
+				F77F581C1C51B497005CBD81 /* NSArray+Subviews.m */,
+				F77F581D1C51B497005CBD81 /* NSArray+UI.h */,
+				F77F581E1C51B497005CBD81 /* NSArray+UI.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		F77F581F1C51B497005CBD81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58201C51B497005CBD81 /* UIView+Animation.h */,
+				F77F58211C51B497005CBD81 /* UIView+Animation.m */,
+				F77F58221C51B497005CBD81 /* UIView+Layout.h */,
+				F77F58231C51B497005CBD81 /* UIView+Layout.m */,
+				F77F58241C51B497005CBD81 /* UIView+Subviews.h */,
+				F77F58251C51B497005CBD81 /* UIView+Subviews.m */,
+				F77F58261C51B497005CBD81 /* UIViewAdditions.h */,
+				F77F58271C51B497005CBD81 /* UIViewAdditions.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F77F58281C51B497005CBD81 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				F77F58291C51B497005CBD81 /* LJXWindowView.h */,
+				F77F582A1C51B497005CBD81 /* LJXWindowView.m */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		418B10211AE8EF7F00CC1848 /* TXUIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418B10361AE8EF7F00CC1848 /* Build configuration list for PBXNativeTarget "TXUIKit" */;
+			buildPhases = (
+				418B101E1AE8EF7F00CC1848 /* Sources */,
+				418B101F1AE8EF7F00CC1848 /* Frameworks */,
+				418B10201AE8EF7F00CC1848 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F74DC03F1C5066FA00E7CB67 /* PBXTargetDependency */,
+			);
+			name = TXUIKit;
+			productName = LJXUIKit;
+			productReference = 418B10221AE8EF7F00CC1848 /* libTXUIKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		418B101A1AE8EF7F00CC1848 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Mobo;
+				TargetAttributes = {
+					418B10211AE8EF7F00CC1848 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 418B101D1AE8EF7F00CC1848 /* Build configuration list for PBXProject "TXUIKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 418B10191AE8EF7F00CC1848;
+			productRefGroup = 418B10231AE8EF7F00CC1848 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F74DC0361C5066F400E7CB67 /* Products */;
+					ProjectRef = F74DC0351C5066F400E7CB67 /* LJXFoundation.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				418B10211AE8EF7F00CC1848 /* TXUIKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F74DC03B1C5066F400E7CB67 /* libLJXFoundation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLJXFoundation.a;
+			remoteRef = F74DC03A1C5066F400E7CB67 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F74DC03D1C5066F400E7CB67 /* LJXFoundationTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = LJXFoundationTests.xctest;
+			remoteRef = F74DC03C1C5066F400E7CB67 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		418B101E1AE8EF7F00CC1848 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F77F58321C51B497005CBD81 /* LJXTableViewController.m in Sources */,
+				F77F58401C51B497005CBD81 /* LJXSpinImageView.m in Sources */,
+				F77F582E1C51B497005CBD81 /* LJXListButton.m in Sources */,
+				F77F58561C51B497005CBD81 /* NSArray+UI.m in Sources */,
+				F77F58391C51B497005CBD81 /* LJXLockPassword.m in Sources */,
+				F77F582B1C51B497005CBD81 /* UIButtonAdditions.m in Sources */,
+				F77F58581C51B497005CBD81 /* UIView+Layout.m in Sources */,
+				F77F58311C51B497005CBD81 /* LJXRoundFrameButton.m in Sources */,
+				F77F58411C51B497005CBD81 /* UIView+Toast.m in Sources */,
+				F77F58591C51B497005CBD81 /* UIView+Subviews.m in Sources */,
+				F77F58351C51B497005CBD81 /* LJXGesturePasswordViewController.m in Sources */,
+				F77F58471C51B497005CBD81 /* UIDeviceAdditions.m in Sources */,
+				F77F58521C51B497005CBD81 /* LJXPasswordTextField.m in Sources */,
+				F77F582C1C51B497005CBD81 /* LJXBlueRoundButton.m in Sources */,
+				F77F58491C51B497005CBD81 /* UIImage+Bundle.m in Sources */,
+				F77F58441C51B497005CBD81 /* LJXUISystemMetric.m in Sources */,
+				F77F582D1C51B497005CBD81 /* LJXButton.m in Sources */,
+				F77F58541C51B497005CBD81 /* LJXUserNameTextField.m in Sources */,
+				F77F585B1C51B497005CBD81 /* LJXWindowView.m in Sources */,
+				F77F585A1C51B497005CBD81 /* UIViewAdditions.m in Sources */,
+				F77F58531C51B497005CBD81 /* LJXUITextField.m in Sources */,
+				F77F58431C51B497005CBD81 /* LJXUIStyle.m in Sources */,
+				F77F58461C51B497005CBD81 /* UIDevice+IdentifierAddition.m in Sources */,
+				F77F582F1C51B497005CBD81 /* LJXMultiStateButton.m in Sources */,
+				F77F58371C51B497005CBD81 /* LJXGestureLock.m in Sources */,
+				F77F58451C51B497005CBD81 /* UICollectionView+Additions.m in Sources */,
+				F77F583D1C51B497005CBD81 /* LJXUIWebViewController.m in Sources */,
+				F77F583B1C51B497005CBD81 /* LJXUINavigationController.m in Sources */,
+				F77F583A1C51B497005CBD81 /* LJXLockView.m in Sources */,
+				F77F583C1C51B497005CBD81 /* UINavigationController+LJXAddition.m in Sources */,
+				F77F58571C51B497005CBD81 /* UIView+Animation.m in Sources */,
+				F77F58361C51B497005CBD81 /* LJXSetGesturePwdViewController.m in Sources */,
+				F77F58331C51B497005CBD81 /* LJXViewController.m in Sources */,
+				F77F58481C51B497005CBD81 /* UIImage+Addition.m in Sources */,
+				F77F584B1C51B497005CBD81 /* UIResponderAdditions.m in Sources */,
+				F77F58421C51B497005CBD81 /* LJXAppStoreHelper.m in Sources */,
+				F77F583E1C51B497005CBD81 /* LJXLoadingViewController.m in Sources */,
+				F77F58341C51B497005CBD81 /* UIViewController+Addition.m in Sources */,
+				F77F584C1C51B497005CBD81 /* UITableView+Addition.m in Sources */,
+				F77F58301C51B497005CBD81 /* LJXRoundButton.m in Sources */,
+				F77F583F1C51B497005CBD81 /* LJXMBProgressHUD.m in Sources */,
+				F77F584A1C51B497005CBD81 /* UIImage+editor.m in Sources */,
+				F77F58381C51B497005CBD81 /* LJXLockIndicator.m in Sources */,
+				F77F58551C51B497005CBD81 /* NSArray+Subviews.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F74DC03F1C5066FA00E7CB67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LJXFoundation;
+			targetProxy = F74DC03E1C5066FA00E7CB67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		418B10341AE8EF7F00CC1848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		418B10351AE8EF7F00CC1848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		418B10371AE8EF7F00CC1848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/LJXUIKit/LJXUIKit.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/LJXFoundation";
+			};
+			name = Debug;
+		};
+		418B10381AE8EF7F00CC1848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/LJXUIKit/LJXUIKit.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/LJXFoundation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		418B101D1AE8EF7F00CC1848 /* Build configuration list for PBXProject "TXUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418B10341AE8EF7F00CC1848 /* Debug */,
+				418B10351AE8EF7F00CC1848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418B10361AE8EF7F00CC1848 /* Build configuration list for PBXNativeTarget "TXUIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418B10371AE8EF7F00CC1848 /* Debug */,
+				418B10381AE8EF7F00CC1848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 418B101A1AE8EF7F00CC1848 /* Project object */;
+}
