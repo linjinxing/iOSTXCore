@@ -27,4 +27,6 @@
 //- (void)addNonEmptyString:(NSString*)string;
 -(BOOL)moveObjectFromIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex;
 -(BOOL)swapObjetAtIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex;
+
+- (void)setValue:(id)value withCount:(NSUInteger)count;
 @end

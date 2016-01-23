@@ -95,5 +95,13 @@
     }
 }
 
+- (void)setValue:(id)value withCount:(NSUInteger)count
+{
+    if (value) {
+        for (NSUInteger i = 0; i < count; ++i) {
+            [self addObject:value];
+        }
+    }
+}
 
 @end
