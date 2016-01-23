@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CTHSubject.h"
 
 @interface CTHQuestionTagsTableViewController : UITableViewController
-
+@property(nonatomic, copy) CTHSubject* subject;
 @end

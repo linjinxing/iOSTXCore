@@ -13,6 +13,7 @@
 
 @interface CTHQuestionTagsTableViewController ()
 @property(nonatomic, strong) NSArray* groupTags;
+@property(nonatomic, strong) NSMutableArray* selectedTags;
 @property(nonatomic, strong) NSMutableArray* cellHeights;
 @end
 
@@ -21,18 +22,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.cellHeights = [NSMutableArray array];
- [CTHURLJSONConnectionCreateSignal(@{@"dataType":@"getTagInfos",@"subjectType":@"chinese",@"userName":@"linjinxing"},
+ [CTHURLJSONConnectionCreateSignal(@{@"dataType":@"getTagInfos",
+                                     @"subjectType":self.subject.subjecttype,
+                                     @"userName":@"linjinxing"},
                                    @"result",
                                    [CTHQuestionTags class])
      subscribeNext:^(id x) {
          self.groupTags = x;
          [self.cellHeights setValue:@(0) withCount:self.groupTags.count];
-         [self.tableView reloadData];
+         LJXPerformBlockAsynOnMainThread(^{
+             [self.tableView reloadData];
+         });
          LJXLogObject(x);
      } error:^(NSError *error) {
          LJXNSError(error);
      }];
-    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -78,6 +82,7 @@
         @strongify(self)
         cell.collectionView.size = [x CGSizeValue];
         self.cellHeights[indexPath.row] = @(cell.collectionView.height + cell.label.height);
+        [cell setNeedsLayout];
 //        [self.tableView reloadData];
         NSLog(@"frame:%@", NSStringFromCGRect(cell.collectionView.frame));
     }];
@@ -87,6 +92,7 @@
 #pragma mark - Table view data source
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    return 120.0;
     return [self.cellHeights[indexPath.row] floatValue];
 }
 

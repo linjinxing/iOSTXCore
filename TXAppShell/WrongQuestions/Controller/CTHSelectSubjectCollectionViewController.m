@@ -8,6 +8,7 @@
 
 #import "CTHSelectSubjectCollectionViewController.h"
 #import "CTHSubject.h"
+#import "CTHCreateQuestionTableViewController.h"
 
 @interface CTHSelectSubjectCollectionViewController ()
 @property(assign) NSInteger selectedIndex;
@@ -52,6 +53,13 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    CTHCreateQuestionTableViewController* vc = (CTHCreateQuestionTableViewController*)[[segue destinationViewController] topViewController];
+    vc.subject = self.subjects[self.selectedIndex];
+    vc.type = [sender tag] ? @"其它题型" : @"选择题型";
 }
 
 /*

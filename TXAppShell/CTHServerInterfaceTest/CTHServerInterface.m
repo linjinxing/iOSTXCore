@@ -16,7 +16,7 @@
 + (void)load
 {
     
-    [self testQuestionAllTags];
+//    [self testQuestionAllTags];
 }
 
 + (void)testSubject
