@@ -10,5 +10,5 @@
 #import "CTHSubject.h"
 
 @interface CTHQuestionTagsTableViewController : UITableViewController
-@property(nonatomic, copy) CTHSubject* subject;
+@property(nonatomic, strong) CTHSubject* subject;
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		680218EB1C539F2200302EA7 /* CTHQuestionTagsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 680218EA1C539F2200302EA7 /* CTHQuestionTagsTableViewCell.m */; };
+		680218EE1C53D7CA00302EA7 /* CTHQuestionTagsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 680218ED1C53D7CA00302EA7 /* CTHQuestionTagsCollectionViewCell.m */; };
 		68104AC81C5106FF00073D03 /* CTHServerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 68104AC71C5106FF00073D03 /* CTHServerInterface.m */; };
 		68B5750C1C525EAF0013BFD8 /* TXTestCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5750B1C525EAF0013BFD8 /* TXTestCollectionViewController.m */; };
 		68B5750F1C5268280013BFD8 /* TXTextTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B5750E1C5268280013BFD8 /* TXTextTableViewController.m */; };
@@ -54,6 +55,8 @@
 		033E235583E459851181937A /* libPods-TXAppShell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TXAppShell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		680218E91C539F2200302EA7 /* CTHQuestionTagsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHQuestionTagsTableViewCell.h; sourceTree = "<group>"; };
 		680218EA1C539F2200302EA7 /* CTHQuestionTagsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHQuestionTagsTableViewCell.m; sourceTree = "<group>"; };
+		680218EC1C53D7CA00302EA7 /* CTHQuestionTagsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHQuestionTagsCollectionViewCell.h; sourceTree = "<group>"; };
+		680218ED1C53D7CA00302EA7 /* CTHQuestionTagsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHQuestionTagsCollectionViewCell.m; sourceTree = "<group>"; };
 		68104AC61C5106FF00073D03 /* CTHServerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHServerInterface.h; sourceTree = "<group>"; };
 		68104AC71C5106FF00073D03 /* CTHServerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHServerInterface.m; sourceTree = "<group>"; };
 		68104ACD1C51092E00073D03 /* TXAppShell.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXAppShell.pch; sourceTree = "<group>"; };
@@ -211,6 +214,8 @@
 			children = (
 				680218E91C539F2200302EA7 /* CTHQuestionTagsTableViewCell.h */,
 				680218EA1C539F2200302EA7 /* CTHQuestionTagsTableViewCell.m */,
+				680218EC1C53D7CA00302EA7 /* CTHQuestionTagsCollectionViewCell.h */,
+				680218ED1C53D7CA00302EA7 /* CTHQuestionTagsCollectionViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -475,6 +480,7 @@
 				F7CA08BE1C508C910027CD78 /* AppDelegate.m in Sources */,
 				68B5750F1C5268280013BFD8 /* TXTextTableViewController.m in Sources */,
 				68B5750C1C525EAF0013BFD8 /* TXTestCollectionViewController.m in Sources */,
+				680218EE1C53D7CA00302EA7 /* CTHQuestionTagsCollectionViewCell.m in Sources */,
 				68B576B91C5288B90013BFD8 /* CTHSubject.m in Sources */,
 				68B576B81C5288B90013BFD8 /* CTHQuestionTagItem.m in Sources */,
 				F7CA08BB1C508C910027CD78 /* main.m in Sources */,

@@ -766,10 +766,16 @@
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6h1-cZ-UUf">
                                                             <rect key="frame" x="0.0" y="7" width="70" height="30"/>
                                                             <state key="normal" title="编辑"/>
+                                                            <connections>
+                                                                <action selector="editAction:" destination="gLC-uE-5oT" eventType="touchUpInside" id="8Qf-S5-Sn6"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ox-0p-uxI">
                                                             <rect key="frame" x="80" y="7" width="70" height="30"/>
                                                             <state key="normal" title="添加"/>
+                                                            <connections>
+                                                                <action selector="addAction:" destination="gLC-uE-5oT" eventType="touchUpInside" id="kj1-f8-GTi"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -799,24 +805,40 @@
                                                 <constraint firstAttribute="trailing" secondItem="bdo-1b-8Wm" secondAttribute="trailing" id="ndC-7o-pjb"/>
                                             </constraints>
                                         </view>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cyJ-PL-2Sq">
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cyJ-PL-2Sq">
                                             <rect key="frame" x="0.0" y="44" width="600" height="75"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="R8m-Ku-mB5">
-                                                <size key="itemSize" width="62" height="26"/>
+                                                <size key="itemSize" width="105" height="40"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                 <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
                                             </collectionViewFlowLayout>
                                             <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tJi-W9-TLk">
-                                                    <rect key="frame" x="5" y="5" width="62" height="26"/>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="tJi-W9-TLk" customClass="CTHQuestionTagsCollectionViewCell">
+                                                    <rect key="frame" x="5" y="5" width="105" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                        <rect key="frame" x="0.0" y="0.0" width="62" height="26"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="40"/>
                                                         <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPg-qd-y6T">
+                                                                <rect key="frame" x="12" y="5" width="83" height="30"/>
+                                                                <state key="normal" title="Button">
+                                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </state>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </view>
+                                                    <constraints>
+                                                        <constraint firstItem="jPg-qd-y6T" firstAttribute="leading" secondItem="tJi-W9-TLk" secondAttribute="leadingMargin" constant="4" id="OtY-5P-KB9"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="jPg-qd-y6T" secondAttribute="trailing" constant="2" id="RY6-ws-gZo"/>
+                                                        <constraint firstItem="jPg-qd-y6T" firstAttribute="centerY" secondItem="tJi-W9-TLk" secondAttribute="centerY" id="fjL-Go-h3a"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="btn" destination="jPg-qd-y6T" id="UCD-GW-7AI"/>
+                                                    </connections>
                                                 </collectionViewCell>
                                             </cells>
                                             <connections>
@@ -860,7 +882,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOM-vb-eCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="966" y="216"/>
+            <point key="canvasLocation" x="1030" y="195"/>
         </scene>
         <!--创建Navigation Controller-->
         <scene sceneID="LsX-47-xBI">
@@ -876,7 +898,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ch-eF-bh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904" y="504"/>
+            <point key="canvasLocation" x="316" y="661"/>
         </scene>
     </scenes>
     <resources>

@@ -10,6 +10,6 @@
 #import "CTHSubject.h"
 
 @interface CTHCreateQuestionTableViewController : UITableViewController
-@property(nonatomic, copy) CTHSubject* subject;
+@property(nonatomic, strong) CTHSubject* subject;
 @property(nonatomic, copy) NSString* type;
 @end

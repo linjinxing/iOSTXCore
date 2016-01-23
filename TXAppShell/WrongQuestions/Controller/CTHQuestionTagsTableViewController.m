@@ -7,6 +7,7 @@
 //
 
 #import "CTHQuestionTagsTableViewController.h"
+#import "CTHQuestionTagsCollectionViewCell.h"
 #import "CTHQuestionTagsTableViewCell.h"
 #import "CTHQuestionTags.h"
 #import "CTHQuestionTagItem.h"
@@ -50,6 +51,33 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)addAction:(id)sender
+{
+    UIAlertView* av = [[UIAlertView alloc] initWithTitle:nil message:@"请输入要添加的标签" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"保存", nil];
+    av.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [av show];
+    @weakify(av)
+    CTHQuestionTags* tags = self.groupTags[[sender tag]];
+    [av.rac_buttonClickedSignal subscribeNext:^(id buttonIndex) {
+        @strongify(av)
+        if (av.cancelButtonIndex != [buttonIndex integerValue]) {
+            CTHURLJSONConnectionCreateSignal(@{@"dataType":@"addTagInfo",
+                                               @"tagInfo":@{@"tagTypeId":@"11",
+                                                            @"subjectType":self.subject.subjecttype,
+                                                            @"topic Tag":[av textFieldAtIndex:0].text,
+                                                            @"userName":@"linjinxing"}
+                                               },
+                                             nil,
+                                             nil);
+        };
+    }];
+}
+
+- (IBAction)editAction:(id)sender
+{
+    
+}
+
 - (NSArray*)tagsForTableViewIndex:(NSInteger)tvIndex
 {
     return [(CTHQuestionTags*)self.groupTags[tvIndex] tags];
@@ -71,7 +99,7 @@
     // Configure the cell...
     cell.label.text = tag.typeName;
     cell.collectionView.tag = indexPath.row;
-    [cell.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"Cell"];
+//    [cell.collectionView registerClass:[CTHQuestionTagsCollectionViewCell class] forCellWithReuseIdentifier:@"Cell"];
     [cell.collectionView reloadData];
 
     self.cellHeights[indexPath.row] = @(cell.collectionView.height + cell.label.height);
@@ -107,16 +135,24 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    CTHQuestionTagsCollectionViewCell *cell = (CTHQuestionTagsCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     
     CTHQuestionTagItem* item  = [self tagsForTableViewIndex:collectionView.tag][indexPath.row];
     // Configure the cell
-    UILabel* lable = [[UILabel alloc] init];
-    lable.text = item.topicTag;
-    lable.textColor = [UIColor grayColor];
-    [cell.contentView addSubview:lable];
-    [lable sizeToFit];
-    lable.backgroundColor = [UIColor lightGrayColor];
+    LJXLogObject([cell.contentView buttonWithTag:1]);
+    [cell.btn setTitle:item.topicTag forState:UIControlStateNormal];
+//    cell.label.text = item.topicTag;
+//    RAC(label, textColor) = [RACObserve(cell, isHighlighted) map:^id(id value) {
+//        return [value boolValue] ? [UIColor whiteColor] : [UIColor grayColor];
+//    }];
+    
+//    UIView* view = [[UIView alloc] init];
+//    [view setBackgroundColor:[UIColor clearColor]];
+//    cell.backgroundView = view;
+//    
+//    view = [[UIView alloc] init];
+//    [view setBackgroundColor:UIColorFromRGBHex(0x398cf4)];
+//    cell.selectedBackgroundView = view;
     return cell;
 }
 
@@ -126,8 +162,17 @@
     UILabel* lable = [[UILabel alloc] init];
     lable.text = item.topicTag;
     [lable sizeToFit];
-    return lable.frame.size;
+    CGSize size = lable.frame.size;
+    size.height += 8;
+    size.width += 18;
+    return size;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+//        cell = [collectionView cellForItemAtIndexPath:indexPath];
+//        cell.selected = YES;
+//    self.selectedIndex = indexPath.item;
+}
 
 @end
