@@ -24,6 +24,7 @@ enum CollectionViewTag{
 @property(weak) IBOutlet UILabel* labelType;
 @property(weak) IBOutlet UIView* viewBottom;
 @property(strong) IBOutletCollection(UICollectionView) NSArray* collectionViews;
+@property(strong) IBOutletCollection(UIImageView) NSArray* imageViewStars;
 @property(strong) NSArray* arrayKnowledgePoints;
 @property(strong) NSArray* arrayTagItems;
 @end
@@ -35,8 +36,19 @@ enum CollectionViewTag{
     
     self.labelSubject.text = self.subject.subjectname;
     self.labelType.text = self.type;
-    
     self.viewBottom.width = self.view.width;
+    
+    @weakify(self)
+    for (UIImageView* imageView in self.imageViewStars) {
+        UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc] init];
+        [imageView addGestureRecognizer:tap];
+        [[tap rac_gestureSignal] subscribeNext:^(UITapGestureRecognizer* gesture) {
+            @strongify(self)
+            for (int i = 0; i < self.imageViewStars.count; ++i) {
+                [self.imageViewStars[i] setHighlighted:i <= gesture.view.tag];
+            }
+        }];
+    }
     
     for (UICollectionView* cv in self.collectionViews) {
         cv.delegate = self;
@@ -49,11 +61,6 @@ enum CollectionViewTag{
          [self.collectionViews[CollectionViewTagKnowledgePoints] reloadData];
          LJXLogObject(noti);
     }];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewWillAppear:(BOOL)animated
