@@ -155,9 +155,9 @@ void LJXUIPresentViewControlerWithNaviController(UIViewController* vc, BOOL show
 	}
 }
 
-UIViewController* LJXViewControlerPresentClass(Class class, void(^init)(UIViewController*viewController))
+UIViewController* LJXViewControlerPresentClass(Class cls, void(^init)(UIViewController*viewController))
 {
-    UIViewController* vc = [[class alloc] init];
+    UIViewController* vc = [[cls alloc] init];
     if (init) {
         init(vc);
     }

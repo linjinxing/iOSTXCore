@@ -4,7 +4,12 @@
 
 #import "NSObject+GCD.h"
 
-
+@implementation NSObject (GCD)
++ (void)performBlockAsynOnMainThread:(LJXBlock)block
+{
+    LJXPerformBlockAsynOnMainThread(block);
+}
+@end
 
 void LJXPerformBlockAsynOnMainThread(LJXBlock block)
 {

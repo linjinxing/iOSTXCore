@@ -56,7 +56,7 @@ static NSString *kSSToolkitTestsAccountName = @"LJXDeviceID";
         return NULL;
     }
     
-    if ((buf = malloc(len)) == NULL) {
+    if ((buf = (char*)malloc(len)) == NULL) {
         printf("Could not allocate memory. error!\n");
         return NULL;
     }

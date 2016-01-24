@@ -31,7 +31,7 @@
  *  创建class，并添加返回按键，并从present它
  * Class
  */
-UIViewController* LJXViewControlerPresentClass(Class class, void(^init)(UIViewController*viewController));
+UIViewController* LJXViewControlerPresentClass(Class cls, void(^init)(UIViewController*viewController));
 
 
 void LJXUIPresentViewControlerWithNaviController(UIViewController* vc, BOOL showReturnButton);

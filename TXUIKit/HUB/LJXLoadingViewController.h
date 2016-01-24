@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LJXMBProgressHUD.h"
+#import "MBProgressHUD.h"
 
 //
 //@interface LJXLoadingViewController : UIViewController
@@ -62,20 +62,20 @@
 @interface UIViewController (MBHud)
 
 //显示提示文字
--(LJXMBProgressHUD *)showHudWithStr:(NSString *)str;
+-(MBProgressHUD *)showHudWithStr:(NSString *)str;
 //显示提示文字并1.5秒后隐藏
 -(void)showHUDAndHidWithStr:(NSString *)str;
 //显示菊花
--(LJXMBProgressHUD *)showHUDProgress;
+-(MBProgressHUD *)showHUDProgress;
 //隐藏菊花和提示文字等
 -(void)hidHUDProgress;
 
--(LJXMBProgressHUD *)showHUDWithStr:(NSString *)str andHideAfterDelay:(NSTimeInterval)time didDismiss:(void(^)())didDismiss;
+-(MBProgressHUD *)showHUDWithStr:(NSString *)str andHideAfterDelay:(NSTimeInterval)time didDismiss:(void(^)())didDismiss;
 
 -(void)showErrorHUD:(NSError*)error;
 -(void)showSuccessHUD:(NSString*)msg;
 
--(LJXMBProgressHUD *)showSuccessHUD:(NSString*)msg andHideAfterDelay:(NSTimeInterval)time didDismiss:(void(^)())didDismiss;
+-(MBProgressHUD *)showSuccessHUD:(NSString*)msg andHideAfterDelay:(NSTimeInterval)time didDismiss:(void(^)())didDismiss;
 @end
 
 

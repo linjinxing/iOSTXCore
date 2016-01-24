@@ -6,7 +6,9 @@
 
 #define LJX_GLOBAL_DEFAULT_QUEUE dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
-
+@interface NSObject (GCD)
++ (void)performBlockAsynOnMainThread:(LJXBlock)block;
+@end
 
 void LJXPerformBlockAsynOnMainThread(LJXBlock block);
 void LJXPerformBlockSynOnMainThread(LJXBlock block);

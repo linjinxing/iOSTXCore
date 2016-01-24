@@ -46,7 +46,7 @@
     if (self.doneBlock) {
         self.doneBlock(self.groupTags, nil);
     }
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)addAction:(id)sender

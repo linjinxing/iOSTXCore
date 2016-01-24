@@ -34,7 +34,7 @@ static NSString * const reuseIdentifier = @"Cell";
 [CTHURLJSONConnectionCreateSignal(@{@"dataType":@"getSubjects",@"userId":@"1"}, @"subjects", [CTHSubject class])
      subscribeNext:^(id x) {
 //         @strongify(self)
-         LJXPerformBlockSynOnMainThread(^{
+         LJXPerformBlockAsynOnMainThread(^{
              self.subjects = x;
              [self.collectionView reloadData];
          });
@@ -48,6 +48,12 @@ static NSString * const reuseIdentifier = @"Cell";
 //    [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"Footer"];
     
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning {

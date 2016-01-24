@@ -25,7 +25,7 @@
 #import "LJXUIWebViewController.h"
 #import "LJXGesturePasswordViewController.h"
 #import "LJXLockPassword.h"
-#import "LJXMBProgressHUD.h"
+#import "MBProgressHUD.h"
 #import "LJXUITextField.h"
 
 /* 系统一些ui的尺寸大小 */

@@ -7,7 +7,7 @@
 //
 
 #import "LJXUIStyle.h"
-#import "LJXFoundation.h"
+#import "TXFoundation.h"
 #import "LJXUIMacros.h"
 
 UIColor* LJXUIStyleThemeColor()

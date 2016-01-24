@@ -384,7 +384,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="tOb-Bi-Wpy" kind="show" id="jB2-Vb-QK2"/>
+                                            <segue destination="SeQ-ZL-ySj" kind="show" id="zKS-iR-EmV"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="zrV-JT-WBX" style="IBUITableViewCellStyleDefault" id="drG-GI-IFJ" userLabel="标签">
@@ -647,10 +647,10 @@
                         <viewControllerLayoutGuide type="bottom" id="bbj-Ga-8jY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EcQ-Qr-cC5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W5p-vJ-Phu">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5p-vJ-Phu">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <subviews>
                                     <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d7h-Xh-iBU">
@@ -667,7 +667,7 @@
                                 <rect key="frame" x="0.0" y="278" width="600" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tvj-y1-rFd">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tvj-y1-rFd">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -881,6 +881,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ch-eF-bh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="316" y="661"/>
+        </scene>
+        <!--选择知识点-->
+        <scene sceneID="A40-HC-1aW">
+            <objects>
+                <viewController id="SeQ-ZL-ySj" userLabel="选择知识点" customClass="TopicDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lw8-Ww-Qms"/>
+                        <viewControllerLayoutGuide type="bottom" id="AHC-EO-9XO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rVO-qP-KAt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JOG-za-hu3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>

@@ -10,6 +10,7 @@
 		68B576BE1C528A330013BFD8 /* UILabel+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B576BD1C528A330013BFD8 /* UILabel+Addition.m */; };
 		68B576C21C528C9F0013BFD8 /* UIStoryboard+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B576C11C528C9F0013BFD8 /* UIStoryboard+Addition.m */; };
 		68B576C31C528E490013BFD8 /* UIStoryboard+Addition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68B576C01C528C9F0013BFD8 /* UIStoryboard+Addition.h */; };
+		74E45F28CF3CE911F4C47B2F /* libPods-TXUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA8595DFEF9BEACB238A240 /* libPods-TXUIKit.a */; };
 		F77F582B1C51B497005CBD81 /* UIButtonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57A51C51B497005CBD81 /* UIButtonAdditions.m */; };
 		F77F582C1C51B497005CBD81 /* LJXBlueRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57A71C51B497005CBD81 /* LJXBlueRoundButton.m */; };
 		F77F582D1C51B497005CBD81 /* LJXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57A91C51B497005CBD81 /* LJXButton.m */; };
@@ -30,10 +31,8 @@
 		F77F583C1C51B497005CBD81 /* UINavigationController+LJXAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57D01C51B497005CBD81 /* UINavigationController+LJXAddition.m */; };
 		F77F583D1C51B497005CBD81 /* LJXUIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57D31C51B497005CBD81 /* LJXUIWebViewController.m */; };
 		F77F583E1C51B497005CBD81 /* LJXLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57DC1C51B497005CBD81 /* LJXLoadingViewController.m */; };
-		F77F583F1C51B497005CBD81 /* LJXMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57DE1C51B497005CBD81 /* LJXMBProgressHUD.m */; };
 		F77F58401C51B497005CBD81 /* LJXSpinImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57E01C51B497005CBD81 /* LJXSpinImageView.m */; };
 		F77F58411C51B497005CBD81 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57E31C51B497005CBD81 /* UIView+Toast.m */; };
-		F77F58421C51B497005CBD81 /* LJXAppStoreHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57E81C51B497005CBD81 /* LJXAppStoreHelper.m */; };
 		F77F58431C51B497005CBD81 /* LJXUIStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57EB1C51B497005CBD81 /* LJXUIStyle.m */; };
 		F77F58441C51B497005CBD81 /* LJXUISystemMetric.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57ED1C51B497005CBD81 /* LJXUISystemMetric.m */; };
 		F77F58451C51B497005CBD81 /* UICollectionView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57F01C51B497005CBD81 /* UICollectionView+Additions.m */; };
@@ -53,7 +52,6 @@
 		F77F58581C51B497005CBD81 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58231C51B497005CBD81 /* UIView+Layout.m */; };
 		F77F58591C51B497005CBD81 /* UIView+Subviews.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58251C51B497005CBD81 /* UIView+Subviews.m */; };
 		F77F585A1C51B497005CBD81 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58271C51B497005CBD81 /* UIViewAdditions.m */; };
-		F77F585B1C51B497005CBD81 /* LJXWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F582A1C51B497005CBD81 /* LJXWindowView.m */; };
 		F77F585C1C51B4C6005CBD81 /* UIButtonAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57A41C51B497005CBD81 /* UIButtonAdditions.h */; };
 		F77F585D1C51B4C6005CBD81 /* LJXBlueRoundButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57A61C51B497005CBD81 /* LJXBlueRoundButton.h */; };
 		F77F585E1C51B4C6005CBD81 /* LJXButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57A81C51B497005CBD81 /* LJXButton.h */; };
@@ -78,10 +76,8 @@
 		F77F58711C51B4C6005CBD81 /* LJXVEnum.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57D71C51B497005CBD81 /* LJXVEnum.h */; };
 		F77F58721C51B4C6005CBD81 /* TXUIKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57D91C51B497005CBD81 /* TXUIKit.h */; };
 		F77F58731C51B4C6005CBD81 /* LJXLoadingViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57DB1C51B497005CBD81 /* LJXLoadingViewController.h */; };
-		F77F58741C51B4C6005CBD81 /* LJXMBProgressHUD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57DD1C51B497005CBD81 /* LJXMBProgressHUD.h */; };
 		F77F58751C51B4C6005CBD81 /* LJXSpinImageView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57DF1C51B497005CBD81 /* LJXSpinImageView.h */; };
 		F77F58761C51B4C6005CBD81 /* UIView+Toast.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57E21C51B497005CBD81 /* UIView+Toast.h */; };
-		F77F58771C51B4C6005CBD81 /* LJXAppStoreHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57E71C51B497005CBD81 /* LJXAppStoreHelper.h */; };
 		F77F58781C51B4C6005CBD81 /* LJXUIStyle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57EA1C51B497005CBD81 /* LJXUIStyle.h */; };
 		F77F58791C51B4C6005CBD81 /* LJXUISystemMetric.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57EC1C51B497005CBD81 /* LJXUISystemMetric.h */; };
 		F77F587A1C51B4C6005CBD81 /* UICollectionView+Additions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57EF1C51B497005CBD81 /* UICollectionView+Additions.h */; };
@@ -103,10 +99,23 @@
 		F77F588F1C51B4C6005CBD81 /* UIView+Layout.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F58221C51B497005CBD81 /* UIView+Layout.h */; };
 		F77F58901C51B4C6005CBD81 /* UIView+Subviews.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F58241C51B497005CBD81 /* UIView+Subviews.h */; };
 		F77F58911C51B4C6005CBD81 /* UIViewAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F58261C51B497005CBD81 /* UIViewAdditions.h */; };
-		F77F58921C51B4C6005CBD81 /* LJXWindowView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F58291C51B497005CBD81 /* LJXWindowView.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		680219541C54C3E300302EA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 680219501C54C3E300302EA7 /* TXFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 418B0FF61AE8EF4300CC1848;
+			remoteInfo = TXFoundation;
+		};
+		6802195C1C54C3F500302EA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 680219501C54C3E300302EA7 /* TXFoundation.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 418B0FF51AE8EF4300CC1848;
+			remoteInfo = TXFoundation;
+		};
 		F74DC03A1C5066F400E7CB67 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F74DC0351C5066F400E7CB67 /* LJXFoundation.xcodeproj */;
@@ -162,10 +171,8 @@
 				F77F58701C51B4C6005CBD81 /* LJXUIMacros.h in CopyFiles */,
 				F77F58711C51B4C6005CBD81 /* LJXVEnum.h in CopyFiles */,
 				F77F58731C51B4C6005CBD81 /* LJXLoadingViewController.h in CopyFiles */,
-				F77F58741C51B4C6005CBD81 /* LJXMBProgressHUD.h in CopyFiles */,
 				F77F58751C51B4C6005CBD81 /* LJXSpinImageView.h in CopyFiles */,
 				F77F58761C51B4C6005CBD81 /* UIView+Toast.h in CopyFiles */,
-				F77F58771C51B4C6005CBD81 /* LJXAppStoreHelper.h in CopyFiles */,
 				F77F58781C51B4C6005CBD81 /* LJXUIStyle.h in CopyFiles */,
 				F77F58791C51B4C6005CBD81 /* LJXUISystemMetric.h in CopyFiles */,
 				F77F587A1C51B4C6005CBD81 /* UICollectionView+Additions.h in CopyFiles */,
@@ -187,7 +194,6 @@
 				F77F588F1C51B4C6005CBD81 /* UIView+Layout.h in CopyFiles */,
 				F77F58901C51B4C6005CBD81 /* UIView+Subviews.h in CopyFiles */,
 				F77F58911C51B4C6005CBD81 /* UIViewAdditions.h in CopyFiles */,
-				F77F58921C51B4C6005CBD81 /* LJXWindowView.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,10 +204,14 @@
 		415591921B0042B1000C1B24 /* LJXUIKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LJXUIKit.xcassets; sourceTree = "<group>"; };
 		418B10221AE8EF7F00CC1848 /* libTXUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTXUIKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		418B10331AE8EF7F00CC1848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		680219501C54C3E300302EA7 /* TXFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TXFoundation.xcodeproj; path = ../TXFoundation/TXFoundation.xcodeproj; sourceTree = "<group>"; };
 		68B576BC1C528A330013BFD8 /* UILabel+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Addition.h"; sourceTree = "<group>"; };
 		68B576BD1C528A330013BFD8 /* UILabel+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Addition.m"; sourceTree = "<group>"; };
 		68B576C01C528C9F0013BFD8 /* UIStoryboard+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Addition.h"; sourceTree = "<group>"; };
 		68B576C11C528C9F0013BFD8 /* UIStoryboard+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboard+Addition.m"; sourceTree = "<group>"; };
+		8A3D3EA53F703B70DE2C2035 /* Pods-TXUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXUIKit.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-TXUIKit/Pods-TXUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		ADA8595DFEF9BEACB238A240 /* libPods-TXUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TXUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE14A34E0B9F346A3F5A0703 /* Pods-TXUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TXUIKit.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-TXUIKit/Pods-TXUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		F74DC0351C5066F400E7CB67 /* LJXFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LJXFoundation.xcodeproj; path = ../../LJXFoundation/LJXFoundation.xcodeproj; sourceTree = "<group>"; };
 		F77F57A41C51B497005CBD81 /* UIButtonAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonAdditions.h; sourceTree = "<group>"; };
 		F77F57A51C51B497005CBD81 /* UIButtonAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonAdditions.m; sourceTree = "<group>"; };
@@ -248,15 +258,11 @@
 		F77F57D91C51B497005CBD81 /* TXUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXUIKit.h; sourceTree = "<group>"; };
 		F77F57DB1C51B497005CBD81 /* LJXLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXLoadingViewController.h; sourceTree = "<group>"; };
 		F77F57DC1C51B497005CBD81 /* LJXLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXLoadingViewController.m; sourceTree = "<group>"; };
-		F77F57DD1C51B497005CBD81 /* LJXMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXMBProgressHUD.h; sourceTree = "<group>"; };
-		F77F57DE1C51B497005CBD81 /* LJXMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXMBProgressHUD.m; sourceTree = "<group>"; };
 		F77F57DF1C51B497005CBD81 /* LJXSpinImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXSpinImageView.h; sourceTree = "<group>"; };
 		F77F57E01C51B497005CBD81 /* LJXSpinImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXSpinImageView.m; sourceTree = "<group>"; };
 		F77F57E21C51B497005CBD81 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		F77F57E31C51B497005CBD81 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		F77F57E51C51B497005CBD81 /* LJXUI.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LJXUI.storyboard; sourceTree = "<group>"; };
-		F77F57E71C51B497005CBD81 /* LJXAppStoreHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXAppStoreHelper.h; sourceTree = "<group>"; };
-		F77F57E81C51B497005CBD81 /* LJXAppStoreHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXAppStoreHelper.m; sourceTree = "<group>"; };
 		F77F57EA1C51B497005CBD81 /* LJXUIStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUIStyle.h; sourceTree = "<group>"; };
 		F77F57EB1C51B497005CBD81 /* LJXUIStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXUIStyle.m; sourceTree = "<group>"; };
 		F77F57EC1C51B497005CBD81 /* LJXUISystemMetric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXUISystemMetric.h; sourceTree = "<group>"; };
@@ -297,8 +303,6 @@
 		F77F58251C51B497005CBD81 /* UIView+Subviews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Subviews.m"; sourceTree = "<group>"; };
 		F77F58261C51B497005CBD81 /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
 		F77F58271C51B497005CBD81 /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
-		F77F58291C51B497005CBD81 /* LJXWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXWindowView.h; sourceTree = "<group>"; };
-		F77F582A1C51B497005CBD81 /* LJXWindowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXWindowView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +310,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74E45F28CF3CE911F4C47B2F /* libPods-TXUIKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,13 +320,13 @@
 		418B10191AE8EF7F00CC1848 = {
 			isa = PBXGroup;
 			children = (
+				6802194E1C54C3CF00302EA7 /* Dependencies */,
 				F77F57D81C51B497005CBD81 /* Export */,
 				F77F57A21C51B497005CBD81 /* Button */,
 				F77F57B21C51B497005CBD81 /* Controller */,
 				F77F57D41C51B497005CBD81 /* Define */,
 				F77F57DA1C51B497005CBD81 /* HUB */,
 				F77F57E41C51B497005CBD81 /* Resource */,
-				F77F57E61C51B497005CBD81 /* Store */,
 				F77F57E91C51B497005CBD81 /* Style */,
 				F77F57EE1C51B497005CBD81 /* UICollectionView */,
 				F77F57F11C51B497005CBD81 /* UIControl */,
@@ -333,10 +338,11 @@
 				F77F58111C51B497005CBD81 /* UITextField */,
 				68B576BF1C528C2C0013BFD8 /* UIStoryboard */,
 				F77F58181C51B497005CBD81 /* UIView */,
-				F77F58281C51B497005CBD81 /* Window */,
 				418B10241AE8EF7F00CC1848 /* LJXUIKit */,
 				418B10311AE8EF7F00CC1848 /* LJXUIKitTests */,
 				418B10231AE8EF7F00CC1848 /* Products */,
+				E2F6233362E11F75425DCA56 /* Pods */,
+				EBF785B88F4AAECD9CBE9592 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -374,6 +380,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6802194E1C54C3CF00302EA7 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				680219501C54C3E300302EA7 /* TXFoundation.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		680219511C54C3E300302EA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				680219551C54C3E300302EA7 /* libTXFoundation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		68B576BB1C528A030013BFD8 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -390,6 +412,23 @@
 				68B576C11C528C9F0013BFD8 /* UIStoryboard+Addition.m */,
 			);
 			path = UIStoryboard;
+			sourceTree = "<group>";
+		};
+		E2F6233362E11F75425DCA56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE14A34E0B9F346A3F5A0703 /* Pods-TXUIKit.debug.xcconfig */,
+				8A3D3EA53F703B70DE2C2035 /* Pods-TXUIKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EBF785B88F4AAECD9CBE9592 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADA8595DFEF9BEACB238A240 /* libPods-TXUIKit.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F74DC0361C5066F400E7CB67 /* Products */ = {
@@ -549,8 +588,6 @@
 			children = (
 				F77F57DB1C51B497005CBD81 /* LJXLoadingViewController.h */,
 				F77F57DC1C51B497005CBD81 /* LJXLoadingViewController.m */,
-				F77F57DD1C51B497005CBD81 /* LJXMBProgressHUD.h */,
-				F77F57DE1C51B497005CBD81 /* LJXMBProgressHUD.m */,
 				F77F57DF1C51B497005CBD81 /* LJXSpinImageView.h */,
 				F77F57E01C51B497005CBD81 /* LJXSpinImageView.m */,
 				F77F57E11C51B497005CBD81 /* Toast */,
@@ -573,15 +610,6 @@
 				F77F57E51C51B497005CBD81 /* LJXUI.storyboard */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		F77F57E61C51B497005CBD81 /* Store */ = {
-			isa = PBXGroup;
-			children = (
-				F77F57E71C51B497005CBD81 /* LJXAppStoreHelper.h */,
-				F77F57E81C51B497005CBD81 /* LJXAppStoreHelper.m */,
-			);
-			path = Store;
 			sourceTree = "<group>";
 		};
 		F77F57E91C51B497005CBD81 /* Style */ = {
@@ -711,15 +739,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		F77F58281C51B497005CBD81 /* Window */ = {
-			isa = PBXGroup;
-			children = (
-				F77F58291C51B497005CBD81 /* LJXWindowView.h */,
-				F77F582A1C51B497005CBD81 /* LJXWindowView.m */,
-			);
-			path = Window;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -727,13 +746,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 418B10361AE8EF7F00CC1848 /* Build configuration list for PBXNativeTarget "TXUIKit" */;
 			buildPhases = (
+				9DF821814166A72D8738B1CD /* Check Pods Manifest.lock */,
 				418B101E1AE8EF7F00CC1848 /* Sources */,
 				418B101F1AE8EF7F00CC1848 /* Frameworks */,
 				418B10201AE8EF7F00CC1848 /* CopyFiles */,
+				E69749198ED382AE89B3D000 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6802195D1C54C3F500302EA7 /* PBXTargetDependency */,
 				F74DC03F1C5066FA00E7CB67 /* PBXTargetDependency */,
 			);
 			name = TXUIKit;
@@ -770,6 +792,10 @@
 					ProductGroup = F74DC0361C5066F400E7CB67 /* Products */;
 					ProjectRef = F74DC0351C5066F400E7CB67 /* LJXFoundation.xcodeproj */;
 				},
+				{
+					ProductGroup = 680219511C54C3E300302EA7 /* Products */;
+					ProjectRef = 680219501C54C3E300302EA7 /* TXFoundation.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -779,6 +805,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		680219551C54C3E300302EA7 /* libTXFoundation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTXFoundation.a;
+			remoteRef = 680219541C54C3E300302EA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		F74DC03B1C5066F400E7CB67 /* libLJXFoundation.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -794,6 +827,39 @@
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DF821814166A72D8738B1CD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E69749198ED382AE89B3D000 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-TXUIKit/Pods-TXUIKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		418B101E1AE8EF7F00CC1848 /* Sources */ = {
@@ -819,7 +885,6 @@
 				F77F58441C51B497005CBD81 /* LJXUISystemMetric.m in Sources */,
 				F77F582D1C51B497005CBD81 /* LJXButton.m in Sources */,
 				F77F58541C51B497005CBD81 /* LJXUserNameTextField.m in Sources */,
-				F77F585B1C51B497005CBD81 /* LJXWindowView.m in Sources */,
 				F77F585A1C51B497005CBD81 /* UIViewAdditions.m in Sources */,
 				F77F58531C51B497005CBD81 /* LJXUITextField.m in Sources */,
 				F77F58431C51B497005CBD81 /* LJXUIStyle.m in Sources */,
@@ -837,12 +902,10 @@
 				F77F58331C51B497005CBD81 /* LJXViewController.m in Sources */,
 				F77F58481C51B497005CBD81 /* UIImage+Addition.m in Sources */,
 				F77F584B1C51B497005CBD81 /* UIResponderAdditions.m in Sources */,
-				F77F58421C51B497005CBD81 /* LJXAppStoreHelper.m in Sources */,
 				F77F583E1C51B497005CBD81 /* LJXLoadingViewController.m in Sources */,
 				F77F58341C51B497005CBD81 /* UIViewController+Addition.m in Sources */,
 				F77F584C1C51B497005CBD81 /* UITableView+Addition.m in Sources */,
 				F77F58301C51B497005CBD81 /* LJXRoundButton.m in Sources */,
-				F77F583F1C51B497005CBD81 /* LJXMBProgressHUD.m in Sources */,
 				F77F584A1C51B497005CBD81 /* UIImage+editor.m in Sources */,
 				F77F58381C51B497005CBD81 /* LJXLockIndicator.m in Sources */,
 				F77F58551C51B497005CBD81 /* NSArray+Subviews.m in Sources */,
@@ -852,6 +915,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6802195D1C54C3F500302EA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TXFoundation;
+			targetProxy = 6802195C1C54C3F500302EA7 /* PBXContainerItemProxy */;
+		};
 		F74DC03F1C5066FA00E7CB67 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LJXFoundation;
@@ -936,23 +1004,33 @@
 		};
 		418B10371AE8EF7F00CC1848 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE14A34E0B9F346A3F5A0703 /* Pods-TXUIKit.debug.xcconfig */;
 			buildSettings = {
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/LJXUIKit/LJXUIKit.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/LJXFoundation";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/TXFoundation";
 			};
 			name = Debug;
 		};
 		418B10381AE8EF7F00CC1848 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A3D3EA53F703B70DE2C2035 /* Pods-TXUIKit.release.xcconfig */;
 			buildSettings = {
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/LJXUIKit/LJXUIKit.pch";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/LJXFoundation";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/TXFoundation";
 			};
 			name = Release;
 		};

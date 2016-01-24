@@ -8,6 +8,7 @@
 
 #import "CTHCreateQuestionTableViewController.h"
 #import "CTHQuestionTagsTableViewController.h"
+#import "TopicDetailViewController.h"
 
 @interface CTHCreateQuestionTableViewController ()
 @property(weak) IBOutlet UILabel* labelSubject;
@@ -24,6 +25,11 @@
     self.labelType.text = self.type;
     
     self.viewBottom.width = self.view.width;
+    
+    [[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"CHANGETABLEVIEW" object:nil]
+     subscribeNext:^(id x) {
+         LJXLogObject(x);
+    }];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -46,8 +52,18 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    CTHQuestionTagsTableViewController* vc = (CTHQuestionTagsTableViewController*)[segue destinationViewController];
-    vc.subject = self.subject;
+    UIViewController* vc = [segue destinationViewController];
+    if ([vc isKindOfClass:[CTHQuestionTagsTableViewController class]]) {
+        ((CTHQuestionTagsTableViewController*)vc).subject = self.subject;
+    }
+    if ([vc isKindOfClass:[TopicDetailViewController class]]) {
+         TopicDetailViewController* topicDetail = (TopicDetailViewController*)vc;
+        topicDetail.isFromeWrongAndAnsy = YES;
+        topicDetail.object = self.subject.subjectname;
+        topicDetail.i = 1;/* 代表知识点 */
+        topicDetail.titleStr = @"选择知识点";
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {

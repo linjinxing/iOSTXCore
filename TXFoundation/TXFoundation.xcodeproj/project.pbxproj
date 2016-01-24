@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680219C11C54C9B000302EA7 /* NSObject+NSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 680219C01C54C9B000302EA7 /* NSObject+NSNotification.m */; };
+		680219CB1C54D19600302EA7 /* NSObject+GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 680219CA1C54D19600302EA7 /* NSObject+GCD.m */; };
 		F77F58FF1C51BF82005CBD81 /* NSArray+LJXExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58991C51BF82005CBD81 /* NSArray+LJXExtend.m */; };
 		F77F59011C51BF82005CBD81 /* NSArray+NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F589B1C51BF82005CBD81 /* NSArray+NSString.m */; };
 		F77F59031C51BF82005CBD81 /* NSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F589D1C51BF82005CBD81 /* NSArrayAdditions.m */; };
@@ -23,10 +25,7 @@
 		F77F59191C51BF82005CBD81 /* LJXFileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58C41C51BF82005CBD81 /* LJXFileHandle.m */; };
 		F77F591B1C51BF82005CBD81 /* NSFileManagerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58C61C51BF82005CBD81 /* NSFileManagerAdditions.m */; };
 		F77F591D1C51BF82005CBD81 /* LJXLocale.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58C91C51BF82005CBD81 /* LJXLocale.m */; };
-		F77F591F1C51BF82005CBD81 /* LJXWifi.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58CC1C51BF82005CBD81 /* LJXWifi.m */; };
 		F77F59211C51BF82005CBD81 /* NSNumber+LJXExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58D01C51BF82005CBD81 /* NSNumber+LJXExtend.m */; };
-		F77F59231C51BF82005CBD81 /* NSObject+GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58D31C51BF82005CBD81 /* NSObject+GCD.m */; };
-		F77F59251C51BF82005CBD81 /* NSObject+NSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58D51C51BF82005CBD81 /* NSObject+NSNotification.m */; };
 		F77F59271C51BF82005CBD81 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58D71C51BF82005CBD81 /* NSObject+Runtime.m */; };
 		F77F59291C51BF82005CBD81 /* NSObjectAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58D91C51BF82005CBD81 /* NSObjectAdditions.m */; };
 		F77F592B1C51BF82005CBD81 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58DC1C51BF82005CBD81 /* NSString+Base64.m */; };
@@ -39,9 +38,6 @@
 		F77F59391C51BF82005CBD81 /* LJXBackgroundKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58EF1C51BF82005CBD81 /* LJXBackgroundKeeper.m */; };
 		F77F593B1C51BF82005CBD81 /* LJXSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58F11C51BF82005CBD81 /* LJXSystem.m */; };
 		F77F593D1C51BF82005CBD81 /* LJXSystemCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58F31C51BF82005CBD81 /* LJXSystemCompatibility.m */; };
-		F77F593F1C51BF82005CBD81 /* LJXBG2Unicode.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58F71C51BF82005CBD81 /* LJXBG2Unicode.m */; };
-		F77F59411C51BF82005CBD81 /* LJXpinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = F77F58F81C51BF82005CBD81 /* LJXpinyin.c */; };
-		F77F59431C51BF82005CBD81 /* LJXurldecodeutf8gbk.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58FB1C51BF82005CBD81 /* LJXurldecodeutf8gbk.m */; };
 		F77F59451C51BF82005CBD81 /* LJXDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58FE1C51BF82005CBD81 /* LJXDebug.m */; };
 		F77F59471C51BF9C005CBD81 /* NSArray+LJXExtend.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58981C51BF82005CBD81 /* NSArray+LJXExtend.h */; };
 		F77F59481C51BF9C005CBD81 /* NSArray+NSString.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F589A1C51BF82005CBD81 /* NSArray+NSString.h */; };
@@ -67,10 +63,7 @@
 		F77F595C1C51BF9C005CBD81 /* LJXFileHandle.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58C31C51BF82005CBD81 /* LJXFileHandle.h */; };
 		F77F595D1C51BF9C005CBD81 /* NSFileManagerAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58C51C51BF82005CBD81 /* NSFileManagerAdditions.h */; };
 		F77F595E1C51BF9C005CBD81 /* LJXLocale.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58C81C51BF82005CBD81 /* LJXLocale.h */; };
-		F77F595F1C51BF9C005CBD81 /* LJXWifi.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58CB1C51BF82005CBD81 /* LJXWifi.h */; };
 		F77F59601C51BF9C005CBD81 /* NSNumber+LJXExtend.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58CF1C51BF82005CBD81 /* NSNumber+LJXExtend.h */; };
-		F77F59611C51BF9C005CBD81 /* NSObject+GCD.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58D21C51BF82005CBD81 /* NSObject+GCD.h */; };
-		F77F59621C51BF9C005CBD81 /* NSObject+NSNotification.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58D41C51BF82005CBD81 /* NSObject+NSNotification.h */; };
 		F77F59631C51BF9C005CBD81 /* NSObject+Runtime.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58D61C51BF82005CBD81 /* NSObject+Runtime.h */; };
 		F77F59641C51BF9C005CBD81 /* NSObjectAdditions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58D81C51BF82005CBD81 /* NSObjectAdditions.h */; };
 		F77F59651C51BF9C005CBD81 /* NSString+Base64.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58DB1C51BF82005CBD81 /* NSString+Base64.h */; };
@@ -83,9 +76,6 @@
 		F77F596C1C51BF9C005CBD81 /* LJXBackgroundKeeper.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58EE1C51BF82005CBD81 /* LJXBackgroundKeeper.h */; };
 		F77F596D1C51BF9C005CBD81 /* LJXSystem.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58F01C51BF82005CBD81 /* LJXSystem.h */; };
 		F77F596E1C51BF9C005CBD81 /* LJXSystemCompatibility.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58F21C51BF82005CBD81 /* LJXSystemCompatibility.h */; };
-		F77F596F1C51BF9C005CBD81 /* LJXBG2Unicode.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58F61C51BF82005CBD81 /* LJXBG2Unicode.h */; };
-		F77F59701C51BF9C005CBD81 /* LJXpinyin.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58F91C51BF82005CBD81 /* LJXpinyin.h */; };
-		F77F59711C51BF9C005CBD81 /* LJXurldecodeutf8gbk.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58FA1C51BF82005CBD81 /* LJXurldecodeutf8gbk.h */; };
 		F77F59721C51BF9C005CBD81 /* LJXDebug.h in Copy Files */ = {isa = PBXBuildFile; fileRef = F77F58FD1C51BF82005CBD81 /* LJXDebug.h */; };
 /* End PBXBuildFile section */
 
@@ -120,10 +110,7 @@
 				F77F595C1C51BF9C005CBD81 /* LJXFileHandle.h in Copy Files */,
 				F77F595D1C51BF9C005CBD81 /* NSFileManagerAdditions.h in Copy Files */,
 				F77F595E1C51BF9C005CBD81 /* LJXLocale.h in Copy Files */,
-				F77F595F1C51BF9C005CBD81 /* LJXWifi.h in Copy Files */,
 				F77F59601C51BF9C005CBD81 /* NSNumber+LJXExtend.h in Copy Files */,
-				F77F59611C51BF9C005CBD81 /* NSObject+GCD.h in Copy Files */,
-				F77F59621C51BF9C005CBD81 /* NSObject+NSNotification.h in Copy Files */,
 				F77F59631C51BF9C005CBD81 /* NSObject+Runtime.h in Copy Files */,
 				F77F59641C51BF9C005CBD81 /* NSObjectAdditions.h in Copy Files */,
 				F77F59651C51BF9C005CBD81 /* NSString+Base64.h in Copy Files */,
@@ -136,9 +123,6 @@
 				F77F596C1C51BF9C005CBD81 /* LJXBackgroundKeeper.h in Copy Files */,
 				F77F596D1C51BF9C005CBD81 /* LJXSystem.h in Copy Files */,
 				F77F596E1C51BF9C005CBD81 /* LJXSystemCompatibility.h in Copy Files */,
-				F77F596F1C51BF9C005CBD81 /* LJXBG2Unicode.h in Copy Files */,
-				F77F59701C51BF9C005CBD81 /* LJXpinyin.h in Copy Files */,
-				F77F59711C51BF9C005CBD81 /* LJXurldecodeutf8gbk.h in Copy Files */,
 				F77F59721C51BF9C005CBD81 /* LJXDebug.h in Copy Files */,
 			);
 			name = "Copy Files";
@@ -149,6 +133,10 @@
 /* Begin PBXFileReference section */
 		418B0FF61AE8EF4300CC1848 /* libTXFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTXFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		418B10071AE8EF4400CC1848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		680219BF1C54C9B000302EA7 /* NSObject+NSNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSNotification.h"; sourceTree = "<group>"; };
+		680219C01C54C9B000302EA7 /* NSObject+NSNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSNotification.m"; sourceTree = "<group>"; };
+		680219C91C54D19600302EA7 /* NSObject+GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GCD.h"; sourceTree = "<group>"; };
+		680219CA1C54D19600302EA7 /* NSObject+GCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GCD.m"; sourceTree = "<group>"; };
 		F77F58981C51BF82005CBD81 /* NSArray+LJXExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+LJXExtend.h"; sourceTree = "<group>"; };
 		F77F58991C51BF82005CBD81 /* NSArray+LJXExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+LJXExtend.m"; sourceTree = "<group>"; };
 		F77F589A1C51BF82005CBD81 /* NSArray+NSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NSString.h"; sourceTree = "<group>"; };
@@ -189,14 +177,8 @@
 		F77F58C61C51BF82005CBD81 /* NSFileManagerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSFileManagerAdditions.m; sourceTree = "<group>"; };
 		F77F58C81C51BF82005CBD81 /* LJXLocale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXLocale.h; sourceTree = "<group>"; };
 		F77F58C91C51BF82005CBD81 /* LJXLocale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXLocale.m; sourceTree = "<group>"; };
-		F77F58CB1C51BF82005CBD81 /* LJXWifi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXWifi.h; sourceTree = "<group>"; };
-		F77F58CC1C51BF82005CBD81 /* LJXWifi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXWifi.m; sourceTree = "<group>"; };
 		F77F58CF1C51BF82005CBD81 /* NSNumber+LJXExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+LJXExtend.h"; sourceTree = "<group>"; };
 		F77F58D01C51BF82005CBD81 /* NSNumber+LJXExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+LJXExtend.m"; sourceTree = "<group>"; };
-		F77F58D21C51BF82005CBD81 /* NSObject+GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GCD.h"; sourceTree = "<group>"; };
-		F77F58D31C51BF82005CBD81 /* NSObject+GCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GCD.m"; sourceTree = "<group>"; };
-		F77F58D41C51BF82005CBD81 /* NSObject+NSNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSNotification.h"; sourceTree = "<group>"; };
-		F77F58D51C51BF82005CBD81 /* NSObject+NSNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSNotification.m"; sourceTree = "<group>"; };
 		F77F58D61C51BF82005CBD81 /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
 		F77F58D71C51BF82005CBD81 /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
 		F77F58D81C51BF82005CBD81 /* NSObjectAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObjectAdditions.h; sourceTree = "<group>"; };
@@ -221,12 +203,6 @@
 		F77F58F11C51BF82005CBD81 /* LJXSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXSystem.m; sourceTree = "<group>"; };
 		F77F58F21C51BF82005CBD81 /* LJXSystemCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXSystemCompatibility.h; sourceTree = "<group>"; };
 		F77F58F31C51BF82005CBD81 /* LJXSystemCompatibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXSystemCompatibility.m; sourceTree = "<group>"; };
-		F77F58F61C51BF82005CBD81 /* LJXBG2Unicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXBG2Unicode.h; sourceTree = "<group>"; };
-		F77F58F71C51BF82005CBD81 /* LJXBG2Unicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXBG2Unicode.m; sourceTree = "<group>"; };
-		F77F58F81C51BF82005CBD81 /* LJXpinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LJXpinyin.c; sourceTree = "<group>"; };
-		F77F58F91C51BF82005CBD81 /* LJXpinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXpinyin.h; sourceTree = "<group>"; };
-		F77F58FA1C51BF82005CBD81 /* LJXurldecodeutf8gbk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXurldecodeutf8gbk.h; sourceTree = "<group>"; };
-		F77F58FB1C51BF82005CBD81 /* LJXurldecodeutf8gbk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXurldecodeutf8gbk.m; sourceTree = "<group>"; };
 		F77F58FD1C51BF82005CBD81 /* LJXDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXDebug.h; sourceTree = "<group>"; };
 		F77F58FE1C51BF82005CBD81 /* LJXDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXDebug.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -245,6 +221,7 @@
 		418B0FED1AE8EF4300CC1848 = {
 			isa = PBXGroup;
 			children = (
+				F77F58BF1C51BF82005CBD81 /* Export */,
 				F77F58971C51BF82005CBD81 /* Array */,
 				F77F58A01C51BF82005CBD81 /* Bundle */,
 				F77F58A31C51BF82005CBD81 /* Data */,
@@ -252,12 +229,12 @@
 				F77F58AB1C51BF82005CBD81 /* Define */,
 				F77F58B51C51BF82005CBD81 /* Dictionary */,
 				F77F58BC1C51BF82005CBD81 /* Error */,
-				F77F58BF1C51BF82005CBD81 /* Export */,
 				F77F58C11C51BF82005CBD81 /* FileManager */,
 				F77F58C71C51BF82005CBD81 /* Internationalization */,
-				F77F58CA1C51BF82005CBD81 /* Network */,
 				F77F58CD1C51BF82005CBD81 /* Notification */,
 				F77F58CE1C51BF82005CBD81 /* NSNumber */,
+				680219C81C54D19600302EA7 /* Thread */,
+				680219BE1C54C9B000302EA7 /* NSNotification */,
 				F77F58D11C51BF82005CBD81 /* NSObject */,
 				F77F58DA1C51BF82005CBD81 /* NSString */,
 				F77F58E31C51BF82005CBD81 /* NSURLRequest */,
@@ -293,6 +270,24 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		680219BE1C54C9B000302EA7 /* NSNotification */ = {
+			isa = PBXGroup;
+			children = (
+				680219BF1C54C9B000302EA7 /* NSObject+NSNotification.h */,
+				680219C01C54C9B000302EA7 /* NSObject+NSNotification.m */,
+			);
+			path = NSNotification;
+			sourceTree = "<group>";
+		};
+		680219C81C54D19600302EA7 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				680219C91C54D19600302EA7 /* NSObject+GCD.h */,
+				680219CA1C54D19600302EA7 /* NSObject+GCD.m */,
+			);
+			path = Thread;
+			sourceTree = SOURCE_ROOT;
 		};
 		F77F58971C51BF82005CBD81 /* Array */ = {
 			isa = PBXGroup;
@@ -412,15 +407,6 @@
 			path = Internationalization;
 			sourceTree = "<group>";
 		};
-		F77F58CA1C51BF82005CBD81 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				F77F58CB1C51BF82005CBD81 /* LJXWifi.h */,
-				F77F58CC1C51BF82005CBD81 /* LJXWifi.m */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		F77F58CD1C51BF82005CBD81 /* Notification */ = {
 			isa = PBXGroup;
 			children = (
@@ -440,10 +426,6 @@
 		F77F58D11C51BF82005CBD81 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
-				F77F58D21C51BF82005CBD81 /* NSObject+GCD.h */,
-				F77F58D31C51BF82005CBD81 /* NSObject+GCD.m */,
-				F77F58D41C51BF82005CBD81 /* NSObject+NSNotification.h */,
-				F77F58D51C51BF82005CBD81 /* NSObject+NSNotification.m */,
 				F77F58D61C51BF82005CBD81 /* NSObject+Runtime.h */,
 				F77F58D71C51BF82005CBD81 /* NSObject+Runtime.m */,
 				F77F58D81C51BF82005CBD81 /* NSObjectAdditions.h */,
@@ -518,23 +500,9 @@
 		F77F58F41C51BF82005CBD81 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				F77F58F51C51BF82005CBD81 /* Convert */,
 				F77F58FC1C51BF82005CBD81 /* Debug */,
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		F77F58F51C51BF82005CBD81 /* Convert */ = {
-			isa = PBXGroup;
-			children = (
-				F77F58F61C51BF82005CBD81 /* LJXBG2Unicode.h */,
-				F77F58F71C51BF82005CBD81 /* LJXBG2Unicode.m */,
-				F77F58F81C51BF82005CBD81 /* LJXpinyin.c */,
-				F77F58F91C51BF82005CBD81 /* LJXpinyin.h */,
-				F77F58FA1C51BF82005CBD81 /* LJXurldecodeutf8gbk.h */,
-				F77F58FB1C51BF82005CBD81 /* LJXurldecodeutf8gbk.m */,
-			);
-			path = Convert;
 			sourceTree = "<group>";
 		};
 		F77F58FC1C51BF82005CBD81 /* Debug */ = {
@@ -606,14 +574,11 @@
 				F77F59211C51BF82005CBD81 /* NSNumber+LJXExtend.m in Sources */,
 				F77F59031C51BF82005CBD81 /* NSArrayAdditions.m in Sources */,
 				F77F59271C51BF82005CBD81 /* NSObject+Runtime.m in Sources */,
-				F77F591F1C51BF82005CBD81 /* LJXWifi.m in Sources */,
-				F77F59251C51BF82005CBD81 /* NSObject+NSNotification.m in Sources */,
 				F77F590B1C51BF82005CBD81 /* NSDataAdditions.m in Sources */,
 				F77F59191C51BF82005CBD81 /* LJXFileHandle.m in Sources */,
 				F77F591B1C51BF82005CBD81 /* NSFileManagerAdditions.m in Sources */,
 				F77F591D1C51BF82005CBD81 /* LJXLocale.m in Sources */,
 				F77F592B1C51BF82005CBD81 /* NSString+Base64.m in Sources */,
-				F77F59231C51BF82005CBD81 /* NSObject+GCD.m in Sources */,
 				F77F590F1C51BF82005CBD81 /* LJXConstValues.m in Sources */,
 				F77F592D1C51BF82005CBD81 /* NSString+Player.m in Sources */,
 				F77F59311C51BF82005CBD81 /* NSStringAdditions.m in Sources */,
@@ -621,16 +586,15 @@
 				F77F59351C51BF82005CBD81 /* LJXPath.m in Sources */,
 				F77F59131C51BF82005CBD81 /* NSDictionaryAdditions.m in Sources */,
 				F77F590D1C51BF82005CBD81 /* NSDateAdditions.m in Sources */,
-				F77F59431C51BF82005CBD81 /* LJXurldecodeutf8gbk.m in Sources */,
+				680219CB1C54D19600302EA7 /* NSObject+GCD.m in Sources */,
 				F77F59051C51BF82005CBD81 /* NSMutableArrayAdditions.m in Sources */,
 				F77F59091C51BF82005CBD81 /* NSData+AES.m in Sources */,
 				F77F59171C51BF82005CBD81 /* LJXError.m in Sources */,
 				F77F59011C51BF82005CBD81 /* NSArray+NSString.m in Sources */,
-				F77F59411C51BF82005CBD81 /* LJXpinyin.c in Sources */,
 				F77F58FF1C51BF82005CBD81 /* NSArray+LJXExtend.m in Sources */,
-				F77F593F1C51BF82005CBD81 /* LJXBG2Unicode.m in Sources */,
 				F77F59151C51BF82005CBD81 /* NSMutableDictionaryAdditions.m in Sources */,
 				F77F59391C51BF82005CBD81 /* LJXBackgroundKeeper.m in Sources */,
+				680219C11C54C9B000302EA7 /* NSObject+NSNotification.m in Sources */,
 				F77F592F1C51BF82005CBD81 /* NSString+UrlAddition.m in Sources */,
 				F77F59451C51BF82005CBD81 /* LJXDebug.m in Sources */,
 				F77F59111C51BF82005CBD81 /* NSDictionary+SafeExpectations.m in Sources */,
@@ -721,6 +685,7 @@
 		418B100B1AE8EF4400CC1848 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = TXFoundation;
 				SKIP_INSTALL = YES;
@@ -730,6 +695,7 @@
 		418B100C1AE8EF4400CC1848 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = TXFoundation;
 				SKIP_INSTALL = YES;
