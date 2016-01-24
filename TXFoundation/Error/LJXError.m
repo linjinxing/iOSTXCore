@@ -27,7 +27,7 @@ NSError*  LJXErrorCreateWithCode(NSInteger code, NSDictionary* userInfo)
     
     NSMutableDictionary *userInfo = [NSMutableDictionary dictionaryWithCapacity:2];
     [userInfo setValue:description forKey:NSLocalizedDescriptionKey];
-    [userInfo setValue:false forKey:NSLocalizedFailureReasonErrorKey];
+    [userInfo setValue:FALSE forKey:NSLocalizedFailureReasonErrorKey];
     return [NSError errorWithDomain:domain code:code userInfo:userInfo];
 }
 

@@ -30,7 +30,7 @@ static char base64EncodingTable[64] = {
     return @"";
   }
   result = [NSMutableString stringWithCapacity: lentext];
-  raw = [data bytes];
+  raw = (const unsigned char*)[data bytes];
   ixtext = 0; 
   
   while (true) {
