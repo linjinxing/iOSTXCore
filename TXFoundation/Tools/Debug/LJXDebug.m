@@ -84,7 +84,7 @@ void LJXDebugLoadSetting()
         
         value = [[NSUserDefaults standardUserDefaults] valueForKey:keyOutput];
         if (value) {
-            s_TraceModule.output = [value integerValue];
+            s_TraceModule.output = (LJXDebugOutput)[value integerValue];
         }
     });
 }

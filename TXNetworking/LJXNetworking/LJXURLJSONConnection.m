@@ -40,19 +40,19 @@ static id LJXURLConnectionDecodeReponseData(NSData *data,
 static id LJXURLConnectionJSON2ClassInstance(id responseObject,
                                              NSString* keypath,
                                              NSError**error,
-                                             Class class)
+                                             Class cls)
 {
 	id result = nil;
     id datas = keypath ? [responseObject valueForKeyPath:keypath] : responseObject;
-	if (class) {
+	if (cls) {
         NSError* error = nil;
 		if ([datas isKindOfClass:[NSArray class]]) {
-			result = [class objectArrayWithKeyValuesArray:datas error:&error];
+			result = [cls objectArrayWithKeyValuesArray:datas error:&error];
 		}else if ([datas isKindOfClass:[NSDictionary class]]){
-            result = [class objectWithKeyValues:datas error:&error];
+            result = [cls objectWithKeyValues:datas error:&error];
 		}else{
             error = [NSError errorWithDomain:LJXURLJSONConnectionErrorDomain code:LJXHTTPRequestErrorJSON2ClassFailure userInfo:@{NSLocalizedFailureReasonErrorKey:@"json数据转对象失败"}];
-			NSLog(@"datas:%@ convert to class:%@ failure", datas, NSStringFromClass(class));
+			NSLog(@"datas:%@ convert to class:%@ failure", datas, NSStringFromClass(cls));
 		}
 	}else{
         result = datas ? datas : responseObject;
@@ -63,15 +63,15 @@ static id LJXURLConnectionJSON2ClassInstance(id responseObject,
 
 void LJXURLJSONConnection(NSURLRequest* request,
                           NSString* keyPath,
-                          Class class,
+                          Class cls,
 //                          LJXURLJSONConnectionReponseDataError getErrorMsg,
                           LJXURLJSONConnectionSuccess success,
                           LJXURLJSONConnectionFailure failure)
 {
-	/* 如果需要解析成class，那么传入的getErrorMsg是不能为空 */
-//	if (nil != class && nil == getErrorMsg) {
+	/* 如果需要解析成cls，那么传入的getErrorMsg是不能为空 */
+//	if (nil != cls && nil == getErrorMsg) {
 //		NSLog(@"必须对返回的数据判断是否成功，如果不需要判断，请直接返回Yes");
-//        assert(nil != class && nil == getErrorMsg);
+//        assert(nil != cls && nil == getErrorMsg);
 //		return;
 //	}
 
@@ -87,7 +87,7 @@ void LJXURLJSONConnection(NSURLRequest* request,
         returnIfError(error, nil);
         id obj = LJXURLConnectionDecodeReponseData(data, &error);
         returnIfError(error, obj ? obj : data);
-        id result = LJXURLConnectionJSON2ClassInstance(obj, keyPath, &error, class);
+        id result = LJXURLConnectionJSON2ClassInstance(obj, keyPath, &error, cls);
         returnIfError(error, obj ? obj : data);
         if (success) {
             success(result);
@@ -99,12 +99,12 @@ void LJXURLJSONConnection(NSURLRequest* request,
 
 void LJXURLJSONConnectionURL(NSString* url,
                              NSString* keyPath,
-                             Class class,
+                             Class cls,
 //                             LJXURLJSONConnectionReponseDataError getErrorMsg,
                              LJXURLJSONConnectionSuccess success,
                              LJXURLJSONConnectionFailure failure)
 {
-	LJXURLJSONConnection([NSURLRequest requestWithURL:[NSURL URLWithString:url]], keyPath, class, success, failure);
+	LJXURLJSONConnection([NSURLRequest requestWithURL:[NSURL URLWithString:url]], keyPath, cls, success, failure);
 }
 
 
