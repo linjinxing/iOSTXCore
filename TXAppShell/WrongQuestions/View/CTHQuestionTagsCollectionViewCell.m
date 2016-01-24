@@ -22,7 +22,7 @@
     [[self.btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         @strongify(self)
         self.btn.selected = !self.btn.isSelected;
-        [self.btn setBackgroundColor:self.btn.selected? [UIColor blueColor] : [UIColor whiteColor]];
+//        [self.btn setBackgroundColor:self.btn.selected? [UIColor blueColor] : [UIColor whiteColor]];
     }];
 }
 @end

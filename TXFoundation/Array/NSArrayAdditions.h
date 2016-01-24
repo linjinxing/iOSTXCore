@@ -80,7 +80,7 @@ typedef enum tagLayoutOrientation
 - (void)setObjectsValue:(id)value forKey:(NSString *)key;
 
 - (NSArray*)arrayByInsertObject:(id)anObject atIndex:(NSUInteger)index;
-
+- (NSArray*)arrayByAddObject:(id)anObject;
 - (NSArray*)arrayByRemoveObject:(id)anObject;
 - (NSArray*)arrayByRemoveObjectAtIndex:(NSUInteger)index;
 

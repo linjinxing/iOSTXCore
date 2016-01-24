@@ -64,7 +64,7 @@
 //显示提示文字
 -(LJXMBProgressHUD *)showHudWithStr:(NSString *)str;
 //显示提示文字并1.5秒后隐藏
--(LJXMBProgressHUD *)showHUDAndHidWithStr:(NSString *)str;
+-(void)showHUDAndHidWithStr:(NSString *)str;
 //显示菊花
 -(LJXMBProgressHUD *)showHUDProgress;
 //隐藏菊花和提示文字等
@@ -72,8 +72,8 @@
 
 -(LJXMBProgressHUD *)showHUDWithStr:(NSString *)str andHideAfterDelay:(NSTimeInterval)time didDismiss:(void(^)())didDismiss;
 
--(LJXMBProgressHUD *)showErrorHUD:(NSError*)error;
--(LJXMBProgressHUD *)showSuccessHUD:(NSString*)msg;
+-(void)showErrorHUD:(NSError*)error;
+-(void)showSuccessHUD:(NSString*)msg;
 
 -(LJXMBProgressHUD *)showSuccessHUD:(NSString*)msg andHideAfterDelay:(NSTimeInterval)time didDismiss:(void(^)())didDismiss;
 @end

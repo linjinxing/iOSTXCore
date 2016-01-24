@@ -261,6 +261,13 @@
     return [NSArray arrayWithArray:array];
 }
 
+- (NSArray*)arrayByAddObject:(id)anObject
+{
+    NSMutableArray* array = [NSMutableArray arrayWithArray:self];
+    [array addObject:anObject];
+    return [NSArray arrayWithArray:array];
+}
+
 - (NSArray*)arrayByRemoveObjectAtIndex:(NSUInteger)index
 {
     NSMutableArray* array = [NSMutableArray arrayWithArray:self];

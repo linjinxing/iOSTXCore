@@ -11,4 +11,5 @@
 
 @interface CTHQuestionTagsTableViewController : UITableViewController
 @property(nonatomic, strong) CTHSubject* subject;
+@property(nonatomic, copy) LJXResultBlock doneBlock; /* 完成标签选择回调 */
 @end

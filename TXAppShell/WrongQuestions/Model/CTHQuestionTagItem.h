@@ -10,7 +10,7 @@
 
 @interface CTHQuestionTagItem : NSObject
 @property(copy) NSNumber* id;
-@property(copy) NSNumber* tagId;
+//@property(copy) NSNumber* tagId; /* 暂时不用了 */
 @property(copy) NSNumber* tagTypeId;
 @property(copy) NSString* subjectType;
 @property(copy) NSString* topicTag;

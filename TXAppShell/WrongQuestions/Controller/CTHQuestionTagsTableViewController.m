@@ -30,7 +30,9 @@
                                    [CTHQuestionTags class])
      subscribeNext:^(id x) {
          self.groupTags = x;
-         [self.cellHeights setValue:@(0) withCount:self.groupTags.count];
+         for (CTHQuestionTags* tag in x) {
+             tag.selectedTags = [NSMutableSet setWithCapacity:30];
+         }
          LJXPerformBlockAsynOnMainThread(^{
              [self.tableView reloadData];
          });
@@ -51,24 +53,41 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)doneAction:(id)sender
+{
+    if (self.doneBlock) {
+        self.doneBlock(self.groupTags, nil);
+    }
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (IBAction)addAction:(id)sender
 {
     UIAlertView* av = [[UIAlertView alloc] initWithTitle:nil message:@"请输入要添加的标签" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"保存", nil];
     av.alertViewStyle = UIAlertViewStylePlainTextInput;
     [av show];
     @weakify(av)
-    CTHQuestionTags* tags = self.groupTags[[sender tag]];
+    CTHQuestionTags* questionTags = self.groupTags[[sender tag]];
     [av.rac_buttonClickedSignal subscribeNext:^(id buttonIndex) {
         @strongify(av)
         if (av.cancelButtonIndex != [buttonIndex integerValue]) {
-            CTHURLJSONConnectionCreateSignal(@{@"dataType":@"addTagInfo",
-                                               @"tagInfo":@{@"tagTypeId":@"11",
+            [CTHURLJSONConnectionCreateSignal(@{@"dataType":@"addTagInfo",
+                                               @"tagInfo":@{@"tagTypeId":questionTags.id,
                                                             @"subjectType":self.subject.subjecttype,
                                                             @"topic Tag":[av textFieldAtIndex:0].text,
                                                             @"userName":@"linjinxing"}
                                                },
-                                             nil,
-                                             nil);
+                                             @"result",
+                                              [CTHQuestionTagItem class])
+             subscribeNext:^(id x) {
+                [self showHUDAndHidWithStr:kLJXAddSuccessTip];
+                questionTags.tags = [questionTags.tags arrayByAddObject:x];
+                 LJXPerformBlockAsynOnMainThread(^{
+                    [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:[sender tag] inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
+                 });
+            } error:^(NSError *error) {
+                [self showErrorHUD:error];
+            }];
         };
     }];
 }
@@ -98,22 +117,22 @@
     CTHQuestionTags* tag = self.groupTags[indexPath.row];
     // Configure the cell...
     cell.label.text = tag.typeName;
-    cell.collectionView.tag = indexPath.row;
-//    [cell.collectionView registerClass:[CTHQuestionTagsCollectionViewCell class] forCellWithReuseIdentifier:@"Cell"];
+    cell.collectionView.tag = cell.btnAdd.tag = cell.btnEdit.tag = indexPath.row;
     [cell.collectionView reloadData];
 
-    self.cellHeights[indexPath.row] = @(cell.collectionView.height + cell.label.height);
-    @weakify(cell)
-    @weakify(self)
-    [RACObserve(cell.collectionView, contentSize) subscribeNext:^(id x) {
-        @strongify(cell)
-        @strongify(self)
-        cell.collectionView.size = [x CGSizeValue];
-        self.cellHeights[indexPath.row] = @(cell.collectionView.height + cell.label.height);
-        [cell setNeedsLayout];
-//        [self.tableView reloadData];
-        NSLog(@"frame:%@", NSStringFromCGRect(cell.collectionView.frame));
-    }];
+    
+//    self.cellHeights[indexPath.row] = @(cell.collectionView.height + cell.label.height);
+//    @weakify(cell)
+//    @weakify(self)
+//    [RACObserve(cell.collectionView, contentSize) subscribeNext:^(id x) {
+//        @strongify(cell)
+//        @strongify(self)
+//        cell.collectionView.size = [x CGSizeValue];
+//        self.cellHeights[indexPath.row] = @(cell.collectionView.height + cell.label.height);
+//        [cell setNeedsLayout];
+////        [self.tableView reloadData];
+//        NSLog(@"frame:%@", NSStringFromCGRect(cell.collectionView.frame));
+//    }];
     return cell;
 }
 
@@ -137,10 +156,27 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CTHQuestionTagsCollectionViewCell *cell = (CTHQuestionTagsCollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     
+    CTHQuestionTags* tags = self.groupTags[collectionView.tag];
     CTHQuestionTagItem* item  = [self tagsForTableViewIndex:collectionView.tag][indexPath.row];
     // Configure the cell
-    LJXLogObject([cell.contentView buttonWithTag:1]);
     [cell.btn setTitle:item.topicTag forState:UIControlStateNormal];
+    cell.btn.selected = [tags.selectedTags containsObject:item];
+    
+    [cell.disposable dispose];
+    /* 当用户点击按钮时调用subscribeNext */
+    cell.disposable = [[cell.btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(UIButton* btn) {
+        NSArray* multiSelectItems = @[@"错因分析", @"自定义标签"];
+        if (![multiSelectItems containsObject:tags.typeName]) {
+            [tags.selectedTags removeAllObjects];
+        }
+        if (btn.isSelected) {
+            [tags.selectedTags addObject:item];
+        }else{
+            [tags.selectedTags removeObject:item];
+        }
+        [collectionView reloadData];
+    }];
+
 //    cell.label.text = item.topicTag;
 //    RAC(label, textColor) = [RACObserve(cell, isHighlighted) map:^id(id value) {
 //        return [value boolValue] ? [UIColor whiteColor] : [UIColor grayColor];
@@ -168,11 +204,19 @@
     return size;
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
+//- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    CTHQuestionTags* tags = self.groupTags[collectionView.tag];
+//    NSArray* multiSelectItems = @[@"错因分析", @"自定义标签"];
+//    if (![multiSelectItems containsObject:tags.typeName]) {
+//        [tags.selectedTags removeAllObjects];
+//    }
+//    [tags.selectedTags addObject:[self tagsForTableViewIndex:collectionView.tag][indexPath.row]];
+//    
+//    [collectionView reloadData];
 //        cell = [collectionView cellForItemAtIndexPath:indexPath];
 //        cell.selected = YES;
 //    self.selectedIndex = indexPath.item;
-}
+//}
 
 @end

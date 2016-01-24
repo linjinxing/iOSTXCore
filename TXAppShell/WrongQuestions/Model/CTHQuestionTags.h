@@ -13,4 +13,5 @@
 @property(copy) NSString* typeName;
 @property(copy) NSString* alias;
 @property(copy) NSArray* tags;
+@property(strong) NSMutableSet* selectedTags;
 @end

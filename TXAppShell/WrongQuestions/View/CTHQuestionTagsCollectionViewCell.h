@@ -11,4 +11,5 @@
 @interface CTHQuestionTagsCollectionViewCell : UICollectionViewCell
 //@property(nonatomic, weak, readonly) UILabel* label;
 @property(nonatomic, weak, readonly) UIButton* btn;
+@property(nonatomic, strong) RACDisposable * disposable;
 @end
