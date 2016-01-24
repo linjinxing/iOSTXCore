@@ -14,7 +14,7 @@
 
 @interface CTHQuestionTagsTableViewController ()
 @property(nonatomic, strong) NSArray* groupTags;
-@property(nonatomic, strong) NSMutableArray* selectedTags;
+//@property(nonatomic, strong) NSMutableArray* selectedTags;
 @property(nonatomic, strong) NSMutableArray* cellHeights;
 @end
 
@@ -41,10 +41,14 @@
      }];
 }
 
-- (void)doneAction:(id)sender
+- (IBAction)doneAction:(id)sender
 {
     if (self.doneBlock) {
-        self.doneBlock(self.groupTags, nil);
+        NSMutableSet* set = [NSMutableSet setWithCapacity:30];
+        for (CTHQuestionTags* tag in self.groupTags) {
+            [set unionSet:tag.selectedTags];
+        }
+        self.doneBlock([set allObjects], nil);
     }
     [self.navigationController popViewControllerAnimated:YES];
 }

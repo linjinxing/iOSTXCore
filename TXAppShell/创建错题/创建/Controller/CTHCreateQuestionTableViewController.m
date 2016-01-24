@@ -9,11 +9,23 @@
 #import "CTHCreateQuestionTableViewController.h"
 #import "CTHQuestionTagsTableViewController.h"
 #import "TopicDetailViewController.h"
+#import "CTHQuestionTagItem.h"
 
-@interface CTHCreateQuestionTableViewController ()
+enum CollectionViewTag{
+    CollectionViewTagQuestion ,
+    CollectionViewTagAnswer  ,
+    CollectionViewTagAnalysis  ,
+    CollectionViewTagKnowledgePoints  ,
+    CollectionViewTagTags
+};
+
+@interface CTHCreateQuestionTableViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
 @property(weak) IBOutlet UILabel* labelSubject;
 @property(weak) IBOutlet UILabel* labelType;
 @property(weak) IBOutlet UIView* viewBottom;
+@property(strong) IBOutletCollection(UICollectionView) NSArray* collectionViews;
+@property(strong) NSArray* arrayKnowledgePoints;
+@property(strong) NSArray* arrayTagItems;
 @end
 
 @implementation CTHCreateQuestionTableViewController
@@ -26,9 +38,16 @@
     
     self.viewBottom.width = self.view.width;
     
+    for (UICollectionView* cv in self.collectionViews) {
+        cv.delegate = self;
+        cv.dataSource  = self;
+    }
+    
     [[[NSNotificationCenter defaultCenter] rac_addObserverForName:@"CHANGETABLEVIEW" object:nil]
-     subscribeNext:^(id x) {
-         LJXLogObject(x);
+     subscribeNext:^(NSNotification* noti) {
+         self.arrayKnowledgePoints = [noti.object[@"str"] componentsSeparatedByString:@","];
+         [self.collectionViews[CollectionViewTagKnowledgePoints] reloadData];
+         LJXLogObject(noti);
     }];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -54,8 +73,16 @@
 {
     UIViewController* vc = [segue destinationViewController];
     if ([vc isKindOfClass:[CTHQuestionTagsTableViewController class]]) {
-        ((CTHQuestionTagsTableViewController*)vc).subject = self.subject;
+        CTHQuestionTagsTableViewController* tagsVC = (CTHQuestionTagsTableViewController*)vc;
+        tagsVC.subject = self.subject;
+        @weakify(self)
+        tagsVC.doneBlock = ^(NSArray* result, NSError* error){
+            @strongify(self)
+            self.arrayTagItems = result;
+           [self.collectionViews[CollectionViewTagTags] reloadData];
+        };
     }
+    
     if ([vc isKindOfClass:[TopicDetailViewController class]]) {
          TopicDetailViewController* topicDetail = (TopicDetailViewController*)vc;
         topicDetail.isFromeWrongAndAnsy = YES;
@@ -78,5 +105,53 @@
 
 #pragma mark - Table view data source
 
+#pragma mark - UICollectionView
+
+#pragma mark - 题干
+
+#pragma mark - 答案
+
+static NSArray* const anwsers = @[@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H"];
+
+#pragma mark - 解析
+
+#pragma mark - 知识点
+
+#pragma mark - 标签
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    switch (collectionView.tag) {
+        case CollectionViewTagAnswer: return anwsers.count;
+        case CollectionViewTagKnowledgePoints: return self.arrayKnowledgePoints.count;
+        case CollectionViewTagTags: return self.arrayTagItems.count;
+        default:
+            return 0;
+    };
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString* const reuseIdentifier = @"Cell";
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    switch (collectionView.tag) {
+        case CollectionViewTagAnswer:
+        {
+            [[cell.contentView buttonWithTag:1] setTitle:anwsers[indexPath.item] forState:UIControlStateNormal];
+            return cell;
+        }
+        case CollectionViewTagKnowledgePoints:
+        {
+            [cell.contentView labelWithTag:1].text = self.arrayKnowledgePoints[indexPath.item];
+            return cell;
+        }
+        case CollectionViewTagTags:
+        {
+            [cell.contentView labelWithTag:1].text = [self.arrayTagItems[indexPath.item] topicTag];
+            return cell;
+        }
+            break;
+        default:
+            return [[UICollectionViewCell alloc] init];
+    };
+};
 
 @end
