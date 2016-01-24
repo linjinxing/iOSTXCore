@@ -40,6 +40,7 @@ NSString * const kLJXCopySuccessTip = @"复制成功";
 NSString * const kLJXCancleTip = @"取消中";
 
 NSString * const kLJXSuccessTip = @"成功";
+NSString * const kLJXAddSuccessTip = @"添加成功";
 NSString * const kLJXError = @"错误";
 
 

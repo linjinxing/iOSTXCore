@@ -61,6 +61,16 @@
 //    return dict;
 //}
 
+- (id)viewWithTag:(NSInteger)tag class:(Class)cls{
+    for (UIView* view in self.subviews) {
+        if (tag == view.tag) {
+            if ([view isKindOfClass:cls]){
+                return view;
+            }
+        }
+    }
+    return nil;
+}
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

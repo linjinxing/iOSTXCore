@@ -6,8 +6,8 @@
 //  Copyright © 2016年 tongxing. All rights reserved.
 //
 
-#import "CTHQuestionTag.h"
+#import "CTHQuestionTagItem.h"
 
-@implementation CTHQuestionTag
+@implementation CTHQuestionTagItem
 
 @end

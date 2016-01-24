@@ -256,8 +256,32 @@
 
 - (NSArray*)arrayByRemoveObject:(id)anObject
 {
+    if (!anObject) {
+        return nil;
+    }
     NSMutableArray* array = [NSMutableArray arrayWithArray:self];
     [array removeObject:anObject];
+    return [NSArray arrayWithArray:array];
+}
+
+- (NSArray*)arrayByRemoveObjectWitBlock:(BOOL(^)(id obj))checkblock
+{
+    id removedObj = nil;
+    if (checkblock) {
+        for (id obj in self) {
+            if (checkblock(obj)) {
+                removedObj = obj;
+                break;
+            }
+        }
+    }
+    return [self arrayByRemoveObject:removedObj];
+}
+
+- (NSArray*)arrayByAddObject:(id)anObject
+{
+    NSMutableArray* array = [NSMutableArray arrayWithArray:self];
+    [array addObject:anObject];
     return [NSArray arrayWithArray:array];
 }
 

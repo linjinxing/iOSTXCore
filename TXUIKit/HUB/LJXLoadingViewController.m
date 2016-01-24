@@ -158,35 +158,39 @@
 
 -(LJXMBProgressHUD *)showHudWithStr:(NSString *)str
 {
-	UIWindow *window = [UIApplication sharedApplication].keyWindow;
-	LJXMBProgressHUD *hud = [[LJXMBProgressHUD alloc] initWithView:window];
-	hud.mode = MBProgressHUDModeText;
-	hud.labelText = str;
-	[window addSubview:hud];
-	[hud show:YES];
-	return hud;
+//    LJXPerformBlockAsynOnMainThread(^{
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        LJXMBProgressHUD *hud = [[LJXMBProgressHUD alloc] initWithView:window];
+        hud.mode = MBProgressHUDModeText;
+        hud.labelText = str;
+        [window addSubview:hud];
+        [hud show:YES];
+        return hud;
+//    });
 }
 
--(LJXMBProgressHUD *)showHUDAndHidWithStr:(NSString *)str
+-(void)showHUDAndHidWithStr:(NSString *)str
 {
-	UIWindow *window = [UIApplication sharedApplication].keyWindow;
-	LJXMBProgressHUD *hud = [[LJXMBProgressHUD alloc] init];
-	hud.mode = MBProgressHUDModeText;
-	hud.labelText = str;
-	[window addSubview:hud];
-	[hud show:YES];
-	[hud hide:YES afterDelay:1.5f];
-	return hud;
+    LJXPerformBlockAsynOnMainThread(^{
+        UIWindow *window = [UIApplication sharedApplication].keyWindow;
+        LJXMBProgressHUD *hud = [[LJXMBProgressHUD alloc] init];
+        hud.mode = MBProgressHUDModeText;
+        hud.labelText = str;
+        [window addSubview:hud];
+        [hud show:YES];
+        [hud hide:YES afterDelay:1.5f];
+//        return hud;
+    });
 }
 
--(LJXMBProgressHUD *)showErrorHUD:(NSError*)error
+-(void)showErrorHUD:(NSError*)error
 {
-	return [self showHUDAndHidWithStr:[error localizedDescription]];
+	 [self showHUDAndHidWithStr:[error localizedDescription]];
 }
 
--(LJXMBProgressHUD *)showSuccessHUD:(NSString*)msg
+-(void)showSuccessHUD:(NSString*)msg
 {
-	return [self showHUDAndHidWithStr:msg];
+	 [self showHUDAndHidWithStr:msg];
 }
 
 -(LJXMBProgressHUD *)showHUDProgress{

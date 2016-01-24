@@ -38,3 +38,4 @@ FOUNDATION_EXTERN NSString * const kLJXCopySuccessTip;
 FOUNDATION_EXTERN NSString * const kLJXCancleTip;
 FOUNDATION_EXTERN NSString * const kLJXSuccessTip;
 FOUNDATION_EXTERN NSString * const kLJXError;
+FOUNDATION_EXTERN NSString * const kLJXAddSuccessTip;
