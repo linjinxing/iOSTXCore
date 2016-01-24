@@ -13,5 +13,7 @@
 @property(copy) NSString* typeName;
 @property(copy) NSString* alias;
 @property(copy) NSArray* tags;
+
+@property(assign) BOOL isEditing;
 @property(strong) NSMutableSet* selectedTags;
 @end

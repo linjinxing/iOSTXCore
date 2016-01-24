@@ -84,4 +84,5 @@ typedef enum tagLayoutOrientation
 - (NSArray*)arrayByRemoveObject:(id)anObject;
 - (NSArray*)arrayByRemoveObjectAtIndex:(NSUInteger)index;
 
+- (NSArray*)arrayByRemoveObjectWitBlock:(BOOL(^)(id obj))checkblock;
 @end

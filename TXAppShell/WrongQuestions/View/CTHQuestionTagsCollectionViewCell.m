@@ -11,6 +11,7 @@
 @interface CTHQuestionTagsCollectionViewCell()
 @property(nonatomic, weak) IBOutlet UILabel* label;
 @property(nonatomic, weak) IBOutlet UIButton* btn;
+@property(nonatomic, weak) IBOutlet UIButton* btnDelete;
 @end
 
 @implementation CTHQuestionTagsCollectionViewCell
@@ -24,5 +25,9 @@
         self.btn.selected = !self.btn.isSelected;
 //        [self.btn setBackgroundColor:self.btn.selected? [UIColor blueColor] : [UIColor whiteColor]];
     }];
+    
+    RAC(self.btnDelete, hidden) = RACObserve(self, bDeleteViewHidden);
+    self.bDeleteViewHidden = YES;
+    self.btnDelete.userInteractionEnabled = NO;
 }
 @end

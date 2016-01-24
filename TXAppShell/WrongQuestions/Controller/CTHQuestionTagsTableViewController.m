@@ -28,29 +28,17 @@
                                      @"userName":@"linjinxing"},
                                    @"result",
                                    [CTHQuestionTags class])
-     subscribeNext:^(id x) {
-         self.groupTags = x;
-         for (CTHQuestionTags* tag in x) {
+     subscribeNext:^(NSArray* tags) {
+         self.groupTags = tags;
+         for (CTHQuestionTags* tag in tags) {
              tag.selectedTags = [NSMutableSet setWithCapacity:30];
          }
          LJXPerformBlockAsynOnMainThread(^{
              [self.tableView reloadData];
          });
-         LJXLogObject(x);
      } error:^(NSError *error) {
          LJXNSError(error);
      }];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)doneAction:(id)sender
@@ -79,9 +67,9 @@
                                                },
                                              @"result",
                                               [CTHQuestionTagItem class])
-             subscribeNext:^(id x) {
-                [self showHUDAndHidWithStr:kLJXAddSuccessTip];
-                questionTags.tags = [questionTags.tags arrayByAddObject:x];
+             subscribeNext:^(CTHQuestionTagItem* item) {
+//                [self showHUDAndHidWithStr:kLJXAddSuccessTip];
+                questionTags.tags = [questionTags.tags arrayByAddObject:item];
                  LJXPerformBlockAsynOnMainThread(^{
                     [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:[sender tag] inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
                  });
@@ -94,7 +82,24 @@
 
 - (IBAction)editAction:(id)sender
 {
+    void(^reloadCell)() = ^{
+        [self.tableView reloadRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:[sender tag] inSection:0]] withRowAnimation:UITableViewRowAnimationFade];
+    };
+    CTHQuestionTags* qTags = self.groupTags[[sender tag]];
+    if (qTags.isEditing) {
+        qTags.isEditing = NO;
+        reloadCell();
+        return;
+    }
     
+    if ([qTags.tags.rac_sequence any:^BOOL(id value) {
+        return [[value userName] length];
+    }]){
+        qTags.isEditing = YES;
+        reloadCell();
+    }else{
+        [self showHUDAndHidWithStr:@"没有可编辑的标签"];
+    }
 }
 
 - (NSArray*)tagsForTableViewIndex:(NSInteger)tvIndex
@@ -102,11 +107,7 @@
     return [(CTHQuestionTags*)self.groupTags[tvIndex] tags];
 }
 
-#pragma mark - Table view data source
-
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//    return groupTags.count;
-//}
+#pragma mark - Table view delegate & data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.groupTags.count;
@@ -116,38 +117,20 @@
     CTHQuestionTagsTableViewCell *cell = (CTHQuestionTagsTableViewCell*)[tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     CTHQuestionTags* tag = self.groupTags[indexPath.row];
     // Configure the cell...
+    [cell.btnEdit setTitle:tag.isEditing ? LJXButtonTitleDone : LJXButtonTitleEdit forState:UIControlStateNormal];
     cell.label.text = tag.typeName;
     cell.collectionView.tag = cell.btnAdd.tag = cell.btnEdit.tag = indexPath.row;
     [cell.collectionView reloadData];
-
-    
-//    self.cellHeights[indexPath.row] = @(cell.collectionView.height + cell.label.height);
-//    @weakify(cell)
-//    @weakify(self)
-//    [RACObserve(cell.collectionView, contentSize) subscribeNext:^(id x) {
-//        @strongify(cell)
-//        @strongify(self)
-//        cell.collectionView.size = [x CGSizeValue];
-//        self.cellHeights[indexPath.row] = @(cell.collectionView.height + cell.label.height);
-//        [cell setNeedsLayout];
-////        [self.tableView reloadData];
-//        NSLog(@"frame:%@", NSStringFromCGRect(cell.collectionView.frame));
-//    }];
     return cell;
 }
 
-#pragma mark - Table view data source
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 120.0;
+    return 150.0;
     return [self.cellHeights[indexPath.row] floatValue];
 }
 
-#pragma mark - UICollectionView 
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
-}
+#pragma mark - UICollectionView
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return [[self.groupTags[collectionView.tag] tags] count];
@@ -160,7 +143,9 @@
     CTHQuestionTagItem* item  = [self tagsForTableViewIndex:collectionView.tag][indexPath.row];
     // Configure the cell
     [cell.btn setTitle:item.topicTag forState:UIControlStateNormal];
-    cell.btn.selected = [tags.selectedTags containsObject:item];
+    cell.btn.selected = [tags.selectedTags containsObject:item] && !tags.isEditing;
+    cell.btn.enabled = !tags.isEditing;
+    cell.bDeleteViewHidden = !(tags.isEditing && [item.userName length]);
     
     [cell.disposable dispose];
     /* 当用户点击按钮时调用subscribeNext */
@@ -176,25 +161,11 @@
         }
         [collectionView reloadData];
     }];
-
-//    cell.label.text = item.topicTag;
-//    RAC(label, textColor) = [RACObserve(cell, isHighlighted) map:^id(id value) {
-//        return [value boolValue] ? [UIColor whiteColor] : [UIColor grayColor];
-//    }];
-    
-//    UIView* view = [[UIView alloc] init];
-//    [view setBackgroundColor:[UIColor clearColor]];
-//    cell.backgroundView = view;
-//    
-//    view = [[UIView alloc] init];
-//    [view setBackgroundColor:UIColorFromRGBHex(0x398cf4)];
-//    cell.selectedBackgroundView = view;
     return cell;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CTHQuestionTagItem* item  = [self tagsForTableViewIndex:collectionView.tag][indexPath.row];
-    // Configure the cell
+    CTHQuestionTagItem* item  = [self tagsForTableViewIndex:collectionView.tag][indexPath.item];
     UILabel* lable = [[UILabel alloc] init];
     lable.text = item.topicTag;
     [lable sizeToFit];
@@ -204,19 +175,27 @@
     return size;
 }
 
-//- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    CTHQuestionTags* tags = self.groupTags[collectionView.tag];
-//    NSArray* multiSelectItems = @[@"错因分析", @"自定义标签"];
-//    if (![multiSelectItems containsObject:tags.typeName]) {
-//        [tags.selectedTags removeAllObjects];
-//    }
-//    [tags.selectedTags addObject:[self tagsForTableViewIndex:collectionView.tag][indexPath.row]];
-//    
-//    [collectionView reloadData];
-//        cell = [collectionView cellForItemAtIndexPath:indexPath];
-//        cell.selected = YES;
-//    self.selectedIndex = indexPath.item;
-//}
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CTHQuestionTags* questionTags = self.groupTags[collectionView.tag];
+    CTHQuestionTagItem* item  = questionTags.tags[indexPath.item];
+    [CTHURLJSONConnectionCreateSignal(@{@"dataType":@"delTagInfo",
+                                        @"tagInfoId":item.id
+                                        },
+                                      @"result",
+                                      [CTHQuestionTagItem class])
+     subscribeNext:^(CTHQuestionTagItem* item) {
+         //                [self showHUDAndHidWithStr:kLJXAddSuccessTip];
+         questionTags.tags = [questionTags.tags arrayByRemoveObjectWitBlock:^BOOL(id obj) {
+             return [[obj topicTag] isEqualToString:item.topicTag];
+         }];
+         LJXPerformBlockAsynOnMainThread(^{
+             [collectionView reloadData];
+         });
+     } error:^(NSError *error) {
+         [self showErrorHUD:error];
+     }];
+
+}
 
 @end
