@@ -29,8 +29,7 @@
 
 +(NSString*)document
 {
-    return [[self root] stringByAppendingPathComponent:[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]];
-    return nil;
+    return [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 }
 
 +(NSString*)tmp

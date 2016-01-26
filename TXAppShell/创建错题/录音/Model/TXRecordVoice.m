@@ -45,7 +45,8 @@
     
     NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     
-    NSURL *url = [NSURL fileURLWithPath:[documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.wav", [[NSDate date] description]]]];
+    self.filePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.wav", [[NSDate date] formatDateTime]]];
+    NSURL *url = [NSURL fileURLWithPath:self.filePath];
     LJXFoundationLog("recording file path:%@", url);
     NSDictionary *settings = [NSDictionary dictionaryWithObjectsAndKeys:
                               [NSNumber numberWithInt:kAudioFormatLinearPCM], AVFormatIDKey,
@@ -95,11 +96,11 @@
         self.updateMeter(value);
     }
 }
-
-- (NSURL*)recordURL{
-    return recorder.url;
-//    NSData *myData = [NSData dataWithContentsOfURL:recorder.url];
-}
+//
+//- (NSURL*)recordURL{
+//    return recorder.url;
+////    NSData *myData = [NSData dataWithContentsOfURL:recorder.url];
+//}
 
 - (void)dealloc
 {

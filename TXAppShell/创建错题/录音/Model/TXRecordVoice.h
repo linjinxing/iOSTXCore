@@ -11,11 +11,12 @@
 
 @interface TXRecordVoice : NSObject
 @property(nonatomic, copy) void(^updateMeter)(CGFloat value);
+@property(nonatomic, copy) NSString* filePath;
 @property(nonatomic, assign) NSTimeInterval duration;
 - (void)startRecording;
 - (void)play;
 - (void)stopRecording;
-- (NSURL*)recordURL;
+//- (NSURL*)recordURL;
 //@property (weak, nonatomic) IBOutlet F3BarGauge *levelMeter;
 
 @end

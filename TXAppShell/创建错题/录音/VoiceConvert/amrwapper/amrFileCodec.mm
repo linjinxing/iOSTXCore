@@ -157,6 +157,7 @@ int EncodeWAVEFileToAMRFile(const char* pchWAVEFilename, const char* pchAMRFileN
 	fpamr = fopen(pchAMRFileName, "wb");
 	if (fpamr == NULL)
 	{
+        perror(pchAMRFileName);
 		fclose(fpwave);
 		return 0;
 	}

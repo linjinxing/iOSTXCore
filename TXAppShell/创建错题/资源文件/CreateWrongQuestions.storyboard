@@ -739,7 +739,7 @@
                                                     </constraints>
                                                     <state key="normal" title="按住说话"/>
                                                     <connections>
-                                                        <action selector="playVoiceAction:" destination="W3q-iv-FhV" eventType="touchUpInside" id="ldB-3d-nYD"/>
+                                                        <outletCollection property="gestureRecognizers" destination="jAl-Yg-QAV" appends="YES" id="jEw-xT-SbG"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDc-Tl-rPv">

@@ -11,6 +11,7 @@
 #import "TopicDetailViewController.h"
 #import "CTHQuestionTagItem.h"
 #import "TXRecordVoice.h"
+#import "VoiceConverter.h"
 
 enum CollectionViewTag{
     CollectionViewTagQuestion ,
@@ -129,6 +130,7 @@ enum CollectionViewTag{
         LJXFoundationLog("record end");
         [self.recorder stopRecording];
         self.labelVoiceLength.text = [NSString stringWithFormat:@"%.01f\"", self.recorder.duration / 1000];
+//        [VoiceConverter wavToAmr:self.recorder.filePath amrSavePath:[[LJXPath document] stringByAppendingPathComponent:@"tmp.amr"]];
     }
 }
 

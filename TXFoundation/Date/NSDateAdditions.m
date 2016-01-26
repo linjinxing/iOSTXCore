@@ -87,7 +87,7 @@
   if (nil == formatter) {
     formatter = [[NSDateFormatter alloc] init];
     formatter.dateFormat =
-      LJXLocalizedString(@"EEEE, LLLL d, YYYY", @"Date format: Monday, July 27, 2009");
+      LJXLocalizedString(@"EEEE, LLLL d, YYYY", @"Date format:Monday-July-27-2009");
     formatter.locale = LJXCurrentLocale();
   }
   return [formatter stringFromDate:self];
