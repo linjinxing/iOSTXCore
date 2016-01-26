@@ -10,6 +10,7 @@
 #import "CTHQuestionTagsTableViewController.h"
 #import "TopicDetailViewController.h"
 #import "CTHQuestionTagItem.h"
+#import "TXRecordVoice.h"
 
 enum CollectionViewTag{
     CollectionViewTagQuestion ,
@@ -22,11 +23,13 @@ enum CollectionViewTag{
 @interface CTHCreateQuestionTableViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
 @property(weak) IBOutlet UILabel* labelSubject;
 @property(weak) IBOutlet UILabel* labelType;
-@property(weak) IBOutlet UIView* viewBottom;
+@property(weak) IBOutlet UIView* viewBottom; /* 底部工具栏 */
+@property(weak) IBOutlet UILabel* labelVoiceLength;
 @property(strong) IBOutletCollection(UICollectionView) NSArray* collectionViews;
 @property(strong) IBOutletCollection(UIImageView) NSArray* imageViewStars;
 @property(strong) NSArray* arrayKnowledgePoints;
 @property(strong) NSArray* arrayTagItems;
+@property(strong) TXRecordVoice* recorder;
 @end
 
 @implementation CTHCreateQuestionTableViewController
@@ -110,6 +113,31 @@ enum CollectionViewTag{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+#pragma mark - 录音
+
+- (IBAction)longPressVoiceRecordButtonAction:(UILongPressGestureRecognizer*)longPressedRecognizer
+{
+    if (nil == self.recorder) {
+        self.recorder = [[TXRecordVoice alloc] init];
+    }
+    LJXLogObject(longPressedRecognizer);
+    if(longPressedRecognizer.state == UIGestureRecognizerStateBegan) {
+        LJXFoundationLog("record start");
+        [self.recorder startRecording];
+    }//长按结束
+    else if(longPressedRecognizer.state == UIGestureRecognizerStateEnded || longPressedRecognizer.state == UIGestureRecognizerStateCancelled){
+        LJXFoundationLog("record end");
+        [self.recorder stopRecording];
+        self.labelVoiceLength.text = [NSString stringWithFormat:@"%.01f\"", self.recorder.duration / 1000];
+    }
+}
+
+- (IBAction)playVoiceAction:(id)sender
+{
+    LJXLogFunction;
+    [self.recorder play];
+}
+
 #pragma mark - Table view data source
 
 #pragma mark - UICollectionView
@@ -160,5 +188,7 @@ static NSArray* const anwsers = @[@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H"
             return [[UICollectionViewCell alloc] init];
     };
 };
+
+
 
 @end
