@@ -12,6 +12,7 @@
 #import "CTHQuestionTagItem.h"
 #import "TXRecordVoice.h"
 #import "VoiceConverter.h"
+#import "MAImagePickerController.h"
 
 enum CollectionViewTag{
     CollectionViewTagQuestion ,
@@ -21,7 +22,7 @@ enum CollectionViewTag{
     CollectionViewTagTags
 };
 
-@interface CTHCreateQuestionTableViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
+@interface CTHCreateQuestionTableViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, MAImagePickerControllerDelegate>
 @property(weak) IBOutlet UILabel* labelSubject;
 @property(weak) IBOutlet UILabel* labelType;
 @property(weak) IBOutlet UIView* viewBottom; /* 底部工具栏 */
@@ -191,6 +192,38 @@ static NSArray* const anwsers = @[@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H"
     };
 };
 
+- (IBAction)addImage:(id)sender
+{
+    MAImagePickerController *imagePicker = [[MAImagePickerController alloc] init];
+    
+    [imagePicker setDelegate:self];
+    [imagePicker setSourceType:MAImagePickerControllerSourceTypeCamera];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:imagePicker];
+    
+    [self presentViewController:navigationController animated:YES completion:nil];
+}
 
+- (void)imagePickerDidCancel
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerDidChooseImageWithPath:(NSString *)path
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    if ([[NSFileManager defaultManager] fileExistsAtPath:path])
+    {
+        NSLog(@"File Found at %@", path);
+        
+    }
+    else
+    {
+        NSLog(@"No File Found at %@", path);
+    }
+    
+    [[NSFileManager defaultManager] removeItemAtPath:path error:nil];
+}
 
 @end
