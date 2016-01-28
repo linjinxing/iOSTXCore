@@ -29,11 +29,12 @@
 @synthesize pointB = _pointB;
 @synthesize pointA = _pointA;
 
-- (id)initWithFrame:(CGRect)frame
+- (void)awakeFromNib
 {
-    self = [super initWithFrame:frame];
-    if (self)
-    {
+//    self = [super initWithFrame:frame];
+//    if (self)
+//    {
+    self.width = [UIScreen mainScreen].bounds.size.width;
         [self setPoints];
         [self setClipsToBounds:NO];
         [self setBackgroundColor:[UIColor clearColor]];
@@ -88,8 +89,8 @@
         
         [self setButtons];
         
-    }
-    return self;
+//    }
+//    return self;
 }
 
 - (UIImage *)squareButtonWithWidth:(int)width

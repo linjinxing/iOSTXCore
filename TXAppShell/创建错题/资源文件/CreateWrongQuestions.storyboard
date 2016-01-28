@@ -1243,7 +1243,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="apu-27-4w2">
                                 <rect key="frame" x="0.0" y="44" width="600" height="512"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Anq-5P-4Bn" userLabel="编辑图像视图">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Anq-5P-4Bn" userLabel="编辑图像视图" customClass="MDScratchImageView">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="512"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D2z-Mz-Eom" userLabel="涂抹">

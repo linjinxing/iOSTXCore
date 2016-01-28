@@ -13,13 +13,14 @@
 #import "MAOpenCV.h"
 #import "MADrawRect.h"
 #import "UIImageView+ContentFrame.h"
+#import "MDScratchImageView.h"
 
 @interface MAImagePickerFinalViewController ()
 
 @property(nonatomic, assign) BOOL firstCrop;
 @property (strong, nonatomic) UIImage *adjustedImage;
 @property(nonatomic, weak) IBOutlet MADrawRect* viewCrop;
-@property (weak, nonatomic) IBOutlet UIImageView *finalImageView;
+@property (weak, nonatomic) IBOutlet MDScratchImageView *finalImageView;
 @property (weak, nonatomic) IBOutlet UIView* viewScratchStroke;
 @end
 
@@ -28,7 +29,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.finalImageView.image = self.adjustedImage = self.sourceImage;
+    self.adjustedImage = self.sourceImage;
+    [self.finalImageView setImage:self.sourceImage radius:10.0];
 }
 
 - (void)popCurrentViewController
@@ -264,7 +266,7 @@ enum EditAction{
             [self adjustPreviewImage:2];
         }
     }
-    self.viewScratchStroke.hidden == EditActionTagScatch != [sender tag];
+    self.viewScratchStroke.hidden = EditActionTagScatch != [sender tag];
     switch ([sender tag]) {
         case EditActionTagScatch:
         {
@@ -293,6 +295,7 @@ enum EditAction{
         }
         case EditActionTagRotateRight:
         {
+            [self rotateImage];
             break;
         }
         case EditActionTagSave:
