@@ -186,6 +186,102 @@
             </objects>
             <point key="canvasLocation" x="-408" y="282"/>
         </scene>
+        <!--分享到-->
+        <scene sceneID="dw3-hJ-5Mt">
+            <objects>
+                <viewController id="Qm0-Za-bz1" userLabel="分享到" customClass="CTHShareViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ddV-6t-NYa"/>
+                        <viewControllerLayoutGuide type="bottom" id="ctP-Aa-JIx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MIc-Sa-GXl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享到" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKC-CZ-vca">
+                                <rect key="frame" x="60" y="192" width="480" height="48"/>
+                                <color key="backgroundColor" red="0.21691400699999999" green="0.53914473129999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="mxF-9e-CiE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lMC-nt-Zk2">
+                                <rect key="frame" x="60" y="240" width="480" height="120"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="uCa-ju-ywx"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ajz-eI-4Nm">
+                                    <size key="itemSize" width="60" height="68"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Iks-z2-Ols">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="68"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="语文.png" translatesAutoresizingMaskIntoConstraints="NO" id="XOP-gX-idA">
+                                                    <rect key="frame" x="8" y="8" width="77" height="69"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="语文" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rz5-gb-JnM">
+                                                    <rect key="frame" x="9" y="77" width="75" height="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="rz5-gb-JnM" firstAttribute="leading" secondItem="Iks-z2-Ols" secondAttribute="leading" constant="9" id="4TD-dp-MGV"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="XOP-gX-idA" secondAttribute="bottom" constant="6" id="LdJ-q6-3uk"/>
+                                            <constraint firstAttribute="trailing" secondItem="rz5-gb-JnM" secondAttribute="trailing" constant="9" id="TgC-bS-Uuv"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="XOP-gX-idA" secondAttribute="trailing" id="X2R-YE-HTk"/>
+                                            <constraint firstItem="XOP-gX-idA" firstAttribute="leading" secondItem="Iks-z2-Ols" secondAttribute="leadingMargin" id="aIn-Ni-Dae"/>
+                                            <constraint firstItem="XOP-gX-idA" firstAttribute="top" secondItem="Iks-z2-Ols" secondAttribute="topMargin" id="uH3-JS-M6X"/>
+                                            <constraint firstAttribute="bottom" secondItem="rz5-gb-JnM" secondAttribute="bottom" id="xkN-FH-Wpy"/>
+                                            <constraint firstItem="rz5-gb-JnM" firstAttribute="top" secondItem="XOP-gX-idA" secondAttribute="bottom" id="yGP-Sf-Cyx"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Qm0-Za-bz1" id="ydc-CZ-fJE"/>
+                                    <outlet property="delegate" destination="Qm0-Za-bz1" id="ks8-v1-Trb"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lMC-nt-Zk2" firstAttribute="width" secondItem="MIc-Sa-GXl" secondAttribute="width" multiplier="4:5" id="Eef-8s-0Ia"/>
+                            <constraint firstItem="ZKC-CZ-vca" firstAttribute="width" secondItem="lMC-nt-Zk2" secondAttribute="width" id="GU6-eF-q37"/>
+                            <constraint firstItem="lMC-nt-Zk2" firstAttribute="centerX" secondItem="MIc-Sa-GXl" secondAttribute="centerX" id="QjB-nw-xOs"/>
+                            <constraint firstItem="lMC-nt-Zk2" firstAttribute="height" secondItem="MIc-Sa-GXl" secondAttribute="height" multiplier="1:2" id="gtO-MW-c4K"/>
+                            <constraint firstItem="ZKC-CZ-vca" firstAttribute="leading" secondItem="lMC-nt-Zk2" secondAttribute="leading" id="nX1-qZ-LQk"/>
+                            <constraint firstItem="lMC-nt-Zk2" firstAttribute="top" secondItem="ZKC-CZ-vca" secondAttribute="bottom" id="riD-x8-LQC"/>
+                            <constraint firstItem="lMC-nt-Zk2" firstAttribute="centerY" secondItem="MIc-Sa-GXl" secondAttribute="centerY" id="zLl-4a-Ta3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gtO-MW-c4K"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="lMC-nt-Zk2" id="NBI-jn-cXT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qKL-1m-eKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-408" y="282"/>
+        </scene>
         <!--创建-->
         <scene sceneID="hc1-DS-oUt">
             <objects>
@@ -893,6 +989,9 @@
                             <state key="normal" title="保存并分享">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <segue destination="Qm0-Za-bz1" kind="show" id="MQm-gf-8i8"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLV-1N-12h">
                             <rect key="frame" x="240" y="0.0" width="180" height="44"/>
@@ -1444,7 +1543,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cOu-Yg-XaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="216" y="2383"/>
+            <point key="canvasLocation" x="188" y="2537"/>
         </scene>
     </scenes>
     <resources>

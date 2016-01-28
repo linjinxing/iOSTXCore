@@ -13,6 +13,7 @@
 #import "TXRecordVoice.h"
 #import "VoiceConverter.h"
 #import "MAImagePickerController.h"
+#import "CTHShareViewController.h"
 
 enum CollectionViewTag{
     CollectionViewTagQuestion ,
@@ -113,6 +114,12 @@ enum CollectionViewTag{
 - (IBAction)cancel:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+- (IBAction)share:(id)sender
+{
+    
 }
 
 #pragma mark - 录音
