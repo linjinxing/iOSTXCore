@@ -38,6 +38,7 @@
 @property (strong, nonatomic) UIButton *pointB;
 @property (strong, nonatomic) UIButton *pointA;
 
+- (void)setup;
 - (BOOL)frameEdited;
 - (void)resetFrame;
 - (CGPoint)coordinatesForPoint: (int)point withScaleFactor: (CGFloat)scaleFactor;

@@ -15,10 +15,14 @@
 #import "UIImageView+ContentFrame.h"
 #import "MDScratchImageView.h"
 
+static NSUInteger strokes[] = {3, 6, 10, 15};
+
 @interface MAImagePickerFinalViewController ()
 
 @property(nonatomic, assign) BOOL firstCrop;
-@property (strong, nonatomic) UIImage *adjustedImage;
+@property(nonatomic, assign) NSUInteger lastActionTag;
+//@property(nonatomic, assign) NSUInteger strokeRaidus;
+//@property (strong, nonatomic) UIImage *adjustedImage;
 @property(nonatomic, weak) IBOutlet MADrawRect* viewCrop;
 @property (weak, nonatomic) IBOutlet MDScratchImageView *finalImageView;
 @property (weak, nonatomic) IBOutlet UIView* viewScratchStroke;
@@ -26,11 +30,31 @@
 
 @implementation MAImagePickerFinalViewController
 
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    self.lastActionTag = EditActionTagCrop;
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    self.adjustedImage = self.sourceImage;
-    [self.finalImageView setImage:self.sourceImage radius:10.0];
+    [self.finalImageView setImage:self.sourceImage];
+    self.finalImageView.radius = strokes[0];
+//    @weakify(self)
+//     [RACObserve(self.finalImageView, bounds) subscribeNext:^(id x) {
+//        @strongify(self)
+//
+//     }];
+//    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    self.viewCrop.frame = self.finalImageView.bounds;
+    [self.viewCrop setup];
 }
 
 - (void)popCurrentViewController
@@ -43,106 +67,54 @@
     [self storeImageToCache];
 }
 
-- (void)adjustPreviewImage:(NSUInteger)filter
+
+- (void)adjustPreviewImage
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
         
-        _adjustedImage = _sourceImage;
-        
-        if (filter == 1)
-        {
-            
-        }
-        
-        if (filter != 1)
-        {
-            
-            cv::Mat original;
-            
-            if (filter == 2)
+        UIImage* adjustedImage = self.finalImageView.image;
+  
+        cv::Mat original;
+            if (_imageFrameEdited)
             {
-                if (_imageFrameEdited)
-                {
-                    original = [MAOpenCV cvMatGrayFromAdjustedUIImage:_sourceImage];
-                }
-                else
-                {
-                    original = [MAOpenCV cvMatGrayFromUIImage:_sourceImage];
-                }
-                
-                cv::GaussianBlur(original, original, cvSize(11,11), 0);
-                cv::adaptiveThreshold(original, original, 255, cv::ADAPTIVE_THRESH_MEAN_C, cv::THRESH_BINARY, 5, 2);
-                _adjustedImage = [MAOpenCV UIImageFromCVMat:original];
-                
-                original.release();
+                original = [MAOpenCV cvMatGrayFromAdjustedUIImage:adjustedImage];
+            }
+            else
+            {
+                original = [MAOpenCV cvMatGrayFromUIImage:adjustedImage];
             }
             
-            if (filter == 3)
-            {
-                if (_imageFrameEdited)
-                {
-                    original = [MAOpenCV cvMatGrayFromAdjustedUIImage:_sourceImage];
-                }
-                else
-                {
-                    original = [MAOpenCV cvMatGrayFromUIImage:_sourceImage];
-                }
-                
-                cv::Mat new_image = cv::Mat::zeros( original.size(), original.type() );
-                
-                original.convertTo(new_image, -1, 1.4, -50);
-                original.release();
-                
-                _adjustedImage = [MAOpenCV UIImageFromCVMat:new_image];
-                new_image.release();
-            }
+            cv::GaussianBlur(original, original, cvSize(11,11), 0);
+            cv::adaptiveThreshold(original, original, 255, cv::ADAPTIVE_THRESH_MEAN_C, cv::THRESH_BINARY, 5, 2);
+            adjustedImage = [MAOpenCV UIImageFromCVMat:original];
             
-            if (filter == 4)
-            {
-                if (_imageFrameEdited)
-                {
-                    original = [MAOpenCV cvMatFromAdjustedUIImage:_sourceImage];
-                }
-                else
-                {
-                    original = [MAOpenCV cvMatFromUIImage:_sourceImage];
-                }
-                
-                cv::Mat new_image = cv::Mat::zeros( original.size(), original.type() );
-                
-                original.convertTo(new_image, -1, 1.9, -80);
-                
-                original.release();
-                
-                _adjustedImage = [MAOpenCV UIImageFromCVMat:new_image];
-                new_image.release();
-            }
-            
-        }
+            original.release();
         
         dispatch_async(dispatch_get_main_queue(),
                        ^{
-                           [self updateImageView];
+                           if (adjustedImage != self.finalImageView.image) {
+                               [self.finalImageView setImage:adjustedImage];
+                           }
                        });
     });
 }
 
 - (void) updateImageView
 {
-    [_finalImageView setNeedsDisplay];
-    [_finalImageView setImage:_adjustedImage];
+    [self.finalImageView setNeedsDisplay];
+//    [self.finalImageView setImage:self.adjustedImage];
 }
 
 - (void) updateImageViewAnimated
 {
-    _finalImageView.image = _adjustedImage;
+//    self.finalImageView.image = self.adjustedImage;
 }
 
 
 - (void)storeImageToCache
 {
     NSString *tmpPath = [NSString stringWithFormat:@"%@/%@", [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0], @"maimagepickercontollerfinalimage.jpg"];
-    NSData* imageData = UIImageJPEGRepresentation(_adjustedImage, 0.8);
+    NSData* imageData = UIImageJPEGRepresentation(self.finalImageView.image, 0.8);
     [imageData writeToFile:tmpPath atomically:NO];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"MAIPCSuccessInternal" object:tmpPath];
 }
@@ -150,25 +122,25 @@
 
 - (void)rotateImage
 {
-    switch (_adjustedImage.imageOrientation)
+    switch (self.self.finalImageView.image.imageOrientation)
     {
         case UIImageOrientationRight:
-            _adjustedImage = [[UIImage alloc] initWithCGImage: _adjustedImage.CGImage
+            self.finalImageView.image = [[UIImage alloc] initWithCGImage: self.finalImageView.image.CGImage
                                                         scale: 1.0
                                                   orientation: UIImageOrientationDown];
             break;
         case UIImageOrientationDown:
-            _adjustedImage = [[UIImage alloc] initWithCGImage: _adjustedImage.CGImage
+            self.finalImageView.image = [[UIImage alloc] initWithCGImage: self.finalImageView.image.CGImage
                                                         scale: 1.0
                                                   orientation: UIImageOrientationLeft];
             break;
         case UIImageOrientationLeft:
-            _adjustedImage = [[UIImage alloc] initWithCGImage: _adjustedImage.CGImage
+            self.finalImageView.image = [[UIImage alloc] initWithCGImage: self.finalImageView.image.CGImage
                                                         scale: 1.0
                                                   orientation: UIImageOrientationUp];
             break;
         case UIImageOrientationUp:
-            _adjustedImage = [[UIImage alloc] initWithCGImage: _adjustedImage.CGImage
+            self.finalImageView.image = [[UIImage alloc] initWithCGImage: self.finalImageView.image.CGImage
                                                         scale: 1.0
                                                   orientation: UIImageOrientationRight];
             break;
@@ -183,8 +155,7 @@
 
 - (void)confirmedImage
 {
-    BOOL edited;
-    if ([self.viewCrop frameEdited])
+    if ([self.viewCrop frameEdited] || !self.firstCrop)
     {
         //cv::GaussianBlur(original, original, cvSize(11,11), 0);
         //cv::adaptiveThreshold(original, original, 255, cv::ADAPTIVE_THRESH_MEAN_C, cv::THRESH_BINARY, 5, 2);
@@ -224,17 +195,19 @@
         dst[3].y = maxHeight - 1;
         
         cv::Mat undistorted = cv::Mat( cvSize(maxWidth,maxHeight), CV_8UC1);
-        cv::Mat original = [MAOpenCV cvMatFromUIImage:_adjustedImage];
+        cv::Mat original = [MAOpenCV cvMatFromUIImage:self.finalImageView.image];
         cv::warpPerspective(original, undistorted, cv::getPerspectiveTransform(src, dst), cvSize(maxWidth, maxHeight));
         original.release();
-        
-        _adjustedImage = [MAOpenCV UIImageFromCVMat:undistorted];
+        UIImage* image = [MAOpenCV UIImageFromCVMat:undistorted];;
         undistorted.release();
-        edited = YES;
-    }
-    else
-    {
-        edited = NO;
+        LJXPerformBlockAsynOnMainThread(^{
+            self.finalImageView.image = image;
+            if (!self.firstCrop) {
+                self.firstCrop = YES;
+//                [self adjustPreviewImage];
+            }
+        });
+        LJXFoundationLog("no change");
     }
 }
 
@@ -251,31 +224,31 @@ enum EditAction{
 
 - (IBAction)stokeAction:(id)sender
 {
-    
+    self.finalImageView.radius = strokes[[sender tag]];
 }
 
 - (IBAction)editAction:(id)sender
 {
     if (EditActionTagCrop == [sender tag]) {
         self.viewCrop.hidden = NO;
+        [self.viewCrop resetFrame];
     }else{
         self.viewCrop.hidden = YES;
-        [self confirmedImage];
-        if (!self.firstCrop) {
-            self.firstCrop = YES;
-            [self adjustPreviewImage:2];
+        if (EditActionTagCrop == self.lastActionTag) {
+            [self confirmedImage];
         }
     }
     self.viewScratchStroke.hidden = EditActionTagScatch != [sender tag];
+    self.finalImageView.userInteractionEnabled = EditActionTagScatch == [sender tag];
     switch ([sender tag]) {
-        case EditActionTagScatch:
-        {
-            [self adjustPreviewImage:4];
-            break;
-        }
+//        case EditActionTagScatch:
+//        {
+////            [self adjustPreviewImage:4];
+//            break;
+//        }
         case EditActionTagRecover:
         {
-            
+            [self.finalImageView reset];
             break;
         }
         case EditActionTagUseOriginalImage:
@@ -306,6 +279,7 @@ enum EditAction{
         default:
             break;
     }
+    self.lastActionTag = [sender tag];
 }
 
 @end

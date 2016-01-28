@@ -49,9 +49,9 @@ inline CGPoint scalePoint(CGPoint point, CGSize previousSize, CGSize currentSize
 	CGColorSpaceRef		_colorSpace;
 	CGContextRef		_imageContext;
 	
-	size_t				_radius;
 }
 
+@property (nonatomic, strong) UIImage* imgOriginal;
 @property (nonatomic, strong) MDMatrix			*maskedMatrix;
 @property (nonatomic, strong) NSMutableArray    *touchPoints;
 
@@ -129,16 +129,18 @@ inline CGPoint scalePoint(CGPoint point, CGSize previousSize, CGSize currentSize
 
 #pragma mark -
 
-- (void)setImage:(UIImage *)image radius:(size_t)radius {
-	[super setImage:image];
-	_radius = radius;
-	[self initialize];
+- (void)setImage:(UIImage *)image{
+	if (image != self.image) {
+        self.imgOriginal = image;
+        [super setImage:image];
+        [self initialize];
+        [self addTouches:nil];
+    }
 }
 
-- (void)setImage:(UIImage *)image {
-	if (image != self.image) {
-		[self setImage:image radius:MDScratchImageViewDefaultRadius];
-	}
+- (void)reset{
+    self.image = self.imgOriginal;
+    
 }
 
 #pragma mark -

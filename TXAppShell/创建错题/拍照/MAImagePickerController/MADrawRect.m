@@ -29,12 +29,12 @@
 @synthesize pointB = _pointB;
 @synthesize pointA = _pointA;
 
-- (void)awakeFromNib
+
+- (void)setup
 {
 //    self = [super initWithFrame:frame];
 //    if (self)
 //    {
-    self.width = [UIScreen mainScreen].bounds.size.width;
         [self setPoints];
         [self setClipsToBounds:NO];
         [self setBackgroundColor:[UIColor clearColor]];
