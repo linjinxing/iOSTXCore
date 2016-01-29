@@ -13,6 +13,8 @@
 		686B07A71C5BAAF500E404EE /* UIViewController+Addition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 686B07A01C5BA64C00E404EE /* UIViewController+Addition.h */; };
 		686B084F1C5BB64500E404EE /* JSImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 686B084E1C5BB64500E404EE /* JSImagePickerViewController.m */; };
 		686B08501C5BB87C00E404EE /* JSImagePickerViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 686B084D1C5BB64500E404EE /* JSImagePickerViewController.h */; };
+		686B085D1C5BC6BE00E404EE /* TXImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 686B085C1C5BC6BE00E404EE /* TXImageCollectionViewCell.m */; };
+		686B08601C5BCA7700E404EE /* TXImageLabelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 686B085F1C5BCA7700E404EE /* TXImageLabelCollectionViewCell.m */; };
 		68B576BE1C528A330013BFD8 /* UILabel+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B576BD1C528A330013BFD8 /* UILabel+Addition.m */; };
 		68B576C21C528C9F0013BFD8 /* UIStoryboard+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B576C11C528C9F0013BFD8 /* UIStoryboard+Addition.m */; };
 		68B576C31C528E490013BFD8 /* UIStoryboard+Addition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68B576C01C528C9F0013BFD8 /* UIStoryboard+Addition.h */; };
@@ -212,6 +214,11 @@
 		686B07A11C5BA64C00E404EE /* UIViewController+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Addition.m"; sourceTree = "<group>"; };
 		686B084D1C5BB64500E404EE /* JSImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSImagePickerViewController.h; sourceTree = "<group>"; };
 		686B084E1C5BB64500E404EE /* JSImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSImagePickerViewController.m; sourceTree = "<group>"; };
+		686B08591C5BC59400E404EE /* TXImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TXImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		686B085B1C5BC6BE00E404EE /* TXImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXImageCollectionViewCell.h; sourceTree = "<group>"; };
+		686B085C1C5BC6BE00E404EE /* TXImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXImageCollectionViewCell.m; sourceTree = "<group>"; };
+		686B085E1C5BCA7700E404EE /* TXImageLabelCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXImageLabelCollectionViewCell.h; sourceTree = "<group>"; };
+		686B085F1C5BCA7700E404EE /* TXImageLabelCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXImageLabelCollectionViewCell.m; sourceTree = "<group>"; };
 		68B576BC1C528A330013BFD8 /* UILabel+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Addition.h"; sourceTree = "<group>"; };
 		68B576BD1C528A330013BFD8 /* UILabel+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Addition.m"; sourceTree = "<group>"; };
 		68B576C01C528C9F0013BFD8 /* UIStoryboard+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Addition.h"; sourceTree = "<group>"; };
@@ -418,6 +425,25 @@
 				686B084E1C5BB64500E404EE /* JSImagePickerViewController.m */,
 			);
 			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		686B08581C5BC55000E404EE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				686B08591C5BC59400E404EE /* TXImageCollectionViewCell.xib */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		686B085A1C5BC64700E404EE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				686B085B1C5BC6BE00E404EE /* TXImageCollectionViewCell.h */,
+				686B085C1C5BC6BE00E404EE /* TXImageCollectionViewCell.m */,
+				686B085E1C5BCA7700E404EE /* TXImageLabelCollectionViewCell.h */,
+				686B085F1C5BCA7700E404EE /* TXImageLabelCollectionViewCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		68B576BB1C528A030013BFD8 /* UILabel */ = {
@@ -637,6 +663,8 @@
 		F77F57EE1C51B497005CBD81 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				686B085A1C5BC64700E404EE /* Cell */,
+				686B08581C5BC55000E404EE /* Resource */,
 				F77F57EF1C51B497005CBD81 /* UICollectionView+Additions.h */,
 				F77F57F01C51B497005CBD81 /* UICollectionView+Additions.m */,
 			);
@@ -903,6 +931,7 @@
 				F77F58461C51B497005CBD81 /* UIDevice+IdentifierAddition.m in Sources */,
 				F77F582F1C51B497005CBD81 /* LJXMultiStateButton.m in Sources */,
 				F77F58371C51B497005CBD81 /* LJXGestureLock.m in Sources */,
+				686B08601C5BCA7700E404EE /* TXImageLabelCollectionViewCell.m in Sources */,
 				68B576C21C528C9F0013BFD8 /* UIStoryboard+Addition.m in Sources */,
 				F77F58451C51B497005CBD81 /* UICollectionView+Additions.m in Sources */,
 				F77F583D1C51B497005CBD81 /* LJXUIWebViewController.m in Sources */,
@@ -920,6 +949,7 @@
 				F77F58301C51B497005CBD81 /* LJXRoundButton.m in Sources */,
 				F77F584A1C51B497005CBD81 /* UIImage+editor.m in Sources */,
 				F77F58381C51B497005CBD81 /* LJXLockIndicator.m in Sources */,
+				686B085D1C5BC6BE00E404EE /* TXImageCollectionViewCell.m in Sources */,
 				F77F58551C51B497005CBD81 /* NSArray+Subviews.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

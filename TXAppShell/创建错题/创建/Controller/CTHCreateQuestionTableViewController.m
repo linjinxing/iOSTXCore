@@ -31,8 +31,10 @@ enum CollectionViewTag{
 @property(weak) IBOutlet UILabel* labelVoiceLength;
 @property(strong) IBOutletCollection(UICollectionView) NSArray* collectionViews;
 @property(strong) IBOutletCollection(UIImageView) NSArray* imageViewStars;
-@property(strong) NSArray* arrayKnowledgePoints;
-@property(strong) NSArray* arrayTagItems;
+@property(strong) NSArray* arrayKnowledgePoints; /* 知识点 */
+@property(strong) NSArray* arrayTagItems;  /* 标签 */
+@property(strong) NSMutableArray* arrayQeustionImages; /* 题目图片 */
+@property(strong) NSMutableArray* arrayQeustionAnalysisImages; /* 题目解析图片 */
 @property(strong) TXRecordVoice* recorder;
 @end
 
@@ -41,7 +43,7 @@ enum CollectionViewTag{
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.labelSubject.text = self.subject.subjectname;
+    self.labelSubject.text = self.subject.subjectName;
     self.labelType.text = self.type;
     self.viewBottom.width = self.view.width;
     
@@ -100,7 +102,7 @@ enum CollectionViewTag{
     if ([vc isKindOfClass:[TopicDetailViewController class]]) {
          TopicDetailViewController* topicDetail = (TopicDetailViewController*)vc;
         topicDetail.isFromeWrongAndAnsy = YES;
-        topicDetail.object = self.subject.subjectname;
+        topicDetail.object = self.subject.subjectName;
         topicDetail.i = 1;/* 代表知识点 */
         topicDetail.titleStr = @"选择知识点";
     }

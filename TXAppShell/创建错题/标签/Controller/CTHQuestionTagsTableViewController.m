@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
  [CTHURLJSONConnectionCreateSignal(@{@"dataType":@"getTagInfos",
-                                     @"subjectType":self.subject.subjecttype,
+                                     @"subjectType":self.subject.subjectType,
                                      @"userName":@"linjinxing"},
                                    @"result",
                                    [CTHQuestionTags class])
@@ -66,7 +66,7 @@
         if (av.cancelButtonIndex != [buttonIndex integerValue]) {
             [CTHURLJSONConnectionCreateSignal(@{@"dataType":@"addTagInfo",
                                                @"tagInfo":@{@"tagTypeId":questionTags.id,
-                                                            @"subjectType":self.subject.subjecttype,
+                                                            @"subjectType":self.subject.subjectType,
                                                             @"topic Tag":[av textFieldAtIndex:0].text,
                                                             @"userName":@"linjinxing"}
                                                },
@@ -132,6 +132,9 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 150.0;
+//    [cell.collectionView.collectionViewLayout prepareLayout];
+//    cell.collectionView.size = [cell.collectionView.collectionViewLayout collectionViewContentSize];
+//    return cell.collectionView.size.height + cell.label.height + 8.0f;
 }
 
 #pragma mark - UICollectionView

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface CTHSubject : NSObject
-@property(nonatomic, copy) NSNumber* subjectid;
-@property(nonatomic, copy) NSString* subjecttype;
-@property(nonatomic, copy) NSString* subjectname;
+@property(nonatomic, copy) NSNumber* subjectId;
+@property(nonatomic, copy) NSString* subjectType;
+@property(nonatomic, copy) NSString* subjectName;
 @end
