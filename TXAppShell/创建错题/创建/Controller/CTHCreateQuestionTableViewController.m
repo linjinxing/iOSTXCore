@@ -14,6 +14,7 @@
 #import "VoiceConverter.h"
 #import "MAImagePickerController.h"
 #import "CTHShareViewController.h"
+#import "TXUIKit.h"
 
 enum CollectionViewTag{
     CollectionViewTagQuestion ,
@@ -204,7 +205,7 @@ static NSArray* const anwsers = @[@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H"
     MAImagePickerController *imagePicker = [[MAImagePickerController alloc] init];
     
     [imagePicker setDelegate:self];
-    [imagePicker setSourceType:MAImagePickerControllerSourceTypeCamera];
+//    [imagePicker setSourceType:MAImagePickerControllerSourceTypeCamera];
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:imagePicker];
     

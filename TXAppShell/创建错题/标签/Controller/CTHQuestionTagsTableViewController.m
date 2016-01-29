@@ -15,14 +15,13 @@
 @interface CTHQuestionTagsTableViewController ()
 @property(nonatomic, strong) NSArray* groupTags;
 //@property(nonatomic, strong) NSMutableArray* selectedTags;
-@property(nonatomic, strong) NSMutableArray* cellHeights;
+@property(nonatomic, strong) NSMutableArray* collectionViews;
 @end
 
 @implementation CTHQuestionTagsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.cellHeights = [NSMutableArray array];
  [CTHURLJSONConnectionCreateSignal(@{@"dataType":@"getTagInfos",
                                      @"subjectType":self.subject.subjecttype,
                                      @"userName":@"linjinxing"},
@@ -30,6 +29,8 @@
                                    [CTHQuestionTags class])
      subscribeNext:^(NSArray* tags) {
          self.groupTags = tags;
+         self.collectionViews = [NSMutableArray arrayWithCapacity:[tags count]];
+         [self.collectionViews setValue:[NSNull null] withCount:[tags count]];
          for (CTHQuestionTags* tag in tags) {
              tag.selectedTags = [NSMutableSet setWithCapacity:30];
          }
@@ -131,7 +132,6 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 150.0;
-    return [self.cellHeights[indexPath.row] floatValue];
 }
 
 #pragma mark - UICollectionView

@@ -37,26 +37,6 @@
 //  }
 //}
 
--(BOOL)swapObjetAtIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex
-{
-    BOOL bRetVal = FALSE;
-    if (fromIndex >=0 && fromIndex < [self count] && toIndex >=0 && [self count] > toIndex) {
-        // LJXFoundationLog("[swapObjetAtIndex] fromIndex:%d, toIndex:%d, self:%@\n",
-        //          fromIndex, toIndex, self);
-        id fromObj = [self objectAtIndex:fromIndex];        
-        id toObj = [self objectAtIndex:toIndex];
-        [self replaceObjectAtIndex:fromIndex withObject:toObj];
-        [self replaceObjectAtIndex:toIndex withObject:fromObj];        
-        bRetVal = TRUE;
-        // LJXFoundationLog("[swapObjetAtIndex] fromObj:%@, toObj:%@, self:%@\n",
-        //          fromObj, toObj, self);        
-    }else {
-        LJXError( "[swapObjetAtIndex] fromIndex:%d, toIndex:%d, self:%@\n",
-                  fromIndex, toIndex, self);
-    }
-    
-    return bRetVal;
-}
 
 -(BOOL)moveObjectFromIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex
 {
