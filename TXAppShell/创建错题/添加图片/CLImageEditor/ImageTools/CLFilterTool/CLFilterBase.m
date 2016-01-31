@@ -71,15 +71,7 @@
             @"CLDefaultVignetteFilter"  : @{@"name":@"CIVignetteEffect",         @"title":[CLImageEditorTheme localizedString:@"CLDefaultVignetteFilter_DefaultTitle" withDefault:@"Vignette"],   @"version":@(7.0), @"dockedNum":@(2.0)},
             @"CLDefaultInstantFilter"   : @{@"name":@"CIPhotoEffectInstant",     @"title":[CLImageEditorTheme localizedString:@"CLDefaultInstantFilter_DefaultTitle" withDefault:@"Instant"],    @"version":@(7.0), @"dockedNum":@(3.0)},
             @"CLDefaultProcessFilter"   : @{@"name":@"CIPhotoEffectProcess",     @"title":[CLImageEditorTheme localizedString:@"CLDefaultProcessFilter_DefaultTitle" withDefault:@"Process"],    @"version":@(7.0), @"dockedNum":@(4.0)},
-            @"CLDefaultTransferFilter"  : @{@"name":@"CIPhotoEffectTransfer",    @"title":[CLImageEditorTheme localizedString:@"CLDefaultTransferFilter_DefaultTitle" withDefault:@"Transfer"],   @"version":@(7.0), @"dockedNum":@(5.0)},
-            @"CLDefaultSepiaFilter"     : @{@"name":@"CISepiaTone",              @"title":[CLImageEditorTheme localizedString:@"CLDefaultSepiaFilter_DefaultTitle" withDefault:@"Sepia"],      @"version":@(5.0), @"dockedNum":@(6.0)},
-            @"CLDefaultChromeFilter"    : @{@"name":@"CIPhotoEffectChrome",      @"title":[CLImageEditorTheme localizedString:@"CLDefaultChromeFilter_DefaultTitle" withDefault:@"Chrome"],     @"version":@(7.0), @"dockedNum":@(7.0)},
-            @"CLDefaultFadeFilter"      : @{@"name":@"CIPhotoEffectFade",        @"title":[CLImageEditorTheme localizedString:@"CLDefaultFadeFilter_DefaultTitle" withDefault:@"Fade"],       @"version":@(7.0), @"dockedNum":@(8.0)},
-            @"CLDefaultCurveFilter"     : @{@"name":@"CILinearToSRGBToneCurve",  @"title":[CLImageEditorTheme localizedString:@"CLDefaultCurveFilter_DefaultTitle" withDefault:@"Curve"],      @"version":@(7.0), @"dockedNum":@(9.0)},
-            @"CLDefaultTonalFilter"     : @{@"name":@"CIPhotoEffectTonal",       @"title":[CLImageEditorTheme localizedString:@"CLDefaultTonalFilter_DefaultTitle" withDefault:@"Tonal"],      @"version":@(7.0), @"dockedNum":@(10.0)},
-            @"CLDefaultNoirFilter"      : @{@"name":@"CIPhotoEffectNoir",        @"title":[CLImageEditorTheme localizedString:@"CLDefaultNoirFilter_DefaultTitle" withDefault:@"Noir"],       @"version":@(7.0), @"dockedNum":@(11.0)},
-            @"CLDefaultMonoFilter"      : @{@"name":@"CIPhotoEffectMono",        @"title":[CLImageEditorTheme localizedString:@"CLDefaultMonoFilter_DefaultTitle" withDefault:@"Mono"],       @"version":@(7.0), @"dockedNum":@(12.0)},
-            @"CLDefaultInvertFilter"    : @{@"name":@"CIColorInvert",            @"title":[CLImageEditorTheme localizedString:@"CLDefaultInvertFilter_DefaultTitle" withDefault:@"Invert"],     @"version":@(6.0), @"dockedNum":@(13.0)},
+            @"CLDefaultTransferFilter"  : @{@"name":@"CIPhotoEffectTransfer",    @"title":[CLImageEditorTheme localizedString:@"CLDefaultTransferFilter_DefaultTitle" withDefault:@"Transfer"],   @"version":@(7.0), @"dockedNum":@(5.0)}
         };
     }
     return defaultFilterInfo;
