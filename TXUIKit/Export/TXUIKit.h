@@ -27,7 +27,7 @@
 #import "LJXLockPassword.h"
 #import "MBProgressHUD.h"
 #import "LJXUITextField.h"
-
+#import "JSImagePickerViewController.h"
 /* 系统一些ui的尺寸大小 */
 #import "LJXUISystemMetric.h"
 

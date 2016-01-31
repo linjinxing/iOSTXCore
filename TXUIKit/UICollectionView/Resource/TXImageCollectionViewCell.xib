@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TXImageCollectionViewCell" id="WZf-cw-scW" customClass="TXImageCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="119" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="119" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qbB-gv-fnT">
+                        <rect key="frame" x="8" y="8" width="103" height="86"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2l-Vt-8Zw">
+                        <rect key="frame" x="0.0" y="2" width="30" height="30"/>
+                        <state key="normal" title="X"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottomMargin" secondItem="qbB-gv-fnT" secondAttribute="bottom" id="MCV-U3-qbB"/>
+                <constraint firstItem="X2l-Vt-8Zw" firstAttribute="leading" secondItem="WZf-cw-scW" secondAttribute="leading" id="RN1-46-fst"/>
+                <constraint firstItem="qbB-gv-fnT" firstAttribute="top" secondItem="WZf-cw-scW" secondAttribute="topMargin" id="XFy-rP-yNk"/>
+                <constraint firstItem="qbB-gv-fnT" firstAttribute="leading" secondItem="WZf-cw-scW" secondAttribute="leadingMargin" id="iFX-AB-eH4"/>
+                <constraint firstItem="X2l-Vt-8Zw" firstAttribute="top" secondItem="WZf-cw-scW" secondAttribute="top" constant="2" id="j1s-Mx-2R6"/>
+                <constraint firstAttribute="trailingMargin" secondItem="qbB-gv-fnT" secondAttribute="trailing" id="mKj-cA-GuG"/>
+            </constraints>
+            <size key="customSize" width="119" height="102"/>
+            <connections>
+                <outlet property="btnDelete" destination="X2l-Vt-8Zw" id="n0T-aZ-m6c"/>
+                <outlet property="imageView" destination="qbB-gv-fnT" id="k1q-FT-7wH"/>
+            </connections>
+            <point key="canvasLocation" x="137.5" y="121"/>
+        </collectionViewCell>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TXImageLabelCollectionViewCell" id="RdA-9z-5Oo" customClass="TXImageLabelCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="119" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="119" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1yO-vN-WVd">
+                        <rect key="frame" x="32" y="6" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="1yO-vN-WVd" secondAttribute="height" id="CZ2-3H-qzG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vda-Bw-PN1">
+                        <rect key="frame" x="8" y="68" width="103" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailingMargin" secondItem="Vda-Bw-PN1" secondAttribute="trailing" id="3Fw-UN-dhN"/>
+                <constraint firstAttribute="bottomMargin" secondItem="Vda-Bw-PN1" secondAttribute="bottom" id="HBS-d3-wZ3"/>
+                <constraint firstItem="1yO-vN-WVd" firstAttribute="width" secondItem="RdA-9z-5Oo" secondAttribute="width" multiplier="7:15" id="OlQ-1K-4AU"/>
+                <constraint firstItem="1yO-vN-WVd" firstAttribute="top" secondItem="RdA-9z-5Oo" secondAttribute="top" constant="6" id="pkQ-JN-3fH"/>
+                <constraint firstItem="1yO-vN-WVd" firstAttribute="centerX" secondItem="RdA-9z-5Oo" secondAttribute="centerX" id="qZu-sc-uad"/>
+                <constraint firstItem="Vda-Bw-PN1" firstAttribute="leading" secondItem="RdA-9z-5Oo" secondAttribute="leadingMargin" id="yFK-Qt-at1"/>
+            </constraints>
+            <size key="customSize" width="119" height="97"/>
+            <point key="canvasLocation" x="137.5" y="304.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

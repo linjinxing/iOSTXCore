@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		686B07A21C5BA64C00E404EE /* LJXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 686B079D1C5BA64C00E404EE /* LJXTableViewController.m */; };
+		686B07A31C5BA64C00E404EE /* LJXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 686B079F1C5BA64C00E404EE /* LJXViewController.m */; };
+		686B07A41C5BA64C00E404EE /* UIViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 686B07A11C5BA64C00E404EE /* UIViewController+Addition.m */; };
+		686B07A71C5BAAF500E404EE /* UIViewController+Addition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 686B07A01C5BA64C00E404EE /* UIViewController+Addition.h */; };
+		686B084F1C5BB64500E404EE /* JSImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 686B084E1C5BB64500E404EE /* JSImagePickerViewController.m */; };
+		686B08501C5BB87C00E404EE /* JSImagePickerViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 686B084D1C5BB64500E404EE /* JSImagePickerViewController.h */; };
+		686B085D1C5BC6BE00E404EE /* TXImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 686B085C1C5BC6BE00E404EE /* TXImageCollectionViewCell.m */; };
+		686B08601C5BCA7700E404EE /* TXImageLabelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 686B085F1C5BCA7700E404EE /* TXImageLabelCollectionViewCell.m */; };
 		68B576BE1C528A330013BFD8 /* UILabel+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B576BD1C528A330013BFD8 /* UILabel+Addition.m */; };
 		68B576C21C528C9F0013BFD8 /* UIStoryboard+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B576C11C528C9F0013BFD8 /* UIStoryboard+Addition.m */; };
 		68B576C31C528E490013BFD8 /* UIStoryboard+Addition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68B576C01C528C9F0013BFD8 /* UIStoryboard+Addition.h */; };
@@ -18,9 +26,6 @@
 		F77F582F1C51B497005CBD81 /* LJXMultiStateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57AD1C51B497005CBD81 /* LJXMultiStateButton.m */; };
 		F77F58301C51B497005CBD81 /* LJXRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57AF1C51B497005CBD81 /* LJXRoundButton.m */; };
 		F77F58311C51B497005CBD81 /* LJXRoundFrameButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57B11C51B497005CBD81 /* LJXRoundFrameButton.m */; };
-		F77F58321C51B497005CBD81 /* LJXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57B51C51B497005CBD81 /* LJXTableViewController.m */; };
-		F77F58331C51B497005CBD81 /* LJXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57B71C51B497005CBD81 /* LJXViewController.m */; };
-		F77F58341C51B497005CBD81 /* UIViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57B91C51B497005CBD81 /* UIViewController+Addition.m */; };
 		F77F58351C51B497005CBD81 /* LJXGesturePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57BD1C51B497005CBD81 /* LJXGesturePasswordViewController.m */; };
 		F77F58361C51B497005CBD81 /* LJXSetGesturePwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57BF1C51B497005CBD81 /* LJXSetGesturePwdViewController.m */; };
 		F77F58371C51B497005CBD81 /* LJXGestureLock.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57C51C51B497005CBD81 /* LJXGestureLock.m */; };
@@ -59,9 +64,6 @@
 		F77F58601C51B4C6005CBD81 /* LJXMultiStateButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57AC1C51B497005CBD81 /* LJXMultiStateButton.h */; };
 		F77F58611C51B4C6005CBD81 /* LJXRoundButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57AE1C51B497005CBD81 /* LJXRoundButton.h */; };
 		F77F58621C51B4C6005CBD81 /* LJXRoundFrameButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57B01C51B497005CBD81 /* LJXRoundFrameButton.h */; };
-		F77F58631C51B4C6005CBD81 /* LJXTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57B41C51B497005CBD81 /* LJXTableViewController.h */; };
-		F77F58641C51B4C6005CBD81 /* LJXViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57B61C51B497005CBD81 /* LJXViewController.h */; };
-		F77F58651C51B4C6005CBD81 /* UIViewController+Addition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57B81C51B497005CBD81 /* UIViewController+Addition.h */; };
 		F77F58661C51B4C6005CBD81 /* LJXGesturePasswordViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57BC1C51B497005CBD81 /* LJXGesturePasswordViewController.h */; };
 		F77F58671C51B4C6005CBD81 /* LJXSetGesturePwdViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57BE1C51B497005CBD81 /* LJXSetGesturePwdViewController.h */; };
 		F77F58681C51B4C6005CBD81 /* LJXGestureLock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F77F57C41C51B497005CBD81 /* LJXGestureLock.h */; };
@@ -146,18 +148,17 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				686B07A71C5BAAF500E404EE /* UIViewController+Addition.h in CopyFiles */,
 				F77F585C1C51B4C6005CBD81 /* UIButtonAdditions.h in CopyFiles */,
 				F77F585D1C51B4C6005CBD81 /* LJXBlueRoundButton.h in CopyFiles */,
 				F77F585E1C51B4C6005CBD81 /* LJXButton.h in CopyFiles */,
 				F77F585F1C51B4C6005CBD81 /* LJXListButton.h in CopyFiles */,
+				686B08501C5BB87C00E404EE /* JSImagePickerViewController.h in CopyFiles */,
 				F77F58721C51B4C6005CBD81 /* TXUIKit.h in CopyFiles */,
 				68B576C31C528E490013BFD8 /* UIStoryboard+Addition.h in CopyFiles */,
 				F77F58601C51B4C6005CBD81 /* LJXMultiStateButton.h in CopyFiles */,
 				F77F58611C51B4C6005CBD81 /* LJXRoundButton.h in CopyFiles */,
 				F77F58621C51B4C6005CBD81 /* LJXRoundFrameButton.h in CopyFiles */,
-				F77F58631C51B4C6005CBD81 /* LJXTableViewController.h in CopyFiles */,
-				F77F58641C51B4C6005CBD81 /* LJXViewController.h in CopyFiles */,
-				F77F58651C51B4C6005CBD81 /* UIViewController+Addition.h in CopyFiles */,
 				F77F58661C51B4C6005CBD81 /* LJXGesturePasswordViewController.h in CopyFiles */,
 				F77F58671C51B4C6005CBD81 /* LJXSetGesturePwdViewController.h in CopyFiles */,
 				F77F58681C51B4C6005CBD81 /* LJXGestureLock.h in CopyFiles */,
@@ -205,6 +206,19 @@
 		418B10221AE8EF7F00CC1848 /* libTXUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTXUIKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		418B10331AE8EF7F00CC1848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		680219501C54C3E300302EA7 /* TXFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TXFoundation.xcodeproj; path = ../TXFoundation/TXFoundation.xcodeproj; sourceTree = "<group>"; };
+		686B079C1C5BA64C00E404EE /* LJXTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXTableViewController.h; sourceTree = "<group>"; };
+		686B079D1C5BA64C00E404EE /* LJXTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXTableViewController.m; sourceTree = "<group>"; };
+		686B079E1C5BA64C00E404EE /* LJXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXViewController.h; sourceTree = "<group>"; };
+		686B079F1C5BA64C00E404EE /* LJXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXViewController.m; sourceTree = "<group>"; };
+		686B07A01C5BA64C00E404EE /* UIViewController+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Addition.h"; sourceTree = "<group>"; };
+		686B07A11C5BA64C00E404EE /* UIViewController+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Addition.m"; sourceTree = "<group>"; };
+		686B084D1C5BB64500E404EE /* JSImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSImagePickerViewController.h; sourceTree = "<group>"; };
+		686B084E1C5BB64500E404EE /* JSImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSImagePickerViewController.m; sourceTree = "<group>"; };
+		686B08591C5BC59400E404EE /* TXImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TXImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		686B085B1C5BC6BE00E404EE /* TXImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXImageCollectionViewCell.h; sourceTree = "<group>"; };
+		686B085C1C5BC6BE00E404EE /* TXImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXImageCollectionViewCell.m; sourceTree = "<group>"; };
+		686B085E1C5BCA7700E404EE /* TXImageLabelCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXImageLabelCollectionViewCell.h; sourceTree = "<group>"; };
+		686B085F1C5BCA7700E404EE /* TXImageLabelCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXImageLabelCollectionViewCell.m; sourceTree = "<group>"; };
 		68B576BC1C528A330013BFD8 /* UILabel+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Addition.h"; sourceTree = "<group>"; };
 		68B576BD1C528A330013BFD8 /* UILabel+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Addition.m"; sourceTree = "<group>"; };
 		68B576C01C528C9F0013BFD8 /* UIStoryboard+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Addition.h"; sourceTree = "<group>"; };
@@ -227,12 +241,6 @@
 		F77F57AF1C51B497005CBD81 /* LJXRoundButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXRoundButton.m; sourceTree = "<group>"; };
 		F77F57B01C51B497005CBD81 /* LJXRoundFrameButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXRoundFrameButton.h; sourceTree = "<group>"; };
 		F77F57B11C51B497005CBD81 /* LJXRoundFrameButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXRoundFrameButton.m; sourceTree = "<group>"; };
-		F77F57B41C51B497005CBD81 /* LJXTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXTableViewController.h; sourceTree = "<group>"; };
-		F77F57B51C51B497005CBD81 /* LJXTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXTableViewController.m; sourceTree = "<group>"; };
-		F77F57B61C51B497005CBD81 /* LJXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXViewController.h; sourceTree = "<group>"; };
-		F77F57B71C51B497005CBD81 /* LJXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXViewController.m; sourceTree = "<group>"; };
-		F77F57B81C51B497005CBD81 /* UIViewController+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Addition.h"; sourceTree = "<group>"; };
-		F77F57B91C51B497005CBD81 /* UIViewController+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Addition.m"; sourceTree = "<group>"; };
 		F77F57BC1C51B497005CBD81 /* LJXGesturePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXGesturePasswordViewController.h; sourceTree = "<group>"; };
 		F77F57BD1C51B497005CBD81 /* LJXGesturePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJXGesturePasswordViewController.m; sourceTree = "<group>"; };
 		F77F57BE1C51B497005CBD81 /* LJXSetGesturePwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJXSetGesturePwdViewController.h; sourceTree = "<group>"; };
@@ -337,6 +345,7 @@
 				F77F58031C51B497005CBD81 /* UITableView */,
 				F77F58111C51B497005CBD81 /* UITextField */,
 				68B576BF1C528C2C0013BFD8 /* UIStoryboard */,
+				686B084C1C5BB64500E404EE /* ImagePicker */,
 				F77F58181C51B497005CBD81 /* UIView */,
 				418B10241AE8EF7F00CC1848 /* LJXUIKit */,
 				418B10311AE8EF7F00CC1848 /* LJXUIKitTests */,
@@ -394,6 +403,47 @@
 				680219551C54C3E300302EA7 /* libTXFoundation.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		686B079B1C5BA64C00E404EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				686B079C1C5BA64C00E404EE /* LJXTableViewController.h */,
+				686B079D1C5BA64C00E404EE /* LJXTableViewController.m */,
+				686B079E1C5BA64C00E404EE /* LJXViewController.h */,
+				686B079F1C5BA64C00E404EE /* LJXViewController.m */,
+				686B07A01C5BA64C00E404EE /* UIViewController+Addition.h */,
+				686B07A11C5BA64C00E404EE /* UIViewController+Addition.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		686B084C1C5BB64500E404EE /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				686B084D1C5BB64500E404EE /* JSImagePickerViewController.h */,
+				686B084E1C5BB64500E404EE /* JSImagePickerViewController.m */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		686B08581C5BC55000E404EE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				686B08591C5BC59400E404EE /* TXImageCollectionViewCell.xib */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		686B085A1C5BC64700E404EE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				686B085B1C5BC6BE00E404EE /* TXImageCollectionViewCell.h */,
+				686B085C1C5BC6BE00E404EE /* TXImageCollectionViewCell.m */,
+				686B085E1C5BCA7700E404EE /* TXImageLabelCollectionViewCell.h */,
+				686B085F1C5BCA7700E404EE /* TXImageLabelCollectionViewCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		68B576BB1C528A030013BFD8 /* UILabel */ = {
@@ -472,25 +522,12 @@
 		F77F57B21C51B497005CBD81 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F77F57B31C51B497005CBD81 /* Base */,
+				686B079B1C5BA64C00E404EE /* Controller */,
 				F77F57BA1C51B497005CBD81 /* MBGesturePWD */,
 				F77F57CC1C51B497005CBD81 /* UINavigationController */,
 				F77F57D11C51B497005CBD81 /* Webview */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		F77F57B31C51B497005CBD81 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				F77F57B41C51B497005CBD81 /* LJXTableViewController.h */,
-				F77F57B51C51B497005CBD81 /* LJXTableViewController.m */,
-				F77F57B61C51B497005CBD81 /* LJXViewController.h */,
-				F77F57B71C51B497005CBD81 /* LJXViewController.m */,
-				F77F57B81C51B497005CBD81 /* UIViewController+Addition.h */,
-				F77F57B91C51B497005CBD81 /* UIViewController+Addition.m */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		F77F57BA1C51B497005CBD81 /* MBGesturePWD */ = {
@@ -626,6 +663,8 @@
 		F77F57EE1C51B497005CBD81 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				686B085A1C5BC64700E404EE /* Cell */,
+				686B08581C5BC55000E404EE /* Resource */,
 				F77F57EF1C51B497005CBD81 /* UICollectionView+Additions.h */,
 				F77F57F01C51B497005CBD81 /* UICollectionView+Additions.m */,
 			);
@@ -866,7 +905,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F77F58321C51B497005CBD81 /* LJXTableViewController.m in Sources */,
 				F77F58401C51B497005CBD81 /* LJXSpinImageView.m in Sources */,
 				F77F582E1C51B497005CBD81 /* LJXListButton.m in Sources */,
 				F77F58561C51B497005CBD81 /* NSArray+UI.m in Sources */,
@@ -874,7 +912,9 @@
 				F77F582B1C51B497005CBD81 /* UIButtonAdditions.m in Sources */,
 				F77F58581C51B497005CBD81 /* UIView+Layout.m in Sources */,
 				F77F58311C51B497005CBD81 /* LJXRoundFrameButton.m in Sources */,
+				686B07A21C5BA64C00E404EE /* LJXTableViewController.m in Sources */,
 				68B576BE1C528A330013BFD8 /* UILabel+Addition.m in Sources */,
+				686B07A41C5BA64C00E404EE /* UIViewController+Addition.m in Sources */,
 				F77F58411C51B497005CBD81 /* UIView+Toast.m in Sources */,
 				F77F58591C51B497005CBD81 /* UIView+Subviews.m in Sources */,
 				F77F58351C51B497005CBD81 /* LJXGesturePasswordViewController.m in Sources */,
@@ -891,23 +931,25 @@
 				F77F58461C51B497005CBD81 /* UIDevice+IdentifierAddition.m in Sources */,
 				F77F582F1C51B497005CBD81 /* LJXMultiStateButton.m in Sources */,
 				F77F58371C51B497005CBD81 /* LJXGestureLock.m in Sources */,
+				686B08601C5BCA7700E404EE /* TXImageLabelCollectionViewCell.m in Sources */,
 				68B576C21C528C9F0013BFD8 /* UIStoryboard+Addition.m in Sources */,
 				F77F58451C51B497005CBD81 /* UICollectionView+Additions.m in Sources */,
 				F77F583D1C51B497005CBD81 /* LJXUIWebViewController.m in Sources */,
+				686B084F1C5BB64500E404EE /* JSImagePickerViewController.m in Sources */,
 				F77F583B1C51B497005CBD81 /* LJXUINavigationController.m in Sources */,
 				F77F583A1C51B497005CBD81 /* LJXLockView.m in Sources */,
 				F77F583C1C51B497005CBD81 /* UINavigationController+LJXAddition.m in Sources */,
 				F77F58571C51B497005CBD81 /* UIView+Animation.m in Sources */,
 				F77F58361C51B497005CBD81 /* LJXSetGesturePwdViewController.m in Sources */,
-				F77F58331C51B497005CBD81 /* LJXViewController.m in Sources */,
+				686B07A31C5BA64C00E404EE /* LJXViewController.m in Sources */,
 				F77F58481C51B497005CBD81 /* UIImage+Addition.m in Sources */,
 				F77F584B1C51B497005CBD81 /* UIResponderAdditions.m in Sources */,
 				F77F583E1C51B497005CBD81 /* LJXLoadingViewController.m in Sources */,
-				F77F58341C51B497005CBD81 /* UIViewController+Addition.m in Sources */,
 				F77F584C1C51B497005CBD81 /* UITableView+Addition.m in Sources */,
 				F77F58301C51B497005CBD81 /* LJXRoundButton.m in Sources */,
 				F77F584A1C51B497005CBD81 /* UIImage+editor.m in Sources */,
 				F77F58381C51B497005CBD81 /* LJXLockIndicator.m in Sources */,
+				686B085D1C5BC6BE00E404EE /* TXImageCollectionViewCell.m in Sources */,
 				F77F58551C51B497005CBD81 /* NSArray+Subviews.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

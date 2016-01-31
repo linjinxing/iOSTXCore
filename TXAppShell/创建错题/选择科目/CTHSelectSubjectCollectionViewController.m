@@ -106,7 +106,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [view setBackgroundColor:[UIColor redColor]];
     cell.selectedBackgroundView = view;
     
-    [cell.contentView labelWithTag:2].text = [self.subjects[indexPath.item] subjectname];
+    [cell.contentView labelWithTag:2].text = [self.subjects[indexPath.item] subjectName];
     return cell;
 }
 

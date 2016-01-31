@@ -52,11 +52,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="60" height="68"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="语文.png" translatesAutoresizingMaskIntoConstraints="NO" id="cvV-eD-95M">
-                                                    <rect key="frame" x="8" y="8" width="77" height="69"/>
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="语文.png" translatesAutoresizingMaskIntoConstraints="NO" id="cvV-eD-95M">
+                                                    <rect key="frame" x="8" y="2" width="44" height="46"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="语文" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldg-Jx-Kxg">
-                                                    <rect key="frame" x="9" y="77" width="75" height="14"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="语文" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldg-Jx-Kxg">
+                                                    <rect key="frame" x="9" y="51" width="42" height="14"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -65,14 +65,14 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="cvV-eD-95M" firstAttribute="top" secondItem="5v5-Hw-Do5" secondAttribute="topMargin" id="6Rw-dP-qAI"/>
+                                            <constraint firstItem="cvV-eD-95M" firstAttribute="top" secondItem="5v5-Hw-Do5" secondAttribute="topMargin" constant="-6" id="6Rw-dP-qAI"/>
                                             <constraint firstItem="cvV-eD-95M" firstAttribute="leading" secondItem="5v5-Hw-Do5" secondAttribute="leadingMargin" id="F6i-bW-jVM"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="cvV-eD-95M" secondAttribute="trailing" id="FCH-Mk-lm2"/>
                                             <constraint firstAttribute="trailing" secondItem="ldg-Jx-Kxg" secondAttribute="trailing" constant="9" id="XXr-9h-mKe"/>
-                                            <constraint firstAttribute="bottom" secondItem="ldg-Jx-Kxg" secondAttribute="bottom" id="bH1-CZ-B6s"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="cvV-eD-95M" secondAttribute="bottom" constant="6" id="nTp-Cu-Jp0"/>
+                                            <constraint firstAttribute="bottom" secondItem="ldg-Jx-Kxg" secondAttribute="bottom" constant="3" id="bH1-CZ-B6s"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="cvV-eD-95M" secondAttribute="bottom" constant="12" id="nTp-Cu-Jp0"/>
                                             <constraint firstItem="ldg-Jx-Kxg" firstAttribute="leading" secondItem="5v5-Hw-Do5" secondAttribute="leading" constant="9" id="vga-L7-l0Y"/>
-                                            <constraint firstItem="ldg-Jx-Kxg" firstAttribute="top" secondItem="cvV-eD-95M" secondAttribute="bottom" id="y76-In-lzO"/>
+                                            <constraint firstItem="ldg-Jx-Kxg" firstAttribute="top" secondItem="cvV-eD-95M" secondAttribute="bottom" constant="3" id="y76-In-lzO"/>
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
