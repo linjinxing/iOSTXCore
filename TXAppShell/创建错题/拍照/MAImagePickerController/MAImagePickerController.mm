@@ -219,9 +219,7 @@
 {
     [[_captureManager captureSession] stopRunning];
     
-    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"CreateWrongQuestions" bundle:nil];
-    
-    MAImagePickerFinalViewController *adjustViewController = [sb instantiateViewControllerWithIdentifier:NSStringFromClass([MAImagePickerFinalViewController class])];
+    MAImagePickerControllerAdjustViewController* adjustViewController = [[MAImagePickerControllerAdjustViewController alloc] init];
     adjustViewController.sourceImage = [[self captureManager] stillImage];
     
     [UIView animateWithDuration:0.05 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^
