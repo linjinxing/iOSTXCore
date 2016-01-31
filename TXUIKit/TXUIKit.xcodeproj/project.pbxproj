@@ -1006,7 +1006,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE14A34E0B9F346A3F5A0703 /* Pods-TXUIKit.debug.xcconfig */;
 			buildSettings = {
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/LJXUIKit/LJXUIKit.pch";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1022,7 +1021,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A3D3EA53F703B70DE2C2035 /* Pods-TXUIKit.release.xcconfig */;
 			buildSettings = {
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/LJXUIKit/LJXUIKit.pch";
 				OTHER_LDFLAGS = (
 					"$(inherited)",

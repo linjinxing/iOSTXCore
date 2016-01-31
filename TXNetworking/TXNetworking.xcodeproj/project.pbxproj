@@ -438,7 +438,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 58B51601CDD7759929D12B55 /* Pods-TXNetworking.debug.xcconfig */;
 			buildSettings = {
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				PRODUCT_NAME = TXNetworking;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/TXFoundation";
@@ -449,7 +448,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F0C85DF90B2287A17250966D /* Pods-TXNetworking.release.xcconfig */;
 			buildSettings = {
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				PRODUCT_NAME = TXNetworking;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/TXFoundation";

@@ -47,7 +47,7 @@
 	NSString* path = [[LJXPath systemData] stringByAppendingPathComponent:aName];
 	
 	if	(0 == [[aName pathExtension] length]){
-		aName = [aName stringByAppendingString:@".jpg"];
+		path = [path stringByAppendingString:@".jpg"];
 	}
 	
 	NSError* error ;

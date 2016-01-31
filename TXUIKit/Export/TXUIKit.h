@@ -43,7 +43,7 @@
 #import "LJXPasswordTextField.h"
 #import "LJXUserNameTextField.h"
 
-#import "LJXWindowView.h"
+//#import "LJXWindowView.h"
 
 #import "UIButtonAdditions.h"
 #import "LJXRoundButton.h"

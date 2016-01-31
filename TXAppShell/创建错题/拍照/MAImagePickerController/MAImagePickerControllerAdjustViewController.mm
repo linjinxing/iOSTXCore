@@ -9,13 +9,19 @@
 #import "MAImagePickerControllerAdjustViewController.h"
 #import "MAImagePickerFinalViewController.h"
 
+#import <opencv2/core/core.hpp>
+#import <opencv2/imgproc/imgproc.hpp>
+
 #import "MAOpenCV.h"
 #import "UIImageView+ContentFrame.h"
 #import <QuartzCore/QuartzCore.h>
+#import "CLImageEditor.h"
 
-@interface MAImagePickerControllerAdjustViewController ()
-
-
+@interface MAImagePickerControllerAdjustViewController ()<CLImageEditorDelegate>
+@property (strong, nonatomic) UIImageView *sourceImageView;
+@property (strong, nonatomic) UIToolbar *adjustToolBar;
+@property (strong, nonatomic) UIImage *adjustedImage;
+@property (strong, nonatomic) MADrawRect *adjustRect;
 @end
 
 @implementation MAImagePickerControllerAdjustViewController
@@ -73,12 +79,14 @@
     [_adjustToolBar setItems:[NSArray arrayWithObjects:fixedSpace,cancelButton,flexibleSpace,undoButton,flexibleSpace,confirmButton,fixedSpace, nil]];
     
     [self.view addSubview:_adjustToolBar];
-    
+    [self.adjustRect setup];
     [self detectEdges];
+//    [self resetRectFrame];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
     if ([_adjustRect frameEdited])
     {
         _adjustedImage = _sourceImage;
@@ -110,8 +118,8 @@
     CGSize targetSize = _sourceImageView.contentSize;
     cv::resize(original, original, cvSize(targetSize.width, targetSize.height));
     
-    cv::vector<cv::vector<cv::Point>>squares;
-    cv::vector<cv::Point> largest_square;
+    std::vector<std::vector<cv::Point>>squares;
+    std::vector<cv::Point> largest_square;
     
     find_squares(original, squares);
     find_largest_square(squares, largest_square);
@@ -256,16 +264,45 @@
         edited = NO;
     }
     
-    MAImagePickerFinalViewController *finalView = [[MAImagePickerFinalViewController alloc] init];
-    finalView.sourceImage = _adjustedImage;
-    finalView.imageFrameEdited = edited;
+    CLImageEditor *editor = [[CLImageEditor alloc] initWithImage:_adjustedImage];
+    editor.delegate = self;
+    
+    NSArray* noAvailableFun = @[
+                                @"CLFilterTool",
+                                @"CLAdjustmentTool",
+                                @"CLEffectTool",
+                                @"CLBlurTool",
+                                @"CLClippingTool",
+                                @"CLToneCurveTool",
+                                ];
+    
+    for (NSString* toolname in noAvailableFun) {
+        CLImageToolInfo *tool = [editor.toolInfo subToolInfoWithToolName:toolname recursive:NO];
+        tool.available = NO;
+    }
+    
+//    CLImageToolInfo *tool = [editor.toolInfo subToolInfoWithToolName:@"CLToneCurveTool" recursive:NO];
+    
+//    MAImagePickerFinalViewController *finalView = [[MAImagePickerFinalViewController alloc] init];
+//    finalView.sourceImage = _adjustedImage;
+//    finalView.imageFrameEdited = edited;
     
     CATransition* transition = [CATransition animation];
     transition.duration = 0.4;
     transition.type = kCATransitionFade;
     transition.subtype = kCATransitionFromBottom;
     [self.navigationController.view.layer addAnimation:transition forKey:kCATransition];
-    [self.navigationController pushViewController:finalView animated:NO];
+    [self.navigationController pushViewController:editor animated:NO];
+}
+
+- (void)imageEditor:(CLImageEditor*)editor didFinishEdittingWithImage:(UIImage*)image
+{
+    LJXLogFunction;
+}
+
+- (void)imageEditorDidCancel:(CLImageEditor*)editor
+{
+    LJXLogFunction;
 }
 
 - (void)didReceiveMemoryWarning
@@ -290,14 +327,14 @@
 }
 
 // http://stackoverflow.com/questions/8667818/opencv-c-obj-c-detecting-a-sheet-of-paper-square-detection
-void find_squares(cv::Mat& image, cv::vector<cv::vector<cv::Point>>&squares) {
+void find_squares(cv::Mat& image, std::vector<std::vector<cv::Point>>&squares) {
     
     // blur will enhance edge detection
     cv::Mat blurred(image);
     medianBlur(image, blurred, 9);
     
     cv::Mat gray0(blurred.size(), CV_8U), gray;
-    cv::vector<cv::vector<cv::Point> > contours;
+    std::vector<std::vector<cv::Point> > contours;
     
     // find squares in every color plane of the image
     for (int c = 0; c < 3; c++)
@@ -327,7 +364,7 @@ void find_squares(cv::Mat& image, cv::vector<cv::vector<cv::Point>>&squares) {
             findContours(gray, contours, CV_RETR_LIST, CV_CHAIN_APPROX_SIMPLE);
             
             // Test contours
-            cv::vector<cv::Point> approx;
+            std::vector<cv::Point> approx;
             for (size_t i = 0; i < contours.size(); i++)
             {
                 // approximate contour with accuracy proportional
@@ -357,7 +394,7 @@ void find_squares(cv::Mat& image, cv::vector<cv::vector<cv::Point>>&squares) {
     }
 }
 
-void find_largest_square(const cv::vector<cv::vector<cv::Point> >& squares, cv::vector<cv::Point>& biggest_square)
+void find_largest_square(const std::vector<std::vector<cv::Point> >& squares, std::vector<cv::Point>& biggest_square)
 {
     if (!squares.size())
     {

@@ -15,7 +15,7 @@
 #import "UIImageView+ContentFrame.h"
 #import "MDScratchImageView.h"
 
-static NSUInteger strokes[] = {3, 6, 10, 15};
+static NSUInteger strokes[] = {3, 6, 9, 15};
 
 @interface MAImagePickerFinalViewController ()
 
@@ -200,7 +200,9 @@ static NSUInteger strokes[] = {3, 6, 10, 15};
         original.release();
         UIImage* image = [MAOpenCV UIImageFromCVMat:undistorted];;
         undistorted.release();
-        LJXPerformBlockAsynOnMainThread(^{
+        static NSUInteger i = 0;
+        [image save2TempWithName:[NSString stringWithFormat:@"%@", @(i)]];
+        dispatch_async(dispatch_get_main_queue(), ^{
             self.finalImageView.image = image;
             if (!self.firstCrop) {
                 self.firstCrop = YES;

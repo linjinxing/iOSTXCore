@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		680219C11C54C9B000302EA7 /* NSObject+NSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 680219C01C54C9B000302EA7 /* NSObject+NSNotification.m */; };
 		680219CB1C54D19600302EA7 /* NSObject+GCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 680219CA1C54D19600302EA7 /* NSObject+GCD.m */; };
+		6873E1A81C5DD50A000C50EA /* NSObject+GCD.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 680219C91C54D19600302EA7 /* NSObject+GCD.h */; };
+		6873E1A91C5DD525000C50EA /* NSObject+NSNotification.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 680219BF1C54C9B000302EA7 /* NSObject+NSNotification.h */; };
 		F77F58FF1C51BF82005CBD81 /* NSArray+LJXExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F58991C51BF82005CBD81 /* NSArray+LJXExtend.m */; };
 		F77F59011C51BF82005CBD81 /* NSArray+NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F589B1C51BF82005CBD81 /* NSArray+NSString.m */; };
 		F77F59031C51BF82005CBD81 /* NSArrayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F589D1C51BF82005CBD81 /* NSArrayAdditions.m */; };
@@ -87,6 +89,8 @@
 			dstSubfolderSpec = 16;
 			files = (
 				F77F59471C51BF9C005CBD81 /* NSArray+LJXExtend.h in Copy Files */,
+				6873E1A81C5DD50A000C50EA /* NSObject+GCD.h in Copy Files */,
+				6873E1A91C5DD525000C50EA /* NSObject+NSNotification.h in Copy Files */,
 				F77F59481C51BF9C005CBD81 /* NSArray+NSString.h in Copy Files */,
 				F77F59491C51BF9C005CBD81 /* NSArrayAdditions.h in Copy Files */,
 				F77F595B1C51BF9C005CBD81 /* TXFoundation.h in Copy Files */,
@@ -685,7 +689,6 @@
 		418B100B1AE8EF4400CC1848 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = TXFoundation;
 				SKIP_INSTALL = YES;
@@ -695,7 +698,6 @@
 		418B100C1AE8EF4400CC1848 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = TXFoundation;
 				SKIP_INSTALL = YES;

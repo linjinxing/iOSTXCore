@@ -156,7 +156,9 @@ enum CollectionViewTag{
 
 #pragma mark - 答案
 
-static NSArray* const anwsers = @[@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H"];
+- (NSArray*) anwsers{
+   return @[@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H"];
+}
 
 #pragma mark - 解析
 
@@ -166,7 +168,7 @@ static NSArray* const anwsers = @[@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H"
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     switch (collectionView.tag) {
-        case CollectionViewTagAnswer: return anwsers.count;
+        case CollectionViewTagAnswer: return [self anwsers].count;
         case CollectionViewTagKnowledgePoints: return self.arrayKnowledgePoints.count;
         case CollectionViewTagTags: return self.arrayTagItems.count;
         default:
@@ -180,7 +182,7 @@ static NSArray* const anwsers = @[@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H"
     switch (collectionView.tag) {
         case CollectionViewTagAnswer:
         {
-            [[cell.contentView buttonWithTag:1] setTitle:anwsers[indexPath.item] forState:UIControlStateNormal];
+            [[cell.contentView buttonWithTag:1] setTitle:[self anwsers][indexPath.item] forState:UIControlStateNormal];
             return cell;
         }
         case CollectionViewTagKnowledgePoints:

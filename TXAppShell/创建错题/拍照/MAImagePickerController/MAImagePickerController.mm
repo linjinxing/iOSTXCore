@@ -7,8 +7,8 @@
 //
 
 #import "MAImagePickerController.h"
+#import "MAImagePickerFinalViewController.h"
 #import "MAImagePickerControllerAdjustViewController.h"
-
 #import "UIImage+fixOrientation.h"
 
 
@@ -219,7 +219,9 @@
 {
     [[_captureManager captureSession] stopRunning];
     
-    MAImagePickerControllerAdjustViewController *adjustViewController = [[MAImagePickerControllerAdjustViewController alloc] init];
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"CreateWrongQuestions" bundle:nil];
+    
+    MAImagePickerFinalViewController *adjustViewController = [sb instantiateViewControllerWithIdentifier:NSStringFromClass([MAImagePickerFinalViewController class])];
     adjustViewController.sourceImage = [[self captureManager] stillImage];
     
     [UIView animateWithDuration:0.05 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^
@@ -255,9 +257,18 @@
     imagePickerDismissed = YES;
     [self.navigationController popViewControllerAnimated:NO];
     
-    MAImagePickerControllerAdjustViewController *adjustViewController = [[MAImagePickerControllerAdjustViewController alloc] init];
+    
+#if 0
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"CreateWrongQuestions" bundle:nil];
+    
+    MAImagePickerFinalViewController *adjustViewController = [sb instantiateViewControllerWithIdentifier:NSStringFromClass([MAImagePickerFinalViewController class])];
+//    adjustViewController.sourceImage = [info objectForKey:UIImagePickerControllerOriginalImage];
     adjustViewController.sourceImage = [[info objectForKey:UIImagePickerControllerOriginalImage] fixOrientation];
-
+#else
+    MAImagePickerControllerAdjustViewController* adjustViewController = [[MAImagePickerControllerAdjustViewController alloc] init];
+    adjustViewController.sourceImage = [[info objectForKey:UIImagePickerControllerOriginalImage] fixOrientation];
+#endif
+    
     CATransition* transition = [CATransition animation];
     transition.duration = 0.4;
     transition.type = kCATransitionFade;
