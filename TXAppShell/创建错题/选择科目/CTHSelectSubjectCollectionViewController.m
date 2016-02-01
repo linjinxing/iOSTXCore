@@ -65,7 +65,7 @@ static NSString * const reuseIdentifier = @"Cell";
 {
     CTHCreateQuestionTableViewController* vc = (CTHCreateQuestionTableViewController*)[[segue destinationViewController] topViewController];
     vc.subject = self.subjects[self.selectedIndex];
-    vc.type = [sender tag] ? @"其它题型" : @"选择题型";
+    vc.type = [sender tag] ? @"其它题型" : @"选择题";
 }
 
 /*

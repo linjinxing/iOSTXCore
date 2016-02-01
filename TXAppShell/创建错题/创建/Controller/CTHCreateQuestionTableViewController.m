@@ -27,19 +27,33 @@ typedef enum tagCollectionViewTag{
     CollectionViewTagTags
 }CollectionViewTag;
 
-@interface CTHCreateQuestionTableViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, MAImagePickerControllerDelegate>
+typedef enum tagCommentInputType{
+  CommentInputTypeVoice = 5, /* CommentInputTypeVoice模式在tableview中的cell的indexpath.row一样，
+                              比如声音按钮的tag必须是CommentInputTypeVoice的值，
+                              键盘按钮的tag必须是CommentInputTypeText的值 */
+ CommentInputTypeText
+}CommentInputType;
+
+@interface CTHCreateQuestionTableViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
 @property(weak) IBOutlet UILabel* labelSubject;
 @property(weak) IBOutlet UILabel* labelType;
 @property(weak) IBOutlet UIView* viewBottom; /* 底部工具栏 */
 @property(weak) IBOutlet UILabel* labelVoiceLength;
+@property(weak) IBOutlet UITextView* tfComment;  /* 备注 */
+@property(weak) IBOutlet UITextView* tfAnswer;   /* 答案 */
 @property(strong) IBOutletCollection(UICollectionView) NSArray* collectionViews;
 @property(strong) IBOutletCollection(UIImageView) NSArray* imageViewStars;
+
+@property(assign) CommentInputType commentType; /* 备注的输入方式 */
+@property(assign) NSUInteger importantLevel; /* 重要程度 */
+
 @property(strong) NSMutableArray* arrayQuestionImagesPath; /* 题目拍摄的图片 */
 @property(strong) NSMutableArray* arrayAnswerAnalysisImagesPath;   /* 答案拍摄的图片 */
 @property(strong) NSMutableArray* arrayAnswer;   /* 答案 */
 @property(strong) NSArray* arrayKnowledgePoints;    /* 知识点 */
 @property(strong) NSArray* arrayTagItems;           /* 标签 */
 @property(strong) TXRecordVoice* recorder;
+@property(strong) NSString* recorderVoicePath;  /* amr 声音保存的路径 */
 @end
 
 @implementation CTHCreateQuestionTableViewController
@@ -53,6 +67,7 @@ typedef enum tagCollectionViewTag{
     self.labelSubject.text = self.subject.subjectName;
     self.labelType.text = self.type;
     self.viewBottom.width = self.view.width;
+    self.commentType = CommentInputTypeVoice;
     
     @weakify(self)
     for (UIImageView* imageView in self.imageViewStars) {
@@ -60,6 +75,7 @@ typedef enum tagCollectionViewTag{
         [imageView addGestureRecognizer:tap];
         [[tap rac_gestureSignal] subscribeNext:^(UITapGestureRecognizer* gesture) {
             @strongify(self)
+            self.importantLevel = gesture.view.tag;
             for (int i = 0; i < self.imageViewStars.count; ++i) {
                 [self.imageViewStars[i] setHighlighted:i <= gesture.view.tag];
             }
@@ -113,13 +129,9 @@ typedef enum tagCollectionViewTag{
         topicDetail.i = 1;/* 代表知识点 */
         topicDetail.titleStr = @"选择知识点";
     }
-    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+#pragma mark - 按钮手势等响应
 
 - (IBAction)cancel:(id)sender
 {
@@ -132,6 +144,12 @@ typedef enum tagCollectionViewTag{
     
 }
 
+- (IBAction)switchCommentType:(id)sender
+{
+    self.commentType = [sender tag];
+    [self.tableView reloadData];
+}
+
 #pragma mark - 录音
 
 - (IBAction)longPressVoiceRecordButtonAction:(UILongPressGestureRecognizer*)longPressedRecognizer
@@ -139,7 +157,7 @@ typedef enum tagCollectionViewTag{
     if (nil == self.recorder) {
         self.recorder = [[TXRecordVoice alloc] init];
     }
-    LJXLogObject(longPressedRecognizer);
+//    LJXLogObject(longPressedRecognizer);
     if(longPressedRecognizer.state == UIGestureRecognizerStateBegan) {
         LJXFoundationLog("record start");
         [self.recorder startRecording];
@@ -148,7 +166,10 @@ typedef enum tagCollectionViewTag{
         LJXFoundationLog("record end");
         [self.recorder stopRecording];
         self.labelVoiceLength.text = [NSString stringWithFormat:@"%.01f\"", self.recorder.duration / 1000];
-//        [VoiceConverter wavToAmr:self.recorder.filePath amrSavePath:[[LJXPath document] stringByAppendingPathComponent:@"tmp.amr"]];
+        self.recorderVoicePath = [[LJXPath document] stringByAppendingPathComponent:@"tmp.amr"];
+        LJXPerformBlockAsyn(^{
+            [VoiceConverter wavToAmr:self.recorder.filePath amrSavePath:self.recorderVoicePath];
+        });
     }
 }
 
@@ -158,23 +179,26 @@ typedef enum tagCollectionViewTag{
     [self.recorder play];
 }
 
-#pragma mark - Table view data source
+#pragma mark -
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (1 == indexPath.section){
+        /* 答案输入所在的cell是第1行， 当是选择题时返回0 */
+        if  (1 == indexPath.row && [self.type isEqualToString:@"选择题"]) return .0f;
+        if  (2 == indexPath.row && ![self.type isEqualToString:@"选择题"]) return .0f;
+    }
+    if (2 == indexPath.section){
+        if  (5 == indexPath.row && CommentInputTypeText == self.commentType) return .0f;
+        if  (6 == indexPath.row && CommentInputTypeVoice == self.commentType) return .0f;
+    }
+    return [super tableView:tableView heightForRowAtIndexPath:indexPath];
+}
 
-#pragma mark - UICollectionView
-
-#pragma mark - 题干
-
-#pragma mark - 答案
+#pragma mark - collection view
 
 - (NSArray*) anwsers{
    return @[@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H"];
 }
-
-#pragma mark - 解析
-
-#pragma mark - 知识点
-
-#pragma mark - 标签
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     switch (collectionView.tag) {
@@ -241,7 +265,6 @@ typedef enum tagCollectionViewTag{
 - (void)addImageWithSuccess:(MAImagePickerDidFinish) didFinish
 {
     MAImagePickerController *imagePicker = [[MAImagePickerController alloc] init];
-//    @weakify(cv)
     imagePicker.didFinish = didFinish;
     @weakify(imagePicker)
     imagePicker.didCancel = ^{
@@ -267,7 +290,7 @@ typedef enum tagCollectionViewTag{
         @weakify(self)
         [self addImageWithSuccess:^(UIImage *image) {
             @strongify(self)
-            NSString* path = [image save2TempWithName:[[NSDate date] formatTime]];
+            NSString* path = [image save2TempWithName:[[NSDate date] description]];
             if (path)
             {
                 if (CollectionViewTagQuestion == collectionView.tag) {
