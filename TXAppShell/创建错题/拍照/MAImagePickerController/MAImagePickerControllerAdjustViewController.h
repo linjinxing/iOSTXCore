@@ -17,7 +17,7 @@
 {
     BOOL isGray;
 }
-
+@property (copy, nonatomic) MAImagePickerDidFinish didFinish;
+@property (copy, nonatomic) MAImagePickerDidCancel didCancel;
 @property (strong, nonatomic) UIImage *sourceImage;
-
 @end

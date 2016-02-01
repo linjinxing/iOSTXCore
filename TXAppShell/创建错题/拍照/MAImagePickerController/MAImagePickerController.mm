@@ -221,6 +221,8 @@
     
     MAImagePickerControllerAdjustViewController* adjustViewController = [[MAImagePickerControllerAdjustViewController alloc] init];
     adjustViewController.sourceImage = [[self captureManager] stillImage];
+    adjustViewController.didFinish = self.didFinish;
+    adjustViewController.didCancel =  self.didCancel;
     
     [UIView animateWithDuration:0.05 delay:0.0 options:UIViewAnimationOptionCurveEaseInOut animations:^
      {
@@ -265,6 +267,8 @@
 #else
     MAImagePickerControllerAdjustViewController* adjustViewController = [[MAImagePickerControllerAdjustViewController alloc] init];
     adjustViewController.sourceImage = [[info objectForKey:UIImagePickerControllerOriginalImage] fixOrientation];
+    adjustViewController.didFinish = self.didFinish;
+    adjustViewController.didCancel =  self.didCancel;
 #endif
     
     CATransition* transition = [CATransition animation];
@@ -307,7 +311,10 @@
     {
         [_invokeCamera removeFromParentViewController];
     }
-    
+    if (self.didCancel)
+    {
+        self.didCancel();
+    }
     [_delegate imagePickerDidCancel];
 }
 
@@ -317,6 +324,10 @@
     
     [self removeNotificationObservers];
     [_delegate imagePickerDidChooseImageWithPath:[notification object]];
+    if (self.didFinish)
+    {
+        self.didFinish([notification object]);
+    }
 }
 
 - (void)removeNotificationObservers

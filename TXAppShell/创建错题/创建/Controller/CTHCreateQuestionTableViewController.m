@@ -16,13 +16,16 @@
 #import "CTHShareViewController.h"
 #import "TXUIKit.h"
 
-enum CollectionViewTag{
+/* 判断是否是添加图片按键的IndexPath */
+#define isAddImageIndexPath(indexPath,array) (indexPath.item >= array.count)
+
+typedef enum tagCollectionViewTag{
     CollectionViewTagQuestion ,
     CollectionViewTagAnswer  ,
     CollectionViewTagAnalysis  ,
     CollectionViewTagKnowledgePoints  ,
     CollectionViewTagTags
-};
+}CollectionViewTag;
 
 @interface CTHCreateQuestionTableViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, MAImagePickerControllerDelegate>
 @property(weak) IBOutlet UILabel* labelSubject;
@@ -31,10 +34,11 @@ enum CollectionViewTag{
 @property(weak) IBOutlet UILabel* labelVoiceLength;
 @property(strong) IBOutletCollection(UICollectionView) NSArray* collectionViews;
 @property(strong) IBOutletCollection(UIImageView) NSArray* imageViewStars;
-@property(strong) NSArray* arrayKnowledgePoints; /* 知识点 */
-@property(strong) NSArray* arrayTagItems;  /* 标签 */
-@property(strong) NSMutableArray* arrayQeustionImages; /* 题目图片 */
-@property(strong) NSMutableArray* arrayQeustionAnalysisImages; /* 题目解析图片 */
+@property(strong) NSMutableArray* arrayQuestionImagesPath; /* 题目拍摄的图片 */
+@property(strong) NSMutableArray* arrayAnswerAnalysisImagesPath;   /* 答案拍摄的图片 */
+@property(strong) NSMutableArray* arrayAnswer;   /* 答案 */
+@property(strong) NSArray* arrayKnowledgePoints;    /* 知识点 */
+@property(strong) NSArray* arrayTagItems;           /* 标签 */
 @property(strong) TXRecordVoice* recorder;
 @end
 
@@ -42,6 +46,9 @@ enum CollectionViewTag{
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.arrayQuestionImagesPath = [NSMutableArray arrayWithCapacity:3];
+    self.arrayAnswerAnalysisImagesPath = [NSMutableArray arrayWithCapacity:3];
+    self.arrayAnswer = [NSMutableArray arrayWithCapacity:10];
     
     self.labelSubject.text = self.subject.subjectName;
     self.labelType.text = self.type;
@@ -171,7 +178,9 @@ enum CollectionViewTag{
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     switch (collectionView.tag) {
+        case CollectionViewTagQuestion: return MIN(self.arrayQuestionImagesPath.count + 1, 3);
         case CollectionViewTagAnswer: return [self anwsers].count;
+        case CollectionViewTagAnalysis: return MIN(self.arrayAnswerAnalysisImagesPath.count + 1, 3);
         case CollectionViewTagKnowledgePoints: return self.arrayKnowledgePoints.count;
         case CollectionViewTagTags: return self.arrayTagItems.count;
         default:
@@ -182,11 +191,36 @@ enum CollectionViewTag{
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     static NSString* const reuseIdentifier = @"Cell";
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+
+    
+    UICollectionViewCell*(^getCell)(NSMutableArray* ) = ^(NSMutableArray* imagePathes){
+        if isAddImageIndexPath(indexPath, imagePathes){
+            /* 添加图片 */
+           return [collectionView dequeueReusableCellWithReuseIdentifier:@"Add" forIndexPath:indexPath];
+        }else{
+            /* 显示已经添加的图片 */
+            [cell.contentView imageViewWithTag:1].image = [UIImage imageWithContentsOfFile:imagePathes[indexPath.item]];
+            [[[cell.contentView buttonWithTag:2] rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+                [imagePathes removeObjectAtIndex:indexPath.item];
+                [collectionView reloadData];
+            }];
+            return (__kindof UICollectionViewCell*) cell;
+        }
+    };
+    
     switch (collectionView.tag) {
+        case CollectionViewTagQuestion:
+        {
+            return getCell(self.arrayQuestionImagesPath);
+        }
         case CollectionViewTagAnswer:
         {
             [[cell.contentView buttonWithTag:1] setTitle:[self anwsers][indexPath.item] forState:UIControlStateNormal];
             return cell;
+        }
+        case CollectionViewTagAnalysis:
+        {
+            return getCell(self.arrayAnswerAnalysisImagesPath);
         }
         case CollectionViewTagKnowledgePoints:
         {
@@ -204,38 +238,49 @@ enum CollectionViewTag{
     };
 };
 
-- (IBAction)addImage:(id)sender
+- (void)addImageWithSuccess:(MAImagePickerDidFinish) didFinish
 {
     MAImagePickerController *imagePicker = [[MAImagePickerController alloc] init];
-    
-    [imagePicker setDelegate:self];
-//    [imagePicker setSourceType:MAImagePickerControllerSourceTypeCamera];
+//    @weakify(cv)
+    imagePicker.didFinish = didFinish;
+    @weakify(imagePicker)
+    imagePicker.didCancel = ^{
+        @strongify(imagePicker)
+        [imagePicker dismissViewControllerAnimated:YES completion:nil];
+    };
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:imagePicker];
     
     [self presentViewController:navigationController animated:YES completion:nil];
 }
 
-- (void)imagePickerDidCancel
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)imagePickerDidChooseImageWithPath:(NSString *)path
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-    if ([[NSFileManager defaultManager] fileExistsAtPath:path])
+    if  (
+         (CollectionViewTagQuestion == collectionView.tag
+         && isAddImageIndexPath(indexPath, self.arrayQuestionImagesPath))
+         ||
+         (CollectionViewTagAnalysis == collectionView.tag
+             && isAddImageIndexPath(indexPath, self.arrayAnswerAnalysisImagesPath))
+         )
     {
-        NSLog(@"File Found at %@", path);
-        
+        @weakify(self)
+        [self addImageWithSuccess:^(UIImage *image) {
+            @strongify(self)
+            NSString* path = [image save2TempWithName:[[NSDate date] formatTime]];
+            if (path)
+            {
+                if (CollectionViewTagQuestion == collectionView.tag) {
+                    [self.arrayQuestionImagesPath insertObject:path atIndex:0];
+                }else{
+                    [self.arrayAnswerAnalysisImagesPath insertObject:path atIndex:0];
+                }
+                [collectionView reloadData];
+            }else{
+                LJXError("存储图片失败, image:%@", image);
+            }
+        }];
     }
-    else
-    {
-        NSLog(@"No File Found at %@", path);
-    }
-    
-    [[NSFileManager defaultManager] removeItemAtPath:path error:nil];
 }
 
 @end

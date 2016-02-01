@@ -56,7 +56,9 @@
 
 #import "UIView+Animation.h"
 #import "UIView+Subviews.h"
-
+#import "UIImageView+Addition.h"
+#import "TXImageCollectionViewCell.h"
+#import "TXImageLabelCollectionViewCell.h"
 #import "UIView+Layout.h"
 #import "UIDeviceAdditions.h"
 #import "UICollectionView+Additions.h"

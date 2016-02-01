@@ -15,6 +15,10 @@
 		686B08501C5BB87C00E404EE /* JSImagePickerViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 686B084D1C5BB64500E404EE /* JSImagePickerViewController.h */; };
 		686B085D1C5BC6BE00E404EE /* TXImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 686B085C1C5BC6BE00E404EE /* TXImageCollectionViewCell.m */; };
 		686B08601C5BCA7700E404EE /* TXImageLabelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 686B085F1C5BCA7700E404EE /* TXImageLabelCollectionViewCell.m */; };
+		6873E20B1C5F7E58000C50EA /* TXImageCollectionViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 686B085B1C5BC6BE00E404EE /* TXImageCollectionViewCell.h */; };
+		6873E20C1C5F7E59000C50EA /* TXImageLabelCollectionViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 686B085E1C5BCA7700E404EE /* TXImageLabelCollectionViewCell.h */; };
+		6873E2101C5F8384000C50EA /* UIImageView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6873E20F1C5F8384000C50EA /* UIImageView+Addition.m */; };
+		6873E2111C5F83E6000C50EA /* UIImageView+Addition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6873E20E1C5F8384000C50EA /* UIImageView+Addition.h */; };
 		68B576BE1C528A330013BFD8 /* UILabel+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B576BD1C528A330013BFD8 /* UILabel+Addition.m */; };
 		68B576C21C528C9F0013BFD8 /* UIStoryboard+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 68B576C11C528C9F0013BFD8 /* UIStoryboard+Addition.m */; };
 		68B576C31C528E490013BFD8 /* UIStoryboard+Addition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68B576C01C528C9F0013BFD8 /* UIStoryboard+Addition.h */; };
@@ -148,9 +152,12 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				6873E2111C5F83E6000C50EA /* UIImageView+Addition.h in CopyFiles */,
+				6873E20B1C5F7E58000C50EA /* TXImageCollectionViewCell.h in CopyFiles */,
 				686B07A71C5BAAF500E404EE /* UIViewController+Addition.h in CopyFiles */,
 				F77F585C1C51B4C6005CBD81 /* UIButtonAdditions.h in CopyFiles */,
 				F77F585D1C51B4C6005CBD81 /* LJXBlueRoundButton.h in CopyFiles */,
+				6873E20C1C5F7E59000C50EA /* TXImageLabelCollectionViewCell.h in CopyFiles */,
 				F77F585E1C51B4C6005CBD81 /* LJXButton.h in CopyFiles */,
 				F77F585F1C51B4C6005CBD81 /* LJXListButton.h in CopyFiles */,
 				686B08501C5BB87C00E404EE /* JSImagePickerViewController.h in CopyFiles */,
@@ -219,6 +226,8 @@
 		686B085C1C5BC6BE00E404EE /* TXImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXImageCollectionViewCell.m; sourceTree = "<group>"; };
 		686B085E1C5BCA7700E404EE /* TXImageLabelCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXImageLabelCollectionViewCell.h; sourceTree = "<group>"; };
 		686B085F1C5BCA7700E404EE /* TXImageLabelCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXImageLabelCollectionViewCell.m; sourceTree = "<group>"; };
+		6873E20E1C5F8384000C50EA /* UIImageView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Addition.h"; sourceTree = "<group>"; };
+		6873E20F1C5F8384000C50EA /* UIImageView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Addition.m"; sourceTree = "<group>"; };
 		68B576BC1C528A330013BFD8 /* UILabel+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Addition.h"; sourceTree = "<group>"; };
 		68B576BD1C528A330013BFD8 /* UILabel+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Addition.m"; sourceTree = "<group>"; };
 		68B576C01C528C9F0013BFD8 /* UIStoryboard+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+Addition.h"; sourceTree = "<group>"; };
@@ -341,6 +350,7 @@
 				F77F57F41C51B497005CBD81 /* UIDevice */,
 				68B576BB1C528A030013BFD8 /* UILabel */,
 				F77F57F91C51B497005CBD81 /* UIImage */,
+				6873E20D1C5F835C000C50EA /* UIImageView */,
 				F77F58001C51B497005CBD81 /* UIResponder */,
 				F77F58031C51B497005CBD81 /* UITableView */,
 				F77F58111C51B497005CBD81 /* UITextField */,
@@ -444,6 +454,15 @@
 				686B085F1C5BCA7700E404EE /* TXImageLabelCollectionViewCell.m */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		6873E20D1C5F835C000C50EA /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				6873E20E1C5F8384000C50EA /* UIImageView+Addition.h */,
+				6873E20F1C5F8384000C50EA /* UIImageView+Addition.m */,
+			);
+			path = UIImageView;
 			sourceTree = "<group>";
 		};
 		68B576BB1C528A030013BFD8 /* UILabel */ = {
@@ -913,6 +932,7 @@
 				F77F58581C51B497005CBD81 /* UIView+Layout.m in Sources */,
 				F77F58311C51B497005CBD81 /* LJXRoundFrameButton.m in Sources */,
 				686B07A21C5BA64C00E404EE /* LJXTableViewController.m in Sources */,
+				6873E2101C5F8384000C50EA /* UIImageView+Addition.m in Sources */,
 				68B576BE1C528A330013BFD8 /* UILabel+Addition.m in Sources */,
 				686B07A41C5BA64C00E404EE /* UIViewController+Addition.m in Sources */,
 				F77F58411C51B497005CBD81 /* UIView+Toast.m in Sources */,

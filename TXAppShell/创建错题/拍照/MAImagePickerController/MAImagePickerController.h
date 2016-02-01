@@ -32,7 +32,8 @@ typedef NS_ENUM(NSInteger, MAImagePickerControllerSourceType)
 }
 
 @property (nonatomic,assign) id<MAImagePickerControllerDelegate> delegate;
-
+@property (copy, nonatomic) MAImagePickerDidFinish didFinish;
+@property (copy, nonatomic) MAImagePickerDidCancel didCancel;
 @property (strong, nonatomic) MACaptureSession *captureManager;
 @property (strong, nonatomic) UIToolbar *cameraToolbar;
 @property (strong, nonatomic) UIBarButtonItem *flashButton;

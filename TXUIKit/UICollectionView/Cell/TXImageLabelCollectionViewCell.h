@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface TXImageLabelCollectionViewCell : UICollectionViewCell
-
+@property(nonatomic, weak, readonly) UIImageView* imageView;
+@property(nonatomic, weak, readonly) UILabel* labelText;
 @end

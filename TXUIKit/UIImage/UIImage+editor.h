@@ -12,5 +12,5 @@
 - (UIImage*)scaleToSize:(CGSize)newSize;
 
 - (UIImage *)scaleWithWidth:(CGFloat)newWidth;
-- (void)save2TempWithName:(NSString*)aName;
+- (NSString*)save2TempWithName:(NSString*)aName;
 @end

@@ -8,6 +8,16 @@
 
 #import "TXImageLabelCollectionViewCell.h"
 
+@interface TXImageLabelCollectionViewCell()
+@property(nonatomic, weak) IBOutlet UIImageView* imageView;
+@property(nonatomic, weak) IBOutlet UILabel* labelText;
+@end
+
 @implementation TXImageLabelCollectionViewCell
+
++ (void)load
+{
+
+}
 
 @end

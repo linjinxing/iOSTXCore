@@ -298,11 +298,21 @@
 - (void)imageEditor:(CLImageEditor*)editor didFinishEdittingWithImage:(UIImage*)image
 {
     LJXLogFunction;
+    [editor dismissViewControllerAnimated:YES completion:nil];
+    if (self.didFinish)
+    {
+        self.didFinish(image);
+    }
 }
 
 - (void)imageEditorDidCancel:(CLImageEditor*)editor
 {
     LJXLogFunction;
+    [editor dismissViewControllerAnimated:YES completion:nil];    
+    if (self.didCancel)
+    {
+        self.didCancel();
+    }
 }
 
 - (void)didReceiveMemoryWarning

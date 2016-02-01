@@ -24,7 +24,7 @@
 		return @"/tmp";
 	}
 #endif
-    return [[self root] stringByAppendingPathComponent:[[NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) lastObject] lastPathComponent]];
+    return [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
 }
 
 +(NSString*)document
@@ -34,7 +34,8 @@
 
 +(NSString*)tmp
 {
-    return [[self root] stringByAppendingPathComponent:[NSTemporaryDirectory() lastPathComponent]];
+    return NSTemporaryDirectory();
+//    return [[self root] stringByAppendingPathComponent:[NSTemporaryDirectory() lastPathComponent]];
 }
 
 

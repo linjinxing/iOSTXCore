@@ -14,6 +14,11 @@
 #define kCropButtonSize 200
 #define kActivityIndicatorSize 100
 
+/* 完成选择和编辑 */
+typedef void(^MAImagePickerDidFinish)(UIImage*image);
+/* 用户取消选择或编辑 */
+typedef void(^MAImagePickerDidCancel)();
+
 @interface MAConstants : NSObject
 
 @end
