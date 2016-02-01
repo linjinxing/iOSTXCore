@@ -1049,6 +1049,9 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLw-Ad-4YT">
                             <rect key="frame" x="120" y="0.0" width="120" height="44"/>
                             <state key="normal" title="保存"/>
+                            <connections>
+                                <action selector="save:" destination="W3q-iv-FhV" eventType="touchUpInside" id="fS3-Nc-ZfQ"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXc-yi-jXY">
                             <rect key="frame" x="420" y="0.0" width="180" height="44"/>
@@ -1057,6 +1060,7 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
+                                <action selector="save:" destination="W3q-iv-FhV" eventType="touchUpInside" id="WsL-XL-GTR"/>
                                 <segue destination="Qm0-Za-bz1" kind="show" id="MQm-gf-8i8"/>
                             </connections>
                         </button>
@@ -1611,7 +1615,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cOu-Yg-XaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188" y="2537"/>
+            <point key="canvasLocation" x="244" y="2598"/>
         </scene>
     </scenes>
     <resources>

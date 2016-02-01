@@ -138,8 +138,7 @@ typedef enum tagCommentInputType{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-
-- (IBAction)share:(id)sender
+- (IBAction)save:(id)sender /* 保存 */
 {
     
 }

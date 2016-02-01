@@ -25,49 +25,49 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)share:(id)sender{
 
-
-- (void)share2QQ{
-    OSMessage *msg=[[OSMessage alloc] init];
-    msg.title=[NSString stringWithFormat:@"Hello OpenShare (msg.title) %f",[[NSDate date] timeIntervalSince1970]];
-    if (1)
-    {
-        [OpenShare shareToQQFriends:msg Success:^(OSMessage *message) {
-            NSLog(@"分享到QQ好友成功:%@",msg);
-        } Fail:^(OSMessage *message, NSError *error) {
-            NSLog(@"分享到QQ好友失败:%@\n%@",msg,error);
-        }];
-    }else
-    {
-        [OpenShare shareToQQZone:msg Success:^(OSMessage *message) {
-            NSLog(@"分享到QQ空间成功:%@",msg);
-        } Fail:^(OSMessage *message, NSError *error) {
-            NSLog(@"分享到QQ空间失败:%@\n%@",msg,error);
-        }];
-    }
 }
 
-- (void)share2WeiXin
+- (NSArray*)datas{
+    return @[@"微信",
+    @"朋友圈",
+    @"QQ好友",
+             @"QQ空间"];
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return [self datas].count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString* const reuseIdentifier = @"Cell";
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+
+    [cell.contentView labelWithTag:2].text = [self datas][indexPath.item];
+    return cell;
+};
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     OSMessage *msg=[[OSMessage alloc] init];
-    msg.title=[NSString stringWithFormat:@"Hello OpenShare (msg.title) %f",[[NSDate date] timeIntervalSince1970]];
-    if (1)
-    {
-        [OpenShare shareToWeixinSession:msg Success:^(OSMessage *message) {
-            NSLog(@"微信分享到会话成功：\n%@",message);
-        } Fail:^(OSMessage *message, NSError *error) {
-            NSLog(@"微信分享到会话失败：\n%@\n%@",error,message);
-        }];
-    }
-    else{
-        [OpenShare shareToWeixinTimeline:msg Success:^(OSMessage *message) {
-            NSLog(@"微信分享到朋友圈成功：\n%@",message);
-        } Fail:^(OSMessage *message, NSError *error) {
-            NSLog(@"微信分享到朋友圈失败：\n%@\n%@",error,message);
-        }];
+    msg.title=[NSString stringWithFormat:@"错题会分享",[[NSDate date] timeIntervalSince1970]];
+    msg.image = UIImageJPEGRepresentation(self.image, 1.0);
+    shareSuccess success = ^(OSMessage * message){
+        [self showHUDAndHidWithStr:[NSString stringWithFormat:@"分享到%@成功", [self datas][indexPath.item]]];
+    };
+    shareFail fail = ^(OSMessage * message,NSError *error){
+        [self showHUDAndHidWithStr:[NSString stringWithFormat:@"分享到%@失败", [self datas][indexPath.item]]];
+    };
+    switch (indexPath.item) {
+        case 0: [OpenShare shareToWeixinSession:msg Success:success Fail:fail];break;
+        case 1: [OpenShare shareToWeixinTimeline:msg Success:success Fail:fail]; break;
+        case 2: [OpenShare shareToQQFriends:msg Success:success Fail:fail]; break;
+        case 3: [OpenShare shareToQQZone:msg Success:success Fail:fail]; break;
+        default:
+            break;
     }
 }
-
 /*
  #pragma mark - Navigation
  
