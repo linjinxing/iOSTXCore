@@ -6,8 +6,8 @@
 //  Copyright © 2016年 CTH. All rights reserved.
 //
 
-#import "CLImageEditor.h"
+#import "CLImageToolBase.h"
 
-//@interface CLImageToolOriginalImage : CLImageToolBase
-//
-//@end
+@interface CLImageToolOriginalImage : CLImageToolBase
+
+@end

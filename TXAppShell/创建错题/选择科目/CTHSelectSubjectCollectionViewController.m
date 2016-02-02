@@ -28,10 +28,29 @@ static NSString * const reuseIdentifier = @"Cell";
         return @([value CGSizeValue].height);
     }];
     
+    [[self.view rac_signalForSelector:@selector(hitTest:withEvent:)] subscribeNext:^(RACTuple* tuple) {
+        CGPoint point = [self.view convertPoint:[tuple.first CGPointValue] toView:self.collectionView];
+        if (![self.collectionView pointInside:point withEvent:nil]) {
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }];
+    
+//    UITapGestureRecognizer* ges = [[UITapGestureRecognizer alloc] init];
+//    [self.view addGestureRecognizer:ges];
+//    @weakify(self)
+//    [[ges rac_gestureSignal] subscribeNext:^(UITapGestureRecognizer* tap) {
+//        @strongify(self)
+//        CGPoint p = [tap locationInView:self.collectionView];
+//        CGPoint p1 = [tap locationInView:self.view];
+//        NSLog(@"p:%@, p1:%@, %s", NSStringFromCGPoint(p), NSStringFromCGPoint(p1), [self.collectionView pointInside:p withEvent:nil] ? "yes" : "no");
+////        [self dismissViewControllerAnimated:YES completion:nil];
+//    }];
+    
+    
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
 //    @weakify(self)
-[CTHURLJSONConnectionCreateSignal(@{@"dataType":@"getSubjects",@"userId":@"1"}, @"subjects", [CTHSubject class])
+    [CTHURLJSONConnectionCreateSignal(@{@"dataType":@"getSubjects",@"userId":@"1"}, @"subjects", [CTHSubject class])
      subscribeNext:^(id x) {
 //         @strongify(self)
          LJXPerformBlockAsynOnMainThread(^{

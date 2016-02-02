@@ -264,16 +264,7 @@
         edited = NO;
     }
     
-    
-    cv::Mat original = [MAOpenCV cvMatGrayFromUIImage:_adjustedImage];
-    
-    cv::GaussianBlur(original, original, cvSize(11,11), 0);
-    cv::adaptiveThreshold(original, original, 255, cv::ADAPTIVE_THRESH_MEAN_C, cv::THRESH_BINARY, 5, 2);
-    UIImage* image = [MAOpenCV UIImageFromCVMat:original];
-    
-    original.release();
-    
-    CLImageEditor *editor = [[CLImageEditor alloc] initWithImage:image];
+    CLImageEditor *editor = [[CLImageEditor alloc] initWithImage:_adjustedImage];
     editor.delegate = self;
     
     NSArray* noAvailableFun = @[
