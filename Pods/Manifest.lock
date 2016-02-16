@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.0):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - MBProgressHUD (0.9.1)
   - MJExtension (2.5.8)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -31,11 +32,13 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - MBProgressHUD
   - MJExtension
   - ReactiveCocoa
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJExtension: e6f30c738b7618552ee5563fcf4eadf552f997e0
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
 

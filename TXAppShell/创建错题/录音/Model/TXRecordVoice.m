@@ -8,11 +8,12 @@
 
 #import "TXRecordVoice.h"
 #import <AVFoundation/AVFoundation.h>
+#import "CTHImageUtilities.h"
 
 #define kdBOffset       40
 #define kMeterRefresh   0.03
 
-@interface TXRecordVoice ()<AVAudioRecorderDelegate>
+@interface TXRecordVoice ()<AVAudioRecorderDelegate, AVAudioPlayerDelegate>
 {
     AVAudioRecorder *recorder;
     AVAudioPlayer *player;
@@ -35,17 +36,28 @@
     
     [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:&err];
     
-    if (err) { /* handle error */ }
+    if (err) { /* handle error */
+        LJXNSError(err);
+    }
     
     err = nil;
     
+    
     [audioSession setActive:YES error:&err];
     
-    if (err) { /* handle error */ }
+    if (err) {
+        LJXNSError(err);
+    }
+
+    [audioSession overrideOutputAudioPort:AVAudioSessionPortOverrideSpeaker error:&err];
+    if (err) {
+        LJXNSError(err);
+    }
+    
     
     NSString *documentsDirectory = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     
-    self.filePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.wav", [[NSDate date] formatDateTime]]];
+    self.filePath = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.wav", @([[NSDate date] timeIntervalSince1970])]];
     NSURL *url = [NSURL fileURLWithPath:self.filePath];
     LJXFoundationLog("recording file path:%@", url);
     NSDictionary *settings = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -78,14 +90,31 @@
     [player stop];
 	player = [[AVAudioPlayer alloc] initWithContentsOfURL:recorder.url error:&error];
     [player play];
+    player.delegate = self;
     NSLog(@"[%@] error:%@", NSStringFromSelector(_cmd), error);
 }
 
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    if (self.playbackDidFinish)
+    {
+        self.playbackDidFinish();
+    }
+}
+
+- (void)audioPlayerDecodeErrorDidOccur:(AVAudioPlayer *)player error:(NSError * __nullable)error
+{
+    if (self.playbackDidFinish)
+    {
+        self.playbackDidFinish();
+    }
+}
+
 - (void)stopRecording {
+    self.duration = recorder.currentTime;
+    NSLog(@"[%@] currentTime:%@, deviceCurrentTime:%@", NSStringFromSelector(_cmd), @(recorder.currentTime), @(recorder.deviceCurrentTime));
     [recorder stop];
     [levelTimer invalidate];
-    self.duration = recorder.deviceCurrentTime;
-    NSLog(@"[%@] currentTime:%@, deviceCurrentTime:%@", NSStringFromSelector(_cmd), @(recorder.currentTime), @(recorder.deviceCurrentTime));
 }
 
 - (void)levelTimerCallback:(NSTimer *)timer {

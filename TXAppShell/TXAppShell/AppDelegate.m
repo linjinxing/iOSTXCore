@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "CTHSelectSubjectCollectionViewController.h"
+//#import "CTHSelectSubjectCollectionViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.window.rootViewController = [UIStoryboard instantiateViewControllerWithClass:[CTHSelectSubjectCollectionViewController class] inStoryboard:@"WrongQuestions"];
+//    self.window.rootViewController = [UIStoryboard instantiateViewControllerWithClass:[CTHSelectSubjectCollectionViewController class] inStoryboard:@"WrongQuestions"];
     return YES;
 }
 

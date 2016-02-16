@@ -27,6 +27,14 @@
 - (UIViewController* )presentViewControllerWithIdentifier:(NSString *)viewControllerIdentifier inStoryboard:(NSString*)storyboardName createExitBtn:(BOOL)bl;
 
 + (UIViewController*) instantiateViewControllerInStoryboard:(NSString*) storyboardName;
+/**
+ *  将自己在最顶层的viewcontroller中显示
+ *
+ *  @param storyboardName 自己所在的storyboard的名字
+ *
+ *  @return 实例化的自己
+ */
++ (UIViewController*) prsentInStoryboard:(NSString*) storyboardName;
 @end
 
 /**

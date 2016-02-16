@@ -12,4 +12,5 @@
 @interface CTHCreateQuestionTableViewController : UITableViewController
 @property(nonatomic, strong) CTHSubject* subject;
 @property(nonatomic, copy) NSString* type;
+//@property(nonatomic, copy) LJXBlock dismiss;
 @end

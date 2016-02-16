@@ -9,7 +9,7 @@
 #import "CTHQuestionTagsCollectionViewCell.h"
 
 @interface CTHQuestionTagsCollectionViewCell()
-@property(nonatomic, weak) IBOutlet UILabel* label;
+//@property(nonatomic, weak) IBOutlet UILabel* label;
 @property(nonatomic, weak) IBOutlet UIButton* btn;
 @property(nonatomic, weak) IBOutlet UIButton* btnDelete;
 @end
@@ -23,11 +23,15 @@
     [[self.btn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
         @strongify(self)
         self.btn.selected = !self.btn.isSelected;
-//        [self.btn setBackgroundColor:self.btn.selected? [UIColor blueColor] : [UIColor whiteColor]];
+    }];
+    
+    [RACObserve(self.btn, isSelected) subscribeNext:^(NSNumber* isSelected) {
+        @strongify(self)
+        [self.btn setBackgroundColor:isSelected? [UIColor clearColor] : [UIColor lightGrayColor]];
     }];
     
     RAC(self.btnDelete, hidden) = RACObserve(self, bDeleteViewHidden);
     self.bDeleteViewHidden = YES;
-    self.btnDelete.userInteractionEnabled = NO;
+//    self.btnDelete.userInteractionEnabled = NO;
 }
 @end

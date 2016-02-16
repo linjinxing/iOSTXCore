@@ -4,18 +4,27 @@ platform :ios, '7.0'
 workspace 'TXCoreApp'
 
 xcodeproj 'TXAppShell/TXAppShell'
-xcodeproj 'LJXNetworking/LJXNetworking'
+xcodeproj 'TXNetworking/TXNetworking'
+xcodeproj 'TXUIKit/TXUIKit'
+
 
 target :TXAppShell do
     xcodeproj 'TXAppShell/TXAppShell'
     pod 'AFNetworking'
     pod 'ReactiveCocoa'
     pod 'MJExtension'
+    pod 'MBProgressHUD'
 end
 
-target :LJXNetworking do
-    xcodeproj 'LJXNetworking/LJXNetworking'
+target :TXNetworking do
+    xcodeproj 'TXNetworking/TXNetworking'
     pod 'AFNetworking'
     pod 'ReactiveCocoa'
     pod 'MJExtension'
 end
+
+target :TXUIKit do
+    xcodeproj 'TXUIKit/TXUIKit'
+    pod 'MBProgressHUD'
+end
+

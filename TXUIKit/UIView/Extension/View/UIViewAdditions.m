@@ -372,8 +372,18 @@ static NSMutableDictionary* s_dict = nil;
 //  }
 //}
 
+- (void)setCornerRadius:(CGFloat)cornerRadius
+{
+    self.layer.cornerRadius = cornerRadius;
+}
+
+- (CGFloat)cornerRadius
+{
+    return self.layer.cornerRadius;
+}
 
 + (void) drawRoundRectangleInRect:(CGRect)rect withRadius:(CGFloat)radius{
+    
 	CGContextRef context = UIGraphicsGetCurrentContext();
     
 	

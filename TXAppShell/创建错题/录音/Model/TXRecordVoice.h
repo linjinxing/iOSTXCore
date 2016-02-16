@@ -11,6 +11,7 @@
 
 @interface TXRecordVoice : NSObject
 @property(nonatomic, copy) void(^updateMeter)(CGFloat value);
+@property(nonatomic, copy) LJXBlock playbackDidFinish;
 @property(nonatomic, copy) NSString* filePath;
 @property(nonatomic, assign) NSTimeInterval duration;
 - (void)startRecording;

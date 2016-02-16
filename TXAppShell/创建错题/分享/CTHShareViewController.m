@@ -18,6 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    @weakify(self)
+    [[self.view rac_signalForSelector:@selector(hitTest:withEvent:)] subscribeNext:^(RACTuple* tuple) {
+        @strongify(self)
+        CGPoint point1 = [self.view convertPoint:[tuple.first CGPointValue] toView:self.collectionView];
+        if (![self.collectionView pointInside:point1 withEvent:nil]) {
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,8 +59,10 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     OSMessage *msg=[[OSMessage alloc] init];
-    msg.title=[NSString stringWithFormat:@"错题会分享",[[NSDate date] timeIntervalSince1970]];
+    msg.title = [NSString stringWithFormat:@"错题会分享"];
     msg.image = UIImageJPEGRepresentation(self.image, 1.0);
+    msg.thumbnail = UIImageJPEGRepresentation([self.image scaleWithWidth:80.0f], 1.0);
+    msg.desc = @"我从错题会分享了错题图片";
     shareSuccess success = ^(OSMessage * message){
         [self showHUDAndHidWithStr:[NSString stringWithFormat:@"分享到%@成功", [self datas][indexPath.item]]];
     };

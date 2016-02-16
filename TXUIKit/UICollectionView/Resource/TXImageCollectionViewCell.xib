@@ -74,5 +74,39 @@
             <size key="customSize" width="119" height="97"/>
             <point key="canvasLocation" x="137.5" y="304.5"/>
         </collectionViewCell>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="3Zl-il-mNa" customClass="CTHQuestionTagsCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="105" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="105" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfy-RE-Wm7" userLabel="X">
+                        <rect key="frame" x="-8" y="-6" width="30" height="30"/>
+                        <state key="normal" title="X">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCD-G9-HXg">
+                        <rect key="frame" x="12" y="5" width="83" height="30"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailingMargin" secondItem="YCD-G9-HXg" secondAttribute="trailing" constant="2" id="9Mi-N8-kB6"/>
+                <constraint firstItem="Vfy-RE-Wm7" firstAttribute="leading" secondItem="3Zl-il-mNa" secondAttribute="leading" constant="-8" id="NGn-Zp-maI"/>
+                <constraint firstItem="Vfy-RE-Wm7" firstAttribute="top" secondItem="3Zl-il-mNa" secondAttribute="top" constant="-6" id="VuV-Mb-pi5"/>
+                <constraint firstItem="YCD-G9-HXg" firstAttribute="centerY" secondItem="3Zl-il-mNa" secondAttribute="centerY" id="jv6-iK-ySZ"/>
+                <constraint firstItem="YCD-G9-HXg" firstAttribute="leading" secondItem="3Zl-il-mNa" secondAttribute="leadingMargin" constant="4" id="ohU-4T-pwK"/>
+            </constraints>
+            <connections>
+                <outlet property="btn" destination="YCD-G9-HXg" id="r4r-tM-NaY"/>
+                <outlet property="btnDelete" destination="Vfy-RE-Wm7" id="okt-5M-7tt"/>
+            </connections>
+        </collectionViewCell>
     </objects>
 </document>

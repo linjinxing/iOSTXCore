@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		208816C1AD55D1612E2F3A99 /* libPods-TXUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA8595DFEF9BEACB238A240 /* libPods-TXUIKit.a */; };
 		686B07A21C5BA64C00E404EE /* LJXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 686B079D1C5BA64C00E404EE /* LJXTableViewController.m */; };
 		686B07A31C5BA64C00E404EE /* LJXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 686B079F1C5BA64C00E404EE /* LJXViewController.m */; };
 		686B07A41C5BA64C00E404EE /* UIViewController+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 686B07A11C5BA64C00E404EE /* UIViewController+Addition.m */; };
@@ -24,7 +25,6 @@
 		68B576C31C528E490013BFD8 /* UIStoryboard+Addition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 68B576C01C528C9F0013BFD8 /* UIStoryboard+Addition.h */; };
 		68B732D61C60D1AC003ADC61 /* LJXTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 686B079C1C5BA64C00E404EE /* LJXTableViewController.h */; };
 		68B732D71C60D1AE003ADC61 /* LJXViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 686B079E1C5BA64C00E404EE /* LJXViewController.h */; };
-		74E45F28CF3CE911F4C47B2F /* libPods-TXUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA8595DFEF9BEACB238A240 /* libPods-TXUIKit.a */; };
 		F77F582B1C51B497005CBD81 /* UIButtonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57A51C51B497005CBD81 /* UIButtonAdditions.m */; };
 		F77F582C1C51B497005CBD81 /* LJXBlueRoundButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57A71C51B497005CBD81 /* LJXBlueRoundButton.m */; };
 		F77F582D1C51B497005CBD81 /* LJXButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F77F57A91C51B497005CBD81 /* LJXButton.m */; };
@@ -331,7 +331,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74E45F28CF3CE911F4C47B2F /* libPods-TXUIKit.a in Frameworks */,
+				208816C1AD55D1612E2F3A99 /* libPods-TXUIKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -918,7 +918,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-TXUIKit/Pods-TXUIKit-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-TXUIKit/Pods-TXUIKit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

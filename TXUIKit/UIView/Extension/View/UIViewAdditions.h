@@ -69,11 +69,9 @@
 - (void)setTransformForCurrentOrientation:(BOOL)animated;
 @end
 
-@interface UIView(transform)
-- (void)scale:(CGFloat)aRatio;
-@end
 
 @interface UIView(graph)
+@property CGFloat cornerRadius;
 + (void) drawRoundRectangleInRect:(CGRect)rect withRadius:(CGFloat)radius;
 @end
 

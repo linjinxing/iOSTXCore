@@ -46,9 +46,9 @@
 	NSData* date = UIImageJPEGRepresentation(self, 1.0);
 	NSString* path = [[LJXPath tmp] stringByAppendingPathComponent:aName];
 	
-	if	(0 == [[aName pathExtension] length]){
-		path = [path stringByAppendingString:@".jpg"];
-	}
+//	if	(0 == [[aName pathExtension] length]){
+//		path = [path stringByAppendingString:@".jpg"];
+//	}
 	
 	NSError* error ;
 	if (![date writeToFile:path options:NSDataWritingAtomic error:&error]){

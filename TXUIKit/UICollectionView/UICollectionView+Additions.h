@@ -10,4 +10,7 @@
 
 @interface UICollectionView (Additions)
 - (void)registerClass:(Class)cellClass;
+
+// 计算大小
+- (CGSize)calculateContentSize;
 @end

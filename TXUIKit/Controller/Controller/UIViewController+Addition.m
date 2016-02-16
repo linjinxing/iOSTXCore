@@ -82,6 +82,13 @@
     return [[UIStoryboard storyboardWithName:storyboardName bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass(self.class)];
 }
 
++ (UIViewController*) prsentInStoryboard:(NSString*) storyboardName
+{
+    UIViewController* vc = [self instantiateViewControllerInStoryboard:storyboardName];
+    [LJXUIGetTopViewController() presentViewController:vc animated:YES completion:nil];
+    return vc;
+}
+
 - (UIButton *)toolbarItemWithTitle:(NSString *)title
 {
 //    __block UIBarButtonItem* item = nil;
